@@ -1,0 +1,17 @@
+dataset	compartment	donor_id	n_cells	reason
+KIRC_GSE159115	endothelial	SS_2022	12	fewer than 20 cells
+KIRC_GSE139555	endothelial	Renal1	1	fewer than 20 cells
+KIRC_GSE139555	endothelial	Renal2	1	fewer than 20 cells
+KIRC_Li2022	endothelial	PD43948	10	fewer than 20 cells
+KIRC_Li2022	endothelial	PD44967	5	fewer than 20 cells
+KIRC_Li2022	endothelial	PD47171	18	fewer than 20 cells
+KIRC_Li2022	endothelial	PD47465	8	fewer than 20 cells
+KIRC_Li2022	endothelial	PD47512	1	fewer than 20 cells
+KIRC_Li2022	fibroblast_stromal	PD44966	6	fewer than 20 cells
+KIRC_Li2022	fibroblast_stromal	PD45814	11	fewer than 20 cells
+KIRC_Li2022	fibroblast_stromal	PD47171	1	fewer than 20 cells
+KIRC_Li2022	fibroblast_stromal	PD47465	6	fewer than 20 cells
+KIRC_Li2022	fibroblast_stromal	PD47512	1	fewer than 20 cells
+KIRC_GSE222703	endothelial	p027	7	fewer than 20 cells
+KIRC_GSE222703	endothelial	p029	1	fewer than 20 cells
+KIRC_GSE222703	fibroblast_stromal	p029	1	fewer than 20 cells

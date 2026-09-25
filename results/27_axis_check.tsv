@@ -1,0 +1,5 @@
+quantity	check	recomputed_27	reported_07	n	max_abs_diff	tolerance	agree	note
+protein_coding_PC1_var_explained	absolute difference from the value reported in 07	0.1371	0.1371	506	0	5e-04	TRUE	07_pc_variance_explained.tsv / 07_axis_vs_purity_qc_correlations.tsv
+protein_coding_PC1_rho_noFeature	absolute difference from the value reported in 07	0.046	0.046	506	0	0.005	TRUE	07_pc_variance_explained.tsv / 07_axis_vs_purity_qc_correlations.tsv
+protein_coding_PC1_n	absolute difference from the value reported in 07	506	506	506	0	0	TRUE	07_pc_variance_explained.tsv / 07_axis_vs_purity_qc_correlations.tsv
+lncRNA_PC1_vs_cached_lnc_global_axis	element-wise identity of the 511 axis values (all.equal + maximum absolute difference)			511	0	1e-08	TRUE	cache/lnc_global_axis.rds; all.equal result: TRUE (all.equal on the values reports no difference)

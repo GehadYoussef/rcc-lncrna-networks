@@ -1,0 +1,7 @@
+patient	os_time_pipeline	os_event_pipeline	vital_pipeline	OS_time_cdr_raw	OS_cdr_raw	OS_time_cdr_10y	OS_cdr_10y	diff_days_pipeline_minus_cdr	event_differs	time_differs	cdr_vital_status	cdr_last_contact_days_to	cdr_death_days_to	cdr_tumor_status	DSS	DSS.time	PFI	PFI.time	dead_in_both	explained_by_later_freeze	flag
+TCGA-CZ-4864	1315	1	Dead	2830	1	2830	1	-1515	FALSE	TRUE	Dead	2830	2830	TUMOR FREE	0	2830	0	2830	TRUE	FALSE	NOT explained by a later freeze: death recorded in both sources with the times more than a year apart; check whether 01 selected an earlier follow-up record
+TCGA-CJ-4873	1776	0	Alive	2259	0	2259	0	-483	FALSE	TRUE	Alive	2259		TUMOR FREE	0	2259	0	2259	FALSE	TRUE	benign: the CDR records later follow-up than the GDC API / BCR XML used in 01 (later freeze)
+TCGA-AK-3450	1508	0	Alive	1779	0	1779	0	-271	FALSE	TRUE	Alive	1779		TUMOR FREE	0	1779	0	1779	FALSE	TRUE	benign: the CDR records later follow-up than the GDC API / BCR XML used in 01 (later freeze)
+TCGA-A3-3331	1257	0	Alive	1485	0	1485	0	-228	FALSE	TRUE	Alive	1485		TUMOR FREE	0	1485	0	1485	FALSE	TRUE	benign: the CDR records later follow-up than the GDC API / BCR XML used in 01 (later freeze)
+TCGA-CW-6090	2780	0	Alive	2552	0	2552	0	228	FALSE	TRUE	Alive	2552		TUMOR FREE	0	2552	1	2780	FALSE	TRUE	benign: the pipeline records later follow-up than the CDR for this patient
+TCGA-CJ-5672	1972	1	Dead	2190	1	2190	1	-218	FALSE	TRUE	Dead		2190	TUMOR FREE	0	2190	0	2190	TRUE	TRUE	benign: the CDR records later follow-up than the GDC API / BCR XML used in 01 (later freeze)

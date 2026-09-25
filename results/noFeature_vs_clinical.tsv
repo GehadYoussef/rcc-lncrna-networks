@@ -1,0 +1,7 @@
+variable	n	test	p	rho
+stage group (I-II vs III-IV)	517	Wilcoxon	0.486	
+grade group (G1-2 vs G3-4)	512	Wilcoxon	0.836	
+grade_num	512	Spearman	0.402	-0.037
+T_stage	520	Spearman	0.278	0.048
+age	520	Spearman	0.437	-0.034
+M1	520	Wilcoxon	0.773	

@@ -1,0 +1,26 @@
+column	type	definition	applicable_cohorts
+cohort	character	GDC project the expression file belongs to (TCGA-KIRC, CPTAC-3, TCGA-KIRP or TCGA-KICH).	all
+role	character	Role of that cohort in the study: discovery, validation or subtype.	all
+patient	character	Submitter (case) identifier of the patient the aliquot came from.	all
+sample_barcode	character	Submitter identifier of the sample (aliquot) the library was made from.	all
+sample_type	character	GDC sample type of the aliquot; only Primary Tumor samples can enter a cohort.	all
+file_id	character	GDC file UUID of the STAR-Counts file.	all
+file_name	character	GDC file name of the STAR-Counts file.	all
+gdc_md5sum	character	md5 checksum of the file as recorded by the GDC /files endpoint.	all
+gdc_file_size	numeric	Size in bytes of the file as recorded by the GDC /files endpoint.	all
+gdc_data_release	character	GDC data release current when this metadata was read (/status endpoint). One value for the whole fetch: /files carries no per-file release field.	all
+gdc_metadata_fetched	character	Date on which this script read the GDC metadata.	all
+gdc_state	character	GDC file state (released for every file used here).	all
+gdc_workflow_version	character	Version of the GDC mRNA analysis workflow that produced the file.	all
+gdc_created_datetime	character	Datetime the file was created in the GDC.	all
+gdc_updated_datetime	character	Datetime the file record was last updated in the GDC.	all
+local_file_present	logical	TRUE if the file is present in this project's local download tree. Only primary tumours were downloaded for the subtype cohorts, so the non-primary subtype files are absent by design.	all
+local_file_size	numeric	Size in bytes of the local copy; empty when the file was never downloaded.	all
+local_file_date	character	Modification date of the local copy; empty when the file was never downloaded.	all
+local_md5sum	character	md5 checksum recomputed from the local copy; empty when the file was never downloaded.	all
+local_md5_matches_gdc	logical	TRUE if the local md5 equals the GDC md5; empty when either checksum is unavailable.	all
+assigned_reads	numeric	STAR assigned reads: the sum of unstranded counts over ENSG genes, which is the library size used throughout the pipeline. Empty when the file was never downloaded.	all
+retained_in_analysed_cohort	logical	TRUE if this file supplied the expression profile of one patient in the analysed cohort.	all
+exclusion_reason	character	Why the file was excluded, reconstructed from the cohort build of 01 (TCGA-KIRC), 08 (CPTAC-3) or 11 (subtypes). Empty for retained files.	all
+in_adjusted_models	logical	TRUE if the patient contributed to the covariate-adjusted survival models: complete age, sex, T stage, N, M1 and grade in TCGA-KIRC and CPTAC-3; complete age, sex, T stage and M1 in the subtype cohorts.	all
+in_prediction_set	character	TRUE if the sample is in the locked prediction set written by 09_validate.R (cache/locked_model.rds): the 493 TCGA-KIRC patients every model in that file is fitted on, or the 199 CPTAC-3 patients they are then scored on. The file holds 2 comparator sets and two Cox fits of each on those same patients -- the comparator terms alone, unpenalised, and an elastic net that leaves those terms unpenalised and offers the same 29 module scores (13 protein-coding, 16 lncRNA) to the penalty. The comparator sets are: clinical (age, male, T_stage, N_pos, M1, grade), of which 9 module scores are retained; augmented (age, male, T_stage, N_pos, M1, grade, stromal, immune, noFeature, multimap, libsize_z), of which 5 module scores are retained. No fit contains an individual hub lncRNA gene. Written as 'not applicable' for TCGA-KIRP and TCGA-KICH, for which no locked model exists.	TCGA-KIRC and CPTAC-3

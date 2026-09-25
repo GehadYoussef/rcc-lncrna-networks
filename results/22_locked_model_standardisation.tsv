@@ -1,0 +1,8 @@
+comparator	covariate	source	mean	sd
+clinical	age	clinical	61.1754	12.0387
+augmented	age	clinical	61.1754	12.0387
+augmented	stromal	ESTIMATE	842.4403	476.047
+augmented	immune	ESTIMATE	1683.9339	640.6478
+augmented	noFeature	STAR summary (07)	5.1418	2.566
+augmented	multimap	STAR summary (07)	7.8333	1.7663
+augmented	libsize_z	STAR summary (07)	7.7592	0.1078

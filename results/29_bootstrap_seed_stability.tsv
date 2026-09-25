@@ -1,0 +1,101 @@
+arm	seed	is_primary_seed	boot_B	n_modules	n_ci_excludes_0	n_fdr_sig	modules_ci_excludes_0	modules_fdr_sig
+observed	20260816	TRUE	2000	16	9	7	blue;cyan;lightcyan;midnightblue;pink;red;salmon;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260817	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260818	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260819	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260820	FALSE	2000	16	9	7	blue;cyan;lightcyan;midnightblue;pink;red;salmon;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260821	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260822	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260823	FALSE	2000	16	9	7	blue;cyan;lightcyan;midnightblue;pink;red;salmon;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260824	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260825	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260826	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260827	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260828	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260829	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260830	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260831	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260832	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260833	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260834	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260835	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260836	FALSE	2000	16	9	7	blue;cyan;lightcyan;midnightblue;pink;red;salmon;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260837	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260838	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260839	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260840	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260841	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260842	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260843	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260844	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260845	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260846	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260847	FALSE	2000	16	9	7	blue;cyan;lightcyan;midnightblue;pink;red;salmon;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260848	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260849	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260850	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260851	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260852	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260853	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260854	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260855	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260856	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260857	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260858	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260859	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260860	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260861	FALSE	2000	16	9	7	blue;cyan;lightcyan;midnightblue;pink;red;salmon;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260862	FALSE	2000	16	9	7	blue;cyan;lightcyan;midnightblue;pink;red;salmon;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260863	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260864	FALSE	2000	16	9	7	blue;cyan;lightcyan;midnightblue;pink;red;salmon;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+observed	20260865	FALSE	2000	16	8	7	blue;cyan;lightcyan;midnightblue;pink;red;tan;yellow	blue;cyan;lightcyan;midnightblue;pink;red;tan
+residualised	20260816	TRUE	2000	16	2	0	red;salmon	
+residualised	20260817	FALSE	2000	16	2	0	red;salmon	
+residualised	20260818	FALSE	2000	16	2	0	red;salmon	
+residualised	20260819	FALSE	2000	16	2	0	red;salmon	
+residualised	20260820	FALSE	2000	16	2	0	red;salmon	
+residualised	20260821	FALSE	2000	16	2	0	red;salmon	
+residualised	20260822	FALSE	2000	16	2	0	red;salmon	
+residualised	20260823	FALSE	2000	16	2	0	red;salmon	
+residualised	20260824	FALSE	2000	16	2	0	red;salmon	
+residualised	20260825	FALSE	2000	16	2	0	red;salmon	
+residualised	20260826	FALSE	2000	16	2	0	red;salmon	
+residualised	20260827	FALSE	2000	16	1	0	red	
+residualised	20260828	FALSE	2000	16	2	0	red;salmon	
+residualised	20260829	FALSE	2000	16	2	0	red;salmon	
+residualised	20260830	FALSE	2000	16	1	0	red	
+residualised	20260831	FALSE	2000	16	2	0	red;salmon	
+residualised	20260832	FALSE	2000	16	1	0	red	
+residualised	20260833	FALSE	2000	16	1	0	red	
+residualised	20260834	FALSE	2000	16	2	0	red;salmon	
+residualised	20260835	FALSE	2000	16	2	0	red;salmon	
+residualised	20260836	FALSE	2000	16	2	0	red;salmon	
+residualised	20260837	FALSE	2000	16	2	0	red;salmon	
+residualised	20260838	FALSE	2000	16	2	0	red;salmon	
+residualised	20260839	FALSE	2000	16	2	0	red;salmon	
+residualised	20260840	FALSE	2000	16	1	0	red	
+residualised	20260841	FALSE	2000	16	2	0	red;salmon	
+residualised	20260842	FALSE	2000	16	2	0	red;salmon	
+residualised	20260843	FALSE	2000	16	2	0	red;salmon	
+residualised	20260844	FALSE	2000	16	2	0	red;salmon	
+residualised	20260845	FALSE	2000	16	2	0	red;salmon	
+residualised	20260846	FALSE	2000	16	2	0	red;salmon	
+residualised	20260847	FALSE	2000	16	2	0	red;salmon	
+residualised	20260848	FALSE	2000	16	2	0	red;salmon	
+residualised	20260849	FALSE	2000	16	2	0	red;salmon	
+residualised	20260850	FALSE	2000	16	2	0	red;salmon	
+residualised	20260851	FALSE	2000	16	2	0	red;salmon	
+residualised	20260852	FALSE	2000	16	2	0	red;salmon	
+residualised	20260853	FALSE	2000	16	2	0	red;salmon	
+residualised	20260854	FALSE	2000	16	1	0	red	
+residualised	20260855	FALSE	2000	16	2	0	red;salmon	
+residualised	20260856	FALSE	2000	16	2	0	red;salmon	
+residualised	20260857	FALSE	2000	16	2	0	red;salmon	
+residualised	20260858	FALSE	2000	16	2	0	red;salmon	
+residualised	20260859	FALSE	2000	16	2	0	red;salmon	
+residualised	20260860	FALSE	2000	16	2	0	red;salmon	
+residualised	20260861	FALSE	2000	16	2	0	red;salmon	
+residualised	20260862	FALSE	2000	16	2	0	red;salmon	
+residualised	20260863	FALSE	2000	16	2	0	red;salmon	
+residualised	20260864	FALSE	2000	16	2	0	red;salmon	
+residualised	20260865	FALSE	2000	16	2	0	red;salmon	

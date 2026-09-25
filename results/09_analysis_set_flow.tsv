@@ -1,0 +1,11 @@
+step	n
+discovery_in_both_networks	497
+discovery_complete_clinical_set	493
+discovery_complete_augmented_set	493
+discovery_events	159
+cptac_clear_cell	200
+cptac_T_missing	1
+cptac_grade_missing	0
+cptac_complete_clinical_set	199
+cptac_events	32
+cptac_M1_reconciled_from_stage_iv	12

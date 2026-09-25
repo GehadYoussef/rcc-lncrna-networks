@@ -1,0 +1,25 @@
+gene_id	gene_name	chr	gene_type_annotation	module	kME	in_network	status	prognostic_module	group
+ENSG00000270641.1	TSIX	chrX	lncRNA			FALSE	not in network (below the expression or MAD filter of 01/02)	FALSE	TSIX
+ENSG00000270012.1	AC232271.1	chrX	lncRNA	turquoise	0.7499	TRUE	module turquoise	TRUE	X-linked, prognostic module
+ENSG00000286977.1	Z83745.1	chrX	lncRNA	turquoise	0.7412	TRUE	module turquoise	TRUE	X-linked, prognostic module
+ENSG00000241769.7	LINC00893	chrX	lncRNA	turquoise	0.6671	TRUE	module turquoise	TRUE	X-linked, prognostic module
+ENSG00000235703.6	LINC00894	chrX	lncRNA	turquoise	0.6537	TRUE	module turquoise	TRUE	X-linked, prognostic module
+ENSG00000284377.1	AL589669.1	chrX	lncRNA	blue	0.6302	TRUE	module blue	TRUE	X-linked, prognostic module
+ENSG00000286724.1	AL732509.1	chrX	lncRNA	blue	0.605	TRUE	module blue	TRUE	X-linked, prognostic module
+ENSG00000286085.1	AL109653.3	chrX	lncRNA	greenyellow	0.5897	TRUE	module greenyellow	TRUE	X-linked, prognostic module
+ENSG00000232611.1	AL683813.1	chrX	lncRNA	turquoise	0.5282	TRUE	module turquoise	TRUE	X-linked, prognostic module
+ENSG00000237836.6	PHKA2-AS1	chrX	lncRNA	blue	0.4719	TRUE	module blue	TRUE	X-linked, prognostic module
+ENSG00000234405.2	Z69733.1	chrX	lncRNA	greenyellow	0.4703	TRUE	module greenyellow	TRUE	X-linked, prognostic module
+ENSG00000238039.1	AC244197.2	chrX	lncRNA	turquoise	0.4554	TRUE	module turquoise	TRUE	X-linked, prognostic module
+ENSG00000226179.6	LINC00685	chrX	lncRNA	turquoise	0.4537	TRUE	module turquoise	TRUE	X-linked, prognostic module
+ENSG00000286366.1	AC005052.2	chrX	lncRNA	turquoise	0.38	TRUE	module turquoise	TRUE	X-linked, prognostic module
+ENSG00000226310.1	AL022157.1	chrX	lncRNA	turquoise	0.3119	TRUE	module turquoise	TRUE	X-linked, prognostic module
+ENSG00000229807.12	XIST	chrX	lncRNA	grey	-0.2617	TRUE	in network, unassigned (grey)	FALSE	XIST
+ENSG00000229308.1	AC010737.1	chrY	lncRNA	cyan	0.3382	TRUE	module cyan	FALSE	Y-linked
+ENSG00000260197.1	AC010889.1	chrY	lncRNA	grey	0.2552	TRUE	in network, unassigned (grey)	FALSE	Y-linked
+ENSG00000278847.1	AC006157.1	chrY	lncRNA	grey	0.233	TRUE	in network, unassigned (grey)	FALSE	Y-linked
+ENSG00000286009.2	AC244213.1	chrY	lncRNA	grey	0.2322	TRUE	in network, unassigned (grey)	FALSE	Y-linked
+ENSG00000231535.7	LINC00278	chrY	lncRNA	grey	0.2192	TRUE	in network, unassigned (grey)	FALSE	Y-linked
+ENSG00000286050.1	AC012078.2	chrY	lncRNA	grey	0.1804	TRUE	in network, unassigned (grey)	FALSE	Y-linked
+ENSG00000233070.1	ZFY-AS1	chrY	lncRNA	grey	0.1707	TRUE	in network, unassigned (grey)	FALSE	Y-linked
+ENSG00000286201.1	AC011751.1	chrY	lncRNA	grey	0.1169	TRUE	in network, unassigned (grey)	FALSE	Y-linked

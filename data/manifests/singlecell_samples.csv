@@ -1,0 +1,70 @@
+dataset_name,gsm,sample_id,donor_id,tissue,sample_type,include,file_prefix,format,notes
+KIRC_GSE159115,GSM4819725,SI_18854,SS_2005,tumour,primary_ccRCC,TRUE,GSM4819725_SI_18854_filtered_gene_bc_matrices_h5,10x_h5,
+KIRC_GSE159115,GSM4819726,SI_18856,SS_2006,normal_kidney,benign_adjacent,TRUE,GSM4819726_SI_18856_filtered_gene_bc_matrices_h5,10x_h5,TISCH2 labels this GSM SI_18855/Tumor (swap)
+KIRC_GSE159115,GSM4819727,SI_18855,SS_2006,tumour,primary_ccRCC,TRUE,GSM4819727_SI_18855_filtered_gene_bc_matrices_h5,10x_h5,TISCH2 labels this GSM SI_18856/Normal (swap)
+KIRC_GSE159115,GSM4819728,SI_19704,SS_2007,normal_kidney,benign_adjacent,TRUE,GSM4819728_SI_19704_filtered_gene_bc_matrices_h5,10x_h5,TISCH2 swap
+KIRC_GSE159115,GSM4819729,SI_19703,SS_2007,tumour,primary_ccRCC,TRUE,GSM4819729_SI_19703_filtered_gene_bc_matrices_h5,10x_h5,TISCH2 swap
+KIRC_GSE159115,GSM4819730,SI_21255,SS_2014,normal_kidney,benign_adjacent,TRUE,GSM4819730_SI_21255_filtered_gene_bc_matrices_h5,10x_h5,no tumour sample for this donor
+KIRC_GSE159115,GSM4819731,SI_21256,SS_2014,normal_kidney,benign_adjacent,TRUE,GSM4819731_SI_21256_filtered_gene_bc_matrices_h5,10x_h5,second normal sample of SS_2014
+KIRC_GSE159115,GSM4819732,SI_21561,SS_2016,tumour,primary_chRCC,FALSE,GSM4819732_SI_21561_filtered_gene_bc_matrices_h5,10x_h5,chromophobe RCC: not ccRCC; excluded
+KIRC_GSE159115,GSM4819733,SI_22369,SS_2017,normal_kidney,benign_adjacent,TRUE,GSM4819733_SI_22369_filtered_gene_bc_matrices_h5,10x_h5,TISCH2 swap
+KIRC_GSE159115,GSM4819734,SI_22368,SS_2017,tumour,primary_ccRCC,TRUE,GSM4819734_SI_22368_filtered_gene_bc_matrices_h5,10x_h5,TISCH2 swap
+KIRC_GSE159115,GSM4819735,SI_22605,SS_2022,normal_kidney,benign_adjacent,TRUE,GSM4819735_SI_22605_filtered_gene_bc_matrices_h5,10x_h5,TISCH2 swap
+KIRC_GSE159115,GSM4819736,SI_22604,SS_2022,tumour,primary_ccRCC,TRUE,GSM4819736_SI_22604_filtered_gene_bc_matrices_h5,10x_h5,TISCH2 swap
+KIRC_GSE159115,GSM4819737,SI_23459,SS_2023,tumour,primary_ccRCC,TRUE,GSM4819737_SI_23459_filtered_gene_bc_matrices_h5,10x_h5,
+KIRC_GSE159115,GSM4819738,SI_23843,SS_2026,tumour,primary_ccRCC,TRUE,GSM4819738_SI_23843_filtered_gene_bc_matrices_h5,10x_h5,
+KIRC_GSE171306,GSM5222644,ccRCC1,GSE171306_bilateral,tumour,primary_ccRCC,TRUE,GSM5222644_ccRCC1_,10x_mtx_v3,right kidney tumour
+KIRC_GSE171306,GSM5222645,ccRCC2,GSE171306_bilateral,tumour,primary_ccRCC,TRUE,GSM5222645_ccRCC2_,10x_mtx_v3,left kidney tumour; same patient per GEO description
+KIRC_GSE111360,GSM3029087,ccRCC_1_rep1,ccRCC_1,tumour,primary_ccRCC,TRUE,GSM3029087_ccRCC_1_ft_gex_rep1.,10x_mtx_v2,fresh tumour library replicate 1
+KIRC_GSE111360,GSM3029088,ccRCC_1_rep2,ccRCC_1,tumour,primary_ccRCC,TRUE,GSM3029088_ccRCC_1_ft_gex_rep2.,10x_mtx_v2,fresh tumour library replicate 2
+KIRC_GSE111360,GSM3457010,ccRCC_2_rep1,ccRCC_2,tumour,primary_ccRCC,TRUE,GSM3457010_ccRCC_2_ft_gex_rep1.,10x_mtx_v2,fresh tumour library replicate 1
+KIRC_GSE111360,GSM3457011,ccRCC_2_rep2,ccRCC_2,tumour,primary_ccRCC,TRUE,GSM3457011_ccRCC_2_ft_gex_rep2.,10x_mtx_v2,fresh tumour library replicate 2
+KIRC_GSE139555,GSM4143678,RT1,Renal1,tumour,primary_ccRCC,TRUE,GSM4143678_SAM24360638-rt1.,10x_mtx_v2,
+KIRC_GSE139555,GSM4143679,RN1,Renal1,normal_kidney,adjacent_normal,TRUE,GSM4143679_SAM24360640-rn1.,10x_mtx_v2,
+KIRC_GSE139555,GSM4143680,RB1,Renal1,blood,pbmc,TRUE,GSM4143680_SAM24360639-rb1.,10x_mtx_v2,
+KIRC_GSE139555,GSM4143681,RT2,Renal2,tumour,primary_ccRCC,TRUE,GSM4143681_SAM24361563-rt2.,10x_mtx_v2,
+KIRC_GSE139555,GSM4143682,RN2,Renal2,normal_kidney,adjacent_normal,TRUE,GSM4143682_SAM24361562-rn2.,10x_mtx_v2,
+KIRC_GSE139555,GSM4143683,RB2,Renal2,blood,pbmc,TRUE,GSM4143683_SAM24361564-rb2.,10x_mtx_v2,
+KIRC_GSE139555,GSM4143684,RT3,Renal3,tumour,primary_ccRCC,TRUE,GSM4143684_SAM24363036-rt3.,10x_mtx_v2,
+KIRC_GSE139555,GSM4143685,RN3,Renal3,normal_kidney,adjacent_normal,TRUE,GSM4143685_SAM24363037-rn3.,10x_mtx_v2,
+KIRC_GSE139555,GSM4143686,RB3,Renal3,blood,pbmc,TRUE,GSM4143686_SAM24363038-rb3.,10x_mtx_v2,
+KIRC_GSE121636,GSM3440844,GU0700_T,GU0700,tumour,primary_ccRCC_immune,TRUE,GSM3440844_GU0700_T_,10x_mtx_v2,TISCH2 P1
+KIRC_GSE121636,GSM3440845,GU0715_T,GU0715,tumour,primary_ccRCC_immune,TRUE,GSM3440845_GU0715_T_,10x_mtx_v2,TISCH2 P2
+KIRC_GSE121636,GSM3440846,GU0744_T,GU0744,tumour,primary_ccRCC_immune,TRUE,GSM3440846_GU0744_T_,10x_mtx_v2,TISCH2 P3
+KIRC_GSE121636,GSM3440847,GU0700_P,GU0700,blood,pbmc,TRUE,GSM3440847_GU0700_P_,10x_mtx_v2,TISCH2 labels Tissue=Normal
+KIRC_GSE121636,GSM3440848,GU0715_P,GU0715,blood,pbmc,TRUE,GSM3440848_GU0715_P_,10x_mtx_v2,TISCH2 labels Tissue=Normal
+KIRC_GSE121636,GSM3440849,GU0744_P,GU0744,blood,pbmc,TRUE,GSM3440849_GU0744_P_,10x_mtx_v2,TISCH2 labels Tissue=Normal
+KIRC_GSE145281_aPDL1,GSM4317767,Tumor1,Donor1,tumour,metastatic_aPDL1,TRUE,GSM4317767_Tumor1_raw,dense_txt,
+KIRC_GSE145281_aPDL1,GSM4317768,Tumor2,Donor2,tumour,metastatic_aPDL1,TRUE,GSM4317768_Tumor2_raw,dense_txt,
+KIRC_GSE145281_aPDL1,GSM4317769,Tumor3,Donor3,tumour,metastatic_aPDL1,TRUE,GSM4317769_Tumor3_raw,dense_txt,
+KIRC_GSE145281_aPDL1,GSM4317770,Tumor4,Donor4,tumour,metastatic_aPDL1,TRUE,GSM4317770_Tumor4_raw,dense_txt,
+KIRC_GSE145281_aPDL1,GSM4317763,Blood1,Donor1,blood,pbmc_aPDL1,TRUE,GSM4317763_Blood1_raw,dense_txt,
+KIRC_GSE145281_aPDL1,GSM4317764,Blood2,Donor2,blood,pbmc_aPDL1,TRUE,GSM4317764_Blood2_raw,dense_txt,
+KIRC_GSE145281_aPDL1,GSM4317765,Blood3,Donor3,blood,pbmc_aPDL1,TRUE,GSM4317765_Blood3_raw,dense_txt,
+KIRC_GSE145281_aPDL1,GSM4317766,Blood4,Donor4,blood,pbmc_aPDL1,TRUE,GSM4317766_Blood4_raw,dense_txt,
+KIRC_Li2022,,ALL,from_obs,tumour,derived_from_author_obs,TRUE,RCC_upload_final_raw_counts,h5ad,samples donors and regions are read from the author obs table in 02 and written to results/singlecell/02_derived_sample_sheet_KIRC_Li2022.tsv
+KIRC_GSE222703,GSM6929206,p022_Tumoral,p022,tumour,primary_ccRCC,TRUE,GSM6929206_p022_Tumoral_,10x_mtx_v3_extracted,unfiltered barcodes; cells defined by author Seurat object
+KIRC_GSE222703,GSM6929207,p022_Juxta,p022,normal_kidney,juxtatumoral_adjacent,TRUE,GSM6929207_p022_Juxta_,10x_mtx_v3_extracted,unfiltered barcodes; cells defined by author Seurat object
+KIRC_GSE222703,GSM6929208,p027_Tumoral,p027,tumour,primary_ccRCC,TRUE,GSM6929208_p027_Tumoral_,10x_mtx_v3_extracted,unfiltered barcodes; cells defined by author Seurat object
+KIRC_GSE222703,GSM6929209,p027_Juxta,p027,normal_kidney,juxtatumoral_adjacent,TRUE,GSM6929209_p027_Juxta_,10x_mtx_v3_extracted,unfiltered barcodes; cells defined by author Seurat object
+KIRC_GSE222703,GSM6929210,p029_Tumoral,p029,tumour,primary_ccRCC,TRUE,GSM6929210_p029_Tumoral_,10x_mtx_v3_extracted,unfiltered barcodes; cells defined by author Seurat object
+KIRC_GSE222703,GSM6929211,p029_Juxta,p029,normal_kidney,juxtatumoral_adjacent,TRUE,GSM6929211_p029_Juxta_,10x_mtx_v3_extracted,unfiltered barcodes; cells defined by author Seurat object
+KIRC_GSE207493,GSM6290518,RCC81,RCC81,tumour,primary_ccRCC_homogenate,TRUE,RCC81/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290520,RCC84,RCC84,tumour,primary_ccRCC_homogenate,TRUE,RCC84/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290522,RCC86,RCC86,tumour,primary_ccRCC_homogenate,TRUE,RCC86/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290524,RCC87,RCC87,tumour,primary_ccRCC_homogenate,TRUE,RCC87/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290526,RCC94,RCC94,tumour,primary_ccRCC_homogenate,TRUE,RCC94/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290528,RCC96,RCC96,tumour,primary_ccRCC_homogenate,TRUE,RCC96/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290530,RCC99,RCC99,tumour,primary_ccRCC_homogenate,TRUE,RCC99/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290532,RCC100,RCC100,tumour,primary_ccRCC_homogenate,TRUE,RCC100/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290534,RCC101,RCC101,tumour,primary_ccRCC_homogenate,TRUE,RCC101/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290536,RCC103,RCC103,tumour,primary_ccRCC_homogenate,TRUE,RCC103/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290538,RCC104,RCC104,tumour,primary_ccRCC_homogenate,TRUE,RCC104/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290540,RCC106,RCC106,tumour,primary_ccRCC_homogenate,TRUE,RCC106/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290542,RCC112,RCC112,tumour,primary_ccRCC_homogenate,TRUE,RCC112/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290544,RCC113,RCC113,tumour,primary_ccRCC_homogenate,TRUE,RCC113/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290546,RCC114,RCC114,tumour,primary_ccRCC_homogenate,TRUE,RCC114/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290548,RCC115,RCC115,tumour,primary_ccRCC_homogenate,TRUE,RCC115/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290550,RCC116,RCC116,tumour,primary_ccRCC_homogenate,TRUE,RCC116/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290552,RCC119,RCC119,tumour,primary_ccRCC_homogenate,TRUE,RCC119/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)
+KIRC_GSE207493,GSM6290554,RCC120,RCC120,tumour,primary_ccRCC_homogenate,TRUE,RCC120/,10x_mtx_v3_extracted,total tumour homogenate; labels by SingleR (protein-coding reference)

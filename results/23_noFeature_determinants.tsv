@@ -1,0 +1,5 @@
+term	n	df	R2_alone	partial_R2	p_alone	p_partial
+rin	527	1	0.0687	0.0536	9.93e-10	1.5e-07
+plate	527	14	0.2657	0.2404	7.41e-27	9.44e-23
+tss	527	10	0.1107	0.0784	2.33e-09	1.03e-05
+rin + plate + tss	527	25	0.3622	0.3622	4.08e-35	

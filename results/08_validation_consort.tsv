@@ -1,0 +1,16 @@
+step	n
+files_total	521
+primary_tumour_samples	353
+dropped_duplicate_aliquots	92
+with_clinical	261
+excluded_non_clear_cell	38
+clear_cell_or_rcc_nos	223
+usable_survival	200
+deaths	32
+T_missing	1
+grade_missing	0
+N_assessed	56
+M_assessed	70
+m1_reconciled_from_stage_iv	12
+complete_clinical_set	199
+deaths_complete_clinical_set	32

@@ -1,0 +1,7 @@
+class	n_network	n_in_dominant	pct_in_dominant	overall_pct_in_dominant	fisher_p	fdr	fdr_family
+sense_overlapping	19	14	73.7	57.6	0.170798653785732	0.170798653785732	across positional classes
+intronic	698	499	71.5	57.6	2.91154313626019e-17	8.73462940878057e-17	across positional classes
+exonic_sense	126	88	69.8	57.6	0.0043644310158205	0.00654664652373075	across positional classes
+antisense	1162	732	63	57.6	4.3143819863057e-06	8.6287639726114e-06	across positional classes
+divergent	315	159	50.5	57.6	0.0084317520286256	0.0101181024343507	across positional classes
+intergenic	1122	490	43.7	57.6	3.03916515343764e-30	1.82349909206258e-29	across positional classes

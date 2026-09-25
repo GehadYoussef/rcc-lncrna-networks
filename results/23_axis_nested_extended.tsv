@@ -1,0 +1,9 @@
+model	term	n	events	HR	lo	hi	p	C	ph_p
+Axis alone	axis_z	503	163	1.31	1.124	1.527	0.000534	0.555	0.136
++ age, sex, T, N, M1, ordinal grade	axis_z	503	163	1.344	1.151	1.57	0.000192	0.773	0.111
++ ESTIMATE stromal and immune scores	axis_z	503	163	1.36	1.155	1.601	0.00023	0.773	0.104
++ non-feature, multimapping, log10 depth	axis_z	503	163	1.076	0.813	1.425	0.607	0.777	0.0927
++ RIN	axis_z	503	163	1.337	1.134	1.577	0.000547	0.773	0.0887
++ RIN + necrosis	axis_z	503	163	1.386	1.171	1.642	0.000152	0.777	0.107
++ RIN + necrosis + STAR metrics	axis_z	503	163	1.121	0.84	1.497	0.438	0.779	0.0986
++ RIN + necrosis + STAR metrics, stratified by plate	axis_z	503	163	0.896	0.623	1.286	0.55	0.76	0.572

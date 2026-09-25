@@ -1,0 +1,13 @@
+set	pseudo_samples	samples_averaged
+plate|ccA_I-II	15	213
+metric|ccA_I-II	2	20
+depth|ccA_I-II	2	20
+plate|ccB_I-II	14	101
+metric|ccB_I-II	2	20
+depth|ccB_I-II	2	20
+plate|ccA_III-IV	11	91
+metric|ccA_III-IV	2	20
+depth|ccA_III-IV	2	20
+plate|ccB_III-IV	10	108
+metric|ccB_III-IV	2	20
+depth|ccB_III-IV	2	20

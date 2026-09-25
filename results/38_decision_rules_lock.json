@@ -1,0 +1,21 @@
+{
+ "purpose": "pan-cancer decision rules fixed before stage 39 analyses any project",
+ "config_file": "R/00_config.R",
+ "config_sha256": "14986908b4ac4a09435d8bc300e857e10b1da891aadfb723b2ec154e5e6da85f",
+ "git_commit": "962add80b771da1c7d04ba62e87c7cf1401bfeeb",
+ "git_repository": "submission (branch singlecell-lncrna-discovery)",
+ "locked_at": "2026-09-24T21:10:37+01:00",
+ "rules": {
+  "PAN_MIN_TUMOURS": 100,
+  "PAN_MIN_NORMALS": 20,
+  "PAN_EXCLUDE_INFERENCE": "TCGA-LAML",
+  "PAN_AXIS_RHO_MIN": 0.5,
+  "PAN_AXIS_MARGIN": 0.3,
+  "PAN_NET_LARGEST_MIN": 0.4,
+  "PAN_NET_EIGEN_R_MIN": 0.7,
+  "PAN_NET_ARI_MAX": 0.2,
+  "PAN_SURV_MIN_EVENTS": 20,
+  "PAN_STAGE_MIN_FRAC": 0.7,
+  "PAN_PLATE_MIN_N": 10
+ }
+}

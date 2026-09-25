@@ -1,0 +1,46 @@
+dataset	analysis_role	contrast	n_donors_ref	n_donors_test	inference	paired	genes_tested	lnc_tested	lnc_up_fdr_lfc	lnc_down_fdr_lfc	lnc_up_fdr_lfc_lodo_stable
+KIRC_GSE111360	replication_candidate	malignant_vs_normal_epithelial	0	2	not_evaluable						
+KIRC_GSE111360	replication_candidate	malignant_vs_pooled_tme	2	2	descriptive	FALSE	20132	3993	0	0	0
+KIRC_GSE111360	replication_candidate	malignant_vs_immune	2	2	descriptive	FALSE	20030	3942	0	0	0
+KIRC_GSE111360	replication_candidate	malignant_vs_endothelial	0	2	not_evaluable						
+KIRC_GSE111360	replication_candidate	malignant_vs_fibroblast_stromal	2	2	descriptive	FALSE	15574	1719	0	0	0
+KIRC_GSE121636	replication_candidate	malignant_vs_normal_epithelial	0	0	not_evaluable						
+KIRC_GSE121636	replication_candidate	malignant_vs_pooled_tme	3	0	not_evaluable						
+KIRC_GSE121636	replication_candidate	malignant_vs_immune	3	0	not_evaluable						
+KIRC_GSE121636	replication_candidate	malignant_vs_endothelial	0	0	not_evaluable						
+KIRC_GSE121636	replication_candidate	malignant_vs_fibroblast_stromal	0	0	not_evaluable						
+KIRC_GSE139555	replication_candidate	malignant_vs_normal_epithelial	0	0	not_evaluable						
+KIRC_GSE139555	replication_candidate	malignant_vs_pooled_tme	3	0	not_evaluable						
+KIRC_GSE139555	replication_candidate	malignant_vs_immune	3	0	not_evaluable						
+KIRC_GSE139555	replication_candidate	malignant_vs_endothelial	1	0	not_evaluable						
+KIRC_GSE139555	replication_candidate	malignant_vs_fibroblast_stromal	0	0	not_evaluable						
+KIRC_GSE145281_aPDL1	treated_sensitivity	malignant_vs_normal_epithelial	0	0	not_evaluable						
+KIRC_GSE145281_aPDL1	treated_sensitivity	malignant_vs_pooled_tme	4	0	not_evaluable						
+KIRC_GSE145281_aPDL1	treated_sensitivity	malignant_vs_immune	4	0	not_evaluable						
+KIRC_GSE145281_aPDL1	treated_sensitivity	malignant_vs_endothelial	0	0	not_evaluable						
+KIRC_GSE145281_aPDL1	treated_sensitivity	malignant_vs_fibroblast_stromal	0	0	not_evaluable						
+KIRC_GSE159115	discovery	malignant_vs_normal_epithelial	4	4	inferential	TRUE	12659	795	45	62	45
+KIRC_GSE159115	discovery	malignant_vs_pooled_tme	7	7	inferential	TRUE	17035	2305	611	404	611
+KIRC_GSE159115	discovery	malignant_vs_immune	7	7	inferential	TRUE	15283	1553	522	325	522
+KIRC_GSE159115	discovery	malignant_vs_endothelial	6	6	inferential	TRUE	14406	1286	409	215	409
+KIRC_GSE159115	discovery	malignant_vs_fibroblast_stromal	7	7	inferential	TRUE	15167	1499	381	221	381
+KIRC_GSE171306	replication_candidate	malignant_vs_normal_epithelial	0	1	not_evaluable						
+KIRC_GSE171306	replication_candidate	malignant_vs_pooled_tme	1	1	descriptive	FALSE	18793	3356	0	0	0
+KIRC_GSE171306	replication_candidate	malignant_vs_immune	1	1	descriptive	FALSE	17647	2836	0	0	0
+KIRC_GSE171306	replication_candidate	malignant_vs_endothelial	1	1	descriptive	FALSE	16760	2371	0	0	0
+KIRC_GSE171306	replication_candidate	malignant_vs_fibroblast_stromal	1	1	descriptive	FALSE	16150	2070	0	0	0
+KIRC_GSE207493	replication	malignant_vs_normal_epithelial	0	19	not_evaluable						
+KIRC_GSE207493	replication	malignant_vs_pooled_tme	19	19	inferential	TRUE	20065	3909	1275	1048	1275
+KIRC_GSE207493	replication	malignant_vs_immune	19	19	inferential	TRUE	19185	3424	1191	991	1191
+KIRC_GSE207493	replication	malignant_vs_endothelial	19	19	inferential	TRUE	17598	2581	1009	533	1009
+KIRC_GSE207493	replication	malignant_vs_fibroblast_stromal	19	19	inferential	TRUE	17409	2441	847	506	847
+KIRC_GSE222703	replication	malignant_vs_normal_epithelial	3	3	inferential	TRUE	10809	707	193	115	193
+KIRC_GSE222703	replication	malignant_vs_pooled_tme	3	3	inferential	TRUE	12713	1033	315	244	315
+KIRC_GSE222703	replication	malignant_vs_immune	3	3	inferential	TRUE	12651	1033	311	246	311
+KIRC_GSE222703	replication	malignant_vs_endothelial	1	3	descriptive	FALSE	13531	1297	0	0	0
+KIRC_GSE222703	replication	malignant_vs_fibroblast_stromal	2	3	descriptive	FALSE	13445	1263	0	0	0
+KIRC_Li2022	replication	malignant_vs_normal_epithelial	7	7	inferential	TRUE	11168	491	61	33	61
+KIRC_Li2022	replication	malignant_vs_pooled_tme	10	10	inferential	TRUE	14928	1314	360	405	360
+KIRC_Li2022	replication	malignant_vs_immune	10	10	inferential	TRUE	14799	1312	363	412	363
+KIRC_Li2022	replication	malignant_vs_endothelial	5	5	inferential	TRUE	10110	268	114	41	114
+KIRC_Li2022	replication	malignant_vs_fibroblast_stromal	5	5	inferential	TRUE	7066	149	47	23	47

@@ -1,0 +1,3 @@
+comparator	delta_C_validation	lo	hi	p_bootstrap	prop_resamples_positive	n_resamples
+clinical	0.0087	-0.0331	0.0478	0.679	0.66	2000
+augmented	0.0147	-0.0192	0.0478	0.372	0.814	2000

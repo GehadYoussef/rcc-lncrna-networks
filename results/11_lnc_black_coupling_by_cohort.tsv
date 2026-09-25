@@ -1,0 +1,13 @@
+cohort	module	reference_module	n	pearson_r	CI_lo	CI_hi	p	spearman
+TCGA-KIRC	blue	green	497	0.909	0.892	0.923	5.48e-190	0.895
+CPTAC-3	blue	green	199	0.921	0.896	0.939	2.21e-82	0.891
+TCGA-KIRP	blue	green	269	0.834	0.794	0.867	5.84e-71	0.769
+TCGA-KICH	blue	green	65	0.707	0.56	0.811	4.44e-11	0.499
+TCGA-KIRC	greenyellow	green	497	-0.573	-0.63	-0.511	8.89e-45	-0.634
+CPTAC-3	greenyellow	green	199	-0.539	-0.631	-0.432	2.11e-16	-0.579
+TCGA-KIRP	greenyellow	green	269	-0.424	-0.517	-0.32	3.88e-13	-0.406
+TCGA-KICH	greenyellow	green	65	-0.183	-0.409	0.063	0.144	0.125
+TCGA-KIRC	turquoise	green	497	0.015	-0.073	0.103	0.741	0.006
+CPTAC-3	turquoise	green	199	-0.044	-0.182	0.096	0.541	-0.048
+TCGA-KIRP	turquoise	green	269	-0.04	-0.159	0.08	0.516	-0.031
+TCGA-KICH	turquoise	green	65	-0.055	-0.295	0.192	0.666	-0.122

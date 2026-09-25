@@ -1,0 +1,30 @@
+comparator	standardisation	model	n	events	C_comparator	C_model	delta_C	lo	hi	p_bootstrap	prop_positive	n_boot
+clinical	cohort	+ modules (all retained)	199	32	0.7499	0.7586	0.0087	-0.0331	0.0478	0.679	0.66	2000
+clinical	cohort	+ modules minus mRNA_MEblack	199	32	0.7499	0.7567	0.0068	-0.0357	0.0466	0.766	0.617	2000
+clinical	cohort	+ modules minus mRNA_MEblue	199	32	0.7499	0.7581	0.0081	-0.032	0.0465	0.708	0.646	2000
+clinical	cohort	+ modules minus mRNA_MEgreen	199	32	0.7499	0.7486	-0.0013	-0.0339	0.032	0.959	0.476	2000
+clinical	cohort	+ modules minus mRNA_MEpink	199	32	0.7499	0.7549	0.005	-0.0368	0.0438	0.837	0.582	2000
+clinical	cohort	+ modules minus mRNA_MEyellow	199	32	0.7499	0.7457	-0.0042	-0.048	0.037	0.817	0.405	2000
+clinical	cohort	+ modules minus lnc_MEblack	199	32	0.7499	0.7583	0.0084	-0.0304	0.0456	0.66	0.67	2000
+clinical	cohort	+ modules minus lnc_MEblue	199	32	0.7499	0.7612	0.0113	-0.0258	0.0471	0.556	0.722	2000
+clinical	cohort	+ modules minus lnc_MEmidnightblue	199	32	0.7499	0.7581	0.0081	-0.0336	0.0464	0.704	0.648	2000
+clinical	cohort	+ modules minus lnc_MEturquoise	199	32	0.7499	0.7536	0.0037	-0.0361	0.0447	0.869	0.566	2000
+clinical	cohort	+ modules minus all lncRNA modules	199	32	0.7499	0.7604	0.0105	-0.0192	0.0409	0.486	0.757	2000
+clinical	discovery	+ modules (all retained)	199	32	0.7499	0.7539	0.0039	-0.0383	0.0433	0.877	0.561	2000
+clinical	discovery	+ modules minus mRNA_MEblack	199	32	0.7499	0.7531	0.0031	-0.0425	0.045	0.915	0.542	2000
+clinical	discovery	+ modules minus mRNA_MEblue	199	32	0.7499	0.7549	0.005	-0.0367	0.0443	0.848	0.576	2000
+clinical	discovery	+ modules minus mRNA_MEgreen	199	32	0.7499	0.7541	0.0042	-0.0236	0.0341	0.758	0.621	2000
+clinical	discovery	+ modules minus mRNA_MEpink	199	32	0.7499	0.7536	0.0037	-0.0394	0.0437	0.887	0.556	2000
+clinical	discovery	+ modules minus mRNA_MEyellow	199	32	0.7499	0.7444	-0.0055	-0.0504	0.0363	0.79	0.388	2000
+clinical	discovery	+ modules minus lnc_MEblack	199	32	0.7499	0.7565	0.0066	-0.0336	0.0444	0.756	0.622	2000
+clinical	discovery	+ modules minus lnc_MEblue	199	32	0.7499	0.762	0.0121	-0.0255	0.0478	0.525	0.738	2000
+clinical	discovery	+ modules minus lnc_MEmidnightblue	199	32	0.7499	0.7515	0.0016	-0.0404	0.0405	0.968	0.516	2000
+clinical	discovery	+ modules minus lnc_MEturquoise	199	32	0.7499	0.751	0.001	-0.0411	0.0447	0.983	0.508	2000
+clinical	discovery	+ modules minus all lncRNA modules	199	32	0.7499	0.7615	0.0115	-0.0176	0.0419	0.426	0.787	2000
+augmented	cohort	+ modules (all retained)	199	32	0.73	0.7447	0.0147	-0.0192	0.0478	0.372	0.814	2000
+augmented	cohort	+ modules minus mRNA_MEgreen	199	32	0.73	0.7279	-0.0021	-0.0256	0.0208	0.87	0.426	2000
+augmented	cohort	+ modules minus mRNA_MEpink	199	32	0.73	0.7405	0.0105	-0.0269	0.0463	0.578	0.711	2000
+augmented	cohort	+ modules minus lnc_MEblack	199	32	0.73	0.7497	0.0197	-0.013	0.0518	0.226	0.887	2000
+augmented	cohort	+ modules minus lnc_MEblue	199	32	0.73	0.7452	0.0152	-0.0167	0.0459	0.325	0.838	2000
+augmented	cohort	+ modules minus lnc_MEturquoise	199	32	0.73	0.7442	0.0142	-0.0242	0.0503	0.441	0.779	2000
+augmented	cohort	+ modules minus all lncRNA modules	199	32	0.73	0.7426	0.0126	-0.0227	0.0461	0.459	0.77	2000

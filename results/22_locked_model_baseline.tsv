@@ -1,0 +1,13 @@
+comparator	model	years	baseline_survival_lp0	baseline_survival_at_mean_lp	mean_lp_discovery	apparent_C_discovery	n_train	events_train
+clinical	comparator only	1	0.9838	0.93	1.4891	0.7662	493	159
+clinical	comparator only	3	0.9551	0.8156	1.4891	0.7662	493	159
+clinical	comparator only	5	0.924	0.7043	1.4891	0.7662	493	159
+clinical	combined	1	0.9777	0.9356	1.0812	0.7867	493	159
+clinical	combined	3	0.9367	0.8247	1.0812	0.7867	493	159
+clinical	combined	5	0.8907	0.7108	1.0812	0.7867	493	159
+augmented	comparator only	1	0.9885	0.9352	1.7604	0.775	493	159
+augmented	comparator only	3	0.9675	0.825	1.7604	0.775	493	159
+augmented	comparator only	5	0.9436	0.7134	1.7604	0.775	493	159
+augmented	combined	1	0.9825	0.9405	1.2453	0.7916	493	159
+augmented	combined	3	0.9491	0.8342	1.2453	0.7916	493	159
+augmented	combined	5	0.9102	0.7211	1.2453	0.7916	493	159

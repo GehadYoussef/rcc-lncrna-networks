@@ -1,0 +1,10 @@
+tier	first_failed_rule	N
+not_selected	B_pooled_effect_or_FDR	1772
+not_selected	B_replication_direction	321
+not_selected	A_tested_not_enriched_vs_normal_epithelium	141
+not_selected	discovery_donor_expression	68
+not_selected	bulk_expression_TCGA_CPTAC	35
+not_selected	A_replication_direction	23
+not_selected	A_single_dataset_lower_than_normal_epithelium	3
+tier1_tumour_specific		38
+tier2_malignant_compartment_enriched		77

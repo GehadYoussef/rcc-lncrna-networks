@@ -1,0 +1,11 @@
+exposure_scale	model	n	events	HR	lo	hi	p	ph_p	n_strata	lrt_chisq	lrt_df	lrt_p
+linear, per SD	(a) pct_noFeature alone	520	172	1.283	1.13	1.457	0.000119	0.199	1			
+linear, per SD	(b) + age, sex, T, N, M1, ordinal grade	520	172	1.36	1.195	1.547	2.97e-06	0.0654	1			
+linear, per SD	(c) + ESTIMATE stromal and immune scores	520	172	1.366	1.197	1.558	3.76e-06	0.0454	1			
+linear, per SD	(c) + multimapping, log10 depth	520	172	1.356	1.186	1.55	8.05e-06	0.0462	1	19.272	3	0.00024
+linear, per SD	(d) as (c), stratified by tissue source site	520	172	1.451	1.246	1.689	1.64e-06	0.23	11			
+log10, per SD	(a) pct_noFeature alone	520	172	1.347	1.161	1.564	8.94e-05	0.157	1			
+log10, per SD	(b) + age, sex, T, N, M1, ordinal grade	520	172	1.439	1.232	1.68	4.25e-06	0.0519	1			
+log10, per SD	(c) + ESTIMATE stromal and immune scores	520	172	1.452	1.239	1.702	4.15e-06	0.0362	1			
+log10, per SD	(c) + multimapping, log10 depth	520	172	1.441	1.228	1.689	7.04e-06	0.0378	1			
+log10, per SD	(d) as (c), stratified by tissue source site	520	172	1.517	1.273	1.808	3.08e-06	0.185	11			

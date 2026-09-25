@@ -1,0 +1,167 @@
+section	endpoint	quantity	value	note
+coverage	OS_pipeline	description	overall survival, pipeline (01)	
+coverage	OS_cdr	description	overall survival, TCGA-CDR	
+coverage	DSS	description	disease-specific survival, TCGA-CDR (approximate)	
+coverage	PFI	description	progression-free interval, TCGA-CDR	
+coverage	DFI	description	disease-free interval, TCGA-CDR	
+coverage	OS_pipeline	n_cohort	528	
+coverage	OS_cdr	n_cohort	528	
+coverage	DSS	n_cohort	528	
+coverage	PFI	n_cohort	528	
+coverage	DFI	n_cohort	528	
+coverage	OS_pipeline	n_in_cdr	528	
+coverage	OS_cdr	n_in_cdr	528	
+coverage	DSS	n_in_cdr	528	
+coverage	PFI	n_in_cdr	528	
+coverage	DFI	n_in_cdr	528	
+coverage	OS_pipeline	n_available	528	
+coverage	OS_cdr	n_available	528	
+coverage	DSS	n_available	517	
+coverage	PFI	n_available	526	
+coverage	DFI	n_available	114	
+coverage	OS_pipeline	n_time_nonpositive	0	
+coverage	OS_cdr	n_time_nonpositive	0	
+coverage	DSS	n_time_nonpositive	0	
+coverage	PFI	n_time_nonpositive	0	
+coverage	DFI	n_time_nonpositive	0	
+coverage	OS_pipeline	n_analysable	528	
+coverage	OS_cdr	n_analysable	528	
+coverage	DSS	n_analysable	517	
+coverage	PFI	n_analysable	526	
+coverage	DFI	n_analysable	114	
+coverage	OS_pipeline	events_raw	173	
+coverage	OS_cdr	events_raw	173	
+coverage	DSS	events_raw	109	
+coverage	PFI	events_raw	159	
+coverage	DFI	events_raw	15	
+coverage	OS_pipeline	n_censored_at_10y	0	
+coverage	OS_cdr	n_censored_at_10y	13	
+coverage	DSS	n_censored_at_10y	13	
+coverage	PFI	n_censored_at_10y	8	
+coverage	DFI	n_censored_at_10y	8	
+coverage	OS_pipeline	events_10y	173	
+coverage	OS_cdr	events_10y	173	
+coverage	DSS	events_10y	109	
+coverage	PFI	events_10y	158	
+coverage	DFI	events_10y	14	
+coverage	OS_pipeline	median_followup_days_10y	1657	
+coverage	OS_cdr	median_followup_days_10y	1666	
+coverage	DSS	median_followup_days_10y	1495	
+coverage	PFI	median_followup_days_10y	1471	
+coverage	DFI	median_followup_days_10y	1525	
+coverage	OS_pipeline	median_time_to_event_days	793	
+coverage	OS_cdr	median_time_to_event_days	793	
+coverage	DSS	median_time_to_event_days	701	
+coverage	PFI	median_time_to_event_days	399	
+coverage	DFI	median_time_to_event_days	900	
+coverage	OS_pipeline	n_missing_status	0	
+coverage	OS_cdr	n_missing_status	0	
+coverage	DSS	n_missing_status	11	
+coverage	PFI	n_missing_status	0	
+coverage	DFI	n_missing_status	414	
+coverage	OS_pipeline	n_missing_time_with_status	0	
+coverage	OS_cdr	n_missing_time_with_status	0	
+coverage	DSS	n_missing_time_with_status	0	
+coverage	PFI	n_missing_time_with_status	2	
+coverage	DFI	n_missing_time_with_status	0	
+coverage	OS_pipeline	n_missing_any	0	
+coverage	OS_cdr	n_missing_any	0	
+coverage	DSS	n_missing_any	11	
+coverage	PFI	n_missing_any	2	
+coverage	DFI	n_missing_any	414	
+coverage	OS_pipeline	n_missing_among_os_deaths	0	
+coverage	OS_cdr	n_missing_among_os_deaths	0	
+coverage	DSS	n_missing_among_os_deaths	11	
+coverage	PFI	n_missing_among_os_deaths	1	
+coverage	DFI	n_missing_among_os_deaths	168	
+coverage	OS_pipeline	n_missing_among_os_alive	0	
+coverage	OS_cdr	n_missing_among_os_alive	0	
+coverage	DSS	n_missing_among_os_alive	0	
+coverage	PFI	n_missing_among_os_alive	1	
+coverage	DFI	n_missing_among_os_alive	246	
+coverage	OS_pipeline	n_events_lost	0	
+coverage	OS_cdr	n_events_lost	0	
+coverage	DSS	n_events_lost	0	
+coverage	PFI	n_events_lost	2	
+coverage	DFI	n_events_lost	0	
+coverage	OS_pipeline	cdr_kirc_events_all537		
+coverage	OS_cdr	cdr_kirc_events_all537	177	
+coverage	DSS	cdr_kirc_events_all537	110	
+coverage	PFI	cdr_kirc_events_all537	162	
+coverage	DFI	cdr_kirc_events_all537	15	
+coverage	OS_pipeline	cdr_kirc_censored_all537		
+coverage	OS_cdr	cdr_kirc_censored_all537	360	
+coverage	DSS	cdr_kirc_censored_all537	415	
+coverage	PFI	cdr_kirc_censored_all537	375	
+coverage	DFI	cdr_kirc_censored_all537	102	
+coverage	OS_pipeline	cdr_kirc_not_available_all537		
+coverage	OS_cdr	cdr_kirc_not_available_all537	0	
+coverage	DSS	cdr_kirc_not_available_all537	12	
+coverage	PFI	cdr_kirc_not_available_all537	0	
+coverage	DFI	cdr_kirc_not_available_all537	420	
+coverage	OS_pipeline	cdr_recommendation_KIRC	not applicable (pipeline endpoint)	
+coverage	OS_cdr	cdr_recommendation_KIRC	recommended (check); Table 3 KIRC: 177 events, 360 censored	
+coverage	DSS	cdr_recommendation_KIRC	recommended, approximate (check, app.); Table 3 KIRC: 110 events, 415 censored; the notes sheet states DSS is approximated for all types except CESC, PAAD and UVM	
+coverage	PFI	cdr_recommendation_KIRC	recommended (check); Table 3 KIRC: 162 events, 375 censored; the CDR notes sheet prefers PFI over OS given TCGA's short follow-up	
+coverage	DFI	cdr_recommendation_KIRC	recommended with caution (check*), explanation 'number of events is small'; Table 3 KIRC: 15 events, 102 censored	
+coverage	OS_pipeline	analysed_here	TRUE	
+coverage	OS_cdr	analysed_here	TRUE	
+coverage	DSS	analysed_here	TRUE	
+coverage	PFI	analysed_here	TRUE	
+coverage	DFI	analysed_here	FALSE	
+coverage	OS_pipeline	epv_principal_12_parameters	14.4	
+coverage	OS_cdr	epv_principal_12_parameters	14.4	
+coverage	DSS	epv_principal_12_parameters	9.1	
+coverage	PFI	epv_principal_12_parameters	13.2	
+coverage	DFI	epv_principal_12_parameters	1.2	
+coverage	OS_pipeline	missingness_note	every cohort patient is scoreable for this endpoint	
+coverage	OS_cdr	missingness_note	every cohort patient is scoreable for this endpoint	
+coverage	DSS	missingness_note	11 of 528 patients unscoreable (11 with no status, 0 with a status but no time, 0 with a non-positive time); pipeline overall-survival status of the unscoreable: dead 11, alive 0; CDR tumour status of the unscoreable: not recorded n=6; [Discrepancy] n=5; recorded events lost with them: 0	
+coverage	PFI	missingness_note	2 of 528 patients unscoreable (0 with no status, 2 with a status but no time, 0 with a non-positive time); pipeline overall-survival status of the unscoreable: dead 1, alive 1; CDR tumour status of the unscoreable: WITH TUMOR n=2; recorded events lost with them: 2	
+coverage	DFI	missingness_note	414 of 528 patients unscoreable (414 with no status, 0 with a status but no time, 0 with a non-positive time); pipeline overall-survival status of the unscoreable: dead 168, alive 246; CDR tumour status of the unscoreable: TUMOR FREE n=243; WITH TUMOR n=147; not recorded n=16; [Discrepancy] n=8; recorded events lost with them: 0	
+consort	all	cohort_patients_entering_30	528	cohort_full of 01, after the 01 exclusions
+consort	all	cdr_redaction_flagged_whole_resource	57	patients the CDR marks Redacted anywhere in the resource
+consort	all	cdr_redaction_flagged_TCGA_KIRC	0	of those, patients in TCGA-KIRC
+consort	all	cdr_redaction_flagged_in_this_cohort	0	of those, patients in this analysis cohort
+consort	all	excluded_cdr_redaction	0	the redaction flag is acted on, not merely reported; no patient in this cohort carries it, so the exclusion removes nobody
+consort	all	analysed_after_redaction_exclusion	528	every count in every 30_ file is on this set
+missingness	OS_pipeline	missingness_structure	every cohort patient is scoreable for this endpoint	patients this endpoint cannot score, and whether they are decedents; see also n_missing_* and n_events_lost in the coverage section
+missingness	OS_cdr	missingness_structure	every cohort patient is scoreable for this endpoint	patients this endpoint cannot score, and whether they are decedents; see also n_missing_* and n_events_lost in the coverage section
+missingness	DSS	missingness_structure	11 of 528 patients unscoreable (11 with no status, 0 with a status but no time, 0 with a non-positive time); pipeline overall-survival status of the unscoreable: dead 11, alive 0; CDR tumour status of the unscoreable: not recorded n=6; [Discrepancy] n=5; recorded events lost with them: 0	patients this endpoint cannot score, and whether they are decedents; see also n_missing_* and n_events_lost in the coverage section
+missingness	PFI	missingness_structure	2 of 528 patients unscoreable (0 with no status, 2 with a status but no time, 0 with a non-positive time); pipeline overall-survival status of the unscoreable: dead 1, alive 1; CDR tumour status of the unscoreable: WITH TUMOR n=2; recorded events lost with them: 2	patients this endpoint cannot score, and whether they are decedents; see also n_missing_* and n_events_lost in the coverage section
+missingness	DFI	missingness_structure	414 of 528 patients unscoreable (414 with no status, 0 with a status but no time, 0 with a non-positive time); pipeline overall-survival status of the unscoreable: dead 168, alive 246; CDR tumour status of the unscoreable: TUMOR FREE n=243; WITH TUMOR n=147; not recorded n=16; [Discrepancy] n=8; recorded events lost with them: 0	patients this endpoint cannot score, and whether they are decedents; see also n_missing_* and n_events_lost in the coverage section
+endpoint_dependence	OS_pipeline vs OS_cdr	phi_event_indicators	1	phi (Pearson on 0/1 event indicators) among the 528 patients both endpoints can score
+endpoint_dependence	OS_pipeline vs DSS	phi_event_indicators	0.7651	phi (Pearson on 0/1 event indicators) among the 517 patients both endpoints can score
+endpoint_dependence	OS_pipeline vs PFI	phi_event_indicators	0.5245	phi (Pearson on 0/1 event indicators) among the 526 patients both endpoints can score
+endpoint_dependence	OS_cdr vs DSS	phi_event_indicators	0.7651	phi (Pearson on 0/1 event indicators) among the 517 patients both endpoints can score
+endpoint_dependence	OS_cdr vs PFI	phi_event_indicators	0.5245	phi (Pearson on 0/1 event indicators) among the 526 patients both endpoints can score
+endpoint_dependence	DSS vs PFI	phi_event_indicators	0.7851	phi (Pearson on 0/1 event indicators) among the 515 patients both endpoints can score
+endpoint_dependence	all	multiplicity_caveat	the endpoints are not independent: the pipeline and CDR overall survival are the same endpoint (Spearman 0.998 on times, 100% event agreement), and the event indicators correlate at phi 0.77 between overall and disease-specific survival, 0.79 between disease-specific survival and the progression-free interval and 0.52 between overall survival and the progression-free interval, so the adjustment is conservative-crude rather than exact; the CDR endpoints were prespecified as sensitivity analyses, not as independent primary tests	applies to the BH-adjusted p columns of 30_endpoint_cv_increment.tsv and 30_endpoint_locked_model.tsv
+CDR_recommendation_KIRC	OS_cdr	Liu_2018_Table3	recommended (check); Table 3 KIRC: 177 events, 360 censored	transcribed from Table 3 of Liu et al. 2018 Cell 173:400; counts are the CDR's own for all 537 KIRC patients
+CDR_recommendation_KIRC	PFI	Liu_2018_Table3	recommended (check); Table 3 KIRC: 162 events, 375 censored; the CDR notes sheet prefers PFI over OS given TCGA's short follow-up	transcribed from Table 3 of Liu et al. 2018 Cell 173:400; counts are the CDR's own for all 537 KIRC patients
+CDR_recommendation_KIRC	DFI	Liu_2018_Table3	recommended with caution (check*), explanation 'number of events is small'; Table 3 KIRC: 15 events, 102 censored	transcribed from Table 3 of Liu et al. 2018 Cell 173:400; counts are the CDR's own for all 537 KIRC patients
+CDR_recommendation_KIRC	DSS	Liu_2018_Table3	recommended, approximate (check, app.); Table 3 KIRC: 110 events, 415 censored; the notes sheet states DSS is approximated for all types except CESC, PAAD and UVM	transcribed from Table 3 of Liu et al. 2018 Cell 173:400; counts are the CDR's own for all 537 KIRC patients
+CDR_recommendation_general	all	TCGA-CDR_Notes	TCGA-CDR_Notes sheet: 'For clinical outcome endpoints, we recommend the use of PFI for progression-free interval, and OS for overall survival. Both endpoints are relatively accurate. Given the relatively short follow-up time, PFI is preferred over OS.'	sheet TCGA-CDR_Notes of the workbook
+OS_concordance	OS_cdr vs OS_pipeline	n_compared	528	cohort patients with a CDR OS record; both endpoints censored at OS_CENSOR_DAYS for the comparison
+OS_concordance	OS_cdr vs OS_pipeline	n_events_pipeline	173	
+OS_concordance	OS_cdr vs OS_pipeline	n_events_cdr_raw	173	
+OS_concordance	OS_cdr vs OS_pipeline	n_events_cdr_10y	173	
+OS_concordance	OS_cdr vs OS_pipeline	event_agree_raw_n	528	
+OS_concordance	OS_cdr vs OS_pipeline	event_agree_raw_pct	100	
+OS_concordance	OS_cdr vs OS_pipeline	event_agree_10y_n	528	
+OS_concordance	OS_cdr vs OS_pipeline	event_agree_10y_pct	100	
+OS_concordance	OS_cdr vs OS_pipeline	event_differs_n	0	
+OS_concordance	OS_cdr vs OS_pipeline	spearman_rho_time_raw	0.998	pipeline OS time (censored at 10 y) vs CDR OS.time as supplied
+OS_concordance	OS_cdr vs OS_pipeline	spearman_p_time_raw	0	
+OS_concordance	OS_cdr vs OS_pipeline	spearman_rho_time_10y	0.998	
+OS_concordance	OS_cdr vs OS_pipeline	spearman_p_time_10y	0	
+OS_concordance	OS_cdr vs OS_pipeline	time_identical_n	522	
+OS_concordance	OS_cdr vs OS_pipeline	time_differs_n	6	
+OS_concordance	OS_cdr vs OS_pipeline	time_differs_gt30d_n	6	
+OS_concordance	OS_cdr vs OS_pipeline	time_differs_gt365d_n	2	
+OS_concordance	OS_cdr vs OS_pipeline	time_differs_median_abs_days	249.5	
+OS_concordance	OS_cdr vs OS_pipeline	time_differs_max_abs_days	1515	
+OS_concordance	OS_cdr vs OS_pipeline	time_differs_cdr_longer_n	5	the CDR follow-up files record a later last contact or death than the GDC API / BCR XML used in 01
+OS_concordance	OS_cdr vs OS_pipeline	time_differs_pipeline_longer_n	1	
+OS_concordance	OS_cdr vs OS_pipeline	pipeline_censored_at_10y_n	13	patients whose pipeline time is the 10-year cap; they differ from the raw CDR time by construction
+OS_concordance	OS_cdr vs OS_pipeline	event_or_time_differs_n	6	

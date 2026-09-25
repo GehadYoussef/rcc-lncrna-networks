@@ -1,0 +1,3 @@
+comparison	n_genes	adjusted_rand_index	n_modules_unadjusted	n_modules_adjusted
+all genes, grey as a class	3442	0.0616	3	16
+genes assigned in both networks	1722	0.0466	3	16

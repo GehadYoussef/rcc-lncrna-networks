@@ -1,0 +1,7 @@
+variable	test	n	group1	n_group1	median_group1	group2	n_group2	median_group2	rho	p
+stage_group	Wilcoxon rank-sum	525	I-II	319	4.46	III-IV	206	5.14		0.351
+grade_group	Wilcoxon rank-sum	520	G1-2	240	4.53	G3-4	280	4.71		0.971
+M1	Wilcoxon rank-sum	528	M0	447	4.55	M1	81	4.8		0.705
+grade_num	Spearman	520							-0.025	0.567
+T_stage	Spearman	528							0.055	0.21
+age	Spearman	528							-0.036	0.414

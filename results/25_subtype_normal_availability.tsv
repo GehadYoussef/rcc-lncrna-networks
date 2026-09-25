@@ -1,0 +1,3 @@
+project	n_normal_files_gdc	file_count_source	n_on_disk	analysed	status
+TCGA-KIRP	32	live GDC /files query for Solid Tissue Normal STAR-Counts files (cached in cache/25_subtype_normal_files.rds)	0	FALSE	not present locally (11 downloaded primary tumours only); not analysed
+TCGA-KICH	25	live GDC /files query for Solid Tissue Normal STAR-Counts files (cached in cache/25_subtype_normal_files.rds)	0	FALSE	not present locally (11 downloaded primary tumours only); not analysed

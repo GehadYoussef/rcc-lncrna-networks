@@ -1,0 +1,6 @@
+contrast	datasets_pooled	lnc_meta_tested	up_fdr_lfc	down_fdr_lfc	up_replicated	heterogeneity_flagged	reml_fallbacks
+malignant_vs_normal_epithelial	KIRC_GSE159115;KIRC_GSE222703;KIRC_Li2022	563	99	102	67	192	0
+malignant_vs_pooled_tme	KIRC_GSE159115;KIRC_GSE207493;KIRC_GSE222703;KIRC_Li2022	2456	706	614	420	1110	0
+malignant_vs_immune	KIRC_GSE159115;KIRC_GSE207493;KIRC_GSE222703;KIRC_Li2022	1885	585	484	417	977	0
+malignant_vs_endothelial	KIRC_GSE159115;KIRC_GSE207493;KIRC_Li2022	1249	466	232	117	391	0
+malignant_vs_fibroblast_stromal	KIRC_GSE159115;KIRC_GSE207493;KIRC_Li2022	1403	465	234	58	379	0

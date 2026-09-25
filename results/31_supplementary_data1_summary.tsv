@@ -1,0 +1,19 @@
+cohort	role	retained_in_analysed_cohort	exclusion_reason	n_files	n_patients	n_patients_retained	n_local_files	n_gdc_metadata	n_md5_verified	n_in_adjusted_models	n_in_prediction_set
+TCGA-KIRC	discovery	TRUE		528	528	528	528	528	528	520	493
+TCGA-KIRC	discovery	FALSE	non-primary sample	73	73	0	73	73	73	0	0
+TCGA-KIRC	discovery	FALSE	failed library	5	5	0	5	5	5	0	0
+TCGA-KIRC	discovery	FALSE	duplicate aliquot	4	4	0	4	4	4	0	0
+TCGA-KIRC	discovery	FALSE	non-positive or missing survival time	4	4	0	4	4	4	0	0
+CPTAC-3	validation	TRUE		200	200	200	200	200	200	199	199
+CPTAC-3	validation	FALSE	non-primary sample	168	168	0	168	168	168	0	0
+CPTAC-3	validation	FALSE	duplicate aliquot	92	40	0	92	92	92	0	0
+CPTAC-3	validation	FALSE	non-clear-cell histology	38	38	0	38	38	38	0	0
+CPTAC-3	validation	FALSE	non-positive or missing survival time	23	23	0	23	23	23	0	0
+TCGA-KIRP	subtype	TRUE		269	269	269	269	269	269	263	
+TCGA-KIRP	subtype	FALSE	non-primary sample	33	33	0	0	33	0	0	
+TCGA-KIRP	subtype	FALSE	non-positive or missing survival time	3	3	0	3	3	3	0	
+TCGA-KIRP	subtype	FALSE	missing age or sex	18	18	0	18	18	18	0	
+TCGA-KICH	subtype	TRUE		65	65	65	65	65	65	65	
+TCGA-KICH	subtype	FALSE	non-primary sample	25	25	0	0	25	0	0	
+TCGA-KICH	subtype	FALSE	non-positive or missing survival time	1	1	0	1	1	1	0	
+ALL COHORTS	total			1549	1150	1062	1491	1549	1491	1047	692

@@ -1,0 +1,19 @@
+exposure_scale	model	term	n	events	HR	lo	hi	p	C	ph_p
+linear, per SD	Non-feature fraction alone	nf	503	163	1.279	1.111	1.472	0.000592	0.562	0.232
+linear, per SD	+ age, sex, T, N, M1, ordinal grade	nf	503	163	1.357	1.179	1.561	1.99e-05	0.775	0.105
+linear, per SD	+ ESTIMATE stromal and immune scores	nf	503	163	1.367	1.184	1.578	1.97e-05	0.775	0.0866
+linear, per SD	+ multimapping, log10 depth	nf	503	163	1.36	1.173	1.576	4.53e-05	0.777	0.0874
+linear, per SD	+ ESTIMATE, stratified by tissue source site	nf	503	163	1.437	1.221	1.691	1.31e-05	0.764	0.281
+linear, per SD	+ RIN	nf	503	163	1.347	1.165	1.558	5.99e-05	0.775	0.0768
+linear, per SD	+ RIN + necrosis	nf	503	163	1.372	1.185	1.589	2.47e-05	0.779	0.0876
+linear, per SD	+ RIN + necrosis + multimapping, log10 depth	nf	503	163	1.368	1.177	1.591	4.66e-05	0.781	0.0902
+linear, per SD	+ RIN + necrosis + multimapping, log10 depth, stratified by plate	nf	503	163	1.234	1.015	1.5	0.0349	0.757	0.405
+log10, per SD	Non-feature fraction alone	nf_log	503	163	1.319	1.128	1.541	0.000508	0.562	0.133
+log10, per SD	+ age, sex, T, N, M1, ordinal grade	nf_log	503	163	1.413	1.202	1.661	2.9e-05	0.774	0.0626
+log10, per SD	+ ESTIMATE stromal and immune scores	nf_log	503	163	1.43	1.211	1.689	2.44e-05	0.776	0.0505
+log10, per SD	+ multimapping, log10 depth	nf_log	503	163	1.418	1.199	1.677	4.52e-05	0.777	0.0526
+log10, per SD	+ ESTIMATE, stratified by tissue source site	nf_log	503	163	1.482	1.237	1.775	1.97e-05	0.766	0.192
+log10, per SD	+ RIN	nf_log	503	163	1.411	1.195	1.665	4.62e-05	0.775	0.0418
+log10, per SD	+ RIN + necrosis	nf_log	503	163	1.443	1.22	1.707	1.85e-05	0.778	0.0481
+log10, per SD	+ RIN + necrosis + multimapping, log10 depth	nf_log	503	163	1.435	1.211	1.701	3e-05	0.78	0.0515
+log10, per SD	+ RIN + necrosis + multimapping, log10 depth, stratified by plate	nf_log	503	163	1.228	1.001	1.507	0.049	0.757	0.488

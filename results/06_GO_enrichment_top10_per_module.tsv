@@ -1,0 +1,31 @@
+module	Description	GeneRatio	p.adjust	Count
+green	small molecule catabolic process	85/613	4.11e-38	85
+green	organic acid catabolic process	70/613	6.17e-37	70
+green	carboxylic acid catabolic process	70/613	6.17e-37	70
+green	monocarboxylic acid metabolic process	101/613	9.72e-33	101
+green	monocarboxylic acid catabolic process	40/613	2.35e-21	40
+green	fatty acid metabolic process	64/613	1.1e-20	64
+green	organic anion transport	64/613	1.77e-20	64
+green	amino acid catabolic process	33/613	2.67e-18	33
+green	fatty acid catabolic process	33/613	1.44e-17	33
+green	fatty acid oxidation	32/613	6.27e-17	32
+purple	chromosome segregation	62/209	1.46e-44	62
+purple	chromosome organization	70/209	4.51e-43	70
+purple	nuclear division	58/209	6.29e-42	58
+purple	nuclear chromosome segregation	53/209	1.47e-41	53
+purple	mitotic nuclear division	50/209	4.1e-39	50
+purple	organelle fission	58/209	8.89e-39	58
+purple	sister chromatid segregation	47/209	1.32e-38	47
+purple	cell division	67/209	1.03e-37	67
+purple	mitotic sister chromatid segregation	43/209	1.3e-37	43
+purple	cell cycle phase transition	59/209	9.42e-34	59
+red	RNA splicing	56/426	4.5e-15	56
+red	mRNA processing	55/426	8.92e-14	55
+red	RNA splicing, via transesterification reactions	36/426	1.6e-08	36
+red	RNA splicing, via transesterification reactions with bulged adenosine as nucleophile	35/426	2.67e-08	35
+red	mRNA splicing, via spliceosome	35/426	2.67e-08	35
+red	regulation of RNA splicing	25/426	2.91e-07	25
+red	regulation of mRNA processing	18/426	3.43e-05	18
+red	regulation of mRNA splicing, via spliceosome	15/426	0.000337	15
+red	spliceosomal complex assembly	12/426	0.00247	12
+red	regulation of mRNA metabolic process	24/426	0.00387	24

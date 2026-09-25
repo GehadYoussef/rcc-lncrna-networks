@@ -1,0 +1,17 @@
+endpoint	exposure_scale	model	n	events	HR	lo	hi	p	C	ph_p
+DSS	linear, per SD	(a) pct_noFeature alone	509	109	1.199	1.015	1.417	0.0323	0.538	0.186
+DSS	linear, per SD	(b) + age, sex, T, N, M1, ordinal grade	509	109	1.305	1.103	1.545	0.00197	0.843	0.0561
+OS_cdr	linear, per SD	(a) pct_noFeature alone	520	172	1.283	1.13	1.457	0.000122	0.571	0.175
+OS_cdr	linear, per SD	(b) + age, sex, T, N, M1, ordinal grade	520	172	1.356	1.191	1.543	4e-06	0.778	0.0617
+OS_pipeline	linear, per SD	(a) pct_noFeature alone	520	172	1.283	1.13	1.457	0.000119	0.571	0.199
+OS_pipeline	linear, per SD	(b) + age, sex, T, N, M1, ordinal grade	520	172	1.36	1.195	1.547	2.97e-06	0.779	0.0654
+PFI	linear, per SD	(a) pct_noFeature alone	518	157	1.029	0.882	1.201	0.712	0.495	0.894
+PFI	linear, per SD	(b) + age, sex, T, N, M1, ordinal grade	518	157	1.11	0.949	1.298	0.193	0.817	0.744
+DSS	log10, per SD	(a) pct_noFeature alone	509	109	1.233	1.024	1.485	0.0271	0.538	0.105
+DSS	log10, per SD	(b) + age, sex, T, N, M1, ordinal grade	509	109	1.35	1.108	1.644	0.00291	0.843	0.0297
+OS_cdr	log10, per SD	(a) pct_noFeature alone	520	172	1.346	1.159	1.562	9.53e-05	0.571	0.141
+OS_cdr	log10, per SD	(b) + age, sex, T, N, M1, ordinal grade	520	172	1.43	1.224	1.669	6.16e-06	0.778	0.0549
+OS_pipeline	log10, per SD	(a) pct_noFeature alone	520	172	1.347	1.161	1.564	8.94e-05	0.571	0.157
+OS_pipeline	log10, per SD	(b) + age, sex, T, N, M1, ordinal grade	520	172	1.439	1.232	1.68	4.25e-06	0.778	0.0519
+PFI	log10, per SD	(a) pct_noFeature alone	518	157	1.005	0.861	1.174	0.946	0.495	0.934
+PFI	log10, per SD	(b) + age, sex, T, N, M1, ordinal grade	518	157	1.067	0.905	1.257	0.443	0.817	0.815

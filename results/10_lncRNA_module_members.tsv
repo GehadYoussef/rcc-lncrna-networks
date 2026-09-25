@@ -1,0 +1,793 @@
+module	gene_name	gene_id	kME	class
+blue	AC007406.2	ENSG00000255746.1	0.817	clone-based (unnamed)
+blue	ADORA2A-AS1	ENSG00000178803.12	0.796	antisense
+blue	ADAMTS9-AS1	ENSG00000241158.7	0.76	antisense
+blue	SMIM2-AS1	ENSG00000227258.6	0.738	antisense
+blue	HNF1A-AS1	ENSG00000241388.5	0.736	antisense
+blue	LINC01550	ENSG00000246223.9	0.734	lincRNA (named)
+blue	AC073346.1	ENSG00000225457.1	0.733	clone-based (unnamed)
+blue	LINC00671	ENSG00000213373.7	0.731	lincRNA (named)
+blue	CNNM3-DT	ENSG00000273265.1	0.73	divergent
+blue	AC026803.3	ENSG00000286024.1	0.727	clone-based (unnamed)
+blue	AC087482.1	ENSG00000259347.7	0.724	clone-based (unnamed)
+blue	AC009053.3	ENSG00000261170.2	0.721	clone-based (unnamed)
+blue	EGOT	ENSG00000235947.1	0.72	other
+blue	LINC01507	ENSG00000230945.1	0.719	lincRNA (named)
+blue	LHFPL3-AS2	ENSG00000225329.3	0.71	antisense
+blue	AC116345.4	ENSG00000287090.1	0.709	clone-based (unnamed)
+blue	ERVK9-11	ENSG00000269486.2	0.709	other
+blue	AC012409.1	ENSG00000259359.2	0.708	clone-based (unnamed)
+blue	WDFY3-AS2	ENSG00000180769.10	0.695	antisense
+blue	LINC02532	ENSG00000235142.10	0.687	lincRNA (named)
+blue	AC063919.1	ENSG00000251448.2	0.684	clone-based (unnamed)
+blue	DOCK8-AS1	ENSG00000183784.7	0.683	antisense
+blue	LINC01671	ENSG00000225431.1	0.683	lincRNA (named)
+blue	LINC02754	ENSG00000251637.6	0.682	lincRNA (named)
+blue	AC124854.1	ENSG00000249776.5	0.679	clone-based (unnamed)
+blue	LINC01697	ENSG00000232079.7	0.679	lincRNA (named)
+blue	PRKAR1B-AS2	ENSG00000229380.1	0.678	antisense
+blue	AC008554.1	ENSG00000269043.2	0.675	clone-based (unnamed)
+blue	AC022144.1	ENSG00000267892.1	0.67	clone-based (unnamed)
+blue	LINC01843	ENSG00000251169.2	0.662	lincRNA (named)
+blue	AL080248.1	ENSG00000238102.2	0.655	clone-based (unnamed)
+blue	EMX2OS	ENSG00000229847.9	0.654	other
+blue	AC009060.1	ENSG00000247228.3	0.649	clone-based (unnamed)
+blue	LINC01886	ENSG00000224568.2	0.648	lincRNA (named)
+blue	AC003984.1	ENSG00000235139.2	0.647	clone-based (unnamed)
+blue	LINC00526	ENSG00000264575.1	0.646	lincRNA (named)
+blue	AC116025.1	ENSG00000261978.1	0.645	clone-based (unnamed)
+blue	AL161782.1	ENSG00000280366.1	0.645	clone-based (unnamed)
+blue	AC078864.1	ENSG00000257989.1	0.641	clone-based (unnamed)
+blue	AL023284.4	ENSG00000260418.1	0.641	clone-based (unnamed)
+blue	LINC02747	ENSG00000255774.2	0.64	lincRNA (named)
+blue	AL589669.1	ENSG00000284377.1	0.63	clone-based (unnamed)
+blue	ZBTB44-DT	ENSG00000175773.13	0.623	divergent
+blue	AP001542.3	ENSG00000267480.1	0.623	clone-based (unnamed)
+blue	LINC01508	ENSG00000231107.2	0.622	lincRNA (named)
+blue	LINC02275	ENSG00000248319.2	0.622	lincRNA (named)
+blue	SGMS1-AS1	ENSG00000226200.7	0.618	antisense
+blue	AC010503.4	ENSG00000275234.1	0.614	clone-based (unnamed)
+blue	AL121845.4	ENSG00000274501.1	0.612	clone-based (unnamed)
+blue	AC116345.3	ENSG00000251599.1	0.608	clone-based (unnamed)
+blue	AL121992.3	ENSG00000272510.1	0.607	clone-based (unnamed)
+blue	AL157392.2	ENSG00000234091.1	0.605	clone-based (unnamed)
+blue	AL732509.1	ENSG00000286724.1	0.605	clone-based (unnamed)
+blue	C1RL-AS1	ENSG00000205885.7	0.601	antisense
+blue	AL138826.1	ENSG00000226733.4	0.6	clone-based (unnamed)
+blue	AC124242.1	ENSG00000245281.8	0.599	clone-based (unnamed)
+blue	AC129507.2	ENSG00000262294.1	0.597	clone-based (unnamed)
+blue	RTCA-AS1	ENSG00000224616.3	0.595	antisense
+blue	LINC02310	ENSG00000258808.1	0.591	lincRNA (named)
+blue	AC025627.1	ENSG00000262769.1	0.59	clone-based (unnamed)
+blue	AP000355.1	ENSG00000228923.1	0.59	clone-based (unnamed)
+blue	PANTR1	ENSG00000233639.7	0.59	other
+blue	AC104964.3	ENSG00000272505.1	0.589	clone-based (unnamed)
+blue	WWC2-AS2	ENSG00000251359.4	0.588	antisense
+blue	LINC01622	ENSG00000286785.1	0.588	lincRNA (named)
+blue	AC018553.1	ENSG00000277559.1	0.587	clone-based (unnamed)
+blue	AL033381.3	ENSG00000286324.1	0.587	clone-based (unnamed)
+blue	LINC02027	ENSG00000243694.3	0.585	lincRNA (named)
+blue	AP003498.2	ENSG00000285933.1	0.585	clone-based (unnamed)
+blue	AL031722.1	ENSG00000260541.1	0.584	clone-based (unnamed)
+blue	AC002401.3	ENSG00000275025.1	0.584	clone-based (unnamed)
+blue	PIK3CD-AS2	ENSG00000231789.2	0.584	antisense
+blue	LINC00501	ENSG00000203645.2	0.583	lincRNA (named)
+blue	TMEM246-AS1	ENSG00000225376.6	0.583	antisense
+blue	AL627095.2	ENSG00000286747.1	0.582	clone-based (unnamed)
+blue	LINC01517	ENSG00000232624.8	0.581	lincRNA (named)
+blue	AL033381.2	ENSG00000270937.1	0.579	clone-based (unnamed)
+blue	MIR3936HG	ENSG00000233006.8	0.576	other
+blue	AC025580.3	ENSG00000275672.1	0.576	clone-based (unnamed)
+blue	TMEM252-DT	ENSG00000226337.3	0.575	divergent
+blue	AC068051.1	ENSG00000197585.10	0.573	clone-based (unnamed)
+blue	LINC02061	ENSG00000250885.1	0.572	lincRNA (named)
+blue	IQCA1-AS1	ENSG00000232893.1	0.566	antisense
+blue	AL590822.1	ENSG00000234396.3	0.565	clone-based (unnamed)
+blue	SATB2-AS1	ENSG00000225953.3	0.562	antisense
+blue	TNS1-AS1	ENSG00000223923.2	0.561	antisense
+blue	AC008014.1	ENSG00000257261.6	0.56	clone-based (unnamed)
+blue	AC026748.7	ENSG00000286388.1	0.558	clone-based (unnamed)
+blue	BCAR3-AS1	ENSG00000224093.5	0.557	antisense
+blue	AL589745.1	ENSG00000230731.3	0.556	clone-based (unnamed)
+blue	AC137056.1	ENSG00000262995.1	0.554	clone-based (unnamed)
+blue	AC105052.5	ENSG00000286830.1	0.551	clone-based (unnamed)
+blue	AC005476.2	ENSG00000259146.4	0.551	clone-based (unnamed)
+blue	AC009084.1	ENSG00000265408.1	0.548	clone-based (unnamed)
+blue	AC118754.1	ENSG00000229782.1	0.543	clone-based (unnamed)
+blue	LBX2-AS1	ENSG00000257702.3	0.543	antisense
+blue	AP001267.3	ENSG00000255435.7	0.542	clone-based (unnamed)
+blue	DRAIC	ENSG00000245750.10	0.538	other
+blue	MROCKI	ENSG00000227502.3	0.538	other
+blue	PRR26	ENSG00000180525.13	0.535	other
+blue	LRRK2-DT	ENSG00000225342.2	0.535	divergent
+blue	AL139384.2	ENSG00000277159.1	0.534	clone-based (unnamed)
+blue	AL355997.1	ENSG00000228689.8	0.533	clone-based (unnamed)
+blue	COMETT	ENSG00000231210.3	0.531	other
+blue	AC009301.1	ENSG00000285984.1	0.525	clone-based (unnamed)
+blue	ALDH1L1-AS2	ENSG00000246022.3	0.525	antisense
+blue	LINC01428	ENSG00000228888.1	0.524	lincRNA (named)
+blue	AC093249.2	ENSG00000260167.1	0.523	clone-based (unnamed)
+blue	TYMSOS	ENSG00000176912.5	0.523	other
+blue	AC016924.1	ENSG00000250934.2	0.522	clone-based (unnamed)
+blue	AC020779.2	ENSG00000260173.1	0.519	clone-based (unnamed)
+blue	AC022784.6	ENSG00000279949.1	0.517	clone-based (unnamed)
+blue	AC125616.1	ENSG00000256008.3	0.517	clone-based (unnamed)
+blue	AL109627.1	ENSG00000288398.1	0.515	clone-based (unnamed)
+blue	AC002401.2	ENSG00000250282.1	0.515	clone-based (unnamed)
+blue	PCBP1-AS1	ENSG00000179818.14	0.515	antisense
+blue	AC019193.2	ENSG00000272784.1	0.514	clone-based (unnamed)
+blue	RPL37A-DT	ENSG00000232485.3	0.514	divergent
+blue	FZD4-DT	ENSG00000246523.8	0.51	divergent
+blue	AC124798.1	ENSG00000260196.1	0.508	clone-based (unnamed)
+blue	MAFTRR	ENSG00000261390.6	0.504	other
+blue	EPCAM-DT	ENSG00000234690.7	0.502	divergent
+blue	AC021218.1	ENSG00000204876.4	0.502	clone-based (unnamed)
+blue	AP000345.2	ENSG00000272733.1	0.502	clone-based (unnamed)
+blue	PPP1R26-AS1	ENSG00000225361.4	0.501	antisense
+blue	Z73420.1	ENSG00000287236.1	0.499	clone-based (unnamed)
+blue	AC141273.1	ENSG00000260201.2	0.498	clone-based (unnamed)
+blue	AC008115.4	ENSG00000275963.1	0.497	clone-based (unnamed)
+blue	AL096799.1	ENSG00000232271.1	0.496	clone-based (unnamed)
+blue	LINC01320	ENSG00000228262.10	0.494	lincRNA (named)
+blue	AL133383.1	ENSG00000261729.2	0.494	clone-based (unnamed)
+blue	AC018553.2	ENSG00000283689.1	0.493	clone-based (unnamed)
+blue	DGCR5	ENSG00000273032.3	0.493	other
+blue	AC009974.1	ENSG00000272555.1	0.493	clone-based (unnamed)
+blue	AC188616.1	ENSG00000287342.1	0.492	clone-based (unnamed)
+blue	AC092667.1	ENSG00000230393.1	0.491	clone-based (unnamed)
+blue	AC079906.1	ENSG00000274723.1	0.491	clone-based (unnamed)
+blue	AC018742.1	ENSG00000233005.2	0.489	clone-based (unnamed)
+blue	AL021328.1	ENSG00000269985.1	0.488	clone-based (unnamed)
+blue	AC002401.1	ENSG00000236472.1	0.487	clone-based (unnamed)
+blue	LINC01060	ENSG00000249378.6	0.484	lincRNA (named)
+blue	Z94721.3	ENSG00000285730.1	0.483	clone-based (unnamed)
+blue	SPAG5-AS1	ENSG00000227543.5	0.483	antisense
+blue	AC026979.4	ENSG00000285669.1	0.483	clone-based (unnamed)
+blue	LINC02348	ENSG00000286733.1	0.482	lincRNA (named)
+blue	AL161669.1	ENSG00000259444.1	0.481	clone-based (unnamed)
+blue	LINC00887	ENSG00000214145.7	0.48	lincRNA (named)
+blue	LINC01789	ENSG00000229457.1	0.478	lincRNA (named)
+blue	AC093388.1	ENSG00000272979.1	0.475	clone-based (unnamed)
+blue	LINC01132	ENSG00000227630.4	0.473	lincRNA (named)
+blue	PHKA2-AS1	ENSG00000237836.6	0.472	antisense
+blue	AC021087.1	ENSG00000248925.1	0.472	clone-based (unnamed)
+blue	AC019193.3	ENSG00000273180.1	0.472	clone-based (unnamed)
+blue	NRAV	ENSG00000248008.3	0.47	other
+blue	AC015977.1	ENSG00000225378.1	0.466	clone-based (unnamed)
+blue	Z94721.1	ENSG00000227598.1	0.461	clone-based (unnamed)
+blue	CRIM1-DT	ENSG00000260025.1	0.46	divergent
+blue	AC004485.1	ENSG00000228944.1	0.459	clone-based (unnamed)
+blue	GAS5-AS1	ENSG00000270084.2	0.458	antisense
+blue	AC244035.1	ENSG00000226780.1	0.454	clone-based (unnamed)
+blue	AC010226.1	ENSG00000249249.2	0.453	clone-based (unnamed)
+blue	AC026462.3	ENSG00000260963.2	0.453	clone-based (unnamed)
+blue	AC129492.1	ENSG00000214999.3	0.451	clone-based (unnamed)
+blue	LINC01852	ENSG00000236914.4	0.451	lincRNA (named)
+blue	AL353801.1	ENSG00000223462.2	0.451	clone-based (unnamed)
+blue	DARS-AS1	ENSG00000231890.8	0.45	antisense
+blue	LINC00622	ENSG00000260941.1	0.449	lincRNA (named)
+blue	LINC02274	ENSG00000258586.1	0.448	lincRNA (named)
+blue	CTD-3080P12.3	ENSG00000249201.2	0.445	other
+blue	AC008555.4	ENSG00000271109.2	0.444	clone-based (unnamed)
+blue	AL357140.2	ENSG00000228150.1	0.442	clone-based (unnamed)
+blue	LINC02471	ENSG00000223914.4	0.441	lincRNA (named)
+blue	AL357079.3	ENSG00000288573.1	0.44	clone-based (unnamed)
+blue	AC005034.4	ENSG00000270996.1	0.44	clone-based (unnamed)
+blue	AC005162.2	ENSG00000272568.6	0.439	clone-based (unnamed)
+blue	AC093915.1	ENSG00000270540.1	0.437	clone-based (unnamed)
+blue	AC012640.3	ENSG00000271715.1	0.436	clone-based (unnamed)
+blue	AC116651.1	ENSG00000273133.1	0.436	clone-based (unnamed)
+blue	AP001269.1	ENSG00000266955.1	0.434	clone-based (unnamed)
+blue	AL031602.2	ENSG00000287691.1	0.433	clone-based (unnamed)
+blue	AC016727.1	ENSG00000270820.6	0.432	clone-based (unnamed)
+blue	AL157395.1	ENSG00000213994.3	0.431	clone-based (unnamed)
+blue	LINC00667	ENSG00000263753.8	0.43	lincRNA (named)
+blue	AC026979.3	ENSG00000272375.1	0.427	clone-based (unnamed)
+blue	AC106791.1	ENSG00000250159.7	0.427	clone-based (unnamed)
+blue	AC007240.3	ENSG00000285872.1	0.427	clone-based (unnamed)
+blue	AL592295.6	ENSG00000288670.1	0.427	clone-based (unnamed)
+blue	LPP-AS2	ENSG00000270959.1	0.426	antisense
+blue	AC026780.2	ENSG00000249984.1	0.425	clone-based (unnamed)
+blue	AC012593.2	ENSG00000232153.3	0.422	clone-based (unnamed)
+blue	AC005699.1	ENSG00000249631.6	0.419	clone-based (unnamed)
+blue	LY6E-DT	ENSG00000247317.3	0.417	divergent
+blue	AC008035.1	ENSG00000272369.1	0.415	clone-based (unnamed)
+blue	AL360181.1	ENSG00000226699.1	0.413	clone-based (unnamed)
+blue	AC027458.1	ENSG00000260457.2	0.408	clone-based (unnamed)
+blue	AC017000.1	ENSG00000283991.1	0.405	clone-based (unnamed)
+blue	NAPA-AS1	ENSG00000268061.5	0.404	antisense
+blue	KCCAT198	ENSG00000257642.1	0.403	other
+blue	AC092296.1	ENSG00000266973.1	0.403	clone-based (unnamed)
+blue	LINC01506	ENSG00000234506.5	0.402	lincRNA (named)
+blue	OVOL1-AS1	ENSG00000255120.5	0.4	antisense
+blue	LINCR-0001	ENSG00000253641.6	0.4	lincRNA (named)
+blue	TRPC7-AS1	ENSG00000248211.1	0.397	antisense
+blue	AC116345.1	ENSG00000249743.6	0.395	clone-based (unnamed)
+blue	AC104126.1	ENSG00000251076.1	0.393	clone-based (unnamed)
+blue	LINC01942	ENSG00000253428.1	0.393	lincRNA (named)
+blue	AC022613.1	ENSG00000256802.2	0.389	clone-based (unnamed)
+blue	RERG-AS1	ENSG00000255660.1	0.386	antisense
+blue	AC107959.3	ENSG00000253616.5	0.385	clone-based (unnamed)
+blue	AC012640.4	ENSG00000271980.1	0.383	clone-based (unnamed)
+blue	AC087762.1	ENSG00000259579.1	0.381	clone-based (unnamed)
+blue	LINC02762	ENSG00000250303.4	0.38	lincRNA (named)
+blue	LINC02625	ENSG00000233643.2	0.374	lincRNA (named)
+blue	AC007639.1	ENSG00000263680.2	0.372	clone-based (unnamed)
+blue	AL606489.1	ENSG00000226330.1	0.372	clone-based (unnamed)
+blue	AC092296.4	ENSG00000267363.1	0.371	clone-based (unnamed)
+blue	AC011726.2	ENSG00000254362.1	0.37	clone-based (unnamed)
+blue	SCTR-AS1	ENSG00000231013.2	0.366	antisense
+blue	LINC01788	ENSG00000229051.2	0.365	lincRNA (named)
+blue	AC104472.4	ENSG00000286585.1	0.362	clone-based (unnamed)
+blue	SOX9-AS1	ENSG00000234899.11	0.362	antisense
+blue	AC022509.1	ENSG00000255750.6	0.362	clone-based (unnamed)
+blue	DNAJB5-DT	ENSG00000281491.1	0.361	divergent
+blue	AC016747.1	ENSG00000212978.6	0.36	clone-based (unnamed)
+blue	LINC02068	ENSG00000223387.6	0.36	lincRNA (named)
+blue	ERICH6-AS1	ENSG00000240137.6	0.359	antisense
+blue	AC022509.2	ENSG00000256234.1	0.356	clone-based (unnamed)
+blue	AL512353.1	ENSG00000228192.8	0.354	clone-based (unnamed)
+blue	AC087379.2	ENSG00000254695.2	0.354	clone-based (unnamed)
+blue	AC073254.1	ENSG00000237126.8	0.353	clone-based (unnamed)
+blue	LINC02294	ENSG00000257845.1	0.351	lincRNA (named)
+blue	AL365259.1	ENSG00000237742.7	0.348	clone-based (unnamed)
+blue	C1QTNF7-AS1	ENSG00000249252.5	0.345	antisense
+blue	LINC02535	ENSG00000234155.1	0.345	lincRNA (named)
+blue	LINC02048	ENSG00000228271.2	0.341	lincRNA (named)
+blue	AC005013.1	ENSG00000228421.2	0.334	clone-based (unnamed)
+blue	AP001178.2	ENSG00000265490.1	0.33	clone-based (unnamed)
+blue	AC009878.1	ENSG00000278840.1	0.33	clone-based (unnamed)
+blue	AC004053.1	ENSG00000248242.1	0.329	clone-based (unnamed)
+blue	HS1BP3-IT1	ENSG00000231948.2	0.321	intronic
+blue	LINC00605	ENSG00000251533.2	0.32	lincRNA (named)
+blue	AL353740.1	ENSG00000203434.2	0.317	clone-based (unnamed)
+blue	INHBA-AS1	ENSG00000224116.7	0.315	antisense
+blue	PEG13	ENSG00000282164.3	0.311	other
+blue	TNFRSF10A-AS1	ENSG00000253930.1	0.31	antisense
+blue	AC108047.1	ENSG00000233654.2	0.303	clone-based (unnamed)
+greenyellow	TMEM92-AS1	ENSG00000251179.1	0.798	antisense
+greenyellow	AL139351.3	ENSG00000287335.1	0.712	clone-based (unnamed)
+greenyellow	AP000695.2	ENSG00000233818.1	0.668	clone-based (unnamed)
+greenyellow	LINC00997	ENSG00000281332.1	0.664	lincRNA (named)
+greenyellow	LINC01426	ENSG00000234380.2	0.643	lincRNA (named)
+greenyellow	AC018695.9	ENSG00000287125.1	0.635	clone-based (unnamed)
+greenyellow	AC018695.6	ENSG00000275393.1	0.634	clone-based (unnamed)
+greenyellow	AC156455.1	ENSG00000256546.2	0.621	clone-based (unnamed)
+greenyellow	AC023043.4	ENSG00000274849.1	0.613	clone-based (unnamed)
+greenyellow	C1QTNF1-AS1	ENSG00000265096.2	0.612	antisense
+greenyellow	LINC02577	ENSG00000228742.11	0.606	lincRNA (named)
+greenyellow	ZMIZ1-AS1	ENSG00000224596.8	0.604	antisense
+greenyellow	AL109653.3	ENSG00000286085.1	0.59	clone-based (unnamed)
+greenyellow	AC133644.1	ENSG00000273445.1	0.588	clone-based (unnamed)
+greenyellow	LINC01127	ENSG00000281162.2	0.587	lincRNA (named)
+greenyellow	SNTG2-AS1	ENSG00000235688.2	0.58	antisense
+greenyellow	AC061992.2	ENSG00000266970.1	0.575	clone-based (unnamed)
+greenyellow	LINC01914	ENSG00000234362.6	0.569	lincRNA (named)
+greenyellow	LUCAT1	ENSG00000248323.7	0.565	other
+greenyellow	AC107021.2	ENSG00000261051.1	0.564	clone-based (unnamed)
+greenyellow	UST-AS2	ENSG00000236591.1	0.564	antisense
+greenyellow	AC005586.1	ENSG00000261305.2	0.562	clone-based (unnamed)
+greenyellow	AC103702.2	ENSG00000272763.1	0.561	clone-based (unnamed)
+greenyellow	AC005865.2	ENSG00000287712.1	0.556	clone-based (unnamed)
+greenyellow	AC020912.1	ENSG00000284430.1	0.555	clone-based (unnamed)
+greenyellow	AC113346.1	ENSG00000251144.1	0.553	clone-based (unnamed)
+greenyellow	LINC02236	ENSG00000251365.4	0.551	lincRNA (named)
+greenyellow	LINC00460	ENSG00000233532.6	0.549	lincRNA (named)
+greenyellow	AC093001.2	ENSG00000286714.1	0.545	clone-based (unnamed)
+greenyellow	AP000695.1	ENSG00000230479.1	0.544	clone-based (unnamed)
+greenyellow	AC074132.1	ENSG00000285618.1	0.54	clone-based (unnamed)
+greenyellow	AL139351.1	ENSG00000276923.1	0.539	clone-based (unnamed)
+greenyellow	AC083900.1	ENSG00000225111.1	0.537	clone-based (unnamed)
+greenyellow	LNCSRLR	ENSG00000240032.1	0.53	other
+greenyellow	DHCR24-DT	ENSG00000233203.6	0.526	divergent
+greenyellow	AC080013.2	ENSG00000271778.1	0.525	clone-based (unnamed)
+greenyellow	AC018645.3	ENSG00000273014.1	0.523	clone-based (unnamed)
+greenyellow	AC084117.1	ENSG00000256006.1	0.522	clone-based (unnamed)
+greenyellow	AL162253.2	ENSG00000286162.2	0.521	clone-based (unnamed)
+greenyellow	AL121894.2	ENSG00000270001.1	0.516	clone-based (unnamed)
+greenyellow	AP000424.1	ENSG00000253666.2	0.515	clone-based (unnamed)
+greenyellow	DUXAP8	ENSG00000206195.11	0.509	other
+greenyellow	LINC00900	ENSG00000246100.4	0.509	lincRNA (named)
+greenyellow	AP005233.2	ENSG00000260877.2	0.507	clone-based (unnamed)
+greenyellow	HOXB-AS4	ENSG00000242207.1	0.504	antisense
+greenyellow	AC087645.2	ENSG00000267737.1	0.504	clone-based (unnamed)
+greenyellow	LINC01358	ENSG00000237352.4	0.501	lincRNA (named)
+greenyellow	AC008592.3	ENSG00000251409.1	0.501	clone-based (unnamed)
+greenyellow	LINC02615	ENSG00000251432.7	0.499	lincRNA (named)
+greenyellow	AC092535.5	ENSG00000273179.1	0.499	clone-based (unnamed)
+greenyellow	MUC12-AS1	ENSG00000227053.1	0.496	antisense
+greenyellow	AC023043.1	ENSG00000260552.1	0.495	clone-based (unnamed)
+greenyellow	AL033527.3	ENSG00000284719.1	0.495	clone-based (unnamed)
+greenyellow	AP003119.2	ENSG00000255100.1	0.49	clone-based (unnamed)
+greenyellow	AL137186.2	ENSG00000232807.2	0.486	clone-based (unnamed)
+greenyellow	AL096865.1	ENSG00000271857.1	0.484	clone-based (unnamed)
+greenyellow	AC099509.1	ENSG00000249746.1	0.483	clone-based (unnamed)
+greenyellow	AC009549.1	ENSG00000270607.1	0.482	clone-based (unnamed)
+greenyellow	AL079338.1	ENSG00000286546.1	0.482	clone-based (unnamed)
+greenyellow	THCAT158	ENSG00000263293.2	0.476	other
+greenyellow	LINC01554	ENSG00000236882.8	0.475	lincRNA (named)
+greenyellow	AC011352.1	ENSG00000248362.1	0.471	clone-based (unnamed)
+greenyellow	Z69733.1	ENSG00000234405.2	0.47	clone-based (unnamed)
+greenyellow	AC104695.2	ENSG00000270210.1	0.468	clone-based (unnamed)
+greenyellow	LINC01559	ENSG00000180861.9	0.468	lincRNA (named)
+greenyellow	CYTOR	ENSG00000222041.11	0.467	other
+greenyellow	AC120498.10	ENSG00000277010.1	0.462	clone-based (unnamed)
+greenyellow	AC011352.3	ENSG00000251320.1	0.46	clone-based (unnamed)
+greenyellow	AC079210.1	ENSG00000267461.1	0.459	clone-based (unnamed)
+greenyellow	AC022509.4	ENSG00000278095.1	0.457	clone-based (unnamed)
+greenyellow	DCST1-AS1	ENSG00000232093.1	0.453	antisense
+greenyellow	AC131009.1	ENSG00000255992.1	0.451	clone-based (unnamed)
+greenyellow	AC104063.1	ENSG00000248749.1	0.451	clone-based (unnamed)
+greenyellow	C8orf31	ENSG00000177335.11	0.447	other
+greenyellow	AP000424.2	ENSG00000254364.1	0.441	clone-based (unnamed)
+greenyellow	MAP3K2-DT	ENSG00000236682.2	0.44	divergent
+greenyellow	AP003119.3	ENSG00000261578.1	0.439	clone-based (unnamed)
+greenyellow	AC010378.1	ENSG00000286403.1	0.437	clone-based (unnamed)
+greenyellow	AC107373.2	ENSG00000272157.1	0.437	clone-based (unnamed)
+greenyellow	P3H2-AS1	ENSG00000225764.2	0.435	antisense
+greenyellow	AL117332.1	ENSG00000275457.1	0.435	clone-based (unnamed)
+greenyellow	LINC02777	ENSG00000232453.7	0.434	lincRNA (named)
+greenyellow	LINC00239	ENSG00000258512.1	0.431	lincRNA (named)
+greenyellow	BX323043.1	ENSG00000284652.1	0.429	clone-based (unnamed)
+greenyellow	AC092757.3	ENSG00000277144.1	0.429	clone-based (unnamed)
+greenyellow	AC007938.3	ENSG00000270953.1	0.427	clone-based (unnamed)
+greenyellow	AC092757.2	ENSG00000259732.1	0.418	clone-based (unnamed)
+greenyellow	LINC01637	ENSG00000237476.1	0.414	lincRNA (named)
+greenyellow	C2orf27A	ENSG00000287151.1	0.413	other
+greenyellow	AC107959.4	ENSG00000284948.1	0.411	clone-based (unnamed)
+greenyellow	LINC02526	ENSG00000229654.1	0.408	lincRNA (named)
+greenyellow	FILNC1	ENSG00000231426.7	0.406	other
+greenyellow	AL035446.1	ENSG00000234147.1	0.403	clone-based (unnamed)
+greenyellow	AC022784.5	ENSG00000254340.2	0.402	clone-based (unnamed)
+greenyellow	AC010280.2	ENSG00000248884.1	0.4	clone-based (unnamed)
+greenyellow	AC003092.1	ENSG00000236453.5	0.399	clone-based (unnamed)
+greenyellow	AL592431.1	ENSG00000235215.2	0.395	clone-based (unnamed)
+greenyellow	AL355102.4	ENSG00000258793.1	0.391	clone-based (unnamed)
+greenyellow	MIR193BHG	ENSG00000262454.4	0.388	other
+greenyellow	BX640514.2	ENSG00000273812.3	0.369	clone-based (unnamed)
+greenyellow	AC096677.1	ENSG00000224536.2	0.369	clone-based (unnamed)
+greenyellow	AC002401.4	ENSG00000276851.1	0.368	clone-based (unnamed)
+greenyellow	LINC02606	ENSG00000284693.1	0.36	lincRNA (named)
+greenyellow	AC107021.1	ENSG00000243415.2	0.359	clone-based (unnamed)
+greenyellow	MIR31HG	ENSG00000171889.5	0.346	other
+greenyellow	AC003965.1	ENSG00000263280.2	0.344	clone-based (unnamed)
+greenyellow	CEBPA-DT	ENSG00000267296.2	0.334	divergent
+greenyellow	LINC02086	ENSG00000244649.5	0.331	lincRNA (named)
+turquoise	ZKSCAN2-DT	ENSG00000274925.1	0.866	divergent
+turquoise	AC092171.4	ENSG00000272953.1	0.793	clone-based (unnamed)
+turquoise	AC008764.8	ENSG00000279529.1	0.793	clone-based (unnamed)
+turquoise	LINC00653	ENSG00000273148.1	0.78	lincRNA (named)
+turquoise	AC092119.2	ENSG00000274460.1	0.778	clone-based (unnamed)
+turquoise	LINC01089	ENSG00000212694.8	0.769	lincRNA (named)
+turquoise	AL513320.1	ENSG00000238260.1	0.766	clone-based (unnamed)
+turquoise	AC068205.2	ENSG00000283341.2	0.761	clone-based (unnamed)
+turquoise	AL731569.1	ENSG00000227896.2	0.759	clone-based (unnamed)
+turquoise	LINC01004	ENSG00000228393.4	0.756	lincRNA (named)
+turquoise	AC048341.2	ENSG00000275180.1	0.751	clone-based (unnamed)
+turquoise	AC232271.1	ENSG00000270012.1	0.75	clone-based (unnamed)
+turquoise	C8orf44	ENSG00000288596.2	0.748	other
+turquoise	AC011481.1	ENSG00000267114.1	0.741	clone-based (unnamed)
+turquoise	Z83745.1	ENSG00000286977.1	0.741	clone-based (unnamed)
+turquoise	SUGT1-DT	ENSG00000273723.1	0.74	divergent
+turquoise	AC011462.4	ENSG00000277744.1	0.739	clone-based (unnamed)
+turquoise	RNF139-AS1	ENSG00000245149.4	0.735	antisense
+turquoise	AC245884.8	ENSG00000267838.2	0.733	clone-based (unnamed)
+turquoise	AC034236.2	ENSG00000271918.1	0.733	clone-based (unnamed)
+turquoise	AL117379.1	ENSG00000273759.1	0.732	clone-based (unnamed)
+turquoise	AL355488.1	ENSG00000273373.1	0.725	clone-based (unnamed)
+turquoise	AC016773.1	ENSG00000270195.2	0.725	clone-based (unnamed)
+turquoise	AC008764.6	ENSG00000269399.2	0.724	clone-based (unnamed)
+turquoise	AC087741.1	ENSG00000262580.5	0.719	clone-based (unnamed)
+turquoise	TMED2-DT	ENSG00000247373.3	0.718	divergent
+turquoise	MRPL20-DT	ENSG00000272455.1	0.718	divergent
+turquoise	AL139123.1	ENSG00000277218.1	0.713	clone-based (unnamed)
+turquoise	CAPN10-DT	ENSG00000260942.1	0.713	divergent
+turquoise	AC132192.2	ENSG00000268403.2	0.712	clone-based (unnamed)
+turquoise	LINC00174	ENSG00000179406.8	0.711	lincRNA (named)
+turquoise	AC009283.1	ENSG00000273576.1	0.71	clone-based (unnamed)
+turquoise	AC073896.2	ENSG00000257303.2	0.709	clone-based (unnamed)
+turquoise	AC023908.3	ENSG00000261136.1	0.707	clone-based (unnamed)
+turquoise	AC010864.1	ENSG00000273008.1	0.705	clone-based (unnamed)
+turquoise	TMEM147-AS1	ENSG00000236144.8	0.704	antisense
+turquoise	AC087500.1	ENSG00000261879.7	0.702	clone-based (unnamed)
+turquoise	ZNF213-AS1	ENSG00000263072.8	0.7	antisense
+turquoise	LINC01355	ENSG00000261326.4	0.7	lincRNA (named)
+turquoise	AL355388.1	ENSG00000273002.1	0.699	clone-based (unnamed)
+turquoise	Z97832.2	ENSG00000272374.1	0.696	clone-based (unnamed)
+turquoise	AC010201.1	ENSG00000271259.1	0.695	clone-based (unnamed)
+turquoise	NFE2L1-DT	ENSG00000263412.1	0.691	divergent
+turquoise	AC116914.2	ENSG00000262692.1	0.691	clone-based (unnamed)
+turquoise	LENG8-AS1	ENSG00000226696.6	0.691	antisense
+turquoise	AC129510.1	ENSG00000265678.1	0.688	clone-based (unnamed)
+turquoise	AC063948.1	ENSG00000257543.1	0.687	clone-based (unnamed)
+turquoise	AC013731.1	ENSG00000270557.1	0.686	clone-based (unnamed)
+turquoise	AC079807.1	ENSG00000233230.1	0.684	clone-based (unnamed)
+turquoise	LINC02604	ENSG00000273142.1	0.684	lincRNA (named)
+turquoise	AL133410.1	ENSG00000227388.3	0.683	clone-based (unnamed)
+turquoise	AC135050.3	ENSG00000260911.2	0.683	clone-based (unnamed)
+turquoise	AC022762.2	ENSG00000267940.1	0.68	clone-based (unnamed)
+turquoise	SCAT2	ENSG00000257596.1	0.678	other
+turquoise	AC016737.1	ENSG00000271151.1	0.677	clone-based (unnamed)
+turquoise	AC008610.1	ENSG00000248367.1	0.676	clone-based (unnamed)
+turquoise	AC087289.2	ENSG00000267342.1	0.676	clone-based (unnamed)
+turquoise	AC126118.1	ENSG00000271993.1	0.671	clone-based (unnamed)
+turquoise	THBS3-AS1	ENSG00000231064.7	0.671	antisense
+turquoise	AP003419.3	ENSG00000275484.1	0.67	clone-based (unnamed)
+turquoise	AL359504.1	ENSG00000271576.1	0.668	clone-based (unnamed)
+turquoise	AC009133.1	ENSG00000238045.9	0.668	clone-based (unnamed)
+turquoise	LINC00893	ENSG00000241769.7	0.667	lincRNA (named)
+turquoise	AC116407.2	ENSG00000277511.1	0.667	clone-based (unnamed)
+turquoise	AC009065.4	ENSG00000260778.5	0.664	clone-based (unnamed)
+turquoise	AL008582.1	ENSG00000273424.1	0.662	clone-based (unnamed)
+turquoise	CCDC18-AS1	ENSG00000223745.8	0.661	antisense
+turquoise	AL442128.2	ENSG00000277767.1	0.659	clone-based (unnamed)
+turquoise	AC010883.1	ENSG00000234936.1	0.659	clone-based (unnamed)
+turquoise	AL451050.2	ENSG00000272205.1	0.658	clone-based (unnamed)
+turquoise	LINC00115	ENSG00000225880.5	0.656	lincRNA (named)
+turquoise	AC079322.1	ENSG00000261187.1	0.655	clone-based (unnamed)
+turquoise	ZNF436-AS1	ENSG00000249087.7	0.654	antisense
+turquoise	AC092910.3	ENSG00000242622.2	0.654	clone-based (unnamed)
+turquoise	LINC00894	ENSG00000235703.6	0.654	lincRNA (named)
+turquoise	AC074117.1	ENSG00000234072.1	0.652	clone-based (unnamed)
+turquoise	AL158063.1	ENSG00000276957.1	0.652	clone-based (unnamed)
+turquoise	AC005785.1	ENSG00000268189.2	0.65	clone-based (unnamed)
+turquoise	AL450384.2	ENSG00000240291.1	0.649	clone-based (unnamed)
+turquoise	AC010973.2	ENSG00000244151.1	0.649	clone-based (unnamed)
+turquoise	AL162458.1	ENSG00000285796.1	0.646	clone-based (unnamed)
+turquoise	AC068620.2	ENSG00000270147.1	0.644	clone-based (unnamed)
+turquoise	AL031432.4	ENSG00000284602.1	0.642	clone-based (unnamed)
+turquoise	NALT1	ENSG00000237886.1	0.641	other
+turquoise	GARS1-DT	ENSG00000196295.12	0.635	divergent
+turquoise	AC007038.1	ENSG00000272807.1	0.635	clone-based (unnamed)
+turquoise	AC010201.2	ENSG00000271327.1	0.634	clone-based (unnamed)
+turquoise	ZNF460-AS1	ENSG00000267871.6	0.634	antisense
+turquoise	AC005899.6	ENSG00000274341.1	0.633	clone-based (unnamed)
+turquoise	AC084824.5	ENSG00000276148.1	0.631	clone-based (unnamed)
+turquoise	AC079174.2	ENSG00000277715.1	0.63	clone-based (unnamed)
+turquoise	LINC01786	ENSG00000230415.1	0.629	lincRNA (named)
+turquoise	AC099791.2	ENSG00000271200.1	0.628	clone-based (unnamed)
+turquoise	AC027796.4	ENSG00000262903.1	0.627	clone-based (unnamed)
+turquoise	AC024060.2	ENSG00000271870.1	0.624	clone-based (unnamed)
+turquoise	AL357079.1	ENSG00000237950.3	0.623	clone-based (unnamed)
+turquoise	RBM38-AS1	ENSG00000218018.3	0.622	antisense
+turquoise	SNHG11	ENSG00000174365.20	0.621	other
+turquoise	LMNTD2-AS1	ENSG00000254815.6	0.614	antisense
+turquoise	AC010618.2	ENSG00000269161.1	0.614	clone-based (unnamed)
+turquoise	AC060780.1	ENSG00000267002.4	0.612	clone-based (unnamed)
+turquoise	ARHGAP27P1-BPTFP1-KPNA2P3	ENSG00000215769.8	0.607	other
+turquoise	AC018809.1	ENSG00000269894.1	0.603	clone-based (unnamed)
+turquoise	AC010542.5	ENSG00000277978.1	0.603	clone-based (unnamed)
+turquoise	AC012360.3	ENSG00000272994.1	0.603	clone-based (unnamed)
+turquoise	AL136295.7	ENSG00000278784.1	0.602	clone-based (unnamed)
+turquoise	ALOX12-AS1	ENSG00000215067.10	0.6	antisense
+turquoise	CD27-AS1	ENSG00000215039.7	0.598	antisense
+turquoise	AL354836.1	ENSG00000226332.2	0.597	clone-based (unnamed)
+turquoise	AP001767.2	ENSG00000255503.1	0.596	clone-based (unnamed)
+turquoise	AC127024.5	ENSG00000266490.1	0.593	clone-based (unnamed)
+turquoise	AC005393.1	ENSG00000276445.1	0.593	clone-based (unnamed)
+turquoise	AC145285.6	ENSG00000275807.1	0.593	clone-based (unnamed)
+turquoise	AC096642.1	ENSG00000277007.1	0.593	clone-based (unnamed)
+turquoise	AC007566.1	ENSG00000244055.2	0.592	clone-based (unnamed)
+turquoise	AC093788.1	ENSG00000273449.1	0.591	clone-based (unnamed)
+turquoise	AC005899.7	ENSG00000278668.1	0.59	clone-based (unnamed)
+turquoise	ASB16-AS1	ENSG00000267080.6	0.589	antisense
+turquoise	MELTF-AS1	ENSG00000228109.1	0.589	antisense
+turquoise	AC010326.3	ENSG00000269867.1	0.588	clone-based (unnamed)
+turquoise	AC004253.1	ENSG00000263990.1	0.587	clone-based (unnamed)
+turquoise	U91328.3	ENSG00000272810.1	0.587	other
+turquoise	AC008875.1	ENSG00000271788.1	0.586	clone-based (unnamed)
+turquoise	AC009061.2	ENSG00000270049.3	0.582	clone-based (unnamed)
+turquoise	AP006621.2	ENSG00000255142.1	0.58	clone-based (unnamed)
+turquoise	AC138230.1	ENSG00000255237.1	0.578	clone-based (unnamed)
+turquoise	HOXB-AS1	ENSG00000230148.8	0.578	antisense
+turquoise	AL358072.1	ENSG00000271427.1	0.578	clone-based (unnamed)
+turquoise	AC004923.4	ENSG00000255306.1	0.571	clone-based (unnamed)
+turquoise	AC092123.1	ENSG00000261118.1	0.57	clone-based (unnamed)
+turquoise	ZNF32-AS1	ENSG00000226245.1	0.57	antisense
+turquoise	AL353801.3	ENSG00000273363.1	0.566	clone-based (unnamed)
+turquoise	AL512652.1	ENSG00000275485.1	0.561	clone-based (unnamed)
+turquoise	AC145423.1	ENSG00000274427.1	0.561	clone-based (unnamed)
+turquoise	NFYC-AS1	ENSG00000272145.1	0.558	antisense
+turquoise	AC008537.4	ENSG00000282951.1	0.556	clone-based (unnamed)
+turquoise	AC005387.1	ENSG00000268938.2	0.556	clone-based (unnamed)
+turquoise	AC105020.5	ENSG00000274515.1	0.556	clone-based (unnamed)
+turquoise	NDUFV2-AS1	ENSG00000266053.2	0.555	antisense
+turquoise	MMP25-AS1	ENSG00000261971.8	0.555	antisense
+turquoise	AC005332.5	ENSG00000277476.1	0.553	clone-based (unnamed)
+turquoise	ADIRF-AS1	ENSG00000272734.1	0.552	antisense
+turquoise	AP001029.1	ENSG00000267108.1	0.551	clone-based (unnamed)
+turquoise	POLR2J4	ENSG00000214783.9	0.55	other
+turquoise	AP000553.2	ENSG00000272954.1	0.549	clone-based (unnamed)
+turquoise	AC048341.1	ENSG00000257354.2	0.548	clone-based (unnamed)
+turquoise	AC026471.4	ENSG00000261474.1	0.547	clone-based (unnamed)
+turquoise	SNHG3	ENSG00000242125.3	0.545	other
+turquoise	MCCC1-AS1	ENSG00000243368.2	0.544	antisense
+turquoise	U47924.3	ENSG00000275703.1	0.543	other
+turquoise	LINC02062	ENSG00000248489.2	0.543	lincRNA (named)
+turquoise	MZF1-AS1	ENSG00000267858.6	0.542	antisense
+turquoise	DLGAP1-AS2	ENSG00000262001.1	0.542	antisense
+turquoise	AL590096.1	ENSG00000277020.4	0.541	clone-based (unnamed)
+turquoise	Z84485.1	ENSG00000246982.7	0.541	clone-based (unnamed)
+turquoise	AL161729.4	ENSG00000271659.1	0.54	clone-based (unnamed)
+turquoise	AC004263.1	ENSG00000275936.1	0.538	clone-based (unnamed)
+turquoise	LINC02352	ENSG00000259448.3	0.536	lincRNA (named)
+turquoise	AC022167.2	ENSG00000260276.2	0.536	clone-based (unnamed)
+turquoise	AL353622.1	ENSG00000270605.1	0.535	clone-based (unnamed)
+turquoise	AC025171.4	ENSG00000272144.1	0.535	clone-based (unnamed)
+turquoise	AC010168.2	ENSG00000261324.2	0.535	clone-based (unnamed)
+turquoise	AC026333.4	ENSG00000274191.1	0.534	clone-based (unnamed)
+turquoise	ZNF529-AS1	ENSG00000233527.9	0.533	antisense
+turquoise	AL139041.1	ENSG00000271631.1	0.531	clone-based (unnamed)
+turquoise	LINC01160	ENSG00000231346.5	0.531	lincRNA (named)
+turquoise	LINC02878	ENSG00000181097.5	0.53	lincRNA (named)
+turquoise	N4BP2L2-IT2	ENSG00000281026.1	0.529	intronic
+turquoise	AC010719.1	ENSG00000270933.1	0.529	clone-based (unnamed)
+turquoise	AL683813.1	ENSG00000232611.1	0.528	clone-based (unnamed)
+turquoise	LINC01138	ENSG00000274020.4	0.528	lincRNA (named)
+turquoise	AC009318.4	ENSG00000275476.1	0.527	clone-based (unnamed)
+turquoise	AC023494.1	ENSG00000286584.2	0.527	clone-based (unnamed)
+turquoise	AL645940.1	ENSG00000272217.1	0.524	clone-based (unnamed)
+turquoise	AC005840.4	ENSG00000276718.1	0.522	clone-based (unnamed)
+turquoise	AC006064.3	ENSG00000255966.1	0.522	clone-based (unnamed)
+turquoise	AC103706.1	ENSG00000261220.2	0.521	clone-based (unnamed)
+turquoise	AP002985.1	ENSG00000288538.1	0.52	clone-based (unnamed)
+turquoise	AC084198.2	ENSG00000286699.1	0.517	clone-based (unnamed)
+turquoise	AL031705.1	ENSG00000260646.1	0.517	clone-based (unnamed)
+turquoise	AP003352.1	ENSG00000245970.2	0.517	clone-based (unnamed)
+turquoise	Z69706.1	ENSG00000268836.1	0.514	clone-based (unnamed)
+turquoise	AC253536.6	ENSG00000272787.1	0.514	clone-based (unnamed)
+turquoise	LINC01176	ENSG00000281404.2	0.514	lincRNA (named)
+turquoise	AC006017.1	ENSG00000229591.1	0.513	clone-based (unnamed)
+turquoise	AL391684.1	ENSG00000224934.5	0.512	clone-based (unnamed)
+turquoise	SEC24B-AS1	ENSG00000247950.7	0.509	antisense
+turquoise	AC080129.2	ENSG00000232874.1	0.508	clone-based (unnamed)
+turquoise	AC127502.2	ENSG00000270055.1	0.507	clone-based (unnamed)
+turquoise	RASGRP3-AS1	ENSG00000237133.1	0.507	antisense
+turquoise	AC010422.2	ENSG00000268945.1	0.506	clone-based (unnamed)
+turquoise	PSPC1-AS2	ENSG00000226352.2	0.505	antisense
+turquoise	AC013468.1	ENSG00000273240.1	0.505	clone-based (unnamed)
+turquoise	AC123768.1	ENSG00000244952.2	0.504	clone-based (unnamed)
+turquoise	NBR2	ENSG00000198496.12	0.504	other
+turquoise	AC139100.2	ENSG00000278000.1	0.502	clone-based (unnamed)
+turquoise	AC010538.1	ENSG00000275734.2	0.501	clone-based (unnamed)
+turquoise	AL158212.2	ENSG00000233547.1	0.501	clone-based (unnamed)
+turquoise	AC087500.2	ENSG00000263164.1	0.5	clone-based (unnamed)
+turquoise	AL136304.1	ENSG00000272223.1	0.499	clone-based (unnamed)
+turquoise	AC010319.4	ENSG00000269481.1	0.499	clone-based (unnamed)
+turquoise	AC009097.2	ENSG00000260593.1	0.499	clone-based (unnamed)
+turquoise	AL731563.3	ENSG00000272630.1	0.498	clone-based (unnamed)
+turquoise	AL513218.1	ENSG00000272100.1	0.498	clone-based (unnamed)
+turquoise	AL162741.1	ENSG00000260179.1	0.497	clone-based (unnamed)
+turquoise	AC012645.4	ENSG00000275371.1	0.497	clone-based (unnamed)
+turquoise	AC015802.3	ENSG00000267543.1	0.497	clone-based (unnamed)
+turquoise	AC004908.3	ENSG00000273402.1	0.495	clone-based (unnamed)
+turquoise	AP006621.4	ENSG00000269915.1	0.495	clone-based (unnamed)
+turquoise	AC009065.8	ENSG00000261663.1	0.493	clone-based (unnamed)
+turquoise	AC078906.1	ENSG00000253317.1	0.491	clone-based (unnamed)
+turquoise	AC084125.2	ENSG00000255182.2	0.491	clone-based (unnamed)
+turquoise	AL138960.1	ENSG00000277831.1	0.49	clone-based (unnamed)
+turquoise	AP006545.2	ENSG00000272128.1	0.489	clone-based (unnamed)
+turquoise	ELF3-AS1	ENSG00000234678.2	0.489	antisense
+turquoise	IBA57-DT	ENSG00000203684.5	0.488	divergent
+turquoise	AC018653.3	ENSG00000256967.1	0.488	clone-based (unnamed)
+turquoise	AC073655.2	ENSG00000258365.1	0.488	clone-based (unnamed)
+turquoise	AC006480.2	ENSG00000273448.1	0.487	clone-based (unnamed)
+turquoise	AC002550.2	ENSG00000276571.1	0.487	clone-based (unnamed)
+turquoise	AC021148.2	ENSG00000287262.1	0.486	clone-based (unnamed)
+turquoise	AC022210.1	ENSG00000287625.1	0.486	clone-based (unnamed)
+turquoise	AC018648.1	ENSG00000272905.1	0.485	clone-based (unnamed)
+turquoise	HOXA-AS2	ENSG00000253552.8	0.482	antisense
+turquoise	AC079922.2	ENSG00000237753.2	0.481	clone-based (unnamed)
+turquoise	AL133351.4	ENSG00000288612.1	0.481	clone-based (unnamed)
+turquoise	AC127024.6	ENSG00000276250.1	0.48	clone-based (unnamed)
+turquoise	SNHG21	ENSG00000250988.7	0.48	other
+turquoise	AC017104.1	ENSG00000224376.1	0.477	clone-based (unnamed)
+turquoise	HMGA1P4	ENSG00000234705.2	0.477	other
+turquoise	AL157893.2	ENSG00000287077.1	0.477	clone-based (unnamed)
+turquoise	AC024560.4	ENSG00000286909.1	0.477	clone-based (unnamed)
+turquoise	AC024257.4	ENSG00000273765.1	0.475	clone-based (unnamed)
+turquoise	OBSCN-AS1	ENSG00000162913.10	0.474	antisense
+turquoise	AC011005.4	ENSG00000243230.1	0.469	clone-based (unnamed)
+turquoise	AC145285.2	ENSG00000251417.2	0.468	clone-based (unnamed)
+turquoise	AC106028.3	ENSG00000260361.1	0.468	clone-based (unnamed)
+turquoise	AC004908.1	ENSG00000272240.1	0.467	clone-based (unnamed)
+turquoise	AL355999.1	ENSG00000287808.1	0.467	clone-based (unnamed)
+turquoise	AC015660.3	ENSG00000274294.1	0.467	clone-based (unnamed)
+turquoise	AC137561.1	ENSG00000287074.1	0.464	clone-based (unnamed)
+turquoise	AL158151.4	ENSG00000268707.1	0.46	clone-based (unnamed)
+turquoise	AC012291.3	ENSG00000285667.1	0.46	clone-based (unnamed)
+turquoise	PXN-AS1	ENSG00000255857.6	0.46	antisense
+turquoise	OGFR-AS1	ENSG00000229873.1	0.46	antisense
+turquoise	RERE-AS1	ENSG00000232912.6	0.46	antisense
+turquoise	AP001160.4	ENSG00000269463.1	0.457	clone-based (unnamed)
+turquoise	AC004846.2	ENSG00000258944.1	0.457	clone-based (unnamed)
+turquoise	SNHG12	ENSG00000197989.14	0.457	other
+turquoise	AL158196.1	ENSG00000276968.1	0.457	clone-based (unnamed)
+turquoise	AC244197.2	ENSG00000238039.1	0.455	clone-based (unnamed)
+turquoise	AC002059.1	ENSG00000273216.1	0.454	clone-based (unnamed)
+turquoise	AC245060.6	ENSG00000279278.1	0.454	clone-based (unnamed)
+turquoise	LINC00685	ENSG00000226179.6	0.454	lincRNA (named)
+turquoise	AC018638.7	ENSG00000271553.1	0.454	clone-based (unnamed)
+turquoise	AC005840.2	ENSG00000256433.3	0.452	clone-based (unnamed)
+turquoise	FAM13A-AS1	ENSG00000248019.3	0.452	antisense
+turquoise	FIGNL2-DT	ENSG00000259887.1	0.452	divergent
+turquoise	AL359881.2	ENSG00000270035.1	0.449	clone-based (unnamed)
+turquoise	AL512306.2	ENSG00000240219.1	0.448	clone-based (unnamed)
+turquoise	AC005332.1	ENSG00000265100.1	0.448	clone-based (unnamed)
+turquoise	AL670729.3	ENSG00000287315.1	0.446	clone-based (unnamed)
+turquoise	MAP3K14-AS1	ENSG00000267278.6	0.443	antisense
+turquoise	AL117336.2	ENSG00000271335.6	0.443	clone-based (unnamed)
+turquoise	AC121761.2	ENSG00000273987.1	0.442	clone-based (unnamed)
+turquoise	OSGEPL1-AS1	ENSG00000253559.1	0.442	antisense
+turquoise	AP000892.3	ENSG00000276505.1	0.441	clone-based (unnamed)
+turquoise	AP000873.2	ENSG00000247137.9	0.439	clone-based (unnamed)
+turquoise	AC012186.2	ENSG00000261131.1	0.439	clone-based (unnamed)
+turquoise	AC104758.1	ENSG00000259792.1	0.438	clone-based (unnamed)
+turquoise	AC084876.1	ENSG00000277299.1	0.436	clone-based (unnamed)
+turquoise	AL137244.1	ENSG00000228444.2	0.436	clone-based (unnamed)
+turquoise	AC027801.1	ENSG00000204584.1	0.434	clone-based (unnamed)
+turquoise	AL158163.1	ENSG00000270589.1	0.434	clone-based (unnamed)
+turquoise	AL008729.1	ENSG00000215022.7	0.431	clone-based (unnamed)
+turquoise	AL359881.1	ENSG00000269978.1	0.431	clone-based (unnamed)
+turquoise	AC132872.5	ENSG00000287737.1	0.43	clone-based (unnamed)
+turquoise	AC034229.4	ENSG00000272417.1	0.43	clone-based (unnamed)
+turquoise	Z98200.1	ENSG00000271734.1	0.427	clone-based (unnamed)
+turquoise	AL021368.3	ENSG00000272541.1	0.427	clone-based (unnamed)
+turquoise	LINC02019	ENSG00000273356.1	0.426	lincRNA (named)
+turquoise	AL355385.1	ENSG00000272170.1	0.424	clone-based (unnamed)
+turquoise	LINC02614	ENSG00000241288.8	0.423	lincRNA (named)
+turquoise	LINC00921	ENSG00000281005.1	0.421	lincRNA (named)
+turquoise	AC002553.2	ENSG00000275413.1	0.421	clone-based (unnamed)
+turquoise	LINC01569	ENSG00000262468.6	0.421	lincRNA (named)
+turquoise	ZNF433-AS1	ENSG00000219665.8	0.421	antisense
+turquoise	AC124319.1	ENSG00000262979.1	0.42	clone-based (unnamed)
+turquoise	AC005776.2	ENSG00000273218.1	0.419	clone-based (unnamed)
+turquoise	AC004863.1	ENSG00000286407.1	0.418	clone-based (unnamed)
+turquoise	AC009318.1	ENSG00000257176.3	0.417	clone-based (unnamed)
+turquoise	AL121655.1	ENSG00000271228.1	0.417	clone-based (unnamed)
+turquoise	AC133550.3	ENSG00000261766.1	0.417	clone-based (unnamed)
+turquoise	AL356299.2	ENSG00000272945.1	0.413	clone-based (unnamed)
+turquoise	AC009802.1	ENSG00000283667.1	0.412	clone-based (unnamed)
+turquoise	AC004034.1	ENSG00000262482.1	0.412	clone-based (unnamed)
+turquoise	AC016394.1	ENSG00000272599.2	0.412	clone-based (unnamed)
+turquoise	AL358472.5	ENSG00000284738.1	0.411	clone-based (unnamed)
+turquoise	LINC02656	ENSG00000212743.2	0.411	lincRNA (named)
+turquoise	AC004466.2	ENSG00000274737.1	0.41	clone-based (unnamed)
+turquoise	AL162274.2	ENSG00000277959.1	0.408	clone-based (unnamed)
+turquoise	AC004947.3	ENSG00000286507.1	0.408	clone-based (unnamed)
+turquoise	AC004908.2	ENSG00000272812.1	0.408	clone-based (unnamed)
+turquoise	AL353622.2	ENSG00000271398.1	0.407	clone-based (unnamed)
+turquoise	AL122125.1	ENSG00000277050.1	0.406	clone-based (unnamed)
+turquoise	RNF216P1	ENSG00000196204.12	0.406	other
+turquoise	ZNF528-AS1	ENSG00000269834.6	0.405	antisense
+turquoise	AL590560.3	ENSG00000272668.2	0.404	clone-based (unnamed)
+turquoise	AL358472.4	ENSG00000282386.1	0.404	clone-based (unnamed)
+turquoise	AL355377.4	ENSG00000287868.1	0.403	clone-based (unnamed)
+turquoise	BACE1-AS	ENSG00000278768.2	0.402	antisense
+turquoise	ZFAND2A-DT	ENSG00000229043.3	0.402	divergent
+turquoise	AC025176.1	ENSG00000250081.1	0.401	clone-based (unnamed)
+turquoise	TMPO-AS1	ENSG00000257167.2	0.4	antisense
+turquoise	AF117829.1	ENSG00000251136.9	0.4	other
+turquoise	AC097641.2	ENSG00000277728.1	0.4	clone-based (unnamed)
+turquoise	AC104794.3	ENSG00000260077.1	0.4	clone-based (unnamed)
+turquoise	AL162431.1	ENSG00000243155.1	0.4	clone-based (unnamed)
+turquoise	AC015961.2	ENSG00000267707.2	0.398	clone-based (unnamed)
+turquoise	AL355297.2	ENSG00000271265.1	0.395	clone-based (unnamed)
+turquoise	AC073896.4	ENSG00000258199.1	0.395	clone-based (unnamed)
+turquoise	AC106782.5	ENSG00000274653.1	0.394	clone-based (unnamed)
+turquoise	AC009087.1	ENSG00000260252.1	0.394	clone-based (unnamed)
+turquoise	MAILR	ENSG00000253320.7	0.393	other
+turquoise	AC097500.1	ENSG00000287129.1	0.393	clone-based (unnamed)
+turquoise	POC1B-AS1	ENSG00000270344.3	0.393	antisense
+turquoise	AC011498.6	ENSG00000267769.1	0.392	clone-based (unnamed)
+turquoise	AC018638.6	ENSG00000271344.1	0.391	clone-based (unnamed)
+turquoise	AL137127.1	ENSG00000272084.1	0.39	clone-based (unnamed)
+turquoise	AC022558.3	ENSG00000273747.1	0.39	clone-based (unnamed)
+turquoise	AC027020.2	ENSG00000270127.2	0.389	clone-based (unnamed)
+turquoise	AC104463.2	ENSG00000226862.1	0.389	clone-based (unnamed)
+turquoise	AC010999.1	ENSG00000275343.1	0.389	clone-based (unnamed)
+turquoise	SNHG4	ENSG00000281398.4	0.388	other
+turquoise	AC009404.1	ENSG00000236255.2	0.387	clone-based (unnamed)
+turquoise	AL121890.5	ENSG00000278816.1	0.387	clone-based (unnamed)
+turquoise	AC113139.1	ENSG00000271555.1	0.385	clone-based (unnamed)
+turquoise	AC009403.1	ENSG00000216895.9	0.385	clone-based (unnamed)
+turquoise	AC022079.2	ENSG00000278733.1	0.381	clone-based (unnamed)
+turquoise	Z97653.1	ENSG00000259840.1	0.381	clone-based (unnamed)
+turquoise	AL603832.1	ENSG00000225075.1	0.381	clone-based (unnamed)
+turquoise	AC005052.2	ENSG00000286366.1	0.38	clone-based (unnamed)
+turquoise	DHDDS-AS1	ENSG00000225891.2	0.38	antisense
+turquoise	AL157931.2	ENSG00000283075.1	0.38	clone-based (unnamed)
+turquoise	SLC16A1-AS1	ENSG00000226419.8	0.378	antisense
+turquoise	AC092809.4	ENSG00000237101.1	0.378	clone-based (unnamed)
+turquoise	VIM-AS1	ENSG00000229124.7	0.375	antisense
+turquoise	AC016747.2	ENSG00000271889.1	0.373	clone-based (unnamed)
+turquoise	AC012368.1	ENSG00000225889.9	0.373	clone-based (unnamed)
+turquoise	AC027607.1	ENSG00000248936.1	0.373	clone-based (unnamed)
+turquoise	AL645939.4	ENSG00000272236.1	0.372	clone-based (unnamed)
+turquoise	AC079781.5	ENSG00000284707.2	0.372	clone-based (unnamed)
+turquoise	ZNF232-AS1	ENSG00000234327.8	0.371	antisense
+turquoise	AC020659.1	ENSG00000174171.6	0.371	clone-based (unnamed)
+turquoise	AC130469.1	ENSG00000267986.1	0.371	clone-based (unnamed)
+turquoise	THAP9-AS1	ENSG00000251022.6	0.371	antisense
+turquoise	AC068722.2	ENSG00000273972.1	0.37	clone-based (unnamed)
+turquoise	GAS6-AS1	ENSG00000233695.2	0.369	antisense
+turquoise	AC020915.1	ENSG00000268201.1	0.368	clone-based (unnamed)
+turquoise	AC116552.1	ENSG00000261744.1	0.366	clone-based (unnamed)
+turquoise	AC009065.2	ENSG00000259933.6	0.366	clone-based (unnamed)
+turquoise	AP001469.3	ENSG00000239415.1	0.366	clone-based (unnamed)
+turquoise	PRDX6-AS1	ENSG00000203739.4	0.362	antisense
+turquoise	LINC01126	ENSG00000279873.2	0.361	lincRNA (named)
+turquoise	AC025265.1	ENSG00000257681.1	0.361	clone-based (unnamed)
+turquoise	AL391427.1	ENSG00000224251.6	0.36	clone-based (unnamed)
+turquoise	AC102953.2	ENSG00000273230.1	0.359	clone-based (unnamed)
+turquoise	AC011461.1	ENSG00000267197.1	0.358	clone-based (unnamed)
+turquoise	SNHG17	ENSG00000196756.13	0.357	other
+turquoise	AC105105.3	ENSG00000274354.1	0.356	clone-based (unnamed)
+turquoise	RNF213-AS1	ENSG00000263069.6	0.353	antisense
+turquoise	AC009090.1	ENSG00000260038.1	0.352	clone-based (unnamed)
+turquoise	AC114956.1	ENSG00000248240.1	0.352	clone-based (unnamed)
+turquoise	PVT1	ENSG00000249859.12	0.352	other
+turquoise	AC025165.4	ENSG00000269903.1	0.351	clone-based (unnamed)
+turquoise	BCRP3	ENSG00000215481.9	0.351	other
+turquoise	AC093157.1	ENSG00000233184.7	0.351	clone-based (unnamed)
+turquoise	AC087175.1	ENSG00000286315.1	0.349	clone-based (unnamed)
+turquoise	AC009065.5	ENSG00000261123.1	0.349	clone-based (unnamed)
+turquoise	AC010525.1	ENSG00000267117.1	0.348	clone-based (unnamed)
+turquoise	AC092143.3	ENSG00000267048.1	0.348	clone-based (unnamed)
+turquoise	AC015727.1	ENSG00000263220.1	0.347	clone-based (unnamed)
+turquoise	AC079907.1	ENSG00000257222.1	0.347	clone-based (unnamed)
+turquoise	AC006230.1	ENSG00000287778.1	0.347	clone-based (unnamed)
+turquoise	AC026740.1	ENSG00000271781.1	0.346	clone-based (unnamed)
+turquoise	AC112484.1	ENSG00000231305.4	0.345	clone-based (unnamed)
+turquoise	AL031673.1	ENSG00000278383.1	0.343	clone-based (unnamed)
+turquoise	FBXL19-AS1	ENSG00000260852.1	0.342	antisense
+turquoise	AP000867.5	ENSG00000286948.1	0.342	clone-based (unnamed)
+turquoise	AL158071.2	ENSG00000230537.2	0.342	clone-based (unnamed)
+turquoise	AC005041.3	ENSG00000272183.1	0.341	clone-based (unnamed)
+turquoise	AC025165.5	ENSG00000270039.1	0.341	clone-based (unnamed)
+turquoise	AC024560.3	ENSG00000273308.1	0.338	clone-based (unnamed)
+turquoise	AL596202.1	ENSG00000235381.1	0.338	clone-based (unnamed)
+turquoise	AL589739.1	ENSG00000272161.1	0.329	clone-based (unnamed)
+turquoise	AC138932.4	ENSG00000275910.1	0.329	clone-based (unnamed)
+turquoise	AL031768.1	ENSG00000272465.1	0.329	clone-based (unnamed)
+turquoise	AC008655.2	ENSG00000269392.1	0.328	clone-based (unnamed)
+turquoise	AL021707.2	ENSG00000228274.4	0.328	clone-based (unnamed)
+turquoise	MRPS9-AS1	ENSG00000231851.6	0.324	antisense
+turquoise	AC010487.1	ENSG00000269646.1	0.324	clone-based (unnamed)
+turquoise	AL359644.1	ENSG00000227355.3	0.319	clone-based (unnamed)
+turquoise	PRR7-AS1	ENSG00000246334.2	0.318	antisense
+turquoise	AC027373.1	ENSG00000260368.1	0.317	clone-based (unnamed)
+turquoise	AL021392.1	ENSG00000234869.1	0.316	clone-based (unnamed)
+turquoise	AC018690.1	ENSG00000273306.1	0.315	clone-based (unnamed)
+turquoise	AC009831.1	ENSG00000263823.1	0.315	clone-based (unnamed)
+turquoise	AC025178.1	ENSG00000250764.1	0.314	clone-based (unnamed)
+turquoise	TONSL-AS1	ENSG00000232600.3	0.313	antisense
+turquoise	AC009088.1	ENSG00000260060.1	0.313	clone-based (unnamed)
+turquoise	AC104841.1	ENSG00000286588.1	0.312	clone-based (unnamed)
+turquoise	AL022157.1	ENSG00000226310.1	0.312	clone-based (unnamed)
+turquoise	CYP4A22-AS1	ENSG00000225506.2	0.311	antisense
+turquoise	AC016027.1	ENSG00000225335.3	0.311	clone-based (unnamed)
+turquoise	LINC02585	ENSG00000228350.1	0.31	lincRNA (named)
+turquoise	AC010463.3	ENSG00000269815.1	0.31	clone-based (unnamed)
+turquoise	AC092338.1	ENSG00000260635.1	0.309	clone-based (unnamed)
+turquoise	LINC01474	ENSG00000236849.6	0.309	lincRNA (named)
+turquoise	AC016405.3	ENSG00000272384.1	0.309	clone-based (unnamed)
+turquoise	AC145285.3	ENSG00000260796.1	0.309	clone-based (unnamed)
+turquoise	AC008759.2	ENSG00000267612.1	0.309	clone-based (unnamed)
+turquoise	AC025034.1	ENSG00000258302.2	0.308	clone-based (unnamed)
+turquoise	AC022211.3	ENSG00000265800.1	0.307	clone-based (unnamed)
+turquoise	LINC01134	ENSG00000236423.6	0.307	lincRNA (named)
+turquoise	CRNDE	ENSG00000245694.10	0.306	other
+turquoise	AC025171.5	ENSG00000272382.1	0.306	clone-based (unnamed)
+turquoise	LINC02640	ENSG00000233590.1	0.306	lincRNA (named)
+turquoise	LINC02449	ENSG00000215241.4	0.304	lincRNA (named)
+turquoise	AF131215.6	ENSG00000269918.1	0.304	other
+turquoise	AC105105.1	ENSG00000267257.1	0.303	clone-based (unnamed)
+turquoise	AC006504.7	ENSG00000281468.1	0.303	clone-based (unnamed)
+turquoise	AL355377.3	ENSG00000286782.1	0.301	clone-based (unnamed)
+turquoise	AL353600.1	ENSG00000273012.1	0.3	clone-based (unnamed)
+turquoise	WASHC5-AS1	ENSG00000253167.1	0.3	antisense
+turquoise	AL135791.1	ENSG00000236514.1	0.3	clone-based (unnamed)
+turquoise	OCIAD1-AS1	ENSG00000248256.1	0.299	antisense
+turquoise	AC018926.3	ENSG00000277548.1	0.298	clone-based (unnamed)
+turquoise	AL033384.2	ENSG00000271218.1	0.292	clone-based (unnamed)

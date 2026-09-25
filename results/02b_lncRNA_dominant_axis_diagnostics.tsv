@@ -1,0 +1,7 @@
+quantity	value
+PC1 variance explained	0.102
+|cor| PC1 vs largest module eigengene (turquoise)	0
+|cor| PC1 vs library size	0.007
+|cor| PC1 vs per-sample mean lncRNA expression	0.609
+antisense/divergent fraction in largest module (grey)	0.16
+antisense/divergent fraction elsewhere	0.175

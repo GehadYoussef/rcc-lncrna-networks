@@ -1,0 +1,19 @@
+module	matrix	n_partners	n_samples	min_abs_r	n_go_terms	top_term	top_p_adjust
+blue	observed	100	497	0.65	51	small molecule catabolic process	9.39e-11
+blue	observed	300	497	0.556	106	monocarboxylic acid metabolic process	2.35e-14
+blue	observed	500	497	0.511	104	organic acid catabolic process	6.2e-21
+greenyellow	observed	100	497	0.603	9	fatty acid catabolic process	0.0122
+greenyellow	observed	300	497	0.531	27	renal system process	0.0032
+greenyellow	observed	500	497	0.494	33	complement activation	0.00345
+turquoise	observed	100	497	0.474	0		
+turquoise	observed	300	497	0.421	2	RNA splicing	0.0118
+turquoise	observed	500	497	0.391	5	mRNA processing	3.01e-07
+blue	residualised	100	497	0.668	69	small molecule catabolic process	7.2e-13
+blue	residualised	300	497	0.579	92	organic acid catabolic process	5.03e-14
+blue	residualised	500	497	0.532	100	organic acid catabolic process	1.09e-22
+greenyellow	residualised	100	497	0.619	0		
+greenyellow	residualised	300	497	0.554	11	urate metabolic process	0.00648
+greenyellow	residualised	500	497	0.51	13	renal system process	0.0343
+turquoise	residualised	100	497	0.631	2	RNA splicing	0.00254
+turquoise	residualised	300	497	0.51	5	RNA splicing	6.38e-07
+turquoise	residualised	500	497	0.454	7	RNA splicing	4.67e-11

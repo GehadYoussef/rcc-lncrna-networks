@@ -1,0 +1,1066 @@
+{
+  "lock_id": "0324d1059cd0395e998507566c9d7ef6efade764ff7aedc1d61b9813c252068d",
+  "created_utc": "2026-09-16 18:17:43 UTC",
+  "stage": "single-cell outcome-blind candidate selection (phase 8 lock)",
+  "git": {
+    "head_commit": "a862dfb3d97b59a8da1bef3afeefbb2db0df5402",
+    "single_cell_code_uncommitted": false,
+    "uncommitted_paths": [],
+    "note": ""
+  },
+  "code_sha256": {
+    "code/R_singlecell/00_config_sc.R": "7e0c0c1a9e40798fde4f12fe7d805a56e109d362b6c6be26a57e9ab7e3ed565c",
+    "code/R_singlecell/01_validate_manifest.R": "548fff3d16a9b9ca976ad10b55e4722759bc0cf76d9fdd268a31e30e95f1a740",
+    "code/R_singlecell/02_import_dataset.R": "0b2d0ba78ac8b06bdf401a0a430f6c3c9da2e1c9974aa216e6a3bf65a02875be",
+    "code/R_singlecell/03_harmonize_metadata.R": "29209c80605fab747f5bb91bb4360f65bbec76b8ccebc7fbda11c6b89459ada2",
+    "code/R_singlecell/04_gene_annotation.R": "c6dc85640342805f90ddfb8a94d58879713db6540f5238d758ccd2d4e9b67c60",
+    "code/R_singlecell/05_cell_qc_and_annotations.R": "802a1ea963bb2daa5470632715516801adc5681598e5041ec5024f4d4436e025",
+    "code/R_singlecell/06_build_pseudobulk.R": "f327f9f6f9d6cb84279244ce919023761b38a00d588afdc084b19e358dc257d3",
+    "code/R_singlecell/07_within_dataset_de.R": "22dcae0479d29ba6e748df90b25c8895112cb06f185e900974362dca777432b0",
+    "code/R_singlecell/08_meta_analysis.R": "b82fc792b437292cc0246ebb78e31bb992ab6b97db30fefa8db7fd3c6fa0a9b9",
+    "code/R_singlecell/09_candidate_lock.R": "ebe3f538075e624e5aa4f27003f6d51d6afc4803c09940b0d36e9c6d6b98108b",
+    "code/R_singlecell/12_render_report.R": "62bbbcd8f663a7ce090e488b2ef3e4069ff84f24f3535092b19b53f7f55ab54d",
+    "code/R_singlecell/lib_sc.R": "171d0207f758bafd560a569a0039dd0761110e3100a31e759454ee86a1fd7afc",
+    "code/R_singlecell/run_all.R": "81dbbf73e5a37710c8fcdde0cb83e68f87fd0cf9038b196965048ee4dfc742fb",
+    "code/R_singlecell/smoke/make_synthetic.R": "0f593fbd85c9ca5226f4d3a7099921762ddcb6319d744c4c22a4a117f34d6258",
+    "code/R_singlecell/tests/run_tests.R": "ece9bfd3cfd60bbec1056d35bcf3da2cdc2146f6ebad4b84bf56e78e7070a41b",
+    "code/R_singlecell/tests/testthat/test_lib_sc.R": "ea112cddb39f8dcb04afd9a5408dd9feb082f1437ea0eb72efd77f8a5e4f4ad7",
+    "config/singlecell.yml": "228f41d3880b0a7a2aace67658b940bcdfa005e9a2cb0e5ae12cca275591cb0c",
+    "config/singlecell_extra_files.csv": "2846f882d763605f925737f5a7cca893964c03eeb7ea14abf6c387b82c00a39e",
+    "config/singlecell_samples.csv": "e4980ba5957ee4ae14f43c908afe2be8a62ecaef12fdc11033c47d01aa97f3c5",
+    "config/tisch2_kirc_manifest.csv": "1790c78b74f2bb63d38a05d73b58188323f96aae9e1ddf43409c3d12e07e4424"
+  },
+  "config_sha256": "228f41d3880b0a7a2aace67658b940bcdfa005e9a2cb0e5ae12cca275591cb0c",
+  "annotation": {
+    "genome_build": "GRCh38",
+    "gencode_release": 36,
+    "gencode_sha256": "81359865bab048361cbeaf91c9441aac4c700b63978e6691d579d78bf2322d30",
+    "legacy_gencode_release": 19
+  },
+  "discovery_dataset": "KIRC_GSE159115",
+  "datasets": [
+    {
+      "dataset_name": "KIRC_GSE159115",
+      "analysis_role": "discovery",
+      "geo_accession": "GSE159115",
+      "sha256": ""
+    },
+    {
+      "dataset_name": "KIRC_GSE171306",
+      "analysis_role": "replication_candidate",
+      "geo_accession": "GSE171306",
+      "sha256": ""
+    },
+    {
+      "dataset_name": "KIRC_GSE111360",
+      "analysis_role": "replication_candidate",
+      "geo_accession": "GSE111360",
+      "sha256": ""
+    },
+    {
+      "dataset_name": "KIRC_GSE139555",
+      "analysis_role": "replication_candidate",
+      "geo_accession": "GSE139555",
+      "sha256": ""
+    },
+    {
+      "dataset_name": "KIRC_GSE121636",
+      "analysis_role": "replication_candidate",
+      "geo_accession": "GSE121636",
+      "sha256": ""
+    },
+    {
+      "dataset_name": "KIRC_GSE145281_aPDL1",
+      "analysis_role": "treated_sensitivity",
+      "geo_accession": "GSE145281",
+      "sha256": ""
+    },
+    {
+      "dataset_name": "KIRC_Li2022",
+      "analysis_role": "replication",
+      "geo_accession": "Mendeley:g67bkbnhhg",
+      "sha256": ""
+    },
+    {
+      "dataset_name": "KIRC_GSE222703",
+      "analysis_role": "replication",
+      "geo_accession": "GSE222703",
+      "sha256": ""
+    },
+    {
+      "dataset_name": "KIRC_GSE210038",
+      "analysis_role": "replication_candidate",
+      "geo_accession": "GSE210038",
+      "sha256": ""
+    },
+    {
+      "dataset_name": "KIRC_GSE242299",
+      "analysis_role": "replication_candidate",
+      "geo_accession": "GSE242299",
+      "sha256": ""
+    },
+    {
+      "dataset_name": "KIRC_GSE207493",
+      "analysis_role": "replication",
+      "geo_accession": "GSE207493",
+      "sha256": ""
+    }
+  ],
+  "input_digests": {
+    "raw:KIRC_GSE159115/GSM4819725_SI_18854_filtered_gene_bc_matrices_h5.h5": "fa8702bb155ec249f92da4ed9813f7fccfb530c8bf087e9a63c3c3bb6190a17b",
+    "raw:KIRC_GSE159115/GSM4819726_SI_18856_filtered_gene_bc_matrices_h5.h5": "c83522b22a08f84911fca872f179739b935d21fa6e4d5dd4774b50f3a25de950",
+    "raw:KIRC_GSE159115/GSM4819727_SI_18855_filtered_gene_bc_matrices_h5.h5": "2b228f7b6cf9bffc6123e29a172da35328061651b9d75912d17f7fde5da2d56c",
+    "raw:KIRC_GSE159115/GSM4819728_SI_19704_filtered_gene_bc_matrices_h5.h5": "fd9cd9d40560dfce7e4705cacf0c8c95d80a941fa7034e5822dd6b731351c599",
+    "raw:KIRC_GSE159115/GSM4819729_SI_19703_filtered_gene_bc_matrices_h5.h5": "36cee422866995c61371740794c2f82719dcc3fb79250ccd9c24628da3e29ffb",
+    "raw:KIRC_GSE159115/GSM4819730_SI_21255_filtered_gene_bc_matrices_h5.h5": "b7c06ce452aa6eb71ee71169cab068455eb4453c0e1678b05c3d3a839eecd922",
+    "raw:KIRC_GSE159115/GSM4819731_SI_21256_filtered_gene_bc_matrices_h5.h5": "61f68337d8168e5f2a280ad84c6415fe80a428dd8fec2d3bc68471a97807e174",
+    "raw:KIRC_GSE159115/GSM4819732_SI_21561_filtered_gene_bc_matrices_h5.h5": "e94bc6719d8d9a401c494a3707251308b94a021223e03f293df89dc39bf03089",
+    "raw:KIRC_GSE159115/GSM4819733_SI_22369_filtered_gene_bc_matrices_h5.h5": "a7316230aaf3125e2887f1c7a5885d5882675f9440b17953a93cfc8757bac7b2",
+    "raw:KIRC_GSE159115/GSM4819734_SI_22368_filtered_gene_bc_matrices_h5.h5": "d69003f2fcc5447e37c39154a1b3e916361951471f161176e6ec9c97da11e9f4",
+    "raw:KIRC_GSE159115/GSM4819735_SI_22605_filtered_gene_bc_matrices_h5.h5": "ede1ea5117684c662cd8baab01d21ebd09f2e407b4ea722f400eae21a812ddf0",
+    "raw:KIRC_GSE159115/GSM4819736_SI_22604_filtered_gene_bc_matrices_h5.h5": "0afdcabab49b31bc2031819c7f6b1a55a355d436d7a7361e0a93670b460321e5",
+    "raw:KIRC_GSE159115/GSM4819737_SI_23459_filtered_gene_bc_matrices_h5.h5": "6096086e525778104bf86a52e9e6936ac08ccaf6a4211f6c7f937dbafe3bc520",
+    "raw:KIRC_GSE159115/GSM4819738_SI_23843_filtered_gene_bc_matrices_h5.h5": "3e55147db06f6b014b16cf5297af4d7d695f42bd68494d725014303fc54c52e1",
+    "raw:KIRC_GSE171306/GSM5222644_ccRCC1_barcodes.tsv.gz": "fe672baeed51eb264824d73bec06b5e65afe3f908b5b50a190f0edb85d9a43bb",
+    "raw:KIRC_GSE171306/GSM5222644_ccRCC1_features.tsv.gz": "cf0e5f348a5474fb2a8df3dd84f7d05eecbe1d0330bc907f1f5bdd0f583d1757",
+    "raw:KIRC_GSE171306/GSM5222644_ccRCC1_matrix.mtx.gz": "0b2053161d54eab3027e23b378fab90e7596627284389798b2fce72c5b9ea743",
+    "raw:KIRC_GSE171306/GSM5222645_ccRCC2_barcodes.tsv.gz": "94ce615429e8c2a5223cd903cf480a2a6bd82ae2e20ab3b339e8b10e4ae780db",
+    "raw:KIRC_GSE171306/GSM5222645_ccRCC2_features.tsv.gz": "2ba2cbe7297fd84ce53f0e27e3b31b096968f5e21ebf2308bb81425d064f99d7",
+    "raw:KIRC_GSE171306/GSM5222645_ccRCC2_matrix.mtx.gz": "fcfd58274ea0c0acdc7d9d9aceb905e42185e2a8cffe327d7dfce0eb6a84cd88",
+    "raw:KIRC_GSE111360/GSM3029087_ccRCC_1_ft_gex_rep1.barcodes.tsv.gz": "3b70c01b9ccf1b24c7b71cf07dde2cc5681c63e9a342d4c4ab359e2f266c49fb",
+    "raw:KIRC_GSE111360/GSM3029087_ccRCC_1_ft_gex_rep1.genes.tsv.gz": "c2c4a029e90e502f09cc395c73901231753ca803a3015a14c74d23c8d03a8ade",
+    "raw:KIRC_GSE111360/GSM3029087_ccRCC_1_ft_gex_rep1.matrix.mtx.gz": "da62a755e6251e087129f91f8bdf97246e60efa2a1696ff4b28da0de39127f2c",
+    "raw:KIRC_GSE111360/GSM3029088_ccRCC_1_ft_gex_rep2.barcodes.tsv.gz": "c973beea7136debafcc736fcbf64004e763584d6cf5020cfa12a52bab001e094",
+    "raw:KIRC_GSE111360/GSM3029088_ccRCC_1_ft_gex_rep2.genes.tsv.gz": "64f796fdf8bfa8392a6fc5cf9cd4a1fb786ecdb930a2249a8c26064f38318ae3",
+    "raw:KIRC_GSE111360/GSM3029088_ccRCC_1_ft_gex_rep2.matrix.mtx.gz": "54eac65c01fd86d935b30927ddee97aee6dc931f1d9e23a9253c7b9a6fedd176",
+    "raw:KIRC_GSE111360/GSM3457010_ccRCC_2_ft_gex_rep1.barcodes.tsv.gz": "a3af2f5a819d999f9f90511aef7885ced29ca24c82ca5492a77309f41e7cf093",
+    "raw:KIRC_GSE111360/GSM3457010_ccRCC_2_ft_gex_rep1.genes.tsv.gz": "31b6b0ed5bc4be87b70fc30dab5d6fe5de35592c59cd7f75123f53a101b51e99",
+    "raw:KIRC_GSE111360/GSM3457010_ccRCC_2_ft_gex_rep1.matrix.mtx.gz": "588a02152daff7ddef6c8fad872db4ab77b6ea4142af5b04c3dba97a8c1a3a00",
+    "raw:KIRC_GSE111360/GSM3457011_ccRCC_2_ft_gex_rep2.barcodes.tsv.gz": "17a9765805fec6da54dff6fd05d07a279792da637eeb9fce2103ec0e10071394",
+    "raw:KIRC_GSE111360/GSM3457011_ccRCC_2_ft_gex_rep2.genes.tsv.gz": "cf8664fa30295573da174edb696c428a02d8e4793ed4ea547fcc2b75ff8c0ffd",
+    "raw:KIRC_GSE111360/GSM3457011_ccRCC_2_ft_gex_rep2.matrix.mtx.gz": "d95313fd9764ca31c54b94e95e67cf8a2377192f1f350fe3ea1402058fee24cb",
+    "raw:KIRC_GSE139555/GSM4143678_SAM24360638-rt1.barcodes.tsv.gz": "507929a5aec5bf96b10a5b048a199586387e295aaebdf6757c42229feaf39e56",
+    "raw:KIRC_GSE139555/GSM4143678_SAM24360638-rt1.genes.tsv.gz": "535cf5448113bfb5a62b611dce94bf4acc0b037c2e1b439d0d8a2aa8fbe43641",
+    "raw:KIRC_GSE139555/GSM4143678_SAM24360638-rt1.matrix.mtx.gz": "cffba60f26304f63a3a5b011ed1bc1f515788dde73917ea87fc1464af43ae9ac",
+    "raw:KIRC_GSE139555/GSM4143679_SAM24360640-rn1.barcodes.tsv.gz": "b21974ea43f30e37e0bf712ac74ffc740b1dd0fd1ac30ffa17e255cae742ca4e",
+    "raw:KIRC_GSE139555/GSM4143679_SAM24360640-rn1.genes.tsv.gz": "32ccad81246a7c2a35caedfb88c5e9898b70b0d545575c1141c849e86a24362c",
+    "raw:KIRC_GSE139555/GSM4143679_SAM24360640-rn1.matrix.mtx.gz": "af17eef33ffc533b0be647d1bf5c24cd2fd80ba54233df4d4b9c014197aeea16",
+    "raw:KIRC_GSE139555/GSM4143680_SAM24360639-rb1.barcodes.tsv.gz": "bfd215319d7b129b68e713ed381b6324bed58604d0f15d86150b19dfa4fa9b43",
+    "raw:KIRC_GSE139555/GSM4143680_SAM24360639-rb1.genes.tsv.gz": "b6e86a6fe377f8060b9e3f60689f4a339ddf17b32c1e69dc6d5db529a3f00ae3",
+    "raw:KIRC_GSE139555/GSM4143680_SAM24360639-rb1.matrix.mtx.gz": "716184689041c4cf02beed12bf2d697cab2e5d14fb41994a45207964e1f461e2",
+    "raw:KIRC_GSE139555/GSM4143681_SAM24361563-rt2.barcodes.tsv.gz": "d1b70b7058b485ae341486650619580db12f0ce5456d0dbdce7b3b2337720209",
+    "raw:KIRC_GSE139555/GSM4143681_SAM24361563-rt2.genes.tsv.gz": "e55c27bfffe2e0057b9952b31306646304d8bab3aeac66e24a92a024fc5c32b3",
+    "raw:KIRC_GSE139555/GSM4143681_SAM24361563-rt2.matrix.mtx.gz": "4153da3c24d963f9ac8b3494e54f483fa8336e610af536a14b333eb39aca20c7",
+    "raw:KIRC_GSE139555/GSM4143682_SAM24361562-rn2.barcodes.tsv.gz": "7483c2d39636b31dfeb960f8a6850a73e3aeb79fe6d9d2639eb791ffb3ca6404",
+    "raw:KIRC_GSE139555/GSM4143682_SAM24361562-rn2.genes.tsv.gz": "8fb13d27b6f5176c982f0a1f023d15806b6c2ccd12ca55df975d5a1c3e84a53d",
+    "raw:KIRC_GSE139555/GSM4143682_SAM24361562-rn2.matrix.mtx.gz": "703874b1728d7ca76354060bcfc040490e809fa5cb1305ff7e60252d800e03ed",
+    "raw:KIRC_GSE139555/GSM4143683_SAM24361564-rb2.barcodes.tsv.gz": "04787df0ce54020e5b4e7c0a34b269aed7e58cdbbad1cec51f8881faf1ca1726",
+    "raw:KIRC_GSE139555/GSM4143683_SAM24361564-rb2.genes.tsv.gz": "6c51084a3b2b725a585c7cb859087869c40edbf963d7f105682a8042bed1b680",
+    "raw:KIRC_GSE139555/GSM4143683_SAM24361564-rb2.matrix.mtx.gz": "f1b89301c0fe3ed54fc878ff529dcd9c3d7e6bb7a9a4ac2c19df58361f35d8e3",
+    "raw:KIRC_GSE139555/GSM4143684_SAM24363036-rt3.barcodes.tsv.gz": "b7e4af21cd9cbd6573b7fa21b4d3d0c6dea9687a313a3366925c879ae6a2eec4",
+    "raw:KIRC_GSE139555/GSM4143684_SAM24363036-rt3.genes.tsv.gz": "62e178c83e952d3ce0adfd4789518678f1e4f36c1407ef01cfc80f8fa0d81280",
+    "raw:KIRC_GSE139555/GSM4143684_SAM24363036-rt3.matrix.mtx.gz": "5351aae0feda0ebe6fbe75af08b3e32eb18302b07148d7ec07aea15cf18d8ccf",
+    "raw:KIRC_GSE139555/GSM4143685_SAM24363037-rn3.barcodes.tsv.gz": "7f9b5410683879b36b39440935865f71715c27d3043e2f23bd09a8f2386c1f35",
+    "raw:KIRC_GSE139555/GSM4143685_SAM24363037-rn3.genes.tsv.gz": "c3918b414def085ca434d1b5c88bdfc0d323cf8fe2c0cfc4f98df094a4b2c91d",
+    "raw:KIRC_GSE139555/GSM4143685_SAM24363037-rn3.matrix.mtx.gz": "302ce87f2fb064e42971c579bde94e35242e48f40c8930652c83ed582bdebe68",
+    "raw:KIRC_GSE139555/GSM4143686_SAM24363038-rb3.barcodes.tsv.gz": "1f88705db5807c4c8eeef95bda985f3b11fb54fadebc611c9cd7757d0e240446",
+    "raw:KIRC_GSE139555/GSM4143686_SAM24363038-rb3.genes.tsv.gz": "c233ceaea7e0c4a7b52fe045497a28970aa14c2dddeee14d297c43e099df2a41",
+    "raw:KIRC_GSE139555/GSM4143686_SAM24363038-rb3.matrix.mtx.gz": "385b200b3d8dcb32a57c4f1128ec64ebb4dd5c84af7ace387bb7facefd308f5a",
+    "raw:KIRC_GSE121636/GSM3440844_GU0700_T_barcodes.tsv.gz": "54a06550853459630976c1c4274f91f7712e617cc0ba72082fb63f8d839f45eb",
+    "raw:KIRC_GSE121636/GSM3440844_GU0700_T_genes.tsv.gz": "f330b6f028897032ffa604999b37be65f90a59e8dbc554dc774b8e310214eac2",
+    "raw:KIRC_GSE121636/GSM3440844_GU0700_T_matrix.mtx.gz": "f67c4ffdc252a6223d803ee46e51819805a0cbd347671f165c0df39e7606b46d",
+    "raw:KIRC_GSE121636/GSM3440845_GU0715_T_barcodes.tsv.gz": "646ccbae786e87fa331b146b149e2424b14306a17cb45b244c4eacfae6b6f704",
+    "raw:KIRC_GSE121636/GSM3440845_GU0715_T_genes.tsv.gz": "f79133416f6d114832bc9a6cb4d60a75f378a3f0a3a3dc7a0ad651e2d00021b6",
+    "raw:KIRC_GSE121636/GSM3440845_GU0715_T_matrix.mtx.gz": "062512cfc23b778608dbb9ecb3498b2d253b915308c47d209266a8a974710314",
+    "raw:KIRC_GSE121636/GSM3440846_GU0744_T_barcodes.tsv.gz": "11899b8fb624fc6d4d0f365ac7270e301707757a1b6dd13b5ac5d96643823fec",
+    "raw:KIRC_GSE121636/GSM3440846_GU0744_T_genes.tsv.gz": "89ed4f8f8c4e2cde29e6dfd1fe874b48402e3932847c9944abb407b265bb7545",
+    "raw:KIRC_GSE121636/GSM3440846_GU0744_T_matrix.mtx.gz": "4af25fea25335aca58e0cb51290b547929e152d4f46fdd396d186bb72b9ffa35",
+    "raw:KIRC_GSE121636/GSM3440847_GU0700_P_barcodes.tsv.gz": "22081aa422aacfd2ba56e17ccc6dadd2aa621544f542d902efe2daf234d65cb2",
+    "raw:KIRC_GSE121636/GSM3440847_GU0700_P_genes.tsv.gz": "bb9f7e7a92ee0b919e189ec8199af503999acd6add6b7f4510f9defd883e2361",
+    "raw:KIRC_GSE121636/GSM3440847_GU0700_P_matrix.mtx.gz": "c3098943c827820504363ddf50df3df1c165c8b4f23701d7d9df75b31d86c6c6",
+    "raw:KIRC_GSE121636/GSM3440848_GU0715_P_barcodes.tsv.gz": "bcc81ba4413fce1393e7284147173a8fdd6636da55e7c83ac9af1ff94870b657",
+    "raw:KIRC_GSE121636/GSM3440848_GU0715_P_genes.tsv.gz": "3952ef57266f753a83dda58a72120c80878a8835aa1da6bd207e2019f039f701",
+    "raw:KIRC_GSE121636/GSM3440848_GU0715_P_matrix.mtx.gz": "c63dd272861c1bcf1af954db75de4b3b61fe2394680d0b3c8af2ad05898ad0c2",
+    "raw:KIRC_GSE121636/GSM3440849_GU0744_P_barcodes.tsv.gz": "948d3c1a5133be65b5c5b85f1642dd6d361cec80864e75a6d542f5dd589f28d0",
+    "raw:KIRC_GSE121636/GSM3440849_GU0744_P_genes.tsv.gz": "8d66071f2dea9a1a9fae3f90df7c0762425cc2572db811399b0b0051bd8d3731",
+    "raw:KIRC_GSE121636/GSM3440849_GU0744_P_matrix.mtx.gz": "a7f25f5e4bf25bdb304da62e729ad7d04c1b2cc482fa4b609825d87eb29d3f25",
+    "raw:KIRC_GSE145281_aPDL1/GSM4317767_Tumor1_raw.txt.gz": "74438376c3b09debbe6047fc907d98ee3a6236a09e12dbc3a6ee5458c1ec3783",
+    "raw:KIRC_GSE145281_aPDL1/GSM4317768_Tumor2_raw.txt.gz": "61a52aad49ddc995eab03d374d8b241d48ea02d48db194f3d631a1a8a3b686df",
+    "raw:KIRC_GSE145281_aPDL1/GSM4317769_Tumor3_raw.txt.gz": "a243544a2e1679bd446c2b370e92039c2fd6afe771cef320fa85a5a5456c3a39",
+    "raw:KIRC_GSE145281_aPDL1/GSM4317770_Tumor4_raw.txt.gz": "1b6cf308a116f7d666debbd64eeea9b02f59e93f41e55b82ebfa0e6ba721b670",
+    "raw:KIRC_GSE145281_aPDL1/GSM4317763_Blood1_raw.txt.gz": "6247caf7a0e9359533ab0fd5c7621add6e71027f3fa5368a516dbc5081a12725",
+    "raw:KIRC_GSE145281_aPDL1/GSM4317764_Blood2_raw.txt.gz": "3e78bfd5cdee248381602e40c4323bfd7319370688e7decff2a9c53248e1114d",
+    "raw:KIRC_GSE145281_aPDL1/GSM4317765_Blood3_raw.txt.gz": "d09d31a2a3484b7284f90e0c09675da8c35332c9a4aa0724493185b1e61d6f63",
+    "raw:KIRC_GSE145281_aPDL1/GSM4317766_Blood4_raw.txt.gz": "503b5d42fbb93034bc4a5b0ddd93355556beaa783b0fdefa2194c31168162fd5",
+    "raw:KIRC_GSE159115/KIRC_GSE159115_CellMetainfo_table.tsv": "abb8eb002a2044876208946b3e7fe3dfd7dd2b0f64f986a7f94a192094c5e6a1",
+    "raw:KIRC_GSE159115/KIRC_GSE159115_Expression.zip": "81ad1bad9f068aa2b524af6cd6820ca75abf824af589da522cd4f60ae1e2c63a",
+    "raw:KIRC_GSE171306/KIRC_GSE171306_CellMetainfo_table.tsv": "fde60a23ef42722caeed74a585e7181dabdd04ee026d564fec56aea6a5b43b3f",
+    "raw:KIRC_GSE171306/KIRC_GSE171306_Expression.zip": "f20563b981d3e75fb809a13fab899bb8e70e8ce04295221bcb3a71ad2b69f701",
+    "raw:KIRC_GSE111360/KIRC_GSE111360_CellMetainfo_table.tsv": "0793bb358bc5747be508dd3ff6d7ea14d53268580cee0fb0eacbfae4b93070fc",
+    "raw:KIRC_GSE111360/KIRC_GSE111360_Expression.zip": "ad27a7f2c723fde5e805c67fd88e8ff1cf903ff243c2c2f5d796f39e780aa7e5",
+    "raw:KIRC_GSE139555/KIRC_GSE139555_CellMetainfo_table.tsv": "2fc494556fe1691fa45ac12da09e088a4d95434ab98bee4ead34999d13b877c2",
+    "raw:KIRC_GSE139555/KIRC_GSE139555_Expression.zip": "990001d298bb943ac7d830d0d5a65b5a28d67dbe0d21271fec572ff4c327e5fa",
+    "raw:KIRC_GSE121636/KIRC_GSE121636_CellMetainfo_table.tsv": "4f71fe9883050575ae70e8f9168b1dcda0ac257e6a2b9315b4625396e000a627",
+    "raw:KIRC_GSE121636/KIRC_GSE121636_Expression.zip": "589291523323af310107f637c30a173aaaac81391fde5442b0573db2354834ae",
+    "raw:KIRC_GSE145281_aPDL1/KIRC_GSE145281_aPDL1_CellMetainfo_table.tsv": "a2678339147177d20c427668a6daa435488602e2ef7af2548a59181da09420cf",
+    "raw:KIRC_GSE145281_aPDL1/KIRC_GSE145281_aPDL1_Expression.zip": "e1bab5b18f21d193c21b982f9b9209748b932d8bb008d9ec7f365492cf9825c4",
+    "raw:KIRC_GSE159115/GSE159115_ccRCC_anno.csv.gz": "98a60cc1be5631f34532af00c3392d7c6bf56f25a9b8819c908c84b960b4c765",
+    "raw:KIRC_GSE159115/GSE159115_normal_anno.csv.gz": "09f5d35478503c5c7b374cef8a2992d93974204308b7011120ba4176f3aff3c1",
+    "raw:KIRC_GSE159115/GSE159115_chRCC_anno.csv.gz": "93c67d5a1943b2ab511f3eb084e476f5de8b996227f7d6a084f21c7a481edc38",
+    "raw:KIRC_GSE139555/GSE139555_all_metadata.txt.gz": "f74282e4efcd706e7079e724693f20ffaa34382e7ada8c4e2bc57c39292a0fae",
+    "raw:KIRC_Li2022/RCC_upload_final_raw_counts.h5ad": "bd71fbb7d3d440345c5d66f88f88e4acac121c37fd8f5c03ec63c87c7854a6e5",
+    "raw:KIRC_GSE222703/GSE222703_RAW.tar": "50047015c4eb0fbf9f978bc0f0e6ff65967e8255cafcd0c7ad7ba9fe862e5581",
+    "raw:KIRC_GSE222703/GSE222703_SeuratObj_ALL_integrated.rds.gz": "23378da738ffd80668854520434e8efa5d6c607fc4f0c753bc817718cb83213e",
+    "raw:KIRC_GSE207493/GSE207493_scRNA-seq.tar.gz": "fa2925939525d41aa09a9bf3cd43cffcecb1e49a71cf139cfbef6685e411bec4",
+    "reference:gencode_v36_gtf": "81359865bab048361cbeaf91c9441aac4c700b63978e6691d579d78bf2322d30",
+    "reference:gencode_legacy_gtf": "9909e8123a40eca090c3f8e501633f7cc65cd6c4adb83b95009745eca3564d70",
+    "table:06_pseudobulk_samples": "f40313307e418fdcf84d4ffcb29b27cd5921442a81a78cba72f471437ef743be",
+    "table:05_malignant_rescue": "a5417d3befb92ed20383edcecc039b47005a807132f5c5903f2e53108ef74cee",
+    "table:07_de_lncRNA": "131f7a2537d3b187b89ee5a2c1ae1c571c8fc60d29d2e13eec8e5fa918f1bfa5",
+    "table:08_meta_lncRNA": "a6ecdf43853a41498525ff038f9d97e2331e4cf3a47ea861ee35ca79839a93fc",
+    "table:08_candidate_evaluation": "1c73406305a029aca9f05bfa46d67029c51e43bacc886b667c6d77956de9e3f9"
+  },
+  "rules": {
+    "pseudobulk": {
+      "min_cells_per_donor_compartment": 20,
+      "min_donors_inferential": 3
+    },
+    "pseudobulk_build": {
+      "compartments": {
+        "malignant": "tumour",
+        "normal_epithelial": "normal_kidney",
+        "immune": "tumour",
+        "endothelial": "tumour",
+        "fibroblast_stromal": "tumour",
+        "pooled_nonmalignant_tme": "tumour"
+      },
+      "datasets_roles": ["discovery", "replication", "replication_candidate", "treated_sensitivity"]
+    },
+    "cell_qc": {
+      "min_genes": 200,
+      "min_umi": 500,
+      "max_pct_mito": 20,
+      "use_author_doublet_calls": true
+    },
+    "exclude_donors": {
+      "KIRC_Li2022": {
+        "PD47172": "oncocytoma, not ccRCC (Li et al. 2022 Cancer Cell, Results: 'one (PD47172) was an oncocytoma')",
+        "PD44714": "benign thick-walled cyst, not ccRCC (Li et al. 2022 Cancer Cell, Results: 'one (PD44714) was a large benign thick-walled cyst')"
+      }
+    },
+    "rescue_malignant": {
+      "compartments": {
+        "KIRC_GSE111360": "fibroblast_stromal",
+        "KIRC_GSE207493": "epithelial_in_tumour"
+      },
+      "min_ccrcc_markers": 3,
+      "exclude_if_detected": ["PTPRC", "PECAM1"]
+    },
+    "reference_annotation": {
+      "KIRC_GSE207493": {
+        "reference_dataset": "KIRC_GSE159115",
+        "reference_label": "author_label",
+        "feature_biotypes": "protein_coding",
+        "min_reference_cells_per_label": 50
+      }
+    },
+    "feasibility": {
+      "lnc_min_counts_pseudobulk": 10,
+      "lnc_min_donor_frac": 0.5,
+      "min_lnc_passing_discovery": 300,
+      "min_donors_malignant_discovery": 5,
+      "min_donors_normal_epithelial_discovery": 3,
+      "min_replication_malignant_donors": 5,
+      "min_lnc_overlap_replication": 100
+    },
+    "de": {
+      "method": "edgeR_QL",
+      "contrasts": {
+        "malignant_vs_normal_epithelial": ["normal_epithelial", "malignant"],
+        "malignant_vs_pooled_tme": ["pooled_nonmalignant_tme", "malignant"],
+        "malignant_vs_immune": ["immune", "malignant"],
+        "malignant_vs_endothelial": ["endothelial", "malignant"],
+        "malignant_vs_fibroblast_stromal": ["fibroblast_stromal", "malignant"]
+      },
+      "primary_contrasts": ["malignant_vs_normal_epithelial", "malignant_vs_pooled_tme"],
+      "min_paired_donors": 3,
+      "filter_min_count": 10,
+      "robust": true,
+      "descriptive_prior_count": 2,
+      "detection_cpm": 1,
+      "fdr_family": "lncRNA",
+      "leave_one_donor_out": true,
+      "min_abs_log2fc": 1,
+      "fdr": 0.05
+    },
+    "replication": {
+      "pooled_roles": ["discovery", "replication"],
+      "descriptive_roles": "replication_candidate",
+      "min_datasets_concordant": 2,
+      "min_fraction_concordant": 0.67
+    },
+    "meta_analysis": {
+      "method": "REML",
+      "min_datasets": 2,
+      "fdr": 0.05,
+      "min_abs_log2fc": 1,
+      "i2_flag": 0.5,
+      "leave_one_out_contrasts": ["malignant_vs_normal_epithelial", "malignant_vs_pooled_tme"]
+    },
+    "candidate_rules": {
+      "tumour_specificity_contrast": "malignant_vs_normal_epithelial",
+      "compartment_contrast": "malignant_vs_pooled_tme",
+      "require_discovery_donor_filter": true,
+      "require_bulk_expressed_both": true,
+      "require_loo_direction_stable": true
+    },
+    "candidate_ranking_weights": {
+      "meta_effect": 0.5,
+      "replication_fraction": 0.3,
+      "malignant_detection": 0.2
+    },
+    "lncrna_biotypes": ["lncRNA", "lincRNA", "antisense", "sense_intronic", "sense_overlapping", "processed_transcript", "3prime_overlapping_ncRNA", "bidirectional_promoter_lncRNA", "macro_lncRNA"]
+  },
+  "n_candidates": 115,
+  "n_tier1_tumour_specific": 38,
+  "n_tier2_malignant_compartment_enriched": 77,
+  "candidates_ordered": [
+    {
+      "lock_rank": 1,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000228262",
+      "symbol": "LINC01320"
+    },
+    {
+      "lock_rank": 2,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000235142",
+      "symbol": "LINC02532"
+    },
+    {
+      "lock_rank": 3,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000253574",
+      "symbol": "AC021744.1"
+    },
+    {
+      "lock_rank": 4,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000224057",
+      "symbol": "EGFR-AS1"
+    },
+    {
+      "lock_rank": 5,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000269985",
+      "symbol": "AL021328.1"
+    },
+    {
+      "lock_rank": 6,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000233610",
+      "symbol": "LINC00462"
+    },
+    {
+      "lock_rank": 7,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000214145",
+      "symbol": "LINC00887"
+    },
+    {
+      "lock_rank": 8,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000258586",
+      "symbol": "LINC02274"
+    },
+    {
+      "lock_rank": 9,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000254109",
+      "symbol": "RBPMS-AS1"
+    },
+    {
+      "lock_rank": 10,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000249396",
+      "symbol": "LINC02212"
+    },
+    {
+      "lock_rank": 11,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000231013",
+      "symbol": "SCTR-AS1"
+    },
+    {
+      "lock_rank": 12,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000247095",
+      "symbol": "MIR210HG"
+    },
+    {
+      "lock_rank": 13,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000181577",
+      "symbol": "C6orf223"
+    },
+    {
+      "lock_rank": 14,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000255462",
+      "symbol": "AC104031.1"
+    },
+    {
+      "lock_rank": 15,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000232527",
+      "symbol": "LINC02802"
+    },
+    {
+      "lock_rank": 16,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000234380",
+      "symbol": "LINC01426"
+    },
+    {
+      "lock_rank": 17,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000224843",
+      "symbol": "LINC00240"
+    },
+    {
+      "lock_rank": 18,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000245694",
+      "symbol": "CRNDE"
+    },
+    {
+      "lock_rank": 19,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000233593",
+      "symbol": "LINC02609"
+    },
+    {
+      "lock_rank": 20,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000250303",
+      "symbol": "LINC02762"
+    },
+    {
+      "lock_rank": 21,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000163364",
+      "symbol": "LINC01116"
+    },
+    {
+      "lock_rank": 22,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000204677",
+      "symbol": "FAM153CP"
+    },
+    {
+      "lock_rank": 23,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000258667",
+      "symbol": "HIF1A-AS3"
+    },
+    {
+      "lock_rank": 24,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000214870",
+      "symbol": "AC004540.1"
+    },
+    {
+      "lock_rank": 25,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000251432",
+      "symbol": "LINC02615"
+    },
+    {
+      "lock_rank": 26,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000247809",
+      "symbol": "NR2F2-AS1"
+    },
+    {
+      "lock_rank": 27,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000214293",
+      "symbol": "APTR"
+    },
+    {
+      "lock_rank": 28,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000272870",
+      "symbol": "SAP30-DT"
+    },
+    {
+      "lock_rank": 29,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000236882",
+      "symbol": "LINC01554"
+    },
+    {
+      "lock_rank": 30,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000224032",
+      "symbol": "EPB41L4A-AS1"
+    },
+    {
+      "lock_rank": 31,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000237352",
+      "symbol": "LINC01358"
+    },
+    {
+      "lock_rank": 32,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000235531",
+      "symbol": "MSC-AS1"
+    },
+    {
+      "lock_rank": 33,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000231890",
+      "symbol": "DARS-AS1"
+    },
+    {
+      "lock_rank": 34,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000271737",
+      "symbol": "AC008608.2"
+    },
+    {
+      "lock_rank": 35,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000261889",
+      "symbol": "AC108134.2"
+    },
+    {
+      "lock_rank": 36,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000249249",
+      "symbol": "AC010226.1"
+    },
+    {
+      "lock_rank": 37,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000177410",
+      "symbol": "ZFAS1"
+    },
+    {
+      "lock_rank": 38,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000249859",
+      "symbol": "PVT1"
+    },
+    {
+      "lock_rank": 39,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000256234",
+      "symbol": "AC022509.2"
+    },
+    {
+      "lock_rank": 40,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000259370",
+      "symbol": "AC103740.1"
+    },
+    {
+      "lock_rank": 41,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000265962",
+      "symbol": "GACAT2"
+    },
+    {
+      "lock_rank": 42,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000204876",
+      "symbol": "AC021218.1"
+    },
+    {
+      "lock_rank": 43,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000249746",
+      "symbol": "AC099509.1"
+    },
+    {
+      "lock_rank": 44,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000230945",
+      "symbol": "LINC01507"
+    },
+    {
+      "lock_rank": 45,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000224568",
+      "symbol": "LINC01886"
+    },
+    {
+      "lock_rank": 46,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000236751",
+      "symbol": "LINC01186"
+    },
+    {
+      "lock_rank": 47,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000260704",
+      "symbol": "LINC00543"
+    },
+    {
+      "lock_rank": 48,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000278071",
+      "symbol": "AL161669.3"
+    },
+    {
+      "lock_rank": 49,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000273001",
+      "symbol": "AL731533.2"
+    },
+    {
+      "lock_rank": 50,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000256124",
+      "symbol": "LINC01152"
+    },
+    {
+      "lock_rank": 51,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000229457",
+      "symbol": "LINC01789"
+    },
+    {
+      "lock_rank": 52,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000224093",
+      "symbol": "BCAR3-AS1"
+    },
+    {
+      "lock_rank": 53,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000273032",
+      "symbol": "DGCR5"
+    },
+    {
+      "lock_rank": 54,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000204362",
+      "symbol": "LINC02783"
+    },
+    {
+      "lock_rank": 55,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000260944",
+      "symbol": "FOXC2-AS1"
+    },
+    {
+      "lock_rank": 56,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000267530",
+      "symbol": "LINC01836"
+    },
+    {
+      "lock_rank": 57,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000273102",
+      "symbol": "AP000569.1"
+    },
+    {
+      "lock_rank": 58,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000272323",
+      "symbol": "AC026801.2"
+    },
+    {
+      "lock_rank": 59,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000215246",
+      "symbol": "AC116351.1"
+    },
+    {
+      "lock_rank": 60,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000246523",
+      "symbol": "FZD4-DT"
+    },
+    {
+      "lock_rank": 61,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000255750",
+      "symbol": "AC022509.1"
+    },
+    {
+      "lock_rank": 62,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000257556",
+      "symbol": "LINC02298"
+    },
+    {
+      "lock_rank": 63,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000268812",
+      "symbol": "AC004264.1"
+    },
+    {
+      "lock_rank": 64,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000254815",
+      "symbol": "LMNTD2-AS1"
+    },
+    {
+      "lock_rank": 65,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000225361",
+      "symbol": "PPP1R26-AS1"
+    },
+    {
+      "lock_rank": 66,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000271334",
+      "symbol": "LINC02104"
+    },
+    {
+      "lock_rank": 67,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000255337",
+      "symbol": "AP001830.1"
+    },
+    {
+      "lock_rank": 68,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000227533",
+      "symbol": "SLC2A1-AS1"
+    },
+    {
+      "lock_rank": 69,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000223855",
+      "symbol": "HRAT92"
+    },
+    {
+      "lock_rank": 70,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000276649",
+      "symbol": "AL117335.1"
+    },
+    {
+      "lock_rank": 71,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000177640",
+      "symbol": "CASC2"
+    },
+    {
+      "lock_rank": 72,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000204860",
+      "symbol": "FAM201A"
+    },
+    {
+      "lock_rank": 73,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000226644",
+      "symbol": "AL121899.1"
+    },
+    {
+      "lock_rank": 74,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000269053",
+      "symbol": "AC010319.3"
+    },
+    {
+      "lock_rank": 75,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000258457",
+      "symbol": "AL132780.2"
+    },
+    {
+      "lock_rank": 76,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000273145",
+      "symbol": "BX537318.1"
+    },
+    {
+      "lock_rank": 77,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000270504",
+      "symbol": "AL391422.4"
+    },
+    {
+      "lock_rank": 78,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000271270",
+      "symbol": "TMCC1-AS1"
+    },
+    {
+      "lock_rank": 79,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000264107",
+      "symbol": "AC138207.2"
+    },
+    {
+      "lock_rank": 80,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000237877",
+      "symbol": "LINC01473"
+    },
+    {
+      "lock_rank": 81,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000231119",
+      "symbol": "AL031666.1"
+    },
+    {
+      "lock_rank": 82,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000260352",
+      "symbol": "AC092287.1"
+    },
+    {
+      "lock_rank": 83,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000261390",
+      "symbol": "MAFTRR"
+    },
+    {
+      "lock_rank": 84,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000248161",
+      "symbol": "AC098487.1"
+    },
+    {
+      "lock_rank": 85,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000272335",
+      "symbol": "AC093297.2"
+    },
+    {
+      "lock_rank": 86,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000231742",
+      "symbol": "LINC01273"
+    },
+    {
+      "lock_rank": 87,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000250616",
+      "symbol": "AC012645.1"
+    },
+    {
+      "lock_rank": 88,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000224189",
+      "symbol": "HAGLR"
+    },
+    {
+      "lock_rank": 89,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000265943",
+      "symbol": "AC090912.1"
+    },
+    {
+      "lock_rank": 90,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000271576",
+      "symbol": "AL359504.1"
+    },
+    {
+      "lock_rank": 91,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000254614",
+      "symbol": "AP003068.2"
+    },
+    {
+      "lock_rank": 92,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000251602",
+      "symbol": "AL928654.1"
+    },
+    {
+      "lock_rank": 93,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000259583",
+      "symbol": "AC015712.2"
+    },
+    {
+      "lock_rank": 94,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000231064",
+      "symbol": "THBS3-AS1"
+    },
+    {
+      "lock_rank": 95,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000234432",
+      "symbol": "AC092171.3"
+    },
+    {
+      "lock_rank": 96,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000251141",
+      "symbol": "MRPS30-DT"
+    },
+    {
+      "lock_rank": 97,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000261087",
+      "symbol": "ZNNT1"
+    },
+    {
+      "lock_rank": 98,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000232453",
+      "symbol": "LINC02777"
+    },
+    {
+      "lock_rank": 99,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000270959",
+      "symbol": "LPP-AS2"
+    },
+    {
+      "lock_rank": 100,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000233695",
+      "symbol": "GAS6-AS1"
+    },
+    {
+      "lock_rank": 101,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000261188",
+      "symbol": "Z95115.1"
+    },
+    {
+      "lock_rank": 102,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000260924",
+      "symbol": "LINC01311"
+    },
+    {
+      "lock_rank": 103,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000225265",
+      "symbol": "TAF1A-AS1"
+    },
+    {
+      "lock_rank": 104,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000228084",
+      "symbol": "AC118553.1"
+    },
+    {
+      "lock_rank": 105,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000272913",
+      "symbol": "AC009237.14"
+    },
+    {
+      "lock_rank": 106,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000265688",
+      "symbol": "MAFG-DT"
+    },
+    {
+      "lock_rank": 107,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000263400",
+      "symbol": "TMEM220-AS1"
+    },
+    {
+      "lock_rank": 108,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000272525",
+      "symbol": "AC099522.2"
+    },
+    {
+      "lock_rank": 109,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000175147",
+      "symbol": "TMEM51-AS1"
+    },
+    {
+      "lock_rank": 110,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000272356",
+      "symbol": "AL080317.2"
+    },
+    {
+      "lock_rank": 111,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000183250",
+      "symbol": "LINC01547"
+    },
+    {
+      "lock_rank": 112,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000249348",
+      "symbol": "UGDH-AS1"
+    },
+    {
+      "lock_rank": 113,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000260588",
+      "symbol": "AC027702.1"
+    },
+    {
+      "lock_rank": 114,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000234494",
+      "symbol": "SP2-AS1"
+    },
+    {
+      "lock_rank": 115,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000270194",
+      "symbol": "AC097359.2"
+    }
+  ],
+  "outcome_blindness": {
+    "confirmed": true,
+    "statement": "No survival, stage, grade, treatment-response or other outcome field was read by any step that produced this selection. Outcome-like metadata columns were removed at import (listed in removed_at_import) and every selection input table and per-cell metadata file was scanned for outcome-like columns before locking; none were found. Bulk cohorts contributed only expression-based feature presence (04_bulk_lncRNA_features).",
+    "scanned_tables": ["08_candidate_evaluation", "08_meta_lncRNA", "07_de_lncRNA", "06_pseudobulk_samples", "01_acquisition_log"],
+    "scanned_cell_metadata": ["KIRC_GSE111360.coldata_qc.rds", "KIRC_GSE121636.coldata_qc.rds", "KIRC_GSE139555.coldata_qc.rds", "KIRC_GSE145281_aPDL1.coldata_qc.rds", "KIRC_GSE159115.coldata_qc.rds", "KIRC_GSE171306.coldata_qc.rds", "KIRC_GSE207493.coldata_qc.rds", "KIRC_GSE222703.coldata_qc.rds", "KIRC_Li2022.coldata_qc.rds"],
+    "removed_at_import": [
+      {
+        "dataset": "KIRC_GSE111360",
+        "field": "tisch_Stage"
+      },
+      {
+        "dataset": "KIRC_GSE139555",
+        "field": "tisch_Stage"
+      },
+      {
+        "dataset": "KIRC_GSE139555",
+        "field": "tisch_TNMstage"
+      },
+      {
+        "dataset": "KIRC_GSE145281_aPDL1",
+        "field": "tisch_Stage"
+      }
+    ]
+  },
+  "output_files": {
+    "candidates": "results/singlecell/locked_lncRNA_candidates.tsv",
+    "evidence": "results/singlecell/candidate_evidence_long.tsv",
+    "exclusions": "results/singlecell/candidate_exclusions.tsv"
+  },
+  "session": {
+    "R": "R version 4.4.2 (2024-10-31 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "packages": {
+      "edgeR": "4.2.2",
+      "metafor": "4.8.0",
+      "SingleR": "2.6.0",
+      "data.table": "1.16.4",
+      "Matrix": "1.7.1",
+      "SingleCellExperiment": "1.26.0"
+    }
+  },
+  "provenance_refreshed_from": "2026-09-16 17:57:48 UTC",
+  "output_sha256": {
+    "locked_lncRNA_candidates.tsv": "cb612558d2698b01e46f6196e9cbcb36dcfd5c0939211b9b382e9703971f1424",
+    "candidate_evidence_long.tsv": "aa5644cab242d4a42aab9b65e8ee7a5ee488ef5d1797ff2f279bd2e2379b4ecb",
+    "candidate_exclusions.tsv": "7041e43c18307447cf4da64aef1dab019d613bfb4760f8eea2d76870fc677478"
+  }
+}

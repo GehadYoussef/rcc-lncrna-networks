@@ -1,0 +1,3 @@
+dataset	sample_id	donor_id	tissue	n_genes_matrix	n_cells	integer_counts	unfiltered_input	n_cells_tisch2	n_cells_author
+KIRC_GSE171306	ccRCC1	GSE171306_bilateral	tumour	33538	6348	TRUE	FALSE	5602	
+KIRC_GSE171306	ccRCC2	GSE171306_bilateral	tumour	33538	7775	TRUE	FALSE	5825	

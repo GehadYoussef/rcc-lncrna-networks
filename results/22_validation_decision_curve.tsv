@@ -1,0 +1,1417 @@
+baseline	comparator	standardisation	years	threshold	strategy	net_benefit
+discovery	clinical	cohort	3	0.02	comparator	0.126848232698724
+discovery	clinical	cohort	3	0.03	comparator	0.117846668087371
+discovery	clinical	cohort	3	0.04	comparator	0.108657570879947
+discovery	clinical	cohort	3	0.05	comparator	0.100645088714561
+discovery	clinical	cohort	3	0.06	comparator	0.0908400449885015
+discovery	clinical	cohort	3	0.07	comparator	0.0781550467395115
+discovery	clinical	cohort	3	0.08	comparator	0.0723937996762952
+discovery	clinical	cohort	3	0.09	comparator	0.069369773139743
+discovery	clinical	cohort	3	0.1	comparator	0.0590622081507299
+discovery	clinical	cohort	3	0.11	comparator	0.057940553533728
+discovery	clinical	cohort	3	0.12	comparator	0.057530931103767
+discovery	clinical	cohort	3	0.13	comparator	0.058898087785473
+discovery	clinical	cohort	3	0.14	comparator	0.0524785466083971
+discovery	clinical	cohort	3	0.15	comparator	0.0581576655275497
+discovery	clinical	cohort	3	0.16	comparator	0.0549482712436221
+discovery	clinical	cohort	3	0.17	comparator	0.0551332444889671
+discovery	clinical	cohort	3	0.18	comparator	0.0557127012797383
+discovery	clinical	cohort	3	0.19	comparator	0.0516125268722816
+discovery	clinical	cohort	3	0.2	comparator	0.0425734943478795
+discovery	clinical	cohort	3	0.21	comparator	0.0323204434476759
+discovery	clinical	cohort	3	0.22	comparator	0.0331153243232823
+discovery	clinical	cohort	3	0.23	comparator	0.0248358575709617
+discovery	clinical	cohort	3	0.24	comparator	0.0252494274282949
+discovery	clinical	cohort	3	0.25	comparator	0.0189192222098722
+discovery	clinical	cohort	3	0.26	comparator	0.024247046038087
+discovery	clinical	cohort	3	0.27	comparator	0.0310641910104222
+discovery	clinical	cohort	3	0.28	comparator	0.0321680085012878
+discovery	clinical	cohort	3	0.29	comparator	0.0415106685854187
+discovery	clinical	cohort	3	0.3	comparator	0.033884787236676
+discovery	clinical	cohort	3	0.31	comparator	0.0321182059723907
+discovery	clinical	cohort	3	0.32	comparator	0.0340318319538871
+discovery	clinical	cohort	3	0.33	comparator	0.0336639994947242
+discovery	clinical	cohort	3	0.34	comparator	0.0250862839644066
+discovery	clinical	cohort	3	0.35	comparator	0.0280799602407643
+discovery	clinical	cohort	3	0.36	comparator	0.0268698402727925
+discovery	clinical	cohort	3	0.37	comparator	0.0143876419993849
+discovery	clinical	cohort	3	0.38	comparator	0.0129986924741683
+discovery	clinical	cohort	3	0.39	comparator	0.0119498165853375
+discovery	clinical	cohort	3	0.4	comparator	0.0128318359474138
+discovery	clinical	cohort	3	0.41	comparator	0.0116865787592301
+discovery	clinical	cohort	3	0.42	comparator	0.0164682830598616
+discovery	clinical	cohort	3	0.43	comparator	0.0175732463487026
+discovery	clinical	cohort	3	0.44	comparator	0.0167205072983968
+discovery	clinical	cohort	3	0.45	comparator	0.0158367595553525
+discovery	clinical	cohort	3	0.46	comparator	0.022232373991168
+discovery	clinical	cohort	3	0.47	comparator	0.0215140884525544
+discovery	clinical	cohort	3	0.48	comparator	0.0228799676035857
+discovery	clinical	cohort	3	0.49	comparator	0.0222447437936649
+discovery	clinical	cohort	3	0.5	comparator	0.0215841110313472
+discovery	clinical	cohort	3	0.51	comparator	0.0148006345661287
+discovery	clinical	cohort	3	0.52	comparator	0.00858458961474037
+discovery	clinical	cohort	3	0.53	comparator	0.0182065341907104
+discovery	clinical	cohort	3	0.54	comparator	0.0155123443303474
+discovery	clinical	cohort	3	0.55	comparator	0.0150753768844221
+discovery	clinical	cohort	3	0.56	comparator	0.0146185472818639
+discovery	clinical	cohort	3	0.57	comparator	0.0141404697908145
+discovery	clinical	cohort	3	0.58	comparator	0.0136396267049533
+discovery	clinical	cohort	3	0.59	comparator	0.0131143522490501
+discovery	clinical	cohort	3	0.6	comparator	0.0125628140703518
+discovery	clinical	cohort	3	0.02	comparator + modules	0.126848232698724
+discovery	clinical	cohort	3	0.03	comparator + modules	0.118334893635249
+discovery	clinical	cohort	3	0.04	comparator + modules	0.109391596498758
+discovery	clinical	cohort	3	0.05	comparator + modules	0.100139364486739
+discovery	clinical	cohort	3	0.06	comparator + modules	0.0932082094402778
+discovery	clinical	cohort	3	0.07	comparator + modules	0.0876744200926326
+discovery	clinical	cohort	3	0.08	comparator + modules	0.0744334375208942
+discovery	clinical	cohort	3	0.09	comparator + modules	0.0691863135434429
+discovery	clinical	cohort	3	0.1	comparator + modules	0.0695980582196955
+discovery	clinical	cohort	3	0.11	comparator + modules	0.0636693403266598
+discovery	clinical	cohort	3	0.12	comparator + modules	0.0570849536885181
+discovery	clinical	cohort	3	0.13	comparator + modules	0.0561977639302109
+discovery	clinical	cohort	3	0.14	comparator + modules	0.046232439202703
+discovery	clinical	cohort	3	0.15	comparator + modules	0.0480325477910098
+discovery	clinical	cohort	3	0.16	comparator + modules	0.0464762410087741
+discovery	clinical	cohort	3	0.17	comparator + modules	0.0512625560314995
+discovery	clinical	cohort	3	0.18	comparator + modules	0.0538275766932206
+discovery	clinical	cohort	3	0.19	comparator + modules	0.0503355292809711
+discovery	clinical	cohort	3	0.2	comparator + modules	0.0505129317918263
+discovery	clinical	cohort	3	0.21	comparator + modules	0.0476312556763121
+discovery	clinical	cohort	3	0.22	comparator + modules	0.0369924196510545
+discovery	clinical	cohort	3	0.23	comparator + modules	0.038011585839741
+discovery	clinical	cohort	3	0.24	comparator + modules	0.0265465775718812
+discovery	clinical	cohort	3	0.25	comparator + modules	0.0226234019273574
+discovery	clinical	cohort	3	0.26	comparator + modules	0.0143053939891388
+discovery	clinical	cohort	3	0.27	comparator + modules	0.00307910330783719
+discovery	clinical	cohort	3	0.28	comparator + modules	5.09585254711564e-05
+discovery	clinical	cohort	3	0.29	comparator + modules	0.00391263376343749
+discovery	clinical	cohort	3	0.3	comparator + modules	0.00443820417201755
+discovery	clinical	cohort	3	0.31	comparator + modules	0.00451518206962092
+discovery	clinical	cohort	3	0.32	comparator + modules	0.00036553566150075
+discovery	clinical	cohort	3	0.33	comparator + modules	-0.00146225927165483
+discovery	clinical	cohort	3	0.34	comparator + modules	0.00175254525955398
+discovery	clinical	cohort	3	0.35	comparator + modules	0.00366473766080497
+discovery	clinical	cohort	3	0.36	comparator + modules	0.012283640424344
+discovery	clinical	cohort	3	0.37	comparator + modules	0.0107238130688717
+discovery	clinical	cohort	3	0.38	comparator + modules	0.0131461637559615
+discovery	clinical	cohort	3	0.39	comparator + modules	0.00871839354028505
+discovery	clinical	cohort	3	0.4	comparator + modules	0.0117103374012922
+discovery	clinical	cohort	3	0.41	comparator + modules	0.0262394108744505
+discovery	clinical	cohort	3	0.42	comparator + modules	0.0253922130546632
+discovery	clinical	cohort	3	0.43	comparator + modules	0.0228809363958795
+discovery	clinical	cohort	3	0.44	comparator + modules	0.0220332431387708
+discovery	clinical	cohort	3	0.45	comparator + modules	0.0235695523069895
+discovery	clinical	cohort	3	0.46	comparator + modules	0.0240798348001028
+discovery	clinical	cohort	3	0.47	comparator + modules	0.0234912207036982
+discovery	clinical	cohort	3	0.48	comparator + modules	0.0228799676035857
+discovery	clinical	cohort	3	0.49	comparator + modules	0.0310922805749882
+discovery	clinical	cohort	3	0.5	comparator + modules	0.0307091010608599
+discovery	clinical	cohort	3	0.51	comparator + modules	0.030310281566563
+discovery	clinical	cohort	3	0.52	comparator + modules	0.0452261306532663
+discovery	clinical	cohort	3	0.53	comparator + modules	0.0402010050251256
+discovery	clinical	cohort	3	0.54	comparator + modules	0.0402010050251256
+discovery	clinical	cohort	3	0.55	comparator + modules	0.0402010050251256
+discovery	clinical	cohort	3	0.56	comparator + modules	0.0402010050251256
+discovery	clinical	cohort	3	0.57	comparator + modules	0.0402010050251256
+discovery	clinical	cohort	3	0.58	comparator + modules	0.0351758793969849
+discovery	clinical	cohort	3	0.59	comparator + modules	0.0351758793969849
+discovery	clinical	cohort	3	0.6	comparator + modules	0.0301507537688442
+discovery	clinical	cohort	3	0.02	treat all	0.126848232698724
+discovery	clinical	cohort	3	0.03	treat all	0.117846668087371
+discovery	clinical	cohort	3	0.04	treat all	0.108657570879947
+discovery	clinical	cohort	3	0.05	treat all	0.0992750189944731
+discovery	clinical	cohort	3	0.06	treat all	0.0896928383454782
+discovery	clinical	cohort	3	0.07	treat all	0.0799045892954295
+discovery	clinical	cohort	3	0.08	treat all	0.0699035522225538
+discovery	clinical	cohort	3	0.09	treat all	0.0596827121370873
+discovery	clinical	cohort	3	0.1	treat all	0.0492347422719439
+discovery	clinical	cohort	3	0.11	treat all	0.0385519865671342
+discovery	clinical	cohort	3	0.12	treat all	0.0276264409599426
+discovery	clinical	cohort	3	0.13	treat all	0.0164497333847695
+discovery	clinical	cohort	3	0.14	treat all	0.00501310237761568
+discovery	clinical	cohort	3	0.15	treat all	-0.00669262582970651
+discovery	clinical	cohort	3	0.16	treat all	-0.0186770618514887
+discovery	clinical	cohort	3	0.17	treat all	-0.0309502794641572
+discovery	clinical	cohort	3	0.18	treat all	-0.0435228438478665
+discovery	clinical	cohort	3	0.19	treat all	-0.0564058419200624
+discovery	clinical	cohort	3	0.2	treat all	-0.0696109149440631
+discovery	clinical	cohort	3	0.21	treat all	-0.0831502936142411
+discovery	clinical	cohort	3	0.22	treat all	-0.0970368358400648
+discovery	clinical	cohort	3	0.23	treat all	-0.111284067474351
+discovery	clinical	cohort	3	0.24	treat all	-0.125906226256909
+discovery	clinical	cohort	3	0.25	treat all	-0.140918309273667
+discovery	clinical	cohort	3	0.26	treat all	-0.156336124263852
+discovery	clinical	cohort	3	0.27	treat all	-0.172176345144179
+discovery	clinical	cohort	3	0.28	treat all	-0.18845657216007
+discovery	clinical	cohort	3	0.29	treat all	-0.205195397120071
+discovery	clinical	cohort	3	0.3	treat all	-0.222412474221787
+discovery	clinical	cohort	3	0.31	treat all	-0.240128597036595
+discovery	clinical	cohort	3	0.32	treat all	-0.258365782287133
+discovery	clinical	cohort	3	0.33	treat all	-0.27714736112724
+discovery	clinical	cohort	3	0.34	treat all	-0.296498078720077
+discovery	clinical	cohort	3	0.35	treat all	-0.316444203008078
+discovery	clinical	cohort	3	0.36	treat all	-0.337013643680079
+discovery	clinical	cohort	3	0.37	treat all	-0.358236082468652
+discovery	clinical	cohort	3	0.38	treat all	-0.380143116056856
+discovery	clinical	cohort	3	0.39	treat all	-0.402768413041394
+discovery	clinical	cohort	3	0.4	treat all	-0.426147886592084
+discovery	clinical	cohort	3	0.41	treat all	-0.450319884669916
+discovery	clinical	cohort	3	0.42	treat all	-0.475325399922846
+discovery	clinical	cohort	3	0.43	treat all	-0.501208301675878
+discovery	clinical	cohort	3	0.44	treat all	-0.528015592777233
+discovery	clinical	cohort	3	0.45	treat all	-0.555797694464092
+discovery	clinical	cohort	3	0.46	treat all	-0.584608762880094
+discovery	clinical	cohort	3	0.47	treat all	-0.614507041425001
+discovery	clinical	cohort	3	0.48	treat all	-0.645555253760097
+discovery	clinical	cohort	3	0.49	treat all	-0.677821043049511
+discovery	clinical	cohort	3	0.5	treat all	-0.711377463910501
+discovery	clinical	cohort	3	0.51	treat all	-0.746303534602552
+discovery	clinical	cohort	3	0.52	treat all	-0.782684858240105
+discovery	clinical	cohort	3	0.53	treat all	-0.820614323309044
+discovery	clinical	cohort	3	0.54	treat all	-0.860192895554893
+discovery	clinical	cohort	3	0.55	treat all	-0.901530515456113
+discovery	clinical	cohort	3	0.56	treat all	-0.944747118080115
+discovery	clinical	cohort	3	0.57	treat all	-0.989973795244769
+discovery	clinical	cohort	3	0.58	treat all	-1.03735412370298
+discovery	clinical	cohort	3	0.59	treat all	-1.08704568769573
+discovery	clinical	cohort	3	0.6	treat all	-1.13922182988813
+discovery	clinical	cohort	3	0.02	treat none	0
+discovery	clinical	cohort	3	0.03	treat none	0
+discovery	clinical	cohort	3	0.04	treat none	0
+discovery	clinical	cohort	3	0.05	treat none	0
+discovery	clinical	cohort	3	0.06	treat none	0
+discovery	clinical	cohort	3	0.07	treat none	0
+discovery	clinical	cohort	3	0.08	treat none	0
+discovery	clinical	cohort	3	0.09	treat none	0
+discovery	clinical	cohort	3	0.1	treat none	0
+discovery	clinical	cohort	3	0.11	treat none	0
+discovery	clinical	cohort	3	0.12	treat none	0
+discovery	clinical	cohort	3	0.13	treat none	0
+discovery	clinical	cohort	3	0.14	treat none	0
+discovery	clinical	cohort	3	0.15	treat none	0
+discovery	clinical	cohort	3	0.16	treat none	0
+discovery	clinical	cohort	3	0.17	treat none	0
+discovery	clinical	cohort	3	0.18	treat none	0
+discovery	clinical	cohort	3	0.19	treat none	0
+discovery	clinical	cohort	3	0.2	treat none	0
+discovery	clinical	cohort	3	0.21	treat none	0
+discovery	clinical	cohort	3	0.22	treat none	0
+discovery	clinical	cohort	3	0.23	treat none	0
+discovery	clinical	cohort	3	0.24	treat none	0
+discovery	clinical	cohort	3	0.25	treat none	0
+discovery	clinical	cohort	3	0.26	treat none	0
+discovery	clinical	cohort	3	0.27	treat none	0
+discovery	clinical	cohort	3	0.28	treat none	0
+discovery	clinical	cohort	3	0.29	treat none	0
+discovery	clinical	cohort	3	0.3	treat none	0
+discovery	clinical	cohort	3	0.31	treat none	0
+discovery	clinical	cohort	3	0.32	treat none	0
+discovery	clinical	cohort	3	0.33	treat none	0
+discovery	clinical	cohort	3	0.34	treat none	0
+discovery	clinical	cohort	3	0.35	treat none	0
+discovery	clinical	cohort	3	0.36	treat none	0
+discovery	clinical	cohort	3	0.37	treat none	0
+discovery	clinical	cohort	3	0.38	treat none	0
+discovery	clinical	cohort	3	0.39	treat none	0
+discovery	clinical	cohort	3	0.4	treat none	0
+discovery	clinical	cohort	3	0.41	treat none	0
+discovery	clinical	cohort	3	0.42	treat none	0
+discovery	clinical	cohort	3	0.43	treat none	0
+discovery	clinical	cohort	3	0.44	treat none	0
+discovery	clinical	cohort	3	0.45	treat none	0
+discovery	clinical	cohort	3	0.46	treat none	0
+discovery	clinical	cohort	3	0.47	treat none	0
+discovery	clinical	cohort	3	0.48	treat none	0
+discovery	clinical	cohort	3	0.49	treat none	0
+discovery	clinical	cohort	3	0.5	treat none	0
+discovery	clinical	cohort	3	0.51	treat none	0
+discovery	clinical	cohort	3	0.52	treat none	0
+discovery	clinical	cohort	3	0.53	treat none	0
+discovery	clinical	cohort	3	0.54	treat none	0
+discovery	clinical	cohort	3	0.55	treat none	0
+discovery	clinical	cohort	3	0.56	treat none	0
+discovery	clinical	cohort	3	0.57	treat none	0
+discovery	clinical	cohort	3	0.58	treat none	0
+discovery	clinical	cohort	3	0.59	treat none	0
+discovery	clinical	cohort	3	0.6	treat none	0
+discovery	clinical	cohort	5	0.02	comparator	0.247557836916836
+discovery	clinical	cohort	5	0.03	comparator	0.239800701214948
+discovery	clinical	cohort	5	0.04	comparator	0.23188195851927
+discovery	clinical	cohort	5	0.05	comparator	0.223796505451052
+discovery	clinical	cohort	5	0.06	comparator	0.215539021466489
+discovery	clinical	cohort	5	0.07	comparator	0.207103957181182
+discovery	clinical	cohort	5	0.08	comparator	0.20167633348271
+discovery	clinical	cohort	5	0.09	comparator	0.192134048886269
+discovery	clinical	cohort	5	0.1	comparator	0.182139911325317
+discovery	clinical	cohort	5	0.11	comparator	0.174973948860082
+discovery	clinical	cohort	5	0.12	comparator	0.164801566101513
+discovery	clinical	cohort	5	0.13	comparator	0.160568862215398
+discovery	clinical	cohort	5	0.14	comparator	0.153983547162344
+discovery	clinical	cohort	5	0.15	comparator	0.144546246924357
+discovery	clinical	cohort	5	0.16	comparator	0.128310530445287
+discovery	clinical	cohort	5	0.17	comparator	0.124326069406418
+discovery	clinical	cohort	5	0.18	comparator	0.126307139802928
+discovery	clinical	cohort	5	0.19	comparator	0.10789705046047
+discovery	clinical	cohort	5	0.2	comparator	0.108368891050183
+discovery	clinical	cohort	5	0.21	comparator	0.112330780550386
+discovery	clinical	cohort	5	0.22	comparator	0.108667303064818
+discovery	clinical	cohort	5	0.23	comparator	0.105689455703606
+discovery	clinical	cohort	5	0.24	comparator	0.119635359952042
+discovery	clinical	cohort	5	0.25	comparator	0.113504078146436
+discovery	clinical	cohort	5	0.26	comparator	0.117271847696992
+discovery	clinical	cohort	5	0.27	comparator	0.103114616309206
+discovery	clinical	cohort	5	0.28	comparator	0.105998010722322
+discovery	clinical	cohort	5	0.29	comparator	0.0932332908921579
+discovery	clinical	cohort	5	0.3	comparator	0.104854641681439
+discovery	clinical	cohort	5	0.31	comparator	0.0939336142999201
+discovery	clinical	cohort	5	0.32	comparator	0.0963060517328401
+discovery	clinical	cohort	5	0.33	comparator	0.0945228210946943
+discovery	clinical	cohort	5	0.34	comparator	0.0963415808085068
+discovery	clinical	cohort	5	0.35	comparator	0.0999592136350096
+discovery	clinical	cohort	5	0.36	comparator	0.0974381617751923
+discovery	clinical	cohort	5	0.37	comparator	0.0896025133881081
+discovery	clinical	cohort	5	0.38	comparator	0.0792680101258627
+discovery	clinical	cohort	5	0.39	comparator	0.0898097114303432
+discovery	clinical	cohort	5	0.4	comparator	0.112082831739535
+discovery	clinical	cohort	5	0.41	comparator	0.112207396373079
+discovery	clinical	cohort	5	0.42	comparator	0.111170784195073
+discovery	clinical	cohort	5	0.43	comparator	0.110725671367591
+discovery	clinical	cohort	5	0.44	comparator	0.106176157370392
+discovery	clinical	cohort	5	0.45	comparator	0.107246335102121
+discovery	clinical	cohort	5	0.46	comparator	0.095584273615233
+discovery	clinical	cohort	5	0.47	comparator	0.094448526051891
+discovery	clinical	cohort	5	0.48	comparator	0.0530937162511323
+discovery	clinical	cohort	5	0.49	comparator	0.0340318319538871
+discovery	clinical	cohort	5	0.5	comparator	0.0331790531605395
+discovery	clinical	cohort	5	0.51	comparator	0.02416290023499
+discovery	clinical	cohort	5	0.52	comparator	0.000650574300071809
+discovery	clinical	cohort	5	0.53	comparator	-0.00158085259122358
+discovery	clinical	cohort	5	0.54	comparator	-0.0174374188610128
+discovery	clinical	cohort	5	0.55	comparator	-0.0200583062259867
+discovery	clinical	cohort	5	0.56	comparator	-0.0227983248348231
+discovery	clinical	cohort	5	0.57	comparator	-0.0209116719026047
+discovery	clinical	cohort	5	0.58	comparator	-0.021356783919598
+discovery	clinical	cohort	5	0.59	comparator	-0.0184811715636572
+discovery	clinical	cohort	5	0.6	comparator	-0.00942211055276382
+discovery	clinical	cohort	5	0.02	comparator + modules	0.247557836916836
+discovery	clinical	cohort	5	0.03	comparator + modules	0.239800701214948
+discovery	clinical	cohort	5	0.04	comparator + modules	0.23188195851927
+discovery	clinical	cohort	5	0.05	comparator + modules	0.223796505451052
+discovery	clinical	cohort	5	0.06	comparator + modules	0.215740285583379
+discovery	clinical	cohort	5	0.07	comparator + modules	0.207415452646171
+discovery	clinical	cohort	5	0.08	comparator + modules	0.198359754747466
+discovery	clinical	cohort	5	0.09	comparator + modules	0.189109962483893
+discovery	clinical	cohort	5	0.1	comparator + modules	0.183721130248005
+discovery	clinical	cohort	5	0.11	comparator + modules	0.176499686862178
+discovery	clinical	cohort	5	0.12	comparator + modules	0.164172292849888
+discovery	clinical	cohort	5	0.13	comparator + modules	0.14983854222531
+discovery	clinical	cohort	5	0.14	comparator + modules	0.141897292500284
+discovery	clinical	cohort	5	0.15	comparator + modules	0.13521604839344
+discovery	clinical	cohort	5	0.16	comparator + modules	0.130837067734188
+discovery	clinical	cohort	5	0.17	comparator + modules	0.130538852696534
+discovery	clinical	cohort	5	0.18	comparator + modules	0.130930148806148
+discovery	clinical	cohort	5	0.19	comparator + modules	0.127159141485435
+discovery	clinical	cohort	5	0.2	comparator + modules	0.116875183292704
+discovery	clinical	cohort	5	0.21	comparator + modules	0.120819545571426
+discovery	clinical	cohort	5	0.22	comparator + modules	0.123822375440171
+discovery	clinical	cohort	5	0.23	comparator + modules	0.121883855194292
+discovery	clinical	cohort	5	0.24	comparator + modules	0.118216438565267
+discovery	clinical	cohort	5	0.25	comparator + modules	0.121805330828005
+discovery	clinical	cohort	5	0.26	comparator + modules	0.114390543401969
+discovery	clinical	cohort	5	0.27	comparator + modules	0.111150806578251
+discovery	clinical	cohort	5	0.28	comparator + modules	0.120219926914784
+discovery	clinical	cohort	5	0.29	comparator + modules	0.101507343131038
+discovery	clinical	cohort	5	0.3	comparator + modules	0.101673442180335
+discovery	clinical	cohort	5	0.31	comparator + modules	0.0982675005150434
+discovery	clinical	cohort	5	0.32	comparator + modules	0.0989400022499415
+discovery	clinical	cohort	5	0.33	comparator + modules	0.105380115157432
+discovery	clinical	cohort	5	0.34	comparator + modules	0.0993093132008948
+discovery	clinical	cohort	5	0.35	comparator + modules	0.082275326506516
+discovery	clinical	cohort	5	0.36	comparator + modules	0.0790853759706175
+discovery	clinical	cohort	5	0.37	comparator + modules	0.0893528863306943
+discovery	clinical	cohort	5	0.38	comparator + modules	0.0827293563320338
+discovery	clinical	cohort	5	0.39	comparator + modules	0.0807763888789852
+discovery	clinical	cohort	5	0.4	comparator + modules	0.0808898013740513
+discovery	clinical	cohort	5	0.41	comparator + modules	0.0783429203991289
+discovery	clinical	cohort	5	0.42	comparator + modules	0.0629147528248694
+discovery	clinical	cohort	5	0.43	comparator + modules	0.0601394760737585
+discovery	clinical	cohort	5	0.44	comparator + modules	0.0572650822958222
+discovery	clinical	cohort	5	0.45	comparator + modules	0.0569902487326598
+discovery	clinical	cohort	5	0.46	comparator + modules	0.0349159424672815
+discovery	clinical	cohort	5	0.47	comparator + modules	0.0315431610576973
+discovery	clinical	cohort	5	0.48	comparator + modules	0.0377923918407401
+discovery	clinical	cohort	5	0.49	comparator + modules	0.0406198204784426
+discovery	clinical	cohort	5	0.5	comparator + modules	0.0275521191965659
+discovery	clinical	cohort	5	0.51	comparator + modules	0.0249720252567547
+discovery	clinical	cohort	5	0.52	comparator + modules	0.0265536279818216
+discovery	clinical	cohort	5	0.53	comparator + modules	0.0131796130754847
+discovery	clinical	cohort	5	0.54	comparator + modules	-0.00340990667623831
+discovery	clinical	cohort	5	0.55	comparator + modules	-0.0292077672312178
+discovery	clinical	cohort	5	0.56	comparator + modules	-0.0323841429369067
+discovery	clinical	cohort	5	0.57	comparator + modules	-0.0276735575060123
+discovery	clinical	cohort	5	0.58	comparator + modules	-0.0247677132099243
+discovery	clinical	cohort	5	0.59	comparator + modules	-0.0247798224572339
+discovery	clinical	cohort	5	0.6	comparator + modules	-0.0181209075681437
+discovery	clinical	cohort	5	0.02	treat all	0.247557836916836
+discovery	clinical	cohort	5	0.03	treat all	0.239800701214948
+discovery	clinical	cohort	5	0.04	treat all	0.23188195851927
+discovery	clinical	cohort	5	0.05	treat all	0.223796505451052
+discovery	clinical	cohort	5	0.06	treat all	0.215539021466489
+discovery	clinical	cohort	5	0.07	treat all	0.207103957181182
+discovery	clinical	cohort	5	0.08	treat all	0.198485521933152
+discovery	clinical	cohort	5	0.09	treat all	0.189677670525824
+discovery	clinical	cohort	5	0.1	treat all	0.180674089087222
+discovery	clinical	cohort	5	0.11	treat all	0.171468179975842
+discovery	clinical	cohort	5	0.12	treat all	0.162053045657386
+discovery	clinical	cohort	5	0.13	treat all	0.15242147146954
+discovery	clinical	cohort	5	0.14	treat all	0.142565907184302
+discovery	clinical	cohort	5	0.15	treat all	0.132478447268823
+discovery	clinical	cohort	5	0.16	treat all	0.122150809736309
+discovery	clinical	cohort	5	0.17	treat all	0.111574313468072
+discovery	clinical	cohort	5	0.18	treat all	0.100739853876219
+discovery	clinical	cohort	5	0.19	treat all	0.0896378767635798
+discovery	clinical	cohort	5	0.2	treat all	0.0782583502231246
+discovery	clinical	cohort	5	0.21	treat all	0.0665907344031641
+discovery	clinical	cohort	5	0.22	treat all	0.0546239489467944
+discovery	clinical	cohort	5	0.23	treat all	0.0423463378941554
+discovery	clinical	cohort	5	0.24	treat all	0.0297456318138153
+discovery	clinical	cohort	5	0.25	treat all	0.0168089069046662
+discovery	clinical	cohort	5	0.26	treat all	0.00352254078175623
+discovery	clinical	cohort	5	0.27	treat all	-0.0101278353719183
+discovery	clinical	cohort	5	0.28	treat all	-0.0241573886409728
+discovery	clinical	cohort	5	0.29	treat all	-0.0385821405936626
+discovery	clinical	cohort	5	0.3	treat all	-0.0534190283164291
+discovery	clinical	cohort	5	0.31	treat all	-0.0686859707557977
+discovery	clinical	cohort	5	0.32	treat all	-0.0844019409139711
+discovery	clinical	cohort	5	0.33	treat all	-0.100587044509702
+discovery	clinical	cohort	5	0.34	treat all	-0.117262605790152
+discovery	clinical	cohort	5	0.35	treat all	-0.134451261263847
+discovery	clinical	cohort	5	0.36	treat all	-0.152177062221094
+discovery	clinical	cohort	5	0.37	treat all	-0.170465587018255
+discovery	clinical	cohort	5	0.38	treat all	-0.189344064228226
+discovery	clinical	cohort	5	0.39	treat all	-0.208841507904099
+discovery	clinical	cohort	5	0.4	treat all	-0.228988866369167
+discovery	clinical	cohort	5	0.41	treat all	-0.249819186138136
+discovery	clinical	cohort	5	0.42	treat all	-0.27136779279569
+discovery	clinical	cohort	5	0.43	treat all	-0.293672490914913
+discovery	clinical	cohort	5	0.44	treat all	-0.316773785395536
+discovery	clinical	cohort	5	0.45	treat all	-0.340715126948182
+discovery	clinical	cohort	5	0.46	treat all	-0.36554318485463
+discovery	clinical	cohort	5	0.47	treat all	-0.391308150606605
+discovery	clinical	cohort	5	0.48	treat all	-0.418064076579808
+discovery	clinical	cohort	5	0.49	treat all	-0.445869254551961
+discovery	clinical	cohort	5	0.5	treat all	-0.474786639643001
+discovery	clinical	cohort	5	0.51	treat all	-0.504884326166327
+discovery	clinical	cohort	5	0.52	treat all	-0.536236082961459
+discovery	clinical	cohort	5	0.53	treat all	-0.568921957067022
+discovery	clinical	cohort	5	0.54	treat all	-0.603028956133697
+discovery	clinical	cohort	5	0.55	treat all	-0.638651821825557
+discovery	clinical	cohort	5	0.56	treat all	-0.675893908685228
+discovery	clinical	cohort	5	0.57	treat all	-0.714868185631396
+discovery	clinical	cohort	5	0.58	treat all	-0.755698380527382
+discovery	clinical	cohort	5	0.59	treat all	-0.798520292247562
+discovery	clinical	cohort	5	0.6	treat all	-0.843483299553751
+discovery	clinical	cohort	5	0.02	treat none	0
+discovery	clinical	cohort	5	0.03	treat none	0
+discovery	clinical	cohort	5	0.04	treat none	0
+discovery	clinical	cohort	5	0.05	treat none	0
+discovery	clinical	cohort	5	0.06	treat none	0
+discovery	clinical	cohort	5	0.07	treat none	0
+discovery	clinical	cohort	5	0.08	treat none	0
+discovery	clinical	cohort	5	0.09	treat none	0
+discovery	clinical	cohort	5	0.1	treat none	0
+discovery	clinical	cohort	5	0.11	treat none	0
+discovery	clinical	cohort	5	0.12	treat none	0
+discovery	clinical	cohort	5	0.13	treat none	0
+discovery	clinical	cohort	5	0.14	treat none	0
+discovery	clinical	cohort	5	0.15	treat none	0
+discovery	clinical	cohort	5	0.16	treat none	0
+discovery	clinical	cohort	5	0.17	treat none	0
+discovery	clinical	cohort	5	0.18	treat none	0
+discovery	clinical	cohort	5	0.19	treat none	0
+discovery	clinical	cohort	5	0.2	treat none	0
+discovery	clinical	cohort	5	0.21	treat none	0
+discovery	clinical	cohort	5	0.22	treat none	0
+discovery	clinical	cohort	5	0.23	treat none	0
+discovery	clinical	cohort	5	0.24	treat none	0
+discovery	clinical	cohort	5	0.25	treat none	0
+discovery	clinical	cohort	5	0.26	treat none	0
+discovery	clinical	cohort	5	0.27	treat none	0
+discovery	clinical	cohort	5	0.28	treat none	0
+discovery	clinical	cohort	5	0.29	treat none	0
+discovery	clinical	cohort	5	0.3	treat none	0
+discovery	clinical	cohort	5	0.31	treat none	0
+discovery	clinical	cohort	5	0.32	treat none	0
+discovery	clinical	cohort	5	0.33	treat none	0
+discovery	clinical	cohort	5	0.34	treat none	0
+discovery	clinical	cohort	5	0.35	treat none	0
+discovery	clinical	cohort	5	0.36	treat none	0
+discovery	clinical	cohort	5	0.37	treat none	0
+discovery	clinical	cohort	5	0.38	treat none	0
+discovery	clinical	cohort	5	0.39	treat none	0
+discovery	clinical	cohort	5	0.4	treat none	0
+discovery	clinical	cohort	5	0.41	treat none	0
+discovery	clinical	cohort	5	0.42	treat none	0
+discovery	clinical	cohort	5	0.43	treat none	0
+discovery	clinical	cohort	5	0.44	treat none	0
+discovery	clinical	cohort	5	0.45	treat none	0
+discovery	clinical	cohort	5	0.46	treat none	0
+discovery	clinical	cohort	5	0.47	treat none	0
+discovery	clinical	cohort	5	0.48	treat none	0
+discovery	clinical	cohort	5	0.49	treat none	0
+discovery	clinical	cohort	5	0.5	treat none	0
+discovery	clinical	cohort	5	0.51	treat none	0
+discovery	clinical	cohort	5	0.52	treat none	0
+discovery	clinical	cohort	5	0.53	treat none	0
+discovery	clinical	cohort	5	0.54	treat none	0
+discovery	clinical	cohort	5	0.55	treat none	0
+discovery	clinical	cohort	5	0.56	treat none	0
+discovery	clinical	cohort	5	0.57	treat none	0
+discovery	clinical	cohort	5	0.58	treat none	0
+discovery	clinical	cohort	5	0.59	treat none	0
+discovery	clinical	cohort	5	0.6	treat none	0
+discovery	clinical	discovery	3	0.02	comparator	0.126848232698724
+discovery	clinical	discovery	3	0.03	comparator	0.117846668087371
+discovery	clinical	discovery	3	0.04	comparator	0.108657570879947
+discovery	clinical	discovery	3	0.05	comparator	0.100645088714561
+discovery	clinical	discovery	3	0.06	comparator	0.0908400449885015
+discovery	clinical	discovery	3	0.07	comparator	0.0781550467395115
+discovery	clinical	discovery	3	0.08	comparator	0.0730595929193694
+discovery	clinical	discovery	3	0.09	comparator	0.069268095775244
+discovery	clinical	discovery	3	0.1	comparator	0.0600010071943628
+discovery	clinical	discovery	3	0.11	comparator	0.057940553533728
+discovery	clinical	discovery	3	0.12	comparator	0.0586725160481403
+discovery	clinical	discovery	3	0.13	comparator	0.058898087785473
+discovery	clinical	discovery	3	0.14	comparator	0.0536602943628592
+discovery	clinical	discovery	3	0.15	comparator	0.0580151384081218
+discovery	clinical	discovery	3	0.16	comparator	0.0564764379987236
+discovery	clinical	discovery	3	0.17	comparator	0.0551332444889671
+discovery	clinical	discovery	3	0.18	comparator	0.0592461089155731
+discovery	clinical	discovery	3	0.19	comparator	0.0399133546740487
+discovery	clinical	discovery	3	0.2	comparator	0.0486003449160085
+discovery	clinical	discovery	3	0.21	comparator	0.0325280462248017
+discovery	clinical	discovery	3	0.22	comparator	0.0331153243232823
+discovery	clinical	discovery	3	0.23	comparator	0.0248358575709617
+discovery	clinical	discovery	3	0.24	comparator	0.0170010150576452
+discovery	clinical	discovery	3	0.25	comparator	0.0240938872988008
+discovery	clinical	discovery	3	0.26	comparator	0.0271625987078248
+discovery	clinical	discovery	3	0.27	comparator	0.0310641910104222
+discovery	clinical	discovery	3	0.28	comparator	0.035805549963642
+discovery	clinical	discovery	3	0.29	comparator	0.0415106685854187
+discovery	clinical	discovery	3	0.3	comparator	0.033884787236676
+discovery	clinical	discovery	3	0.31	comparator	0.0364765682099541
+discovery	clinical	discovery	3	0.32	comparator	0.0340318319538871
+discovery	clinical	discovery	3	0.33	comparator	0.0283144950477309
+discovery	clinical	discovery	3	0.34	comparator	0.0244077530509692
+discovery	clinical	discovery	3	0.35	comparator	0.0280799602407643
+discovery	clinical	discovery	3	0.36	comparator	0.0157331868519385
+discovery	clinical	discovery	3	0.37	comparator	0.0143876419993849
+discovery	clinical	discovery	3	0.38	comparator	0.0184794942454207
+discovery	clinical	discovery	3	0.39	comparator	0.0119498165853375
+discovery	clinical	discovery	3	0.4	comparator	0.0128318359474138
+discovery	clinical	discovery	3	0.41	comparator	0.0178860403713483
+discovery	clinical	discovery	3	0.42	comparator	0.0164682830598616
+discovery	clinical	discovery	3	0.43	comparator	0.0175732463487026
+discovery	clinical	discovery	3	0.44	comparator	0.0167205072983968
+discovery	clinical	discovery	3	0.45	comparator	0.0158367595553525
+discovery	clinical	discovery	3	0.46	comparator	0.022232373991168
+discovery	clinical	discovery	3	0.47	comparator	0.0215140884525544
+discovery	clinical	discovery	3	0.48	comparator	0.0228799676035857
+discovery	clinical	discovery	3	0.49	comparator	0.0222447437936649
+discovery	clinical	discovery	3	0.5	comparator	0.0155096470004343
+discovery	clinical	discovery	3	0.51	comparator	0.0148006345661287
+discovery	clinical	discovery	3	0.52	comparator	0.00858458961474037
+discovery	clinical	discovery	3	0.53	comparator	0.0159307174168716
+discovery	clinical	discovery	3	0.54	comparator	0.0155123443303474
+discovery	clinical	discovery	3	0.55	comparator	0.0150753768844221
+discovery	clinical	discovery	3	0.56	comparator	0.0146185472818639
+discovery	clinical	discovery	3	0.57	comparator	0.0141404697908145
+discovery	clinical	discovery	3	0.58	comparator	0.0136396267049533
+discovery	clinical	discovery	3	0.59	comparator	0.0131143522490501
+discovery	clinical	discovery	3	0.6	comparator	0.0125628140703518
+discovery	clinical	discovery	3	0.02	comparator + modules	0.126848232698724
+discovery	clinical	discovery	3	0.03	comparator + modules	0.117846668087371
+discovery	clinical	discovery	3	0.04	comparator + modules	0.108657570879947
+discovery	clinical	discovery	3	0.05	comparator + modules	0.100122563317232
+discovery	clinical	discovery	3	0.06	comparator + modules	0.0906563166637586
+discovery	clinical	discovery	3	0.07	comparator + modules	0.0814359261696551
+discovery	clinical	discovery	3	0.08	comparator + modules	0.0733205276853884
+discovery	clinical	discovery	3	0.09	comparator + modules	0.0657804253495569
+discovery	clinical	discovery	3	0.1	comparator + modules	0.0614928382052134
+discovery	clinical	discovery	3	0.11	comparator + modules	0.0491867285576976
+discovery	clinical	discovery	3	0.12	comparator + modules	0.0432935448313738
+discovery	clinical	discovery	3	0.13	comparator + modules	0.0416078227430765
+discovery	clinical	discovery	3	0.14	comparator + modules	0.0391273062051922
+discovery	clinical	discovery	3	0.15	comparator + modules	0.0308972644923124
+discovery	clinical	discovery	3	0.16	comparator + modules	0.0288227158188308
+discovery	clinical	discovery	3	0.17	comparator + modules	0.0256464151324962
+discovery	clinical	discovery	3	0.18	comparator + modules	0.0242554286501686
+discovery	clinical	discovery	3	0.19	comparator + modules	0.0167548059100064
+discovery	clinical	discovery	3	0.2	comparator + modules	0.0167443015195441
+discovery	clinical	discovery	3	0.21	comparator + modules	0.012830854770093
+discovery	clinical	discovery	3	0.22	comparator + modules	0.0167222425053514
+discovery	clinical	discovery	3	0.23	comparator + modules	0.0200379773959597
+discovery	clinical	discovery	3	0.24	comparator + modules	0.0222616286363545
+discovery	clinical	discovery	3	0.25	comparator + modules	0.0244101748310332
+discovery	clinical	discovery	3	0.26	comparator + modules	0.0200544519457538
+discovery	clinical	discovery	3	0.27	comparator + modules	0.0214377359900343
+discovery	clinical	discovery	3	0.28	comparator + modules	0.020949600371711
+discovery	clinical	discovery	3	0.29	comparator + modules	0.0147122315918716
+discovery	clinical	discovery	3	0.3	comparator + modules	0.00569853720016891
+discovery	clinical	discovery	3	0.31	comparator + modules	0.00739469571416879
+discovery	clinical	discovery	3	0.32	comparator + modules	0.0064625724078001
+discovery	clinical	discovery	3	0.33	comparator + modules	0.000541661420199152
+discovery	clinical	discovery	3	0.34	comparator + modules	0.00451530684458096
+discovery	clinical	discovery	3	0.35	comparator + modules	-0.00374339129990293
+discovery	clinical	discovery	3	0.36	comparator + modules	-0.0132181003638654
+discovery	clinical	discovery	3	0.37	comparator + modules	-0.0259087808586454
+discovery	clinical	discovery	3	0.38	comparator + modules	-0.0356030042346449
+discovery	clinical	discovery	3	0.39	comparator + modules	-0.0358844089575858
+discovery	clinical	discovery	3	0.4	comparator + modules	-0.0372546582908738
+discovery	clinical	discovery	3	0.41	comparator + modules	-0.0355342825639223
+discovery	clinical	discovery	3	0.42	comparator + modules	-0.0332349578580734
+discovery	clinical	discovery	3	0.43	comparator + modules	-0.0317031363219924
+discovery	clinical	discovery	3	0.44	comparator + modules	-0.0354997016601184
+discovery	clinical	discovery	3	0.45	comparator + modules	-0.0258348239687159
+discovery	clinical	discovery	3	0.46	comparator + modules	-0.0260757980937828
+discovery	clinical	discovery	3	0.47	comparator + modules	-0.01878279040703
+discovery	clinical	discovery	3	0.48	comparator + modules	-0.0214632866663071
+discovery	clinical	discovery	3	0.49	comparator + modules	-0.0143068282589417
+discovery	clinical	discovery	3	0.5	comparator + modules	-0.0164845390976044
+discovery	clinical	discovery	3	0.51	comparator + modules	-0.0125287068828304
+discovery	clinical	discovery	3	0.52	comparator + modules	-0.00797514357501794
+discovery	clinical	discovery	3	0.53	comparator + modules	-0.00269885857397887
+discovery	clinical	discovery	3	0.54	comparator + modules	0.00349573956740221
+discovery	clinical	discovery	3	0.55	comparator + modules	0.0109521968818451
+discovery	clinical	discovery	3	0.56	comparator + modules	0.00948799943774818
+discovery	clinical	discovery	3	0.57	comparator + modules	0.00795569978694905
+discovery	clinical	discovery	3	0.58	comparator + modules	0.00635043348611187
+discovery	clinical	discovery	3	0.59	comparator + modules	0.0244602804965595
+discovery	clinical	discovery	3	0.6	comparator + modules	0.0258235622557231
+discovery	clinical	discovery	3	0.02	treat all	0.126848232698724
+discovery	clinical	discovery	3	0.03	treat all	0.117846668087371
+discovery	clinical	discovery	3	0.04	treat all	0.108657570879947
+discovery	clinical	discovery	3	0.05	treat all	0.0992750189944731
+discovery	clinical	discovery	3	0.06	treat all	0.0896928383454782
+discovery	clinical	discovery	3	0.07	treat all	0.0799045892954295
+discovery	clinical	discovery	3	0.08	treat all	0.0699035522225538
+discovery	clinical	discovery	3	0.09	treat all	0.0596827121370873
+discovery	clinical	discovery	3	0.1	treat all	0.0492347422719439
+discovery	clinical	discovery	3	0.11	treat all	0.0385519865671342
+discovery	clinical	discovery	3	0.12	treat all	0.0276264409599426
+discovery	clinical	discovery	3	0.13	treat all	0.0164497333847695
+discovery	clinical	discovery	3	0.14	treat all	0.00501310237761568
+discovery	clinical	discovery	3	0.15	treat all	-0.00669262582970651
+discovery	clinical	discovery	3	0.16	treat all	-0.0186770618514887
+discovery	clinical	discovery	3	0.17	treat all	-0.0309502794641572
+discovery	clinical	discovery	3	0.18	treat all	-0.0435228438478665
+discovery	clinical	discovery	3	0.19	treat all	-0.0564058419200624
+discovery	clinical	discovery	3	0.2	treat all	-0.0696109149440631
+discovery	clinical	discovery	3	0.21	treat all	-0.0831502936142411
+discovery	clinical	discovery	3	0.22	treat all	-0.0970368358400648
+discovery	clinical	discovery	3	0.23	treat all	-0.111284067474351
+discovery	clinical	discovery	3	0.24	treat all	-0.125906226256909
+discovery	clinical	discovery	3	0.25	treat all	-0.140918309273667
+discovery	clinical	discovery	3	0.26	treat all	-0.156336124263852
+discovery	clinical	discovery	3	0.27	treat all	-0.172176345144179
+discovery	clinical	discovery	3	0.28	treat all	-0.18845657216007
+discovery	clinical	discovery	3	0.29	treat all	-0.205195397120071
+discovery	clinical	discovery	3	0.3	treat all	-0.222412474221787
+discovery	clinical	discovery	3	0.31	treat all	-0.240128597036595
+discovery	clinical	discovery	3	0.32	treat all	-0.258365782287133
+discovery	clinical	discovery	3	0.33	treat all	-0.27714736112724
+discovery	clinical	discovery	3	0.34	treat all	-0.296498078720077
+discovery	clinical	discovery	3	0.35	treat all	-0.316444203008078
+discovery	clinical	discovery	3	0.36	treat all	-0.337013643680079
+discovery	clinical	discovery	3	0.37	treat all	-0.358236082468652
+discovery	clinical	discovery	3	0.38	treat all	-0.380143116056856
+discovery	clinical	discovery	3	0.39	treat all	-0.402768413041394
+discovery	clinical	discovery	3	0.4	treat all	-0.426147886592084
+discovery	clinical	discovery	3	0.41	treat all	-0.450319884669916
+discovery	clinical	discovery	3	0.42	treat all	-0.475325399922846
+discovery	clinical	discovery	3	0.43	treat all	-0.501208301675878
+discovery	clinical	discovery	3	0.44	treat all	-0.528015592777233
+discovery	clinical	discovery	3	0.45	treat all	-0.555797694464092
+discovery	clinical	discovery	3	0.46	treat all	-0.584608762880094
+discovery	clinical	discovery	3	0.47	treat all	-0.614507041425001
+discovery	clinical	discovery	3	0.48	treat all	-0.645555253760097
+discovery	clinical	discovery	3	0.49	treat all	-0.677821043049511
+discovery	clinical	discovery	3	0.5	treat all	-0.711377463910501
+discovery	clinical	discovery	3	0.51	treat all	-0.746303534602552
+discovery	clinical	discovery	3	0.52	treat all	-0.782684858240105
+discovery	clinical	discovery	3	0.53	treat all	-0.820614323309044
+discovery	clinical	discovery	3	0.54	treat all	-0.860192895554893
+discovery	clinical	discovery	3	0.55	treat all	-0.901530515456113
+discovery	clinical	discovery	3	0.56	treat all	-0.944747118080115
+discovery	clinical	discovery	3	0.57	treat all	-0.989973795244769
+discovery	clinical	discovery	3	0.58	treat all	-1.03735412370298
+discovery	clinical	discovery	3	0.59	treat all	-1.08704568769573
+discovery	clinical	discovery	3	0.6	treat all	-1.13922182988813
+discovery	clinical	discovery	3	0.02	treat none	0
+discovery	clinical	discovery	3	0.03	treat none	0
+discovery	clinical	discovery	3	0.04	treat none	0
+discovery	clinical	discovery	3	0.05	treat none	0
+discovery	clinical	discovery	3	0.06	treat none	0
+discovery	clinical	discovery	3	0.07	treat none	0
+discovery	clinical	discovery	3	0.08	treat none	0
+discovery	clinical	discovery	3	0.09	treat none	0
+discovery	clinical	discovery	3	0.1	treat none	0
+discovery	clinical	discovery	3	0.11	treat none	0
+discovery	clinical	discovery	3	0.12	treat none	0
+discovery	clinical	discovery	3	0.13	treat none	0
+discovery	clinical	discovery	3	0.14	treat none	0
+discovery	clinical	discovery	3	0.15	treat none	0
+discovery	clinical	discovery	3	0.16	treat none	0
+discovery	clinical	discovery	3	0.17	treat none	0
+discovery	clinical	discovery	3	0.18	treat none	0
+discovery	clinical	discovery	3	0.19	treat none	0
+discovery	clinical	discovery	3	0.2	treat none	0
+discovery	clinical	discovery	3	0.21	treat none	0
+discovery	clinical	discovery	3	0.22	treat none	0
+discovery	clinical	discovery	3	0.23	treat none	0
+discovery	clinical	discovery	3	0.24	treat none	0
+discovery	clinical	discovery	3	0.25	treat none	0
+discovery	clinical	discovery	3	0.26	treat none	0
+discovery	clinical	discovery	3	0.27	treat none	0
+discovery	clinical	discovery	3	0.28	treat none	0
+discovery	clinical	discovery	3	0.29	treat none	0
+discovery	clinical	discovery	3	0.3	treat none	0
+discovery	clinical	discovery	3	0.31	treat none	0
+discovery	clinical	discovery	3	0.32	treat none	0
+discovery	clinical	discovery	3	0.33	treat none	0
+discovery	clinical	discovery	3	0.34	treat none	0
+discovery	clinical	discovery	3	0.35	treat none	0
+discovery	clinical	discovery	3	0.36	treat none	0
+discovery	clinical	discovery	3	0.37	treat none	0
+discovery	clinical	discovery	3	0.38	treat none	0
+discovery	clinical	discovery	3	0.39	treat none	0
+discovery	clinical	discovery	3	0.4	treat none	0
+discovery	clinical	discovery	3	0.41	treat none	0
+discovery	clinical	discovery	3	0.42	treat none	0
+discovery	clinical	discovery	3	0.43	treat none	0
+discovery	clinical	discovery	3	0.44	treat none	0
+discovery	clinical	discovery	3	0.45	treat none	0
+discovery	clinical	discovery	3	0.46	treat none	0
+discovery	clinical	discovery	3	0.47	treat none	0
+discovery	clinical	discovery	3	0.48	treat none	0
+discovery	clinical	discovery	3	0.49	treat none	0
+discovery	clinical	discovery	3	0.5	treat none	0
+discovery	clinical	discovery	3	0.51	treat none	0
+discovery	clinical	discovery	3	0.52	treat none	0
+discovery	clinical	discovery	3	0.53	treat none	0
+discovery	clinical	discovery	3	0.54	treat none	0
+discovery	clinical	discovery	3	0.55	treat none	0
+discovery	clinical	discovery	3	0.56	treat none	0
+discovery	clinical	discovery	3	0.57	treat none	0
+discovery	clinical	discovery	3	0.58	treat none	0
+discovery	clinical	discovery	3	0.59	treat none	0
+discovery	clinical	discovery	3	0.6	treat none	0
+discovery	clinical	discovery	5	0.02	comparator	0.247557836916836
+discovery	clinical	discovery	5	0.03	comparator	0.239800701214948
+discovery	clinical	discovery	5	0.04	comparator	0.23188195851927
+discovery	clinical	discovery	5	0.05	comparator	0.223796505451052
+discovery	clinical	discovery	5	0.06	comparator	0.215539021466489
+discovery	clinical	discovery	5	0.07	comparator	0.207103957181182
+discovery	clinical	discovery	5	0.08	comparator	0.20167633348271
+discovery	clinical	discovery	5	0.09	comparator	0.192134048886269
+discovery	clinical	discovery	5	0.1	comparator	0.181872746038307
+discovery	clinical	discovery	5	0.11	comparator	0.16914868110574
+discovery	clinical	discovery	5	0.12	comparator	0.164145340362762
+discovery	clinical	discovery	5	0.13	comparator	0.160568862215398
+discovery	clinical	discovery	5	0.14	comparator	0.156285940765874
+discovery	clinical	discovery	5	0.15	comparator	0.143853558393728
+discovery	clinical	discovery	5	0.16	comparator	0.128310530445287
+discovery	clinical	discovery	5	0.17	comparator	0.126399164683769
+discovery	clinical	discovery	5	0.18	comparator	0.126112262705816
+discovery	clinical	discovery	5	0.19	comparator	0.10789705046047
+discovery	clinical	discovery	5	0.2	comparator	0.10975693097347
+discovery	clinical	discovery	5	0.21	comparator	0.115524133305463
+discovery	clinical	discovery	5	0.22	comparator	0.109750415350752
+discovery	clinical	discovery	5	0.23	comparator	0.112517438250808
+discovery	clinical	discovery	5	0.24	comparator	0.118731850649116
+discovery	clinical	discovery	5	0.25	comparator	0.113504078146436
+discovery	clinical	discovery	5	0.26	comparator	0.116615491849206
+discovery	clinical	discovery	5	0.27	comparator	0.10613564701971
+discovery	clinical	discovery	5	0.28	comparator	0.105998010722322
+discovery	clinical	discovery	5	0.29	comparator	0.103954829225921
+discovery	clinical	discovery	5	0.3	comparator	0.0973882357811379
+discovery	clinical	discovery	5	0.31	comparator	0.0934060875909919
+discovery	clinical	discovery	5	0.32	comparator	0.10261587017708
+discovery	clinical	discovery	5	0.33	comparator	0.0928645259877698
+discovery	clinical	discovery	5	0.34	comparator	0.0963415808085068
+discovery	clinical	discovery	5	0.35	comparator	0.0999592136350096
+discovery	clinical	discovery	5	0.36	comparator	0.0922068711013435
+discovery	clinical	discovery	5	0.37	comparator	0.0891547308383261
+discovery	clinical	discovery	5	0.38	comparator	0.0792680101258627
+discovery	clinical	discovery	5	0.39	comparator	0.100313998336925
+discovery	clinical	discovery	5	0.4	comparator	0.112082831739535
+discovery	clinical	discovery	5	0.41	comparator	0.125833696510669
+discovery	clinical	discovery	5	0.42	comparator	0.111170784195073
+discovery	clinical	discovery	5	0.43	comparator	0.110725671367591
+discovery	clinical	discovery	5	0.44	comparator	0.108382191106669
+discovery	clinical	discovery	5	0.45	comparator	0.0966787212671808
+discovery	clinical	discovery	5	0.46	comparator	0.095584273615233
+discovery	clinical	discovery	5	0.47	comparator	0.0846311118734502
+discovery	clinical	discovery	5	0.48	comparator	0.0359865734924623
+discovery	clinical	discovery	5	0.49	comparator	0.0340318319538871
+discovery	clinical	discovery	5	0.5	comparator	0.0267148097466739
+discovery	clinical	discovery	5	0.51	comparator	0.0235287223288454
+discovery	clinical	discovery	5	0.52	comparator	0.000650574300071809
+discovery	clinical	discovery	5	0.53	comparator	-0.00158085259122358
+discovery	clinical	discovery	5	0.54	comparator	-0.0174374188610128
+discovery	clinical	discovery	5	0.55	comparator	-0.0200583062259867
+discovery	clinical	discovery	5	0.56	comparator	-0.01301964367291
+discovery	clinical	discovery	5	0.57	comparator	-0.0209116719026047
+discovery	clinical	discovery	5	0.58	comparator	-0.0161268100966594
+discovery	clinical	discovery	5	0.59	comparator	-0.0184811715636572
+discovery	clinical	discovery	5	0.6	comparator	-0.00777928102048703
+discovery	clinical	discovery	5	0.02	comparator + modules	0.247557836916836
+discovery	clinical	discovery	5	0.03	comparator + modules	0.239800701214948
+discovery	clinical	discovery	5	0.04	comparator + modules	0.23188195851927
+discovery	clinical	discovery	5	0.05	comparator + modules	0.223796505451052
+discovery	clinical	discovery	5	0.06	comparator + modules	0.215539021466489
+discovery	clinical	discovery	5	0.07	comparator + modules	0.207103957181182
+discovery	clinical	discovery	5	0.08	comparator + modules	0.198909645079894
+discovery	clinical	discovery	5	0.09	comparator + modules	0.190216896687983
+discovery	clinical	discovery	5	0.1	comparator + modules	0.181330976109586
+discovery	clinical	discovery	5	0.11	comparator + modules	0.171421529845905
+discovery	clinical	discovery	5	0.12	comparator + modules	0.163292050589116
+discovery	clinical	discovery	5	0.13	comparator + modules	0.153716459815336
+discovery	clinical	discovery	5	0.14	comparator + modules	0.14925100379621
+discovery	clinical	discovery	5	0.15	comparator + modules	0.141699420506467
+discovery	clinical	discovery	5	0.16	comparator + modules	0.128419407980838
+discovery	clinical	discovery	5	0.17	comparator + modules	0.12187044004645
+discovery	clinical	discovery	5	0.18	comparator + modules	0.111005037721606
+discovery	clinical	discovery	5	0.19	comparator + modules	0.100659217001371
+discovery	clinical	discovery	5	0.2	comparator + modules	0.0973545277761988
+discovery	clinical	discovery	5	0.21	comparator + modules	0.0826388432105052
+discovery	clinical	discovery	5	0.22	comparator + modules	0.0852105079085804
+discovery	clinical	discovery	5	0.23	comparator + modules	0.0818517137999967
+discovery	clinical	discovery	5	0.24	comparator + modules	0.0848997462421119
+discovery	clinical	discovery	5	0.25	comparator + modules	0.0718034659791074
+discovery	clinical	discovery	5	0.26	comparator + modules	0.0686513698078025
+discovery	clinical	discovery	5	0.27	comparator + modules	0.0674219906570714
+discovery	clinical	discovery	5	0.28	comparator + modules	0.0660095837086189
+discovery	clinical	discovery	5	0.29	comparator + modules	0.0792547305734774
+discovery	clinical	discovery	5	0.3	comparator + modules	0.0763199743698586
+discovery	clinical	discovery	5	0.31	comparator + modules	0.0682884487771652
+discovery	clinical	discovery	5	0.32	comparator + modules	0.0614401268988532
+discovery	clinical	discovery	5	0.33	comparator + modules	0.075170128597556
+discovery	clinical	discovery	5	0.34	comparator + modules	0.0693043493673834
+discovery	clinical	discovery	5	0.35	comparator + modules	0.0654695895392188
+discovery	clinical	discovery	5	0.36	comparator + modules	0.0722444815470399
+discovery	clinical	discovery	5	0.37	comparator + modules	0.076777920877592
+discovery	clinical	discovery	5	0.38	comparator + modules	0.073643660017666
+discovery	clinical	discovery	5	0.39	comparator + modules	0.0858069629223228
+discovery	clinical	discovery	5	0.4	comparator + modules	0.0561642664105011
+discovery	clinical	discovery	5	0.41	comparator + modules	0.051239361293023
+discovery	clinical	discovery	5	0.42	comparator + modules	0.0527884453972932
+discovery	clinical	discovery	5	0.43	comparator + modules	0.0549992162960599
+discovery	clinical	discovery	5	0.44	comparator + modules	0.0501909574727156
+discovery	clinical	discovery	5	0.45	comparator + modules	0.0613852989955226
+discovery	clinical	discovery	5	0.46	comparator + modules	0.0585049055451342
+discovery	clinical	discovery	5	0.47	comparator + modules	0.0466713898878688
+discovery	clinical	discovery	5	0.48	comparator + modules	0.0312361179321399
+discovery	clinical	discovery	5	0.49	comparator + modules	0.0376777338457522
+discovery	clinical	discovery	5	0.5	comparator + modules	0.0349234254847809
+discovery	clinical	discovery	5	0.51	comparator + modules	0.0411175343318566
+discovery	clinical	discovery	5	0.52	comparator + modules	0.0546357990500783
+discovery	clinical	discovery	5	0.53	comparator + modules	0.044902085450094
+discovery	clinical	discovery	5	0.54	comparator + modules	0.0351566777808797
+discovery	clinical	discovery	5	0.55	comparator + modules	0.0308011422005776
+discovery	clinical	discovery	5	0.56	comparator + modules	0.0180970347786834
+discovery	clinical	discovery	5	0.57	comparator + modules	0.00773192440161766
+discovery	clinical	discovery	5	0.58	comparator + modules	-0.00806329441324272
+discovery	clinical	discovery	5	0.59	comparator + modules	-0.0115152138430853
+discovery	clinical	discovery	5	0.6	comparator + modules	-0.028358796449352
+discovery	clinical	discovery	5	0.02	treat all	0.247557836916836
+discovery	clinical	discovery	5	0.03	treat all	0.239800701214948
+discovery	clinical	discovery	5	0.04	treat all	0.23188195851927
+discovery	clinical	discovery	5	0.05	treat all	0.223796505451052
+discovery	clinical	discovery	5	0.06	treat all	0.215539021466489
+discovery	clinical	discovery	5	0.07	treat all	0.207103957181182
+discovery	clinical	discovery	5	0.08	treat all	0.198485521933152
+discovery	clinical	discovery	5	0.09	treat all	0.189677670525824
+discovery	clinical	discovery	5	0.1	treat all	0.180674089087222
+discovery	clinical	discovery	5	0.11	treat all	0.171468179975842
+discovery	clinical	discovery	5	0.12	treat all	0.162053045657386
+discovery	clinical	discovery	5	0.13	treat all	0.15242147146954
+discovery	clinical	discovery	5	0.14	treat all	0.142565907184302
+discovery	clinical	discovery	5	0.15	treat all	0.132478447268823
+discovery	clinical	discovery	5	0.16	treat all	0.122150809736309
+discovery	clinical	discovery	5	0.17	treat all	0.111574313468072
+discovery	clinical	discovery	5	0.18	treat all	0.100739853876219
+discovery	clinical	discovery	5	0.19	treat all	0.0896378767635798
+discovery	clinical	discovery	5	0.2	treat all	0.0782583502231246
+discovery	clinical	discovery	5	0.21	treat all	0.0665907344031641
+discovery	clinical	discovery	5	0.22	treat all	0.0546239489467944
+discovery	clinical	discovery	5	0.23	treat all	0.0423463378941554
+discovery	clinical	discovery	5	0.24	treat all	0.0297456318138153
+discovery	clinical	discovery	5	0.25	treat all	0.0168089069046662
+discovery	clinical	discovery	5	0.26	treat all	0.00352254078175623
+discovery	clinical	discovery	5	0.27	treat all	-0.0101278353719183
+discovery	clinical	discovery	5	0.28	treat all	-0.0241573886409728
+discovery	clinical	discovery	5	0.29	treat all	-0.0385821405936626
+discovery	clinical	discovery	5	0.3	treat all	-0.0534190283164291
+discovery	clinical	discovery	5	0.31	treat all	-0.0686859707557977
+discovery	clinical	discovery	5	0.32	treat all	-0.0844019409139711
+discovery	clinical	discovery	5	0.33	treat all	-0.100587044509702
+discovery	clinical	discovery	5	0.34	treat all	-0.117262605790152
+discovery	clinical	discovery	5	0.35	treat all	-0.134451261263847
+discovery	clinical	discovery	5	0.36	treat all	-0.152177062221094
+discovery	clinical	discovery	5	0.37	treat all	-0.170465587018255
+discovery	clinical	discovery	5	0.38	treat all	-0.189344064228226
+discovery	clinical	discovery	5	0.39	treat all	-0.208841507904099
+discovery	clinical	discovery	5	0.4	treat all	-0.228988866369167
+discovery	clinical	discovery	5	0.41	treat all	-0.249819186138136
+discovery	clinical	discovery	5	0.42	treat all	-0.27136779279569
+discovery	clinical	discovery	5	0.43	treat all	-0.293672490914913
+discovery	clinical	discovery	5	0.44	treat all	-0.316773785395536
+discovery	clinical	discovery	5	0.45	treat all	-0.340715126948182
+discovery	clinical	discovery	5	0.46	treat all	-0.36554318485463
+discovery	clinical	discovery	5	0.47	treat all	-0.391308150606605
+discovery	clinical	discovery	5	0.48	treat all	-0.418064076579808
+discovery	clinical	discovery	5	0.49	treat all	-0.445869254551961
+discovery	clinical	discovery	5	0.5	treat all	-0.474786639643001
+discovery	clinical	discovery	5	0.51	treat all	-0.504884326166327
+discovery	clinical	discovery	5	0.52	treat all	-0.536236082961459
+discovery	clinical	discovery	5	0.53	treat all	-0.568921957067022
+discovery	clinical	discovery	5	0.54	treat all	-0.603028956133697
+discovery	clinical	discovery	5	0.55	treat all	-0.638651821825557
+discovery	clinical	discovery	5	0.56	treat all	-0.675893908685228
+discovery	clinical	discovery	5	0.57	treat all	-0.714868185631396
+discovery	clinical	discovery	5	0.58	treat all	-0.755698380527382
+discovery	clinical	discovery	5	0.59	treat all	-0.798520292247562
+discovery	clinical	discovery	5	0.6	treat all	-0.843483299553751
+discovery	clinical	discovery	5	0.02	treat none	0
+discovery	clinical	discovery	5	0.03	treat none	0
+discovery	clinical	discovery	5	0.04	treat none	0
+discovery	clinical	discovery	5	0.05	treat none	0
+discovery	clinical	discovery	5	0.06	treat none	0
+discovery	clinical	discovery	5	0.07	treat none	0
+discovery	clinical	discovery	5	0.08	treat none	0
+discovery	clinical	discovery	5	0.09	treat none	0
+discovery	clinical	discovery	5	0.1	treat none	0
+discovery	clinical	discovery	5	0.11	treat none	0
+discovery	clinical	discovery	5	0.12	treat none	0
+discovery	clinical	discovery	5	0.13	treat none	0
+discovery	clinical	discovery	5	0.14	treat none	0
+discovery	clinical	discovery	5	0.15	treat none	0
+discovery	clinical	discovery	5	0.16	treat none	0
+discovery	clinical	discovery	5	0.17	treat none	0
+discovery	clinical	discovery	5	0.18	treat none	0
+discovery	clinical	discovery	5	0.19	treat none	0
+discovery	clinical	discovery	5	0.2	treat none	0
+discovery	clinical	discovery	5	0.21	treat none	0
+discovery	clinical	discovery	5	0.22	treat none	0
+discovery	clinical	discovery	5	0.23	treat none	0
+discovery	clinical	discovery	5	0.24	treat none	0
+discovery	clinical	discovery	5	0.25	treat none	0
+discovery	clinical	discovery	5	0.26	treat none	0
+discovery	clinical	discovery	5	0.27	treat none	0
+discovery	clinical	discovery	5	0.28	treat none	0
+discovery	clinical	discovery	5	0.29	treat none	0
+discovery	clinical	discovery	5	0.3	treat none	0
+discovery	clinical	discovery	5	0.31	treat none	0
+discovery	clinical	discovery	5	0.32	treat none	0
+discovery	clinical	discovery	5	0.33	treat none	0
+discovery	clinical	discovery	5	0.34	treat none	0
+discovery	clinical	discovery	5	0.35	treat none	0
+discovery	clinical	discovery	5	0.36	treat none	0
+discovery	clinical	discovery	5	0.37	treat none	0
+discovery	clinical	discovery	5	0.38	treat none	0
+discovery	clinical	discovery	5	0.39	treat none	0
+discovery	clinical	discovery	5	0.4	treat none	0
+discovery	clinical	discovery	5	0.41	treat none	0
+discovery	clinical	discovery	5	0.42	treat none	0
+discovery	clinical	discovery	5	0.43	treat none	0
+discovery	clinical	discovery	5	0.44	treat none	0
+discovery	clinical	discovery	5	0.45	treat none	0
+discovery	clinical	discovery	5	0.46	treat none	0
+discovery	clinical	discovery	5	0.47	treat none	0
+discovery	clinical	discovery	5	0.48	treat none	0
+discovery	clinical	discovery	5	0.49	treat none	0
+discovery	clinical	discovery	5	0.5	treat none	0
+discovery	clinical	discovery	5	0.51	treat none	0
+discovery	clinical	discovery	5	0.52	treat none	0
+discovery	clinical	discovery	5	0.53	treat none	0
+discovery	clinical	discovery	5	0.54	treat none	0
+discovery	clinical	discovery	5	0.55	treat none	0
+discovery	clinical	discovery	5	0.56	treat none	0
+discovery	clinical	discovery	5	0.57	treat none	0
+discovery	clinical	discovery	5	0.58	treat none	0
+discovery	clinical	discovery	5	0.59	treat none	0
+discovery	clinical	discovery	5	0.6	treat none	0
+discovery	augmented	cohort	3	0.02	comparator	0.126848232698724
+discovery	augmented	cohort	3	0.03	comparator	0.117846668087371
+discovery	augmented	cohort	3	0.04	comparator	0.108657570879947
+discovery	augmented	cohort	3	0.05	comparator	0.102527402023627
+discovery	augmented	cohort	3	0.06	comparator	0.0946484471347988
+discovery	augmented	cohort	3	0.07	comparator	0.0931058945857056
+discovery	augmented	cohort	3	0.08	comparator	0.0787743144874003
+discovery	augmented	cohort	3	0.09	comparator	0.0775180478086006
+discovery	augmented	cohort	3	0.1	comparator	0.068580692719921
+discovery	augmented	cohort	3	0.11	comparator	0.0594673052210388
+discovery	augmented	cohort	3	0.12	comparator	0.0566068298828966
+discovery	augmented	cohort	3	0.13	comparator	0.0593227712942364
+discovery	augmented	cohort	3	0.14	comparator	0.0517441983999272
+discovery	augmented	cohort	3	0.15	comparator	0.0552712413385835
+discovery	augmented	cohort	3	0.16	comparator	0.0581270539683875
+discovery	augmented	cohort	3	0.17	comparator	0.0557028808262435
+discovery	augmented	cohort	3	0.18	comparator	0.0560763194204601
+discovery	augmented	cohort	3	0.19	comparator	0.0614116254860799
+discovery	augmented	cohort	3	0.2	comparator	0.0487910264398801
+discovery	augmented	cohort	3	0.21	comparator	0.0316282356995397
+discovery	augmented	cohort	3	0.22	comparator	0.0312183837581672
+discovery	augmented	cohort	3	0.23	comparator	0.0303250931699017
+discovery	augmented	cohort	3	0.24	comparator	0.0198828372744219
+discovery	augmented	cohort	3	0.25	comparator	0.0148125998291109
+discovery	augmented	cohort	3	0.26	comparator	0.0171631572621485
+discovery	augmented	cohort	3	0.27	comparator	0.0151676251180622
+discovery	augmented	cohort	3	0.28	comparator	0.00737177953258356
+discovery	augmented	cohort	3	0.29	comparator	0.0030679629539847
+discovery	augmented	cohort	3	0.3	comparator	0.00359554077418764
+discovery	augmented	cohort	3	0.31	comparator	0.00138998492348947
+discovery	augmented	cohort	3	0.32	comparator	-0.00280990752579464
+discovery	augmented	cohort	3	0.33	comparator	-0.00181320322481744
+discovery	augmented	cohort	3	0.34	comparator	-0.00054796480104842
+discovery	augmented	cohort	3	0.35	comparator	-0.007737073937642
+discovery	augmented	cohort	3	0.36	comparator	-0.00610337785182599
+discovery	augmented	cohort	3	0.37	comparator	-0.00411311618139407
+discovery	augmented	cohort	3	0.38	comparator	-0.0100023116634186
+discovery	augmented	cohort	3	0.39	comparator	-0.00300303002822348
+discovery	augmented	cohort	3	0.4	comparator	0.000485381452718113
+discovery	augmented	cohort	3	0.41	comparator	0.00757226666433718
+discovery	augmented	cohort	3	0.42	comparator	0.0090105700918385
+discovery	augmented	cohort	3	0.43	comparator	0.0139315854735056
+discovery	augmented	cohort	3	0.44	comparator	0.0131035511509309
+discovery	augmented	cohort	3	0.45	comparator	0.0186679751168863
+discovery	augmented	cohort	3	0.46	comparator	0.016274789585789
+discovery	augmented	cohort	3	0.47	comparator	0.0157285378675347
+discovery	augmented	cohort	3	0.48	comparator	0.0101361508396684
+discovery	augmented	cohort	3	0.49	comparator	0.0174401418859001
+discovery	augmented	cohort	3	0.5	comparator	0.0113065326633166
+discovery	augmented	cohort	3	0.51	comparator	0.0109219567223874
+discovery	augmented	cohort	3	0.52	comparator	0.0105213567839196
+discovery	augmented	cohort	3	0.53	comparator	0.0101037100395595
+discovery	augmented	cohort	3	0.54	comparator	0.00966790474109679
+discovery	augmented	cohort	3	0.55	comparator	0.00921273031825795
+discovery	augmented	cohort	3	0.56	comparator	0.00873686614892645
+discovery	augmented	cohort	3	0.57	comparator	0.00321374313427603
+discovery	augmented	cohort	3	0.58	comparator	0.00269203158650395
+discovery	augmented	cohort	3	0.59	comparator	-0.00441230542958696
+discovery	augmented	cohort	3	0.6	comparator	-0.0050251256281407
+discovery	augmented	cohort	3	0.02	comparator + modules	0.126848232698724
+discovery	augmented	cohort	3	0.03	comparator + modules	0.117980480867617
+discovery	augmented	cohort	3	0.04	comparator + modules	0.110525858271726
+discovery	augmented	cohort	3	0.05	comparator + modules	0.10270521662584
+discovery	augmented	cohort	3	0.06	comparator + modules	0.0958332931316561
+discovery	augmented	cohort	3	0.07	comparator + modules	0.0903698868170282
+discovery	augmented	cohort	3	0.08	comparator + modules	0.0804357492020604
+discovery	augmented	cohort	3	0.09	comparator + modules	0.0704118177909861
+discovery	augmented	cohort	3	0.1	comparator + modules	0.0703482968514713
+discovery	augmented	cohort	3	0.11	comparator + modules	0.0638112833579967
+discovery	augmented	cohort	3	0.12	comparator + modules	0.0614459981925974
+discovery	augmented	cohort	3	0.13	comparator + modules	0.0612567052143686
+discovery	augmented	cohort	3	0.14	comparator + modules	0.0603852732093299
+discovery	augmented	cohort	3	0.15	comparator + modules	0.0525000723477908
+discovery	augmented	cohort	3	0.16	comparator + modules	0.0543020678353819
+discovery	augmented	cohort	3	0.17	comparator + modules	0.0531812196391784
+discovery	augmented	cohort	3	0.18	comparator + modules	0.0467869999995691
+discovery	augmented	cohort	3	0.19	comparator + modules	0.051869169114421
+discovery	augmented	cohort	3	0.2	comparator + modules	0.0454833850050958
+discovery	augmented	cohort	3	0.21	comparator + modules	0.0409842796486021
+discovery	augmented	cohort	3	0.22	comparator + modules	0.0190044704516736
+discovery	augmented	cohort	3	0.23	comparator + modules	0.0202717564272194
+discovery	augmented	cohort	3	0.24	comparator + modules	0.0197345674025343
+discovery	augmented	cohort	3	0.25	comparator + modules	0.0176049279528134
+discovery	augmented	cohort	3	0.26	comparator + modules	0.00550054399949032
+discovery	augmented	cohort	3	0.27	comparator + modules	0.00373857904662613
+discovery	augmented	cohort	3	0.28	comparator + modules	0.00607395999885791
+discovery	augmented	cohort	3	0.29	comparator + modules	0.00816282158705308
+discovery	augmented	cohort	3	0.3	comparator + modules	0.0115255131283549
+discovery	augmented	cohort	3	0.31	comparator + modules	0.0150881947745051
+discovery	augmented	cohort	3	0.32	comparator + modules	0.0153000830610332
+discovery	augmented	cohort	3	0.33	comparator + modules	0.0113268327575958
+discovery	augmented	cohort	3	0.34	comparator + modules	0.00450303465378844
+discovery	augmented	cohort	3	0.35	comparator + modules	0.00956520924783291
+discovery	augmented	cohort	3	0.36	comparator + modules	0.00814431388353633
+discovery	augmented	cohort	3	0.37	comparator + modules	0.010868823756793
+discovery	augmented	cohort	3	0.38	comparator + modules	0.00815135585762916
+discovery	augmented	cohort	3	0.39	comparator + modules	0.011185371182076
+discovery	augmented	cohort	3	0.4	comparator + modules	0.0101155126280754
+discovery	augmented	cohort	3	0.41	comparator + modules	0.00900938768241382
+discovery	augmented	cohort	3	0.42	comparator + modules	0.00786512049724664
+discovery	augmented	cohort	3	0.43	comparator + modules	0.00668070358628411
+discovery	augmented	cohort	3	0.44	comparator + modules	0.00545398607135865
+discovery	augmented	cohort	3	0.45	comparator + modules	0.00974101275608814
+discovery	augmented	cohort	3	0.46	comparator + modules	0.0149202804144178
+discovery	augmented	cohort	3	0.47	comparator + modules	0.0166656610669126
+discovery	augmented	cohort	3	0.48	comparator + modules	0.0228799676035857
+discovery	augmented	cohort	3	0.49	comparator + modules	0.0202224943578772
+discovery	augmented	cohort	3	0.5	comparator + modules	0.0196219191194066
+discovery	augmented	cohort	3	0.51	comparator + modules	0.0133205711095158
+discovery	augmented	cohort	3	0.52	comparator + modules	0.0126558719523544
+discovery	augmented	cohort	3	0.53	comparator + modules	0.0119628877246754
+discovery	augmented	cohort	3	0.54	comparator + modules	0.0112397737479669
+discovery	augmented	cohort	3	0.55	comparator + modules	0.0104845213722936
+discovery	augmented	cohort	3	0.56	comparator + modules	0.00969493934318055
+discovery	augmented	cohort	3	0.57	comparator + modules	0.00886863256852739
+discovery	augmented	cohort	3	0.58	comparator + modules	0.00800297785222408
+discovery	augmented	cohort	3	0.59	comparator + modules	0.0070950960765889
+discovery	augmented	cohort	3	0.6	comparator + modules	0
+discovery	augmented	cohort	3	0.02	treat all	0.126848232698724
+discovery	augmented	cohort	3	0.03	treat all	0.117846668087371
+discovery	augmented	cohort	3	0.04	treat all	0.108657570879947
+discovery	augmented	cohort	3	0.05	treat all	0.0992750189944731
+discovery	augmented	cohort	3	0.06	treat all	0.0896928383454782
+discovery	augmented	cohort	3	0.07	treat all	0.0799045892954295
+discovery	augmented	cohort	3	0.08	treat all	0.0699035522225538
+discovery	augmented	cohort	3	0.09	treat all	0.0596827121370873
+discovery	augmented	cohort	3	0.1	treat all	0.0492347422719439
+discovery	augmented	cohort	3	0.11	treat all	0.0385519865671342
+discovery	augmented	cohort	3	0.12	treat all	0.0276264409599426
+discovery	augmented	cohort	3	0.13	treat all	0.0164497333847695
+discovery	augmented	cohort	3	0.14	treat all	0.00501310237761568
+discovery	augmented	cohort	3	0.15	treat all	-0.00669262582970651
+discovery	augmented	cohort	3	0.16	treat all	-0.0186770618514887
+discovery	augmented	cohort	3	0.17	treat all	-0.0309502794641572
+discovery	augmented	cohort	3	0.18	treat all	-0.0435228438478665
+discovery	augmented	cohort	3	0.19	treat all	-0.0564058419200624
+discovery	augmented	cohort	3	0.2	treat all	-0.0696109149440631
+discovery	augmented	cohort	3	0.21	treat all	-0.0831502936142411
+discovery	augmented	cohort	3	0.22	treat all	-0.0970368358400648
+discovery	augmented	cohort	3	0.23	treat all	-0.111284067474351
+discovery	augmented	cohort	3	0.24	treat all	-0.125906226256909
+discovery	augmented	cohort	3	0.25	treat all	-0.140918309273667
+discovery	augmented	cohort	3	0.26	treat all	-0.156336124263852
+discovery	augmented	cohort	3	0.27	treat all	-0.172176345144179
+discovery	augmented	cohort	3	0.28	treat all	-0.18845657216007
+discovery	augmented	cohort	3	0.29	treat all	-0.205195397120071
+discovery	augmented	cohort	3	0.3	treat all	-0.222412474221787
+discovery	augmented	cohort	3	0.31	treat all	-0.240128597036595
+discovery	augmented	cohort	3	0.32	treat all	-0.258365782287133
+discovery	augmented	cohort	3	0.33	treat all	-0.27714736112724
+discovery	augmented	cohort	3	0.34	treat all	-0.296498078720077
+discovery	augmented	cohort	3	0.35	treat all	-0.316444203008078
+discovery	augmented	cohort	3	0.36	treat all	-0.337013643680079
+discovery	augmented	cohort	3	0.37	treat all	-0.358236082468652
+discovery	augmented	cohort	3	0.38	treat all	-0.380143116056856
+discovery	augmented	cohort	3	0.39	treat all	-0.402768413041394
+discovery	augmented	cohort	3	0.4	treat all	-0.426147886592084
+discovery	augmented	cohort	3	0.41	treat all	-0.450319884669916
+discovery	augmented	cohort	3	0.42	treat all	-0.475325399922846
+discovery	augmented	cohort	3	0.43	treat all	-0.501208301675878
+discovery	augmented	cohort	3	0.44	treat all	-0.528015592777233
+discovery	augmented	cohort	3	0.45	treat all	-0.555797694464092
+discovery	augmented	cohort	3	0.46	treat all	-0.584608762880094
+discovery	augmented	cohort	3	0.47	treat all	-0.614507041425001
+discovery	augmented	cohort	3	0.48	treat all	-0.645555253760097
+discovery	augmented	cohort	3	0.49	treat all	-0.677821043049511
+discovery	augmented	cohort	3	0.5	treat all	-0.711377463910501
+discovery	augmented	cohort	3	0.51	treat all	-0.746303534602552
+discovery	augmented	cohort	3	0.52	treat all	-0.782684858240105
+discovery	augmented	cohort	3	0.53	treat all	-0.820614323309044
+discovery	augmented	cohort	3	0.54	treat all	-0.860192895554893
+discovery	augmented	cohort	3	0.55	treat all	-0.901530515456113
+discovery	augmented	cohort	3	0.56	treat all	-0.944747118080115
+discovery	augmented	cohort	3	0.57	treat all	-0.989973795244769
+discovery	augmented	cohort	3	0.58	treat all	-1.03735412370298
+discovery	augmented	cohort	3	0.59	treat all	-1.08704568769573
+discovery	augmented	cohort	3	0.6	treat all	-1.13922182988813
+discovery	augmented	cohort	3	0.02	treat none	0
+discovery	augmented	cohort	3	0.03	treat none	0
+discovery	augmented	cohort	3	0.04	treat none	0
+discovery	augmented	cohort	3	0.05	treat none	0
+discovery	augmented	cohort	3	0.06	treat none	0
+discovery	augmented	cohort	3	0.07	treat none	0
+discovery	augmented	cohort	3	0.08	treat none	0
+discovery	augmented	cohort	3	0.09	treat none	0
+discovery	augmented	cohort	3	0.1	treat none	0
+discovery	augmented	cohort	3	0.11	treat none	0
+discovery	augmented	cohort	3	0.12	treat none	0
+discovery	augmented	cohort	3	0.13	treat none	0
+discovery	augmented	cohort	3	0.14	treat none	0
+discovery	augmented	cohort	3	0.15	treat none	0
+discovery	augmented	cohort	3	0.16	treat none	0
+discovery	augmented	cohort	3	0.17	treat none	0
+discovery	augmented	cohort	3	0.18	treat none	0
+discovery	augmented	cohort	3	0.19	treat none	0
+discovery	augmented	cohort	3	0.2	treat none	0
+discovery	augmented	cohort	3	0.21	treat none	0
+discovery	augmented	cohort	3	0.22	treat none	0
+discovery	augmented	cohort	3	0.23	treat none	0
+discovery	augmented	cohort	3	0.24	treat none	0
+discovery	augmented	cohort	3	0.25	treat none	0
+discovery	augmented	cohort	3	0.26	treat none	0
+discovery	augmented	cohort	3	0.27	treat none	0
+discovery	augmented	cohort	3	0.28	treat none	0
+discovery	augmented	cohort	3	0.29	treat none	0
+discovery	augmented	cohort	3	0.3	treat none	0
+discovery	augmented	cohort	3	0.31	treat none	0
+discovery	augmented	cohort	3	0.32	treat none	0
+discovery	augmented	cohort	3	0.33	treat none	0
+discovery	augmented	cohort	3	0.34	treat none	0
+discovery	augmented	cohort	3	0.35	treat none	0
+discovery	augmented	cohort	3	0.36	treat none	0
+discovery	augmented	cohort	3	0.37	treat none	0
+discovery	augmented	cohort	3	0.38	treat none	0
+discovery	augmented	cohort	3	0.39	treat none	0
+discovery	augmented	cohort	3	0.4	treat none	0
+discovery	augmented	cohort	3	0.41	treat none	0
+discovery	augmented	cohort	3	0.42	treat none	0
+discovery	augmented	cohort	3	0.43	treat none	0
+discovery	augmented	cohort	3	0.44	treat none	0
+discovery	augmented	cohort	3	0.45	treat none	0
+discovery	augmented	cohort	3	0.46	treat none	0
+discovery	augmented	cohort	3	0.47	treat none	0
+discovery	augmented	cohort	3	0.48	treat none	0
+discovery	augmented	cohort	3	0.49	treat none	0
+discovery	augmented	cohort	3	0.5	treat none	0
+discovery	augmented	cohort	3	0.51	treat none	0
+discovery	augmented	cohort	3	0.52	treat none	0
+discovery	augmented	cohort	3	0.53	treat none	0
+discovery	augmented	cohort	3	0.54	treat none	0
+discovery	augmented	cohort	3	0.55	treat none	0
+discovery	augmented	cohort	3	0.56	treat none	0
+discovery	augmented	cohort	3	0.57	treat none	0
+discovery	augmented	cohort	3	0.58	treat none	0
+discovery	augmented	cohort	3	0.59	treat none	0
+discovery	augmented	cohort	3	0.6	treat none	0
+discovery	augmented	cohort	5	0.02	comparator	0.247557836916836
+discovery	augmented	cohort	5	0.03	comparator	0.239800701214948
+discovery	augmented	cohort	5	0.04	comparator	0.23188195851927
+discovery	augmented	cohort	5	0.05	comparator	0.223796505451052
+discovery	augmented	cohort	5	0.06	comparator	0.215539021466489
+discovery	augmented	cohort	5	0.07	comparator	0.207103957181182
+discovery	augmented	cohort	5	0.08	comparator	0.198660864821493
+discovery	augmented	cohort	5	0.09	comparator	0.195814709460078
+discovery	augmented	cohort	5	0.1	comparator	0.188599163316857
+discovery	augmented	cohort	5	0.11	comparator	0.183730000953689
+discovery	augmented	cohort	5	0.12	comparator	0.168372367012608
+discovery	augmented	cohort	5	0.13	comparator	0.143011860770947
+discovery	augmented	cohort	5	0.14	comparator	0.134662027659317
+discovery	augmented	cohort	5	0.15	comparator	0.133827215906699
+discovery	augmented	cohort	5	0.16	comparator	0.125849089411705
+discovery	augmented	cohort	5	0.17	comparator	0.119373017839074
+discovery	augmented	cohort	5	0.18	comparator	0.109209021737066
+discovery	augmented	cohort	5	0.19	comparator	0.109981003268477
+discovery	augmented	cohort	5	0.2	comparator	0.108250860811841
+discovery	augmented	cohort	5	0.21	comparator	0.108954042895929
+discovery	augmented	cohort	5	0.22	comparator	0.119578153425009
+discovery	augmented	cohort	5	0.23	comparator	0.125723419973536
+discovery	augmented	cohort	5	0.24	comparator	0.106496234670904
+discovery	augmented	cohort	5	0.25	comparator	0.117422463907185
+discovery	augmented	cohort	5	0.26	comparator	0.121676950328895
+discovery	augmented	cohort	5	0.27	comparator	0.123625764593235
+discovery	augmented	cohort	5	0.28	comparator	0.118896419787649
+discovery	augmented	cohort	5	0.29	comparator	0.119530504198366
+discovery	augmented	cohort	5	0.3	comparator	0.121889990141986
+discovery	augmented	cohort	5	0.31	comparator	0.130735770235215
+discovery	augmented	cohort	5	0.32	comparator	0.126836238311174
+discovery	augmented	cohort	5	0.33	comparator	0.10968086543487
+discovery	augmented	cohort	5	0.34	comparator	0.0997020116087144
+discovery	augmented	cohort	5	0.35	comparator	0.0770785454905067
+discovery	augmented	cohort	5	0.36	comparator	0.0745787930007382
+discovery	augmented	cohort	5	0.37	comparator	0.072137990466096
+discovery	augmented	cohort	5	0.38	comparator	0.0616500579036726
+discovery	augmented	cohort	5	0.39	comparator	0.0442390052710295
+discovery	augmented	cohort	5	0.4	comparator	0.0430055883483717
+discovery	augmented	cohort	5	0.41	comparator	0.048103882450569
+discovery	augmented	cohort	5	0.42	comparator	0.0455542959497601
+discovery	augmented	cohort	5	0.43	comparator	0.0350587506561143
+discovery	augmented	cohort	5	0.44	comparator	0.0408501755434679
+discovery	augmented	cohort	5	0.45	comparator	0.0373961957765051
+discovery	augmented	cohort	5	0.46	comparator	0.0453050525285021
+discovery	augmented	cohort	5	0.47	comparator	0.0432206404163538
+discovery	augmented	cohort	5	0.48	comparator	0.0400051230666074
+discovery	augmented	cohort	5	0.49	comparator	0.049123204781303
+discovery	augmented	cohort	5	0.5	comparator	0.047447765141497
+discovery	augmented	cohort	5	0.51	comparator	0.0457496936886365
+discovery	augmented	cohort	5	0.52	comparator	0.0264897720927871
+discovery	augmented	cohort	5	0.53	comparator	0.019179236524055
+discovery	augmented	cohort	5	0.54	comparator	0.0169743717729393
+discovery	augmented	cohort	5	0.55	comparator	-0.0178730217814528
+discovery	augmented	cohort	5	0.56	comparator	-0.0240665620194846
+discovery	augmented	cohort	5	0.57	comparator	-0.0269635172423287
+discovery	augmented	cohort	5	0.58	comparator	-0.0113472524688267
+discovery	augmented	cohort	5	0.59	comparator	-0.00780161895954275
+discovery	augmented	cohort	5	0.6	comparator	0.0086185915331644
+discovery	augmented	cohort	5	0.02	comparator + modules	0.247557836916836
+discovery	augmented	cohort	5	0.03	comparator + modules	0.239800701214948
+discovery	augmented	cohort	5	0.04	comparator + modules	0.23188195851927
+discovery	augmented	cohort	5	0.05	comparator + modules	0.223796505451052
+discovery	augmented	cohort	5	0.06	comparator + modules	0.214523050752609
+discovery	augmented	cohort	5	0.07	comparator + modules	0.209757741553801
+discovery	augmented	cohort	5	0.08	comparator + modules	0.201086983027639
+discovery	augmented	cohort	5	0.09	comparator + modules	0.184993031882807
+discovery	augmented	cohort	5	0.1	comparator + modules	0.17552033608131
+discovery	augmented	cohort	5	0.11	comparator + modules	0.168745344930342
+discovery	augmented	cohort	5	0.12	comparator + modules	0.165255456464202
+discovery	augmented	cohort	5	0.13	comparator + modules	0.161267367489967
+discovery	augmented	cohort	5	0.14	comparator + modules	0.153228472940273
+discovery	augmented	cohort	5	0.15	comparator + modules	0.151878376678
+discovery	augmented	cohort	5	0.16	comparator + modules	0.142599811303516
+discovery	augmented	cohort	5	0.17	comparator + modules	0.118519829482226
+discovery	augmented	cohort	5	0.18	comparator + modules	0.111456629342684
+discovery	augmented	cohort	5	0.19	comparator + modules	0.117669012727647
+discovery	augmented	cohort	5	0.2	comparator + modules	0.113984625152776
+discovery	augmented	cohort	5	0.21	comparator + modules	0.111477236760802
+discovery	augmented	cohort	5	0.22	comparator + modules	0.109171999780003
+discovery	augmented	cohort	5	0.23	comparator + modules	0.11119931721811
+discovery	augmented	cohort	5	0.24	comparator + modules	0.109235485412878
+discovery	augmented	cohort	5	0.25	comparator + modules	0.109391911389553
+discovery	augmented	cohort	5	0.26	comparator + modules	0.116196754559918
+discovery	augmented	cohort	5	0.27	comparator + modules	0.112324623517992
+discovery	augmented	cohort	5	0.28	comparator + modules	0.111184571066445
+discovery	augmented	cohort	5	0.29	comparator + modules	0.106681605569532
+discovery	augmented	cohort	5	0.3	comparator + modules	0.0973511542338891
+discovery	augmented	cohort	5	0.31	comparator + modules	0.102613445528801
+discovery	augmented	cohort	5	0.32	comparator + modules	0.110676444912152
+discovery	augmented	cohort	5	0.33	comparator + modules	0.10299711066862
+discovery	augmented	cohort	5	0.34	comparator + modules	0.0947471260780301
+discovery	augmented	cohort	5	0.35	comparator + modules	0.0942693538128928
+discovery	augmented	cohort	5	0.36	comparator + modules	0.0719509358487201
+discovery	augmented	cohort	5	0.37	comparator + modules	0.0765946339884461
+discovery	augmented	cohort	5	0.38	comparator + modules	0.0616795784006609
+discovery	augmented	cohort	5	0.39	comparator + modules	0.0589836591405679
+discovery	augmented	cohort	5	0.4	comparator + modules	0.0548190793385454
+discovery	augmented	cohort	5	0.41	comparator + modules	0.0520858365814012
+discovery	augmented	cohort	5	0.42	comparator + modules	0.0437282741412461
+discovery	augmented	cohort	5	0.43	comparator + modules	0.0407450301383907
+discovery	augmented	cohort	5	0.44	comparator + modules	0.0465836777594828
+discovery	augmented	cohort	5	0.45	comparator + modules	0.0293140647611868
+discovery	augmented	cohort	5	0.46	comparator + modules	0.0317619588369473
+discovery	augmented	cohort	5	0.47	comparator + modules	0.0390372065459091
+discovery	augmented	cohort	5	0.48	comparator + modules	0.0353683180517581
+discovery	augmented	cohort	5	0.49	comparator + modules	0.0453946602857246
+discovery	augmented	cohort	5	0.5	comparator + modules	0.0435889856522431
+discovery	augmented	cohort	5	0.51	comparator + modules	0.035394997631097
+discovery	augmented	cohort	5	0.52	comparator + modules	0.0285299264178033
+discovery	augmented	cohort	5	0.53	comparator + modules	0.0267847596645843
+discovery	augmented	cohort	5	0.54	comparator + modules	0.0178964218186153
+discovery	augmented	cohort	5	0.55	comparator + modules	0.0160607309131887
+discovery	augmented	cohort	5	0.56	comparator + modules	0.0142891327385226
+discovery	augmented	cohort	5	0.57	comparator + modules	0.0204249981771309
+discovery	augmented	cohort	5	0.58	comparator + modules	0.00929819163846442
+discovery	augmented	cohort	5	0.59	comparator + modules	-0.0201275621057457
+discovery	augmented	cohort	5	0.6	comparator + modules	-0.0225151732689421
+discovery	augmented	cohort	5	0.02	treat all	0.247557836916836
+discovery	augmented	cohort	5	0.03	treat all	0.239800701214948
+discovery	augmented	cohort	5	0.04	treat all	0.23188195851927
+discovery	augmented	cohort	5	0.05	treat all	0.223796505451052
+discovery	augmented	cohort	5	0.06	treat all	0.215539021466489
+discovery	augmented	cohort	5	0.07	treat all	0.207103957181182
+discovery	augmented	cohort	5	0.08	treat all	0.198485521933152
+discovery	augmented	cohort	5	0.09	treat all	0.189677670525824
+discovery	augmented	cohort	5	0.1	treat all	0.180674089087222
+discovery	augmented	cohort	5	0.11	treat all	0.171468179975842
+discovery	augmented	cohort	5	0.12	treat all	0.162053045657386
+discovery	augmented	cohort	5	0.13	treat all	0.15242147146954
+discovery	augmented	cohort	5	0.14	treat all	0.142565907184302
+discovery	augmented	cohort	5	0.15	treat all	0.132478447268823
+discovery	augmented	cohort	5	0.16	treat all	0.122150809736309
+discovery	augmented	cohort	5	0.17	treat all	0.111574313468072
+discovery	augmented	cohort	5	0.18	treat all	0.100739853876219
+discovery	augmented	cohort	5	0.19	treat all	0.0896378767635798
+discovery	augmented	cohort	5	0.2	treat all	0.0782583502231246
+discovery	augmented	cohort	5	0.21	treat all	0.0665907344031641
+discovery	augmented	cohort	5	0.22	treat all	0.0546239489467944
+discovery	augmented	cohort	5	0.23	treat all	0.0423463378941554
+discovery	augmented	cohort	5	0.24	treat all	0.0297456318138153
+discovery	augmented	cohort	5	0.25	treat all	0.0168089069046662
+discovery	augmented	cohort	5	0.26	treat all	0.00352254078175623
+discovery	augmented	cohort	5	0.27	treat all	-0.0101278353719183
+discovery	augmented	cohort	5	0.28	treat all	-0.0241573886409728
+discovery	augmented	cohort	5	0.29	treat all	-0.0385821405936626
+discovery	augmented	cohort	5	0.3	treat all	-0.0534190283164291
+discovery	augmented	cohort	5	0.31	treat all	-0.0686859707557977
+discovery	augmented	cohort	5	0.32	treat all	-0.0844019409139711
+discovery	augmented	cohort	5	0.33	treat all	-0.100587044509702
+discovery	augmented	cohort	5	0.34	treat all	-0.117262605790152
+discovery	augmented	cohort	5	0.35	treat all	-0.134451261263847
+discovery	augmented	cohort	5	0.36	treat all	-0.152177062221094
+discovery	augmented	cohort	5	0.37	treat all	-0.170465587018255
+discovery	augmented	cohort	5	0.38	treat all	-0.189344064228226
+discovery	augmented	cohort	5	0.39	treat all	-0.208841507904099
+discovery	augmented	cohort	5	0.4	treat all	-0.228988866369167
+discovery	augmented	cohort	5	0.41	treat all	-0.249819186138136
+discovery	augmented	cohort	5	0.42	treat all	-0.27136779279569
+discovery	augmented	cohort	5	0.43	treat all	-0.293672490914913
+discovery	augmented	cohort	5	0.44	treat all	-0.316773785395536
+discovery	augmented	cohort	5	0.45	treat all	-0.340715126948182
+discovery	augmented	cohort	5	0.46	treat all	-0.36554318485463
+discovery	augmented	cohort	5	0.47	treat all	-0.391308150606605
+discovery	augmented	cohort	5	0.48	treat all	-0.418064076579808
+discovery	augmented	cohort	5	0.49	treat all	-0.445869254551961
+discovery	augmented	cohort	5	0.5	treat all	-0.474786639643001
+discovery	augmented	cohort	5	0.51	treat all	-0.504884326166327
+discovery	augmented	cohort	5	0.52	treat all	-0.536236082961459
+discovery	augmented	cohort	5	0.53	treat all	-0.568921957067022
+discovery	augmented	cohort	5	0.54	treat all	-0.603028956133697
+discovery	augmented	cohort	5	0.55	treat all	-0.638651821825557
+discovery	augmented	cohort	5	0.56	treat all	-0.675893908685228
+discovery	augmented	cohort	5	0.57	treat all	-0.714868185631396
+discovery	augmented	cohort	5	0.58	treat all	-0.755698380527382
+discovery	augmented	cohort	5	0.59	treat all	-0.798520292247562
+discovery	augmented	cohort	5	0.6	treat all	-0.843483299553751
+discovery	augmented	cohort	5	0.02	treat none	0
+discovery	augmented	cohort	5	0.03	treat none	0
+discovery	augmented	cohort	5	0.04	treat none	0
+discovery	augmented	cohort	5	0.05	treat none	0
+discovery	augmented	cohort	5	0.06	treat none	0
+discovery	augmented	cohort	5	0.07	treat none	0
+discovery	augmented	cohort	5	0.08	treat none	0
+discovery	augmented	cohort	5	0.09	treat none	0
+discovery	augmented	cohort	5	0.1	treat none	0
+discovery	augmented	cohort	5	0.11	treat none	0
+discovery	augmented	cohort	5	0.12	treat none	0
+discovery	augmented	cohort	5	0.13	treat none	0
+discovery	augmented	cohort	5	0.14	treat none	0
+discovery	augmented	cohort	5	0.15	treat none	0
+discovery	augmented	cohort	5	0.16	treat none	0
+discovery	augmented	cohort	5	0.17	treat none	0
+discovery	augmented	cohort	5	0.18	treat none	0
+discovery	augmented	cohort	5	0.19	treat none	0
+discovery	augmented	cohort	5	0.2	treat none	0
+discovery	augmented	cohort	5	0.21	treat none	0
+discovery	augmented	cohort	5	0.22	treat none	0
+discovery	augmented	cohort	5	0.23	treat none	0
+discovery	augmented	cohort	5	0.24	treat none	0
+discovery	augmented	cohort	5	0.25	treat none	0
+discovery	augmented	cohort	5	0.26	treat none	0
+discovery	augmented	cohort	5	0.27	treat none	0
+discovery	augmented	cohort	5	0.28	treat none	0
+discovery	augmented	cohort	5	0.29	treat none	0
+discovery	augmented	cohort	5	0.3	treat none	0
+discovery	augmented	cohort	5	0.31	treat none	0
+discovery	augmented	cohort	5	0.32	treat none	0
+discovery	augmented	cohort	5	0.33	treat none	0
+discovery	augmented	cohort	5	0.34	treat none	0
+discovery	augmented	cohort	5	0.35	treat none	0
+discovery	augmented	cohort	5	0.36	treat none	0
+discovery	augmented	cohort	5	0.37	treat none	0
+discovery	augmented	cohort	5	0.38	treat none	0
+discovery	augmented	cohort	5	0.39	treat none	0
+discovery	augmented	cohort	5	0.4	treat none	0
+discovery	augmented	cohort	5	0.41	treat none	0
+discovery	augmented	cohort	5	0.42	treat none	0
+discovery	augmented	cohort	5	0.43	treat none	0
+discovery	augmented	cohort	5	0.44	treat none	0
+discovery	augmented	cohort	5	0.45	treat none	0
+discovery	augmented	cohort	5	0.46	treat none	0
+discovery	augmented	cohort	5	0.47	treat none	0
+discovery	augmented	cohort	5	0.48	treat none	0
+discovery	augmented	cohort	5	0.49	treat none	0
+discovery	augmented	cohort	5	0.5	treat none	0
+discovery	augmented	cohort	5	0.51	treat none	0
+discovery	augmented	cohort	5	0.52	treat none	0
+discovery	augmented	cohort	5	0.53	treat none	0
+discovery	augmented	cohort	5	0.54	treat none	0
+discovery	augmented	cohort	5	0.55	treat none	0
+discovery	augmented	cohort	5	0.56	treat none	0
+discovery	augmented	cohort	5	0.57	treat none	0
+discovery	augmented	cohort	5	0.58	treat none	0
+discovery	augmented	cohort	5	0.59	treat none	0
+discovery	augmented	cohort	5	0.6	treat none	0

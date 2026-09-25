@@ -1,0 +1,11 @@
+measure	n_cohort	n_available	pct_available	n_levels	median	iqr_lo	iqr_hi
+aliquot_id	528	528	100	528			
+rin	528	527	99.8		8.4	7.8	8.8
+a260_a280	528	528	100		1.8	1.7	1.8
+plate	528	528	100	19			
+batch	528	528	100	15			
+pct_necrosis_mean	528	528	100		0	0	0
+pct_necrosis_max	528	528	100		0	0	0
+pct_tumor_nuclei_mean	528	528	100		85	80	87.5
+pct_stromal_mean	528	524	99.2		10	6	15
+pct_normal_mean	528	516	97.7		0	0	0

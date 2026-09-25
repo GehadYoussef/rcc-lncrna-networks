@@ -1,0 +1,6 @@
+comparator	standardisation	cohort	n	events	delta_C	lo	hi	p_boot	prop_positive	n_boot
+clinical	cohort	TCGA-KIRC (discovery)	493	159	0.0205	0.0022	0.04	0.026	0.987	2000
+clinical	cohort	CPTAC-3 (validation)	199	32	0.0087	-0.0331	0.0478	0.679	0.66	2000
+clinical	discovery	CPTAC-3 (validation)	199	32	0.0039	-0.0383	0.0433	0.877	0.561	2000
+augmented	cohort	TCGA-KIRC (discovery)	493	159	0.0165	-5e-04	0.0347	0.056	0.972	2000
+augmented	cohort	CPTAC-3 (validation)	199	32	0.0147	-0.0192	0.0478	0.372	0.814	2000

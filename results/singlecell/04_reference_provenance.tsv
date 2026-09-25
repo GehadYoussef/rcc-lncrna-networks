@@ -1,0 +1,14 @@
+field	value
+genome_build	GRCh38
+gencode_release	36
+source_url	https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_36/gencode.v36.annotation.gtf.gz
+local_path	analysis/cache/28_gencode_v36.gtf.gz
+sha256	81359865bab048361cbeaf91c9441aac4c700b63978e6691d579d78bf2322d30
+file_date	2026-09-10
+gtf_header	##description: evidence-based annotation of the human genome (GRCh38), version 36 (Ensembl 102) | ##provider: GENCODE | ##contact: gencode-help@ebi.ac.uk | ##format: gtf | ##date: 2020-09-30
+n_genes	60660
+n_lncRNA_genes	16901
+legacy_gencode_release	19
+legacy_source_url	https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf.gz
+legacy_sha256	9909e8123a40eca090c3f8e501633f7cc65cd6c4adb83b95009745eca3564d70
+legacy_n_genes	57820

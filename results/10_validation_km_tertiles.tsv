@@ -1,0 +1,7 @@
+comparator	group	n	events	logrank_p
+clinical	Low	77	4	9.35e-07
+clinical	Intermediate	65	7	9.35e-07
+clinical	High	57	21	9.35e-07
+augmented	Low	75	6	1.87e-07
+augmented	Intermediate	73	6	1.87e-07
+augmented	High	51	20	1.87e-07

@@ -1,0 +1,26 @@
+# Downloads and caches (created by the pipeline, not redistributed)
+data/raw/
+data/derived/
+*.rds
+*.part
+
+# Run logs and generated reports
+logs/
+reports/
+
+# Single-cell pipeline diagnostic figures
+figures/singlecell/
+
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.vscode/
+.idea/

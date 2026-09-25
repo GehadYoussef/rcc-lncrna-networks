@@ -1,0 +1,9 @@
+dataset	sample_id	donor_id	tissue	n_genes_matrix	n_cells	integer_counts	unfiltered_input	n_cells_tisch2	n_cells_author
+KIRC_GSE145281_aPDL1	Tumor1	Donor1	tumour	16308	7509	TRUE	FALSE	7040	
+KIRC_GSE145281_aPDL1	Tumor2	Donor2	tumour	15815	7165	TRUE	FALSE	6563	
+KIRC_GSE145281_aPDL1	Tumor3	Donor3	tumour	15275	5634	TRUE	FALSE	4877	
+KIRC_GSE145281_aPDL1	Tumor4	Donor4	tumour	15113	8929	TRUE	FALSE	6456	
+KIRC_GSE145281_aPDL1	Blood1	Donor1	blood	14135	5411	TRUE	FALSE	4180	
+KIRC_GSE145281_aPDL1	Blood2	Donor2	blood	14067	8870	TRUE	FALSE	8211	
+KIRC_GSE145281_aPDL1	Blood3	Donor3	blood	12794	7556	TRUE	FALSE	3252	
+KIRC_GSE145281_aPDL1	Blood4	Donor4	blood	12530	4325	TRUE	FALSE	3641	

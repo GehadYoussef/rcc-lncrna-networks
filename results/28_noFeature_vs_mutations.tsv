@@ -1,0 +1,17 @@
+outcome	variable	test	n	n_mutated	n_wildtype	median_mutated	median_wildtype	difference_of_medians	rho	p	fdr
+pct_noFeature (%)	VHL	Wilcoxon rank-sum	368	171	197	3.937	3.946	-0.008		0.678	0.685
+pct_noFeature (%)	PBRM1	Wilcoxon rank-sum	368	151	217	4.071	3.922	0.149		0.39	0.685
+pct_noFeature (%)	BAP1	Wilcoxon rank-sum	368	40	328	4.367	3.894	0.473		0.288	0.685
+pct_noFeature (%)	SETD2	Wilcoxon rank-sum	368	46	322	4.401	3.935	0.465		0.541	0.685
+pct_noFeature (%)	KDM5C	Wilcoxon rank-sum	368	19	349	4.675	3.867	0.808		0.203	0.685
+pct_noFeature (%)	MTOR	Wilcoxon rank-sum	368	26	342	3.725	4.054	-0.329		0.452	0.685
+pct_noFeature (%)	TP53	Wilcoxon rank-sum	368	10	358	3.835	3.942	-0.107		0.685	0.685
+pct_noFeature (%)	n_nonsyn (total non-synonymous count)	Spearman	368						-0.069	0.186	0.685
+lncRNA axis (observed PC1, z)	VHL	Wilcoxon rank-sum	358	170	188	-0.289	-0.398	0.108		0.134	0.288
+lncRNA axis (observed PC1, z)	PBRM1	Wilcoxon rank-sum	358	149	209	-0.207	-0.396	0.19		0.0653	0.288
+lncRNA axis (observed PC1, z)	BAP1	Wilcoxon rank-sum	358	38	320	-0.144	-0.382	0.238		0.879	0.879
+lncRNA axis (observed PC1, z)	SETD2	Wilcoxon rank-sum	358	44	314	-0.035	-0.404	0.369		0.18	0.288
+lncRNA axis (observed PC1, z)	KDM5C	Wilcoxon rank-sum	358	19	339	0.103	-0.382	0.485		0.0897	0.288
+lncRNA axis (observed PC1, z)	MTOR	Wilcoxon rank-sum	358	26	332	-0.429	-0.325	-0.104		0.608	0.811
+lncRNA axis (observed PC1, z)	TP53	Wilcoxon rank-sum	358	10	348	-0.62	-0.333	-0.287		0.163	0.288
+lncRNA axis (observed PC1, z)	n_nonsyn (total non-synonymous count)	Spearman	358						-0.018	0.74	0.846

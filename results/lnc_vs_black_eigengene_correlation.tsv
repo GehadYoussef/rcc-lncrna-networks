@@ -1,0 +1,4 @@
+module	HR	reference_module	pearson_r	CI_lo	CI_hi	p	spearman
+blue	0.709	green	0.909	0.892	0.923	6.99e-190	0.895
+greenyellow	1.354	green	-0.572	-0.629	-0.51	1.31e-44	-0.633
+turquoise	1.239	green	0.016	-0.072	0.103	0.728	0.007

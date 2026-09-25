@@ -1,0 +1,170 @@
+cohort	feature	space	variable	n	pearson_r	pearson_lo	pearson_hi	pearson_p	spearman_rho	spearman_p	fdr_pearson	fdr_spearman
+TCGA-KIRC	Protein-coding green	residualised	PT marker score (full)	506	0.842	0.815	0.866	2.22e-137	0.853	1.56e-144	8.88e-136	6.24e-143
+TCGA-KIRC	Protein-coding green	residualised	PT marker score (HPA-named)	506	0.831	0.802	0.856	1.14e-130	0.845	2.53e-139	2.28e-129	5.06e-138
+TCGA-KIRC	Protein-coding green	residualised	PT marker score (leave-out, non-green)	506	0.288	0.206	0.366	3.81e-11	0.422	2.93e-23	1.02e-10	8.37e-23
+TCGA-KIRC	Protein-coding green	residualised	ClearCode34 ccB minus ccA score	506	-0.735	-0.772	-0.692	5.95e-87	-0.704	5.09e-77	3.97e-86	3.39e-76
+TCGA-KIRC	Protein-coding green	residualised	ClearCode34 class (ccB = 1)	506	-0.61	-0.662	-0.552	8.17e-53	-0.601	4.3e-51	4.08e-52	1.91e-50
+TCGA-KIRC	Protein-coding green	residualised	ESTIMATE score	506	-0.31	-0.387	-0.229	9.85e-13	-0.38	8.13e-19	2.81e-12	2.17e-18
+TCGA-KIRC	Protein-coding green	residualised	ESTIMATE stromal score	506	-0.381	-0.453	-0.304	6.42e-19	-0.458	1.27e-27	1.98e-18	3.91e-27
+TCGA-KIRC	Protein-coding green	residualised	ESTIMATE immune score	506	-0.194	-0.276	-0.108	1.14e-05	-0.241	4.21e-08	2.17e-05	7.32e-08
+TCGA-KIRC	Protein-coding green	residualised	slide tumour nuclei %	506	0.205	0.12	0.287	3.27e-06	0.246	2.05e-08	6.54e-06	3.73e-08
+TCGA-KIRC	Protein-coding green	residualised	non-feature read fraction	506	0	-0.087	0.087	1	0.016	0.726	1	0.764
+TCGA-KIRC	lncRNA blue	residualised	PT marker score (full)	511	0.746	0.705	0.782	5.67e-92	0.744	5.35e-91	5.67e-91	5.35e-90
+TCGA-KIRC	lncRNA blue	residualised	PT marker score (HPA-named)	511	0.733	0.69	0.771	3.2e-87	0.732	6.2e-87	2.56e-86	4.96e-86
+TCGA-KIRC	lncRNA blue	residualised	PT marker score (leave-out, non-green)	511	0.181	0.096	0.264	3.77e-05	0.317	1.98e-13	6.85e-05	4.66e-13
+TCGA-KIRC	lncRNA blue	residualised	ClearCode34 ccB minus ccA score	511	-0.795	-0.825	-0.761	1.31e-112	-0.786	1.35e-108	1.75e-111	1.8e-107
+TCGA-KIRC	lncRNA blue	residualised	ClearCode34 class (ccB = 1)	511	-0.675	-0.72	-0.625	2.59e-69	-0.688	5.92e-73	1.48e-68	3.38e-72
+TCGA-KIRC	lncRNA blue	residualised	ESTIMATE score	511	-0.165	-0.248	-0.079	0.00018	-0.306	1.5e-12	3e-04	3e-12
+TCGA-KIRC	lncRNA blue	residualised	ESTIMATE stromal score	511	-0.211	-0.293	-0.127	1.43e-06	-0.345	9.55e-16	3.01e-06	2.39e-15
+TCGA-KIRC	lncRNA blue	residualised	ESTIMATE immune score	511	-0.098	-0.183	-0.012	0.0263	-0.195	8.81e-06	0.0351	1.36e-05
+TCGA-KIRC	lncRNA blue	residualised	slide tumour nuclei %	511	0.215	0.131	0.296	9.48e-07	0.279	1.48e-10	2.11e-06	2.82e-10
+TCGA-KIRC	lncRNA blue	residualised	non-feature read fraction	511	0	-0.087	0.087	1	0.037	0.407	1	0.452
+TCGA-KIRC	lncRNA greenyellow	residualised	PT marker score (full)	511	-0.444	-0.511	-0.372	3.82e-26	-0.52	8.54e-37	1.39e-25	3.11e-36
+TCGA-KIRC	lncRNA greenyellow	residualised	PT marker score (HPA-named)	511	-0.393	-0.464	-0.317	2.49e-20	-0.478	1.45e-30	8.3e-20	4.83e-30
+TCGA-KIRC	lncRNA greenyellow	residualised	PT marker score (leave-out, non-green)	511	-0.151	-0.234	-0.065	0.000626	-0.181	3.85e-05	0.000927	5.5e-05
+TCGA-KIRC	lncRNA greenyellow	residualised	ClearCode34 ccB minus ccA score	511	0.599	0.54	0.652	4.3e-51	0.658	1.37e-64	1.72e-50	6.85e-64
+TCGA-KIRC	lncRNA greenyellow	residualised	ClearCode34 class (ccB = 1)	511	0.602	0.544	0.655	1.05e-51	0.591	1.82e-49	4.67e-51	7.28e-49
+TCGA-KIRC	lncRNA greenyellow	residualised	ESTIMATE score	511	0.252	0.169	0.332	7.28e-09	0.306	1.49e-12	1.71e-08	3e-12
+TCGA-KIRC	lncRNA greenyellow	residualised	ESTIMATE stromal score	511	0.157	0.071	0.24	0.000373	0.234	8.38e-08	0.000574	1.4e-07
+TCGA-KIRC	lncRNA greenyellow	residualised	ESTIMATE immune score	511	0.276	0.194	0.354	2.26e-10	0.307	1.39e-12	5.65e-10	3e-12
+TCGA-KIRC	lncRNA greenyellow	residualised	slide tumour nuclei %	511	-0.164	-0.247	-0.078	2e-04	-0.186	2.39e-05	0.00032	3.54e-05
+TCGA-KIRC	lncRNA greenyellow	residualised	non-feature read fraction	511	0	-0.087	0.087	1	0.014	0.757	1	0.776
+TCGA-KIRC	lncRNA turquoise	residualised	PT marker score (full)	511	0.039	-0.048	0.126	0.375	0.032	0.473	0.429	0.511
+TCGA-KIRC	lncRNA turquoise	residualised	PT marker score (HPA-named)	511	0.055	-0.032	0.141	0.212	0.051	0.251	0.249	0.287
+TCGA-KIRC	lncRNA turquoise	residualised	PT marker score (leave-out, non-green)	511	0.069	-0.018	0.154	0.122	0.117	0.0082	0.148	0.00994
+TCGA-KIRC	lncRNA turquoise	residualised	ClearCode34 ccB minus ccA score	511	0.139	0.052	0.223	0.0017	0.177	5.67e-05	0.00243	7.56e-05
+TCGA-KIRC	lncRNA turquoise	residualised	ClearCode34 class (ccB = 1)	511	0.101	0.014	0.186	0.0226	0.128	0.00387	0.0312	0.00484
+TCGA-KIRC	lncRNA turquoise	residualised	ESTIMATE score	511	-0.025	-0.111	0.062	0.574	0.006	0.896	0.638	0.896
+TCGA-KIRC	lncRNA turquoise	residualised	ESTIMATE stromal score	511	-0.177	-0.26	-0.092	5.48e-05	-0.179	4.63e-05	9.53e-05	6.39e-05
+TCGA-KIRC	lncRNA turquoise	residualised	ESTIMATE immune score	511	0.095	0.008	0.18	0.0321	0.128	0.00385	0.0401	0.00484
+TCGA-KIRC	lncRNA turquoise	residualised	slide tumour nuclei %	511	0.095	0.009	0.18	0.0314	0.055	0.217	0.0401	0.255
+TCGA-KIRC	lncRNA turquoise	residualised	non-feature read fraction	511	0	-0.087	0.087	1	0.2	5.31e-06	1	8.5e-06
+TCGA-KIRC	Protein-coding green	observed	PT marker score (full)	506	0.864	0.841	0.885	1.25e-152	0.882	1.15e-166	3.06e-151	1.88e-165
+TCGA-KIRC	Protein-coding green	observed	PT marker score (HPA-named)	506	0.849	0.823	0.872	7.1e-142	0.869	2.17e-156	8.7e-141	2.66e-155
+TCGA-KIRC	Protein-coding green	observed	PT marker score (leave-out, non-green)	506	0.296	0.214	0.373	1.14e-11	0.441	1.71e-25	2.66e-11	4.41e-25
+TCGA-KIRC	Protein-coding green	observed	ClearCode34 ccB minus ccA score	506	-0.767	-0.801	-0.729	3.36e-99	-0.74	6.19e-89	3.29e-98	5.06e-88
+TCGA-KIRC	Protein-coding green	observed	ClearCode34 class (ccB = 1)	506	-0.643	-0.692	-0.589	2.08e-60	-0.639	1.59e-59	8.49e-60	5.99e-59
+TCGA-KIRC	Protein-coding green	observed	ESTIMATE score	506	-0.31	-0.386	-0.229	1.05e-12	-0.371	5.4e-18	2.57e-12	1.26e-17
+TCGA-KIRC	Protein-coding green	observed	ESTIMATE stromal score	506	-0.336	-0.411	-0.256	8.79e-15	-0.408	9.32e-22	2.27e-14	2.28e-21
+TCGA-KIRC	Protein-coding green	observed	ESTIMATE immune score	506	-0.227	-0.308	-0.142	2.6e-07	-0.264	1.6e-09	5.37e-07	2.9e-09
+TCGA-KIRC	Protein-coding green	observed	slide tumour nuclei %	506	0.224	0.14	0.305	3.48e-07	0.26	2.96e-09	6.58e-07	5.18e-09
+TCGA-KIRC	Protein-coding green	observed	non-feature read fraction	506	0.018	-0.069	0.105	0.68	0.036	0.423	0.68	0.423
+TCGA-KIRC	lncRNA blue	observed	PT marker score (full)	511	0.733	0.69	0.77	4.09e-87	0.715	5.32e-81	2.58e-86	2.9e-80
+TCGA-KIRC	lncRNA blue	observed	PT marker score (HPA-named)	511	0.733	0.69	0.77	4.21e-87	0.72	1e-82	2.58e-86	6.12e-82
+TCGA-KIRC	lncRNA blue	observed	PT marker score (leave-out, non-green)	511	0.178	0.093	0.261	4.97e-05	0.332	1.4e-14	8.12e-05	3.12e-14
+TCGA-KIRC	lncRNA blue	observed	ClearCode34 ccB minus ccA score	511	-0.756	-0.791	-0.716	1.35e-95	-0.746	8.7e-92	1.1e-94	8.53e-91
+TCGA-KIRC	lncRNA blue	observed	ClearCode34 class (ccB = 1)	511	-0.656	-0.703	-0.604	2.59e-64	-0.666	1.06e-66	1.15e-63	5.19e-66
+TCGA-KIRC	lncRNA blue	observed	ESTIMATE score	511	-0.14	-0.224	-0.054	0.00154	-0.268	7.96e-10	0.00229	1.5e-09
+TCGA-KIRC	lncRNA blue	observed	ESTIMATE stromal score	511	-0.196	-0.278	-0.111	8.52e-06	-0.31	8.29e-13	1.49e-05	1.69e-12
+TCGA-KIRC	lncRNA blue	observed	ESTIMATE immune score	511	-0.071	-0.157	0.016	0.11	-0.163	0.000224	0.135	0.000305
+TCGA-KIRC	lncRNA blue	observed	slide tumour nuclei %	511	0.209	0.125	0.291	1.78e-06	0.254	5.98e-09	3.23e-06	9.77e-09
+TCGA-KIRC	lncRNA blue	observed	non-feature read fraction	511	0.438	0.365	0.505	2.44e-25	0.441	1.01e-25	7.03e-25	2.75e-25
+TCGA-KIRC	lncRNA greenyellow	observed	PT marker score (full)	511	-0.444	-0.511	-0.371	4.85e-26	-0.518	1.86e-36	1.49e-25	5.7e-36
+TCGA-KIRC	lncRNA greenyellow	observed	PT marker score (HPA-named)	511	-0.385	-0.457	-0.309	1.62e-19	-0.461	3.11e-28	4.41e-19	8.96e-28
+TCGA-KIRC	lncRNA greenyellow	observed	PT marker score (leave-out, non-green)	511	-0.153	-0.236	-0.067	0.000533	-0.167	0.000149	0.000816	0.000209
+TCGA-KIRC	lncRNA greenyellow	observed	ClearCode34 ccB minus ccA score	511	0.612	0.554	0.663	9.85e-54	0.66	2.58e-65	3.71e-53	1.15e-64
+TCGA-KIRC	lncRNA greenyellow	observed	ClearCode34 class (ccB = 1)	511	0.61	0.552	0.662	2.12e-53	0.592	1.4e-49	7.42e-53	4.9e-49
+TCGA-KIRC	lncRNA greenyellow	observed	ESTIMATE score	511	0.225	0.141	0.306	2.63e-07	0.281	1e-10	5.37e-07	1.96e-10
+TCGA-KIRC	lncRNA greenyellow	observed	ESTIMATE stromal score	511	0.088	0.002	0.174	0.0459	0.153	0.000505	0.0608	0.000651
+TCGA-KIRC	lncRNA greenyellow	observed	ESTIMATE immune score	511	0.285	0.204	0.363	5.07e-11	0.328	2.71e-14	1.13e-10	5.77e-14
+TCGA-KIRC	lncRNA greenyellow	observed	slide tumour nuclei %	511	-0.173	-0.256	-0.087	8.54e-05	-0.185	2.64e-05	0.000135	3.8e-05
+TCGA-KIRC	lncRNA greenyellow	observed	non-feature read fraction	511	0.223	0.139	0.304	3.49e-07	0.254	5.38e-09	6.58e-07	9.09e-09
+TCGA-KIRC	lncRNA turquoise	observed	PT marker score (full)	511	0.07	-0.017	0.156	0.115	0.037	0.407	0.137	0.423
+TCGA-KIRC	lncRNA turquoise	observed	PT marker score (HPA-named)	511	0.106	0.019	0.191	0.0166	0.08	0.0711	0.0239	0.0818
+TCGA-KIRC	lncRNA turquoise	observed	PT marker score (leave-out, non-green)	511	0.04	-0.047	0.126	0.371	0.121	0.00613	0.406	0.00769
+TCGA-KIRC	lncRNA turquoise	observed	ClearCode34 ccB minus ccA score	511	0.076	-0.011	0.161	0.0877	0.08	0.07	0.11	0.0818
+TCGA-KIRC	lncRNA turquoise	observed	ClearCode34 class (ccB = 1)	511	0.04	-0.047	0.126	0.373	0.036	0.421	0.406	0.423
+TCGA-KIRC	lncRNA turquoise	observed	ESTIMATE score	511	-0.022	-0.108	0.065	0.624	-0.037	0.404	0.637	0.423
+TCGA-KIRC	lncRNA turquoise	observed	ESTIMATE stromal score	511	-0.184	-0.267	-0.099	2.76e-05	-0.188	1.84e-05	4.66e-05	2.82e-05
+TCGA-KIRC	lncRNA turquoise	observed	ESTIMATE immune score	511	0.105	0.018	0.19	0.0176	0.08	0.0718	0.0246	0.0818
+TCGA-KIRC	lncRNA turquoise	observed	slide tumour nuclei %	511	0.038	-0.049	0.124	0.393	0.05	0.26	0.419	0.283
+TCGA-KIRC	lncRNA turquoise	observed	non-feature read fraction	511	0.853	0.828	0.875	4.35e-146	0.896	2.77e-181	7.1e-145	6.79e-180
+TCGA-KIRC	PT marker score (full)	observed	PT marker score (HPA-named)	528	0.992	0.99	0.993	0	0.989	0	0	0
+TCGA-KIRC	PT marker score (full)	observed	PT marker score (leave-out, non-green)	528	0.663	0.612	0.708	4.07e-68	0.72	1.79e-85	1.99e-67	1.25e-84
+TCGA-KIRC	PT marker score (full)	observed	ClearCode34 ccB minus ccA score	528	-0.666	-0.711	-0.616	4.38e-69	-0.629	1.37e-59	2.38e-68	5.59e-59
+TCGA-KIRC	PT marker score (full)	observed	ClearCode34 class (ccB = 1)	528	-0.532	-0.59	-0.468	7.27e-40	-0.544	6.34e-42	2.37e-39	2.07e-41
+TCGA-KIRC	PT marker score (full)	observed	ESTIMATE score	528	-0.041	-0.126	0.045	0.352	-0.184	2e-05	0.401	2.97e-05
+TCGA-KIRC	PT marker score (full)	observed	ESTIMATE stromal score	528	-0.051	-0.135	0.035	0.246	-0.216	5.57e-07	0.287	8.8e-07
+TCGA-KIRC	PT marker score (full)	observed	ESTIMATE immune score	528	-0.026	-0.111	0.06	0.558	-0.119	0.00628	0.582	0.00769
+TCGA-KIRC	PT marker score (full)	observed	slide tumour nuclei %	528	0.102	0.016	0.185	0.0196	0.152	0.000465	0.0267	0.000616
+TCGA-KIRC	PT marker score (full)	observed	non-feature read fraction	528	0.077	-0.008	0.161	0.0772	0.053	0.223	0.0995	0.248
+CPTAC-3	Protein-coding green	residualised	PT marker score (full)	199	0.871	0.833	0.901	9.09e-63	0.885	2.35e-67	3.27e-61	8.46e-66
+CPTAC-3	Protein-coding green	residualised	PT marker score (HPA-named)	199	0.858	0.817	0.891	5.23e-59	0.872	3.89e-63	9.41e-58	7e-62
+CPTAC-3	Protein-coding green	residualised	PT marker score (leave-out, non-green)	199	0.292	0.159	0.414	2.91e-05	0.357	2.22e-07	6.55e-05	4.7e-07
+CPTAC-3	Protein-coding green	residualised	ClearCode34 ccB minus ccA score	199	-0.773	-0.824	-0.71	8.48e-41	-0.717	9.55e-33	7.63e-40	5.73e-32
+CPTAC-3	Protein-coding green	residualised	ClearCode34 class (ccB = 1)	199	-0.647	-0.721	-0.558	5.69e-25	-0.649	3.62e-25	2.56e-24	1.45e-24
+CPTAC-3	Protein-coding green	residualised	ESTIMATE score	199	-0.352	-0.469	-0.224	3.29e-07	-0.452	2.01e-11	9.11e-07	5.57e-11
+CPTAC-3	Protein-coding green	residualised	ESTIMATE stromal score	199	-0.322	-0.441	-0.191	3.62e-06	-0.399	5.43e-09	9.31e-06	1.4e-08
+CPTAC-3	Protein-coding green	residualised	ESTIMATE immune score	199	-0.294	-0.416	-0.162	2.44e-05	-0.366	1.05e-07	5.86e-05	2.36e-07
+CPTAC-3	Protein-coding green	residualised	non-feature read fraction	199	-0.001	-0.14	0.138	0.993	-0.023	0.748	0.997	0.816
+CPTAC-3	lncRNA blue	residualised	PT marker score (full)	199	0.761	0.695	0.814	8.41e-39	0.746	1.11e-36	6.06e-38	9.99e-36
+CPTAC-3	lncRNA blue	residualised	PT marker score (HPA-named)	199	0.748	0.68	0.804	5.46e-37	0.734	6.66e-35	3.28e-36	4.8e-34
+CPTAC-3	lncRNA blue	residualised	PT marker score (leave-out, non-green)	199	0.18	0.042	0.312	0.0108	0.243	0.000558	0.0162	0.000913
+CPTAC-3	lncRNA blue	residualised	ClearCode34 ccB minus ccA score	199	-0.797	-0.843	-0.74	4.68e-45	-0.783	1.5e-42	5.62e-44	1.8e-41
+CPTAC-3	lncRNA blue	residualised	ClearCode34 class (ccB = 1)	199	-0.692	-0.758	-0.612	1.1e-29	-0.71	7.33e-32	5.66e-29	3.77e-31
+CPTAC-3	lncRNA blue	residualised	ESTIMATE score	199	-0.264	-0.389	-0.13	0.000166	-0.383	2.45e-08	0.000332	5.88e-08
+CPTAC-3	lncRNA blue	residualised	ESTIMATE stromal score	199	-0.223	-0.351	-0.086	0.00158	-0.327	2.41e-06	0.00271	4.57e-06
+CPTAC-3	lncRNA blue	residualised	ESTIMATE immune score	199	-0.236	-0.363	-0.1	0.000811	-0.315	5.68e-06	0.00146	1.02e-05
+CPTAC-3	lncRNA blue	residualised	non-feature read fraction	199	-0.001	-0.14	0.138	0.992	0.009	0.899	0.997	0.925
+CPTAC-3	lncRNA greenyellow	residualised	PT marker score (full)	199	-0.478	-0.579	-0.363	9.08e-13	-0.537	3.03e-16	2.97e-12	9.92e-16
+CPTAC-3	lncRNA greenyellow	residualised	PT marker score (HPA-named)	199	-0.443	-0.548	-0.324	5.56e-11	-0.5	5.73e-14	1.67e-10	1.72e-13
+CPTAC-3	lncRNA greenyellow	residualised	PT marker score (leave-out, non-green)	199	-0.142	-0.276	-0.003	0.0447	-0.174	0.0142	0.0644	0.0213
+CPTAC-3	lncRNA greenyellow	residualised	ClearCode34 ccB minus ccA score	199	0.626	0.533	0.704	4.9e-23	0.673	1.41e-27	1.96e-22	6.34e-27
+CPTAC-3	lncRNA greenyellow	residualised	ClearCode34 class (ccB = 1)	199	0.558	0.454	0.647	1.11e-17	0.552	2.97e-17	4e-17	1.07e-16
+CPTAC-3	lncRNA greenyellow	residualised	ESTIMATE score	199	0.195	0.058	0.326	0.00566	0.272	0.000102	0.00886	0.000175
+CPTAC-3	lncRNA greenyellow	residualised	ESTIMATE stromal score	199	0.07	-0.07	0.207	0.328	0.108	0.129	0.407	0.166
+CPTAC-3	lncRNA greenyellow	residualised	ESTIMATE immune score	199	0.254	0.119	0.379	0.000302	0.329	2.15e-06	0.000572	4.3e-06
+CPTAC-3	lncRNA greenyellow	residualised	non-feature read fraction	199	0.001	-0.138	0.14	0.989	-0.011	0.877	0.997	0.925
+CPTAC-3	lncRNA turquoise	residualised	PT marker score (full)	199	-0.027	-0.166	0.112	0.701	-0.025	0.731	0.841	0.816
+CPTAC-3	lncRNA turquoise	residualised	PT marker score (HPA-named)	199	-0.009	-0.148	0.131	0.902	0.005	0.943	0.997	0.943
+CPTAC-3	lncRNA turquoise	residualised	PT marker score (leave-out, non-green)	199	0.091	-0.049	0.227	0.202	0.116	0.102	0.26	0.136
+CPTAC-3	lncRNA turquoise	residualised	ClearCode34 ccB minus ccA score	199	0.269	0.135	0.394	0.000119	0.213	0.00253	0.000252	0.00396
+CPTAC-3	lncRNA turquoise	residualised	ClearCode34 class (ccB = 1)	199	0.204	0.067	0.334	0.0038	0.171	0.0155	0.00622	0.0223
+CPTAC-3	lncRNA turquoise	residualised	ESTIMATE score	199	0.022	-0.118	0.16	0.763	0.099	0.165	0.886	0.205
+CPTAC-3	lncRNA turquoise	residualised	ESTIMATE stromal score	199	-0.128	-0.262	0.012	0.0724	-0.064	0.367	0.0965	0.44
+CPTAC-3	lncRNA turquoise	residualised	ESTIMATE immune score	199	0.141	0.001	0.274	0.0478	0.17	0.0167	0.0662	0.0231
+CPTAC-3	lncRNA turquoise	residualised	non-feature read fraction	199	0	-0.139	0.139	0.997	0.029	0.688	0.997	0.799
+CPTAC-3	Protein-coding green	observed	PT marker score (full)	199	0.875	0.838	0.904	5.94e-64	0.885	1.7e-67	1.31e-62	3.74e-66
+CPTAC-3	Protein-coding green	observed	PT marker score (HPA-named)	199	0.864	0.824	0.895	1.6e-60	0.875	5.58e-64	2.35e-59	8.18e-63
+CPTAC-3	Protein-coding green	observed	PT marker score (leave-out, non-green)	199	0.289	0.156	0.411	3.56e-05	0.354	2.86e-07	7.46e-05	5.72e-07
+CPTAC-3	Protein-coding green	observed	ClearCode34 ccB minus ccA score	199	-0.77	-0.821	-0.707	2.4e-40	-0.709	1.01e-31	2.11e-39	6.35e-31
+CPTAC-3	Protein-coding green	observed	ClearCode34 class (ccB = 1)	199	-0.639	-0.715	-0.549	2.85e-24	-0.636	5.46e-24	1.25e-23	2.4e-23
+CPTAC-3	Protein-coding green	observed	ESTIMATE score	199	-0.361	-0.477	-0.234	1.56e-07	-0.462	6.64e-12	3.81e-07	1.72e-11
+CPTAC-3	Protein-coding green	observed	ESTIMATE stromal score	199	-0.333	-0.451	-0.203	1.57e-06	-0.416	9.6e-10	3.64e-06	2.22e-09
+CPTAC-3	Protein-coding green	observed	ESTIMATE immune score	199	-0.299	-0.421	-0.167	1.74e-05	-0.367	9.39e-08	3.83e-05	2.07e-07
+CPTAC-3	Protein-coding green	observed	non-feature read fraction	199	-0.02	-0.158	0.12	0.782	-0.049	0.496	0.819	0.546
+CPTAC-3	lncRNA blue	observed	PT marker score (full)	199	0.744	0.675	0.801	2.15e-36	0.721	3.4e-33	1.58e-35	2.99e-32
+CPTAC-3	lncRNA blue	observed	PT marker score (HPA-named)	199	0.734	0.662	0.792	6.48e-35	0.708	1.25e-31	4.07e-34	6.88e-31
+CPTAC-3	lncRNA blue	observed	PT marker score (leave-out, non-green)	199	0.175	0.037	0.306	0.0135	0.231	0.00105	0.0192	0.00158
+CPTAC-3	lncRNA blue	observed	ClearCode34 ccB minus ccA score	199	-0.804	-0.848	-0.748	2.62e-46	-0.792	5.17e-44	2.88e-45	5.69e-43
+CPTAC-3	lncRNA blue	observed	ClearCode34 class (ccB = 1)	199	-0.696	-0.761	-0.616	3.86e-30	-0.72	4.5e-33	2.12e-29	3.3e-32
+CPTAC-3	lncRNA blue	observed	ESTIMATE score	199	-0.254	-0.379	-0.119	3e-04	-0.364	1.24e-07	6e-04	2.6e-07
+CPTAC-3	lncRNA blue	observed	ESTIMATE stromal score	199	-0.19	-0.32	-0.052	0.00724	-0.275	8.35e-05	0.0118	0.000141
+CPTAC-3	lncRNA blue	observed	ESTIMATE immune score	199	-0.246	-0.373	-0.111	0.000449	-0.326	2.6e-06	0.000823	4.77e-06
+CPTAC-3	lncRNA blue	observed	non-feature read fraction	199	0.155	0.017	0.288	0.0285	0.163	0.0211	0.0392	0.0273
+CPTAC-3	lncRNA greenyellow	observed	PT marker score (full)	199	-0.474	-0.576	-0.359	1.45e-12	-0.536	3.34e-16	4.25e-12	9.8e-16
+CPTAC-3	lncRNA greenyellow	observed	PT marker score (HPA-named)	199	-0.439	-0.545	-0.319	9e-11	-0.498	6.88e-14	2.48e-10	1.89e-13
+CPTAC-3	lncRNA greenyellow	observed	PT marker score (leave-out, non-green)	199	-0.141	-0.275	-0.002	0.047	-0.174	0.0141	0.0627	0.02
+CPTAC-3	lncRNA greenyellow	observed	ClearCode34 ccB minus ccA score	199	0.629	0.537	0.706	2.62e-23	0.677	4.44e-28	9.61e-23	2.17e-27
+CPTAC-3	lncRNA greenyellow	observed	ClearCode34 class (ccB = 1)	199	0.565	0.462	0.653	3.68e-18	0.56	8.21e-18	1.25e-17	2.78e-17
+CPTAC-3	lncRNA greenyellow	observed	ESTIMATE score	199	0.188	0.051	0.319	0.00774	0.264	0.000166	0.0122	0.000271
+CPTAC-3	lncRNA greenyellow	observed	ESTIMATE stromal score	199	0.059	-0.081	0.196	0.41	0.094	0.185	0.488	0.225
+CPTAC-3	lncRNA greenyellow	observed	ESTIMATE immune score	199	0.251	0.116	0.377	0.000343	0.327	2.48e-06	0.000656	4.74e-06
+CPTAC-3	lncRNA greenyellow	observed	non-feature read fraction	199	-0.027	-0.166	0.112	0.7	-0.041	0.565	0.77	0.606
+CPTAC-3	lncRNA turquoise	observed	PT marker score (full)	199	-0.041	-0.179	0.099	0.57	-0.021	0.768	0.643	0.798
+CPTAC-3	lncRNA turquoise	observed	PT marker score (HPA-named)	199	-0.025	-0.163	0.115	0.73	0.004	0.958	0.783	0.958
+CPTAC-3	lncRNA turquoise	observed	PT marker score (leave-out, non-green)	199	0.08	-0.06	0.217	0.262	0.094	0.189	0.32	0.225
+CPTAC-3	lncRNA turquoise	observed	ClearCode34 ccB minus ccA score	199	0.184	0.046	0.315	0.00945	0.113	0.111	0.0143	0.14
+CPTAC-3	lncRNA turquoise	observed	ClearCode34 class (ccB = 1)	199	0.127	-0.012	0.261	0.0738	0.08	0.263	0.0955	0.305
+CPTAC-3	lncRNA turquoise	observed	ESTIMATE score	199	0.051	-0.089	0.188	0.478	0.164	0.0204	0.553	0.0273
+CPTAC-3	lncRNA turquoise	observed	ESTIMATE stromal score	199	-0.018	-0.156	0.122	0.805	0.073	0.305	0.824	0.344
+CPTAC-3	lncRNA turquoise	observed	ESTIMATE immune score	199	0.095	-0.044	0.231	0.181	0.164	0.0209	0.228	0.0273
+CPTAC-3	lncRNA turquoise	observed	non-feature read fraction	199	0.406	0.283	0.516	2.76e-09	0.431	2.07e-10	7.14e-09	5.06e-10
+CPTAC-3	PT marker score (full)	observed	PT marker score (HPA-named)	199	0.993	0.991	0.995	8.03e-187	0.99	7.57e-168	3.53e-185	3.33e-166
+CPTAC-3	PT marker score (full)	observed	PT marker score (leave-out, non-green)	199	0.662	0.576	0.734	1.8e-26	0.626	5.1e-23	8.8e-26	2.04e-22
+CPTAC-3	PT marker score (full)	observed	ClearCode34 ccB minus ccA score	199	-0.634	-0.71	-0.543	9.17e-24	-0.569	1.69e-18	3.67e-23	6.2e-18
+CPTAC-3	PT marker score (full)	observed	ClearCode34 class (ccB = 1)	199	-0.507	-0.603	-0.396	2.21e-14	-0.538	2.48e-16	6.95e-14	7.79e-16
+CPTAC-3	PT marker score (full)	observed	ESTIMATE score	199	-0.214	-0.343	-0.077	0.00242	-0.28	6.01e-05	0.00426	0.000106
+CPTAC-3	PT marker score (full)	observed	ESTIMATE stromal score	199	-0.178	-0.31	-0.04	0.0117	-0.253	0.000316	0.0172	0.000497
+CPTAC-3	PT marker score (full)	observed	ESTIMATE immune score	199	-0.192	-0.323	-0.055	0.00647	-0.23	0.00108	0.0109	0.00158
+CPTAC-3	PT marker score (full)	observed	non-feature read fraction	199	0.01	-0.13	0.149	0.891	-0.02	0.78	0.891	0.798

@@ -1,0 +1,5 @@
+cohort	matrix	n	n_genes	pc1_var_share	pc2_var_share	pc3_var_share	pc4_var_share	pc5_var_share	rho_noFeature	p_noFeature	rho_multimap	p_multimap	rho_log_depth	p_log_depth	rho_mean_expr	p_mean_expr
+TCGA-KIRP	lncRNA	269	3442	0.2666	0.0701	0.057	0.0345	0.0283	0.827	0	-0.181	0.00294	-0.336	2.02e-08	0.983	0
+TCGA-KIRP	protein_coding	269	12000	0.128	0.1191	0.0934	0.0644	0.034	0.493	0	-0.647	0	0.26	1.7e-05	0.72	0
+TCGA-KICH	lncRNA	65	3442	0.1445	0.1122	0.0721	0.0562	0.0478	-0.126	0.317	0.296	0.0169	-0.182	0.146	0.488	4.76e-05
+TCGA-KICH	protein_coding	65	12000	0.1585	0.1298	0.0854	0.0619	0.0469	-0.125	0.318	-0.165	0.188	-0.053	0.675	0.562	1.72e-06

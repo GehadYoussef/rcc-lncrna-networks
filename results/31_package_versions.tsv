@@ -1,0 +1,40 @@
+package	how	n_scripts	scripts	version	installed	platform
+R	interpreter	37	all	4.4.2	TRUE	x86_64-w64-mingw32
+AnnotationDbi	library; namespace (::); requireNamespace	2	19_eigengene_correlation.R; ora_hypergeometric.R	1.66.0	TRUE	x86_64-w64-mingw32
+DESeq2	library	1	29_normalisation_check.R	1.44.0	TRUE	x86_64-w64-mingw32
+GO.db	namespace (::); requireNamespace	2	19_eigengene_correlation.R; ora_hypergeometric.R	3.19.1	TRUE	x86_64-w64-mingw32
+GenomicRanges	library	1	28_mutations_and_lncRNA_classes.R	1.56.2	TRUE	x86_64-w64-mingw32
+IRanges	library	1	28_mutations_and_lncRNA_classes.R	2.38.1	TRUE	x86_64-w64-mingw32
+S4Vectors	library; namespace (::)	2	28_mutations_and_lncRNA_classes.R; 29_normalisation_check.R	0.42.1	TRUE	x86_64-w64-mingw32
+WGCNA	library	6	02_wgcna.R; 02b_lncrna_tuning.R; 12_model_diagnostics.R; 23_technical_axis_extended.R; 24_module_preservation.R; 30_endpoint_sensitivity.R	1.73	TRUE	x86_64-w64-mingw32
+car	namespace (::); requireNamespace	1	07_purity_qc.R	3.1.5	TRUE	x86_64-w64-mingw32
+clusterProfiler	library	2	06_enrichment.R; 10_paper_analyses.R	4.12.6	TRUE	x86_64-w64-mingw32
+data.table	library; namespace (::)	35	00_config.R; 01_build_data.R; 02_wgcna.R; 02b_lncrna_tuning.R; 03_survival.R; 04_dcor.R; 04b_dcor_diagnostics.R; 05_ml.R; 06_enrichment.R; 07_purity_qc.R; 08_validation_data.R; 09_validate.R; 10_paper_analyses.R; 11_subtype_specificity.R; 12_model_diagnostics.R; 13_figures.R; 14_tables.R; 15_sensitivity_tissue_source_site.R; 19_eigengene_correlation.R; 20_turquoise_units_and_locked_model.R; 22_v8_revision.R; 23_technical_axis_extended.R; 24_module_preservation.R; 25_matched_normal_control.R; 26_published_signatures.R; 27_metric_biology.R; 28_mutations_and_lncRNA_classes.R; 29_normalisation_check.R; 30_endpoint_sensitivity.R; 31_supplementary_data_and_index.R; 32_supplementary_figures.R; 33_sex_stratified.R; 34_proximal_tubule_reading.R; 35_axis_projection_subtypes.R; ora_hypergeometric.R	1.16.4	TRUE	x86_64-w64-mingw32
+doParallel	library	1	05_ml.R	1.0.17	TRUE	x86_64-w64-mingw32
+edgeR	library	1	29_normalisation_check.R	4.2.2	TRUE	x86_64-w64-mingw32
+energy	library; namespace (::)	2	04_dcor.R; 04b_dcor_diagnostics.R	1.7.12	TRUE	x86_64-w64-mingw32
+estimate	library	2	07_purity_qc.R; 09_validate.R	1.0.13	TRUE	x86_64-w64-mingw32
+foreach	library	1	05_ml.R	1.5.2	TRUE	x86_64-w64-mingw32
+ggplot2	library; namespace (::)	16	00_config.R; 02_wgcna.R; 02b_lncrna_tuning.R; 03_survival.R; 04_dcor.R; 04b_dcor_diagnostics.R; 05_ml.R; 06_enrichment.R; 07_purity_qc.R; 09_validate.R; 10_paper_analyses.R; 11_subtype_specificity.R; 12_model_diagnostics.R; 13_figures.R; 24_module_preservation.R; 32_supplementary_figures.R	4.0.2	TRUE	x86_64-w64-mingw32
+glmnet	library	4	05_ml.R; 09_validate.R; 12_model_diagnostics.R; 30_endpoint_sensitivity.R	4.1.10	TRUE	x86_64-w64-mingw32
+grDevices	namespace (::)	1	00_config.R	4.4.2	TRUE	x86_64-w64-mingw32
+httr	library; namespace (::)	10	01_build_data.R; 08_validation_data.R; 11_subtype_specificity.R; 23_technical_axis_extended.R; 25_matched_normal_control.R; 26_published_signatures.R; 28_mutations_and_lncRNA_classes.R; 30_endpoint_sensitivity.R; 31_supplementary_data_and_index.R; 33_sex_stratified.R	1.4.8	TRUE	x86_64-w64-mingw32
+jsonlite	library; namespace (::)	9	01_build_data.R; 08_validation_data.R; 11_subtype_specificity.R; 23_technical_axis_extended.R; 25_matched_normal_control.R; 26_published_signatures.R; 28_mutations_and_lncRNA_classes.R; 31_supplementary_data_and_index.R; 33_sex_stratified.R	2.0.0	TRUE	x86_64-w64-mingw32
+limma	namespace (::); requireNamespace	1	29_normalisation_check.R	3.60.6	TRUE	x86_64-w64-mingw32
+matrixStats	namespace (::)	1	01_build_data.R	1.5.0	TRUE	x86_64-w64-mingw32
+org.Hs.eg.db	library; requireNamespace	4	06_enrichment.R; 10_paper_analyses.R; 19_eigengene_correlation.R; ora_hypergeometric.R	3.19.1	TRUE	x86_64-w64-mingw32
+parallel	library; namespace (::)	3	00_config.R; 29_normalisation_check.R; 30_endpoint_sensitivity.R	4.4.2	TRUE	x86_64-w64-mingw32
+patchwork	library	2	13_figures.R; 32_supplementary_figures.R	1.3.2	TRUE	x86_64-w64-mingw32
+pheatmap	namespace (::)	1	04_dcor.R	1.0.13	TRUE	x86_64-w64-mingw32
+ragg	namespace (::)	1	00_config.R	1.5.2	TRUE	x86_64-w64-mingw32
+readxl	library; namespace (::)	1	30_endpoint_sensitivity.R	1.4.5	TRUE	x86_64-w64-mingw32
+scales	namespace (::)	1	13_figures.R	1.4.0	TRUE	x86_64-w64-mingw32
+stats	namespace (::)	12	02_wgcna.R; 02b_lncrna_tuning.R; 23_technical_axis_extended.R; 24_module_preservation.R; 25_matched_normal_control.R; 27_metric_biology.R; 28_mutations_and_lncRNA_classes.R; 29_normalisation_check.R; 30_endpoint_sensitivity.R; 33_sex_stratified.R; 34_proximal_tubule_reading.R; 35_axis_projection_subtypes.R	4.4.2	TRUE	x86_64-w64-mingw32
+survival	library; namespace (::)	23	00_config.R; 01_build_data.R; 03_survival.R; 05_ml.R; 07_purity_qc.R; 08_validation_data.R; 09_validate.R; 10_paper_analyses.R; 11_subtype_specificity.R; 12_model_diagnostics.R; 14_tables.R; 15_sensitivity_tissue_source_site.R; 20_turquoise_units_and_locked_model.R; 22_v8_revision.R; 23_technical_axis_extended.R; 25_matched_normal_control.R; 26_published_signatures.R; 27_metric_biology.R; 28_mutations_and_lncRNA_classes.R; 29_normalisation_check.R; 30_endpoint_sensitivity.R; 33_sex_stratified.R; 34_proximal_tubule_reading.R	3.7.0	TRUE	x86_64-w64-mingw32
+survminer	library	2	03_survival.R; 10_paper_analyses.R	0.5.2	TRUE	x86_64-w64-mingw32
+svglite	namespace (::)	1	00_config.R	2.2.2	TRUE	x86_64-w64-mingw32
+systemfonts	namespace (::)	2	13_figures.R; 32_supplementary_figures.R	1.3.2	TRUE	x86_64-w64-mingw32
+timeROC	library	2	05_ml.R; 10_paper_analyses.R	0.4.1	TRUE	x86_64-w64-mingw32
+tools	namespace (::)	2	28_mutations_and_lncRNA_classes.R; 31_supplementary_data_and_index.R	4.4.2	TRUE	x86_64-w64-mingw32
+utils	namespace (::)	3	00_config.R; 26_published_signatures.R; 31_supplementary_data_and_index.R	4.4.2	TRUE	x86_64-w64-mingw32
+xml2	library	2	01_build_data.R; 23_technical_axis_extended.R	1.3.8	TRUE	x86_64-w64-mingw32

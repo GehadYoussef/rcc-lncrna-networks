@@ -1,0 +1,14 @@
+module	n_genes	n	var_explained_residualised	var_explained_observed	pearson_r_observed_vs_residualised	pearson_r_observed_vs_metric	pearson_r_residualised_vs_metric	r_orthogonal_part_vs_metric	is_catabolic_reference
+black	323	506	0.4347	0.4272	0.988	-0.017	0	-0.109	FALSE
+blue	994	506	0.3936	0.403	0.933	0.111	0	0.31	FALSE
+brown	988	506	0.3815	0.3986	0.906	0.015	0	0.035	FALSE
+green	670	506	0.3624	0.3641	0.958	0.018	0	0.064	TRUE
+greenyellow	164	506	0.4506	0.4768	0.889	0.021	0	0.045	FALSE
+magenta	227	506	0.4646	0.4848	0.885	0.096	0	0.206	FALSE
+pink	270	506	0.4521	0.5639	0.738	0.279	0	0.414	FALSE
+purple	216	506	0.4467	0.4251	0.998	0.055	0	0.801	FALSE
+red	473	506	0.3849	0.5923	0.585	0.803	0	0.99	FALSE
+salmon	63	506	0.4601	0.4602	0.96	0.141	0	0.506	FALSE
+tan	152	506	0.4813	0.4918	0.927	-0.183	0	-0.487	FALSE
+turquoise	2405	506	0.3649	0.4355	0.81	0.003	0	0.004	FALSE
+yellow	986	506	0.4009	0.3821	0.989	0.14	0	0.95	FALSE

@@ -1,0 +1,239 @@
+# singlecell.yml: paths and scientific thresholds for src/singlecell.
+# The R code does not override these values. Stage 12 prints this file in its
+# report, and the candidate and bulk locks record the rules they used.
+
+seed: 20260816
+
+# ---- paths (relative to the repository root) ----
+paths:
+  manifest:        data/manifests/tisch2_kirc_manifest.csv
+  sample_sheet:    data/manifests/singlecell_samples.csv
+  extra_files:     data/manifests/singlecell_extra_files.csv
+  raw_dir:         data/raw/singlecell          # downloaded inputs, never edited
+  derived_dir:     data/derived/singlecell      # SingleCellExperiment .rds objects
+  results_dir:     results/singlecell
+  figures_dir:     figures/singlecell
+  logs_dir:        logs/singlecell
+  reports_dir:     reports
+  # GENCODE v36 is the gene model of GDC data release 46 (TCGA-KIRC, CPTAC-3).
+  # Downloaded from annotation$gencode_url if absent.
+  gencode_gtf:     data/derived/cache/28_gencode_v36.gtf.gz
+  legacy_gtf:      data/raw/singlecell/reference/gencode.v19.annotation.gtf.gz
+  bulk_tcga:       data/derived/cache/expr_raw.rds
+  bulk_cptac:      data/derived/cache/validation_dataset.rds
+
+# ---- acquisition ----
+download:
+  user_agent: "lncRNA-ccRCC-singlecell-audit/0.1 (academic research; R curl)"
+  retries: 4
+  retry_wait_seconds: 20
+  timeout_seconds: 3600
+  # TISCH2 Expression files hold mean log-normalised expression per cell group.
+  # They are fetched only to audit which genes TISCH2 retains.
+  fetch_tisch2_expression: true
+
+# ---- reference annotation ----
+annotation:
+  genome_build: GRCh38
+  gencode_release: 36
+  gencode_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_36/gencode.v36.annotation.gtf.gz
+  # GENCODE >= v33 merged the older lncRNA subtypes into "lncRNA". Legacy names
+  # are listed so older feature files are classified consistently.
+  lncrna_biotypes:
+    - lncRNA
+    - lincRNA
+    - antisense
+    - sense_intronic
+    - sense_overlapping
+    - processed_transcript
+    - 3prime_overlapping_ncRNA
+    - bidirectional_promoter_lncRNA
+    - macro_lncRNA
+  # Legacy symbol bridge. Some matrices (GSE139555, GSE145281, Li 2022) carry
+  # GRCh37-era symbols (e.g. RP11-206L10.9) absent from v36. These are looked
+  # up in GENCODE v19 when unique and carried to v36 by Ensembl gene ID.
+  legacy_gencode_release: 19
+  legacy_gencode_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf.gz
+  # Analysis key: unversioned Ensembl gene ID. Symbols map only when unique.
+  primary_gene_key: ensembl_unversioned
+
+# ---- donor exclusions ----
+# Donors removed from all compartments, with the published evidence. Their
+# cells stay in the imported objects and are counted in the exclusion log.
+exclude_donors:
+  KIRC_Li2022:
+    PD47172: "oncocytoma, not ccRCC (Li et al. 2022 Cancer Cell, Results: 'one (PD47172) was an oncocytoma')"
+    PD44714: "benign thick-walled cyst, not ccRCC (Li et al. 2022 Cancer Cell, Results: 'one (PD44714) was a large benign thick-walled cyst')"
+
+# ---- reference-based annotation ----
+# For datasets deposited without cell annotation: SingleR transfers the
+# discovery dataset's author labels using protein-coding genes only, so no
+# lncRNA influences which cells are called malignant. Pruned labels become
+# other_uncertain.
+reference_annotation:
+  KIRC_GSE207493:
+    reference_dataset: KIRC_GSE159115
+    reference_label: author_label
+    feature_biotypes: [protein_coding]
+    min_reference_cells_per_label: 50
+
+# ---- cell QC ----
+cell_qc:
+  min_genes: 200
+  min_umi: 500
+  max_pct_mito: 20          # percent, looser than the usual 10 because kidney
+                            # tubule cells are mitochondria-rich
+  # Author doublet calls are used where supplied. No doublet caller is run.
+  use_author_doublet_calls: true
+
+# ---- compartment definitions ----
+# Harmonised compartments. Label mapping rules are in map_compartment()
+# (src/singlecell/lib_sc.R).
+compartments:
+  - malignant
+  - normal_epithelial
+  - immune
+  - endothelial
+  - fibroblast_stromal
+  - other_uncertain
+# Marker panels used only to check labels (mean detection per compartment).
+markers:
+  malignant_ccrcc:   [CA9, NDUFA4L2, ANGPTL4, VEGFA, EGLN3]
+  renal_epithelial:  [PAX8, PAX2, CUBN, LRP2, SLC34A1, UMOD, KRT18]
+  immune:            [PTPRC, CD3E, CD68, CD14, MS4A1]
+  endothelial:       [PECAM1, VWF, PLVAP, KDR]
+  fibroblast_stromal: [COL1A1, COL1A2, ACTA2, RGS5, PDGFRB]
+
+# ---- malignant-cell rescue ----
+# Compartments flagged in 05_marker_discordance.tsv as hiding malignant cells.
+# Rescue is per cell: a cell becomes malignant only if it detects
+# >= min_ccrcc_markers of markers$malignant_ccrcc and none of exclude_if_detected.
+rescue_malignant:
+  compartments:
+    KIRC_GSE111360: [fibroblast_stromal]
+    KIRC_GSE207493: [epithelial_in_tumour]
+  min_ccrcc_markers: 3
+  exclude_if_detected: [PTPRC, PECAM1]
+
+# ---- feasibility thresholds (data-quality gate checked by 06) ----
+pseudobulk:
+  min_cells_per_donor_compartment: 20
+  min_donors_inferential: 3          # per group, per dataset
+feasibility:
+  # A lncRNA passes donor-level expression with >= lnc_min_counts_pseudobulk
+  # summed raw counts in >= lnc_min_donor_frac of malignant donor pseudobulks.
+  lnc_min_counts_pseudobulk: 10
+  lnc_min_donor_frac: 0.5
+  # The gate requires, in the discovery dataset:
+  min_lnc_passing_discovery: 300
+  min_donors_malignant_discovery: 5
+  min_donors_normal_epithelial_discovery: 3
+  # and, across replication datasets, at least this many independent donors
+  # with an evaluable malignant compartment:
+  min_replication_malignant_donors: 5
+  # and at least this many discovery-passing lncRNAs must also pass the same
+  # donor-level filter in at least one replication dataset:
+  min_lnc_overlap_replication: 100
+# A non-malignant compartment whose cells detect the ccRCC marker panel at a
+# mean rate >= this value is flagged as a probable mislabel (not relabelled).
+marker_discordance_threshold: 0.5
+
+# ---- pseudobulk and within-dataset differential expression (06-07) ----
+pseudobulk_build:
+  # tissue each compartment is taken from (TME lineages come from tumour tissue)
+  compartments:
+    malignant: tumour
+    normal_epithelial: normal_kidney
+    immune: tumour
+    endothelial: tumour
+    fibroblast_stromal: tumour
+    pooled_nonmalignant_tme: tumour
+  datasets_roles: [discovery, replication, replication_candidate, treated_sensitivity]
+de:
+  method: edgeR_QL
+  # contrast name: [reference level, test level], positive log2FC = higher in test
+  contrasts:
+    malignant_vs_normal_epithelial: [normal_epithelial, malignant]
+    malignant_vs_pooled_tme: [pooled_nonmalignant_tme, malignant]
+    malignant_vs_immune: [immune, malignant]
+    malignant_vs_endothelial: [endothelial, malignant]
+    malignant_vs_fibroblast_stromal: [fibroblast_stromal, malignant]
+  primary_contrasts: [malignant_vs_normal_epithelial, malignant_vs_pooled_tme]
+  min_paired_donors: 3            # paired design when >= this many donors have both groups
+  filter_min_count: 10            # edgeR::filterByExpr min.count
+  robust: true                    # glmQLFit robust dispersion
+  descriptive_prior_count: 2      # log2 CPM prior for descriptive (non-inferential) effects
+  detection_cpm: 1                # a donor "detects" a gene at CPM >= this
+  fdr_family: lncRNA              # BH across lncRNAs tested in each dataset x contrast
+  leave_one_donor_out: true       # flag genes whose direction flips when any donor is dropped
+  min_abs_log2fc: 1.0
+  fdr: 0.05
+# ---- cross-dataset replication and meta-analysis (08) ----
+# Only inferential estimates from untreated primary-tumour datasets are pooled.
+# Descriptive datasets (too few donors) add direction evidence only, and
+# treated_sensitivity datasets are not pooled.
+replication:
+  pooled_roles: [discovery, replication]
+  descriptive_roles: [replication_candidate]
+  min_datasets_concordant: 2       # replication datasets (discovery excluded) with the same sign
+  min_fraction_concordant: 0.67    # of replication datasets in which the gene was tested
+meta_analysis:
+  method: REML                     # metafor::rma random effects, DL fallback recorded
+  min_datasets: 2
+  fdr: 0.05                        # BH across lncRNAs meta-analysed per contrast
+  min_abs_log2fc: 1.0              # pooled effect threshold
+  i2_flag: 0.5                     # heterogeneity warning, not an exclusion
+  leave_one_out_contrasts: [malignant_vs_normal_epithelial, malignant_vs_pooled_tme]
+candidate_rules:
+  # tier 1 (tumour-specific): passes both primary contrasts
+  # tier 2 (malignant-compartment enriched): passes the TME contrast, with the
+  #         normal-epithelium contrast untestable (tested failures are excluded)
+  tumour_specificity_contrast: malignant_vs_normal_epithelial
+  compartment_contrast: malignant_vs_pooled_tme
+  require_discovery_donor_filter: true     # passes 05 donor-level expression filter in discovery malignant cells
+  require_bulk_expressed_both: true        # bulk_expressed in TCGA-KIRC and CPTAC-3 (04)
+  require_loo_direction_stable: true       # pooled sign unchanged when any dataset is dropped (k >= 3)
+candidate_ranking_weights:
+  meta_effect: 0.5
+  replication_fraction: 0.3
+  malignant_detection: 0.2
+
+# ---- bulk handoff: availability and technical sensitivity (10) ----
+# No survival field is read. Patient sets are the analysis-ready bulk cohorts
+# (TCGA-KIRC cohort_adj, n=520, CPTAC-3 with complete clinical covariates,
+# n=199). STAR metrics come from the same file as the expression.
+bulk_handoff:
+  helpers: src/R/00_config.R          # bulk-pipeline helpers sourced by 10 and 11
+  tcga_dataset: data/derived/cache/dataset.rds  # $cohort_adj
+  tcga_expr: data/derived/cache/expr_raw.rds    # $fpkm, columns chosen by file_id
+  tcga_star_qc: data/derived/cache/star_qc.rds
+  cptac_dataset: data/derived/cache/validation_dataset.rds  # $fpkm, $cohort, $qc
+  expression_transform: log2_fpkm_plus1
+  detection_fpkm: 0.30
+  min_detection_fraction: 0.20     # removed if below this in either cohort
+  technical_r2_max: 0.30           # R2 on the 3 STAR metrics within a cohort,
+                                   # removed if >= this in either cohort
+  min_retained_tier1: 3            # 11 stops with fewer retained tier-1 candidates
+
+# ---- prognostic development (TCGA) and validation (CPTAC-3) (11) ----
+prognostic:
+  # Primary: unweighted score = mean within-cohort z of STAR-residualised
+  # log2(FPKM+1) over retained tier-1 candidates, all signs +1, added to the
+  # clinical Cox model (CLIN_TERMS) fitted in TCGA. Secondary: elastic-net Cox
+  # over all retained candidates with clinical terms unpenalised.
+  primary_score: tier1_unweighted
+  secondary_model: elastic_net_all_retained
+  cv_repeats: 10
+  cv_folds: 10
+  inner_folds: 5
+  horizons_years: [1, 3, 5]
+  primary_horizon_years: 3
+  min_at_risk_report: 10           # horizon metrics with fewer at risk are reported but flagged
+  nb_thresholds: [0.02, 0.60, 0.01]
+  nb_summary_window: [0.10, 0.40]
+
+# ---- runtime ----
+runtime:
+  cores: 4
+  chunk_cells: 20000
+  smoke_test: false

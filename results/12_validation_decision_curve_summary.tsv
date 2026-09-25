@@ -1,0 +1,13 @@
+baseline	comparator	standardisation	years	window	n_thresholds	median_gain	n_positive	boot_lo	boot_hi	p_boot	n_boot
+discovery	clinical	cohort	3	0.10-0.40	31	-0.0037	9	-0.0223	0.0061	0.424	500
+discovery	clinical	cohort	3	0.05-0.30	26	-5e-04	11	-0.0162	0.0061	0.868	500
+discovery	clinical	cohort	5	0.10-0.40	31	0.0026	19	-0.0183	0.0219	0.852	500
+discovery	clinical	cohort	5	0.05-0.30	26	0.0016	16	-0.0075	0.0133	0.744	500
+discovery	clinical	discovery	3	0.10-0.40	31	-0.0268	3	-0.0421	-4e-04	0.048	500
+discovery	clinical	discovery	3	0.05-0.30	26	-0.0147	5	-0.0322	0.001	0.1	500
+discovery	clinical	discovery	5	0.10-0.40	31	-0.02	2	-0.057	0.0104	0.22	500
+discovery	clinical	discovery	5	0.05-0.30	26	-0.0071	2	-0.0286	0.0024	0.26	500
+discovery	augmented	cohort	3	0.10-0.40	31	0.0043	19	-0.0083	0.0147	0.504	500
+discovery	augmented	cohort	3	0.05-0.30	26	-7e-04	12	-0.0125	0.0087	0.796	500
+discovery	augmented	cohort	5	0.10-0.40	31	-0.0026	14	-0.0217	0.0174	0.844	500
+discovery	augmented	cohort	5	0.05-0.30	26	-9e-04	11	-0.0127	0.0112	0.824	500

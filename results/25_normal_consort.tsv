@@ -1,0 +1,3 @@
+cohort	n_normal_files_in_file_map	file_count_source	n_normal_files_on_disk	n_failed_rule_as_written	n_failed_reads	n_failed_noFeature	n_excluded	exclusion_rule	n_normal_analysed	n_normal_patient_with_analysed_tumour	n_tumour_analysed	n_pairs	n_pairs_with_survival	deaths_in_pairs	n_normal_with_plate	n_pairs_both_plates_known	n_pairs_same_plate	frac_pairs_same_plate
+TCGA-KIRC	72	normal rows of cache/gdc_file_map.rds (local file map, not a live GDC query)	72	0	0	0	0	as 01 (reads and non-feature cap)	72	71	528	71	71	26	72	71	67	0.944
+CPTAC-3	168	normal rows of cache/valid_file_map.rds (local file map, not a live GDC query)	168	168	0	168	0	assigned reads only (08 applies no rule; protocol above the non-feature cap)	168	129	200	129	129	28	0	0	0	

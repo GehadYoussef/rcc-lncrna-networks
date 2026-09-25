@@ -1,0 +1,5 @@
+model	n	events	HR	lo	hi	p	C	ph_p	vif_axis
+Axis alone	504	163	1.311	1.125	1.527	0.00053	0.555	0.136	1
++ age, sex, T, N, M1, ordinal grade	504	163	1.344	1.151	1.57	0.000191	0.773	0.111	1.017
++ ESTIMATE stromal and immune scores	504	163	1.36	1.155	1.601	0.00023	0.773	0.104	1.09
++ non-feature, multimapping, log10 depth	504	163	1.076	0.813	1.425	0.607	0.777	0.0928	4.536

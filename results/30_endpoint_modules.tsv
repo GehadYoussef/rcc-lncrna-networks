@@ -1,0 +1,61 @@
+endpoint	biotype	module	specification	n	events	HR	lo	hi	p	fdr_5modules	C	ph_p	specification_terms	n_parameters	epv	adequate_epv
+OS_pipeline	protein_coding	green	unadjusted	506	166	0.642	0.555	0.742	2.06e-09	3.43e-09	0.63	0.952	module alone	1	166	TRUE
+OS_pipeline	protein_coding	green	clinical	502	165	0.691	0.592	0.807	2.93e-06	1.46e-05	0.776	0.685	module + age, sex, T, N, M1, ordinal grade	7	23.6	TRUE
+OS_pipeline	protein_coding	green	principal	502	165	0.625	0.531	0.736	1.69e-08	8.45e-08	0.788	0.51	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	13.8	TRUE
+OS_pipeline	protein_coding	purple	unadjusted	506	166	1.528	1.356	1.722	3.27e-12	8.18e-12	0.62	0.767	module alone	1	166	TRUE
+OS_pipeline	protein_coding	purple	clinical	502	165	1.242	1.063	1.452	0.00645	0.00645	0.769	0.488	module + age, sex, T, N, M1, ordinal grade	7	23.6	TRUE
+OS_pipeline	protein_coding	purple	principal	502	165	1.281	1.091	1.504	0.00252	0.00315	0.781	0.471	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	13.8	TRUE
+OS_pipeline	lncRNA	blue	unadjusted	511	164	0.693	0.597	0.805	1.5e-06	1.5e-06	0.612	0.515	module alone	1	164	TRUE
+OS_pipeline	lncRNA	blue	clinical	504	163	0.727	0.62	0.853	9.38e-05	0.000234	0.777	0.907	module + age, sex, T, N, M1, ordinal grade	7	23.3	TRUE
+OS_pipeline	lncRNA	blue	principal	504	163	0.709	0.603	0.833	3.03e-05	7.58e-05	0.788	0.955	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	13.6	TRUE
+OS_pipeline	lncRNA	greenyellow	unadjusted	511	164	1.631	1.423	1.868	1.85e-12	8.18e-12	0.654	0.927	module alone	1	164	TRUE
+OS_pipeline	lncRNA	greenyellow	clinical	504	163	1.311	1.113	1.544	0.00116	0.00193	0.775	0.519	module + age, sex, T, N, M1, ordinal grade	7	23.3	TRUE
+OS_pipeline	lncRNA	greenyellow	principal	504	163	1.354	1.147	1.598	0.000341	0.000568	0.785	0.449	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	13.6	TRUE
+OS_pipeline	lncRNA	turquoise	unadjusted	511	164	1.594	1.362	1.866	5.97e-09	7.46e-09	0.603	0.337	module alone	1	164	TRUE
+OS_pipeline	lncRNA	turquoise	clinical	504	163	1.264	1.076	1.486	0.00444	0.00555	0.775	0.905	module + age, sex, T, N, M1, ordinal grade	7	23.3	TRUE
+OS_pipeline	lncRNA	turquoise	principal	504	163	1.239	1.059	1.45	0.00735	0.00735	0.779	0.911	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	13.6	TRUE
+OS_cdr	protein_coding	green	unadjusted	506	166	0.639	0.552	0.738	1.42e-09	2.37e-09	0.631	0.959	module alone	1	166	TRUE
+OS_cdr	protein_coding	green	clinical	502	165	0.688	0.589	0.803	2.34e-06	1.17e-05	0.775	0.704	module + age, sex, T, N, M1, ordinal grade	7	23.6	TRUE
+OS_cdr	protein_coding	green	principal	502	165	0.622	0.528	0.733	1.24e-08	6.2e-08	0.788	0.521	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	13.8	TRUE
+OS_cdr	protein_coding	purple	unadjusted	506	166	1.533	1.361	1.728	2.35e-12	5.88e-12	0.621	0.757	module alone	1	166	TRUE
+OS_cdr	protein_coding	purple	clinical	502	165	1.247	1.066	1.458	0.00565	0.00627	0.769	0.475	module + age, sex, T, N, M1, ordinal grade	7	23.6	TRUE
+OS_cdr	protein_coding	purple	principal	502	165	1.291	1.1	1.516	0.00175	0.00219	0.781	0.45	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	13.8	TRUE
+OS_cdr	lncRNA	blue	unadjusted	511	164	0.691	0.595	0.802	1.22e-06	1.22e-06	0.613	0.481	module alone	1	164	TRUE
+OS_cdr	lncRNA	blue	clinical	504	163	0.726	0.618	0.851	8.38e-05	0.00021	0.776	0.861	module + age, sex, T, N, M1, ordinal grade	7	23.3	TRUE
+OS_cdr	lncRNA	blue	principal	504	163	0.708	0.602	0.831	2.64e-05	6.6e-05	0.787	0.91	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	13.6	TRUE
+OS_cdr	lncRNA	greenyellow	unadjusted	511	164	1.635	1.427	1.873	1.36e-12	5.88e-12	0.656	0.994	module alone	1	164	TRUE
+OS_cdr	lncRNA	greenyellow	clinical	504	163	1.317	1.119	1.55	0.000908	0.00151	0.775	0.57	module + age, sex, T, N, M1, ordinal grade	7	23.3	TRUE
+OS_cdr	lncRNA	greenyellow	principal	504	163	1.363	1.156	1.607	0.000236	0.000393	0.785	0.503	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	13.6	TRUE
+OS_cdr	lncRNA	turquoise	unadjusted	511	164	1.584	1.354	1.853	9.65e-09	1.21e-08	0.601	0.351	module alone	1	164	TRUE
+OS_cdr	lncRNA	turquoise	clinical	504	163	1.253	1.066	1.472	0.00627	0.00627	0.774	0.937	module + age, sex, T, N, M1, ordinal grade	7	23.3	TRUE
+OS_cdr	lncRNA	turquoise	principal	504	163	1.229	1.051	1.436	0.00961	0.00961	0.778	0.847	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	13.6	TRUE
+DSS	protein_coding	green	unadjusted	495	103	0.539	0.449	0.646	2.71e-11	4.52e-11	0.677	0.262	module alone	1	103	TRUE
+DSS	protein_coding	green	clinical	491	103	0.605	0.495	0.74	1.01e-06	5.05e-06	0.86	0.168	module + age, sex, T, N, M1, ordinal grade	7	14.7	TRUE
+DSS	protein_coding	green	principal	491	103	0.49	0.393	0.612	2.86e-10	1.43e-09	0.865	0.121	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	8.6	TRUE
+DSS	protein_coding	purple	unadjusted	495	103	1.803	1.572	2.067	3.39e-17	1.7e-16	0.672	0.246	module alone	1	103	TRUE
+DSS	protein_coding	purple	clinical	491	103	1.343	1.108	1.628	0.00265	0.00331	0.843	0.0715	module + age, sex, T, N, M1, ordinal grade	7	14.7	TRUE
+DSS	protein_coding	purple	principal	491	103	1.489	1.206	1.837	0.000211	0.000264	0.848	0.0536	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	8.6	TRUE
+DSS	lncRNA	blue	unadjusted	500	102	0.59	0.49	0.71	2.37e-08	2.96e-08	0.659	0.845	module alone	1	102	TRUE
+DSS	lncRNA	blue	clinical	493	102	0.657	0.535	0.807	6.36e-05	0.000159	0.856	0.649	module + age, sex, T, N, M1, ordinal grade	7	14.6	TRUE
+DSS	lncRNA	blue	principal	493	102	0.605	0.489	0.749	3.99e-06	9.98e-06	0.858	0.652	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	8.5	TRUE
+DSS	lncRNA	greenyellow	unadjusted	500	102	1.961	1.663	2.312	1.09e-15	2.72e-15	0.707	0.244	module alone	1	102	TRUE
+DSS	lncRNA	greenyellow	clinical	493	102	1.459	1.192	1.787	0.000256	0.000427	0.848	0.0988	module + age, sex, T, N, M1, ordinal grade	7	14.6	TRUE
+DSS	lncRNA	greenyellow	principal	493	102	1.503	1.221	1.851	0.000124	0.000207	0.852	0.0841	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	8.5	TRUE
+DSS	lncRNA	turquoise	unadjusted	500	102	1.634	1.348	1.982	5.96e-07	5.96e-07	0.619	0.256	module alone	1	102	TRUE
+DSS	lncRNA	turquoise	clinical	493	102	1.21	0.997	1.467	0.0531	0.0531	0.843	0.766	module + age, sex, T, N, M1, ordinal grade	7	14.6	TRUE
+DSS	lncRNA	turquoise	principal	493	102	1.2	0.997	1.444	0.0537	0.0537	0.842	0.959	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	8.5	TRUE
+PFI	protein_coding	green	unadjusted	504	152	0.62	0.533	0.722	6.73e-10	1.12e-09	0.64	0.526	module alone	1	152	TRUE
+PFI	protein_coding	green	clinical	500	151	0.746	0.633	0.88	0.000493	0.00246	0.83	0.176	module + age, sex, T, N, M1, ordinal grade	7	21.6	TRUE
+PFI	protein_coding	green	principal	500	151	0.697	0.585	0.832	6.13e-05	0.000306	0.828	0.13	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	12.6	TRUE
+PFI	protein_coding	purple	unadjusted	504	152	1.584	1.397	1.795	7.18e-13	1.8e-12	0.643	0.6	module alone	1	152	TRUE
+PFI	protein_coding	purple	clinical	500	151	1.043	0.879	1.238	0.629	0.743	0.813	0.546	module + age, sex, T, N, M1, ordinal grade	7	21.6	TRUE
+PFI	protein_coding	purple	principal	500	151	1.149	0.957	1.379	0.137	0.171	0.815	0.821	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	12.6	TRUE
+PFI	lncRNA	blue	unadjusted	509	150	0.697	0.597	0.812	4.03e-06	5.04e-06	0.615	0.729	module alone	1	150	TRUE
+PFI	lncRNA	blue	clinical	502	149	0.803	0.682	0.945	0.00823	0.0206	0.826	0.703	module + age, sex, T, N, M1, ordinal grade	7	21.3	TRUE
+PFI	lncRNA	blue	principal	502	149	0.804	0.676	0.956	0.0134	0.0335	0.821	0.79	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	12.4	TRUE
+PFI	lncRNA	greenyellow	unadjusted	509	150	1.747	1.523	2.004	1.68e-15	8.4e-15	0.681	0.544	module alone	1	150	TRUE
+PFI	lncRNA	greenyellow	clinical	502	149	1.173	0.988	1.392	0.0684	0.114	0.826	0.503	module + age, sex, T, N, M1, ordinal grade	7	21.3	TRUE
+PFI	lncRNA	greenyellow	principal	502	149	1.208	1.01	1.445	0.0388	0.0647	0.824	0.317	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	12.4	TRUE
+PFI	lncRNA	turquoise	unadjusted	509	150	1.353	1.14	1.606	0.000555	0.000555	0.56	0.0752	module alone	1	150	TRUE
+PFI	lncRNA	turquoise	clinical	502	149	0.974	0.831	1.141	0.743	0.743	0.814	0.32	module + age, sex, T, N, M1, ordinal grade	7	21.3	TRUE
+PFI	lncRNA	turquoise	principal	502	149	1.032	0.877	1.216	0.702	0.702	0.811	0.33	module + clinical + ESTIMATE + non-feature, multimapping, log10 depth	12	12.4	TRUE

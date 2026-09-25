@@ -1,0 +1,6 @@
+biotype	module	HR_tcga	fdr_tcga	HR_cptac	lo	hi	p_cptac	same_direction	fdr_cptac	n	events	epv	adequate_epv	HR_cptac_disc	lo_disc	hi_disc	p_disc	HR_cptac_M1coded	p_M1coded
+mRNA	green	0.625	2.2e-07	0.731	0.513	1.04	0.0818	TRUE	0.136	199	32	2.7	FALSE	0.733	0.515	1.041	0.0827	0.676	0.0302
+mRNA	purple	1.281	0.0164	1.519	1.078	2.14	0.0169	TRUE	0.0422	199	32	2.7	FALSE	1.518	1.078	2.139	0.0168	1.497	0.0227
+lncRNA	blue	0.709	0.000484	0.778	0.546	1.11	0.166	TRUE	0.208	199	32	2.7	FALSE	0.775	0.543	1.105	0.159	0.733	0.0922
+lncRNA	greenyellow	1.354	0.00273	1.586	1.118	2.249	0.00967	TRUE	0.0422	199	32	2.7	FALSE	1.585	1.115	2.253	0.0102	1.691	0.00277
+lncRNA	turquoise	1.239	0.0392	1.112	0.811	1.526	0.509	TRUE	0.509	199	32	2.7	FALSE	1.118	0.812	1.537	0.494	1.213	0.257

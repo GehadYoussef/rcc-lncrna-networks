@@ -1,0 +1,5 @@
+dataset	sample_id	donor_id	tissue	n_genes_matrix	n_cells	integer_counts	unfiltered_input	n_cells_tisch2	n_cells_author
+KIRC_GSE111360	ccRCC_1_rep1	ccRCC_1	tumour	33694	6287	TRUE	TRUE	6287	
+KIRC_GSE111360	ccRCC_1_rep2	ccRCC_1	tumour	33694	6208	TRUE	TRUE	6208	
+KIRC_GSE111360	ccRCC_2_rep1	ccRCC_2	tumour	33694	5383	TRUE	TRUE	5383	
+KIRC_GSE111360	ccRCC_2_rep2	ccRCC_2	tumour	33694	5252	TRUE	TRUE	5252	

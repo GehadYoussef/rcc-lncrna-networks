@@ -1,0 +1,5 @@
+cohort	protocol	n	noFeature_median	noFeature_q25	noFeature_q75	multimap_median	multimap_q25	multimap_q75	assigned_reads_median	assigned_reads_q25	assigned_reads_q75
+TCGA-KIRC	polyA	528	4.649	3.062	6.795	7.518	6.751	8.684	58535637	48652763.5	67605628.75
+CPTAC-3	ribo-depleted total RNA	200	40.518	38.41	42.885	9.29	8.522	10.288	38262072	35100817.75	42596008.25
+TCGA-KIRP	polyA	269	3.925	2.73	5.337	7.922	6.849	9.476	49913462	42203644	59805124
+TCGA-KICH	polyA	65	3.107	2.594	3.466	10.374	8.892	12.196	64638125	59997960	68894474

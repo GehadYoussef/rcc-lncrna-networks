@@ -1,0 +1,10 @@
+dataset	analysis_role	evaluable_malignant_donors	lnc_detected_in_malignant_cells	lnc_passing_donor_filter
+KIRC_GSE159115	discovery	7	7243	1130
+KIRC_GSE171306	replication_candidate	1	4588	1726
+KIRC_GSE111360	replication_candidate	2	4306	1358
+KIRC_GSE139555	replication_candidate	0	0	0
+KIRC_GSE121636	replication_candidate	0	0	0
+KIRC_GSE145281_aPDL1	treated_sensitivity	0	0	0
+KIRC_Li2022	replication	10	2297	269
+KIRC_GSE222703	replication	3	5088	406
+KIRC_GSE207493	replication	19	8983	1681

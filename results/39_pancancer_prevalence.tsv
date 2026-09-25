@@ -1,0 +1,7 @@
+quantity	n	of
+eligible tumour projects	25	
+rule A met	9	25
+lncRNA PC1 |rho| >= 0.5 (first half of rule A)	19	25
+intronic median |rho| above intergenic	25	25
+normal sets analysed	13	
+normal sets meeting rule A thresholds (descriptive)	2	13

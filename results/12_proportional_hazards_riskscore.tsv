@@ -1,0 +1,21 @@
+cohort	comparator	standardisation	model	n	events	term	chisq	df	p
+TCGA-KIRC	clinical	cohort	comparator	493	159	score	5.868	1	0.0154
+TCGA-KIRC	clinical	cohort	comparator	493	159	GLOBAL	5.868	1	0.0154
+TCGA-KIRC	clinical	cohort	comparator + modules	493	159	score	2.471	1	0.116
+TCGA-KIRC	clinical	cohort	comparator + modules	493	159	GLOBAL	2.471	1	0.116
+CPTAC-3	clinical	cohort	comparator	199	32	score	0.466	1	0.495
+CPTAC-3	clinical	cohort	comparator	199	32	GLOBAL	0.466	1	0.495
+CPTAC-3	clinical	cohort	comparator + modules	199	32	score	1.509	1	0.219
+CPTAC-3	clinical	cohort	comparator + modules	199	32	GLOBAL	1.509	1	0.219
+CPTAC-3	clinical	discovery	comparator	199	32	score	0.465	1	0.495
+CPTAC-3	clinical	discovery	comparator	199	32	GLOBAL	0.465	1	0.495
+CPTAC-3	clinical	discovery	comparator + modules	199	32	score	1.4	1	0.237
+CPTAC-3	clinical	discovery	comparator + modules	199	32	GLOBAL	1.4	1	0.237
+TCGA-KIRC	augmented	cohort	comparator	493	159	score	2.502	1	0.114
+TCGA-KIRC	augmented	cohort	comparator	493	159	GLOBAL	2.502	1	0.114
+TCGA-KIRC	augmented	cohort	comparator + modules	493	159	score	0.719	1	0.397
+TCGA-KIRC	augmented	cohort	comparator + modules	493	159	GLOBAL	0.719	1	0.397
+CPTAC-3	augmented	cohort	comparator	199	32	score	0.003	1	0.959
+CPTAC-3	augmented	cohort	comparator	199	32	GLOBAL	0.003	1	0.959
+CPTAC-3	augmented	cohort	comparator + modules	199	32	score	0	1	0.999
+CPTAC-3	augmented	cohort	comparator + modules	199	32	GLOBAL	0	1	0.999

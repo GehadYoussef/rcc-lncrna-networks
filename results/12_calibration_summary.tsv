@@ -1,0 +1,31 @@
+cohort	comparator	standardisation	model	years	primary	slope	slope_lo	slope_hi	observed	expected	OE	n_at_risk
+discovery	clinical	cohort	comparator	1	FALSE	1	0.8285	1.1715	0.0938	0.0939	0.9981	408
+discovery	clinical	cohort	comparator + modules	1	FALSE	1.0546	0.8922	1.2169	0.0938	0.0947	0.9897	408
+discovery	clinical	cohort	comparator	3	TRUE	1	0.8285	1.1715	0.2313	0.2251	1.0277	275
+discovery	clinical	cohort	comparator + modules	3	TRUE	1.0546	0.8922	1.2169	0.2313	0.2258	1.0244	275
+discovery	clinical	cohort	comparator	5	FALSE	1	0.8285	1.1715	0.3627	0.3349	1.083	141
+discovery	clinical	cohort	comparator + modules	5	FALSE	1.0546	0.8922	1.2169	0.3627	0.3368	1.0771	141
+validation	clinical	cohort	comparator	1	FALSE	0.9741	0.6047	1.3435	0.0561	0.0794	0.7058	144
+validation	clinical	cohort	comparator + modules	1	FALSE	0.8873	0.5795	1.1951	0.0561	0.0827	0.6776	144
+validation	clinical	cohort	comparator	3	TRUE	0.9741	0.6047	1.3435	0.1443	0.1922	0.7507	95
+validation	clinical	cohort	comparator + modules	3	TRUE	0.8873	0.5795	1.1951	0.1443	0.1939	0.7442	95
+validation	clinical	cohort	comparator	5	FALSE	0.9741	0.6047	1.3435	0.2626	0.2919	0.8998	23
+validation	clinical	cohort	comparator + modules	5	FALSE	0.8873	0.5795	1.1951	0.2626	0.2946	0.8915	23
+validation	clinical	discovery	comparator	1	FALSE	0.9747	0.6051	1.3442	0.0561	0.0786	0.7128	144
+validation	clinical	discovery	comparator + modules	1	FALSE	0.8923	0.5816	1.2031	0.0561	0.1148	0.4883	144
+validation	clinical	discovery	comparator	3	TRUE	0.9747	0.6051	1.3442	0.1443	0.1906	0.7573	95
+validation	clinical	discovery	comparator + modules	3	TRUE	0.8923	0.5816	1.2031	0.1443	0.2603	0.5545	95
+validation	clinical	discovery	comparator	5	FALSE	0.9747	0.6051	1.3442	0.2626	0.2896	0.9069	23
+validation	clinical	discovery	comparator + modules	5	FALSE	0.8923	0.5816	1.2031	0.2626	0.3842	0.6835	23
+discovery	augmented	cohort	comparator	1	FALSE	1	0.8382	1.1618	0.0938	0.0926	1.012	408
+discovery	augmented	cohort	comparator + modules	1	FALSE	1.0382	0.8844	1.1919	0.0938	0.0934	1.0037	408
+discovery	augmented	cohort	comparator	3	TRUE	1	0.8382	1.1618	0.2313	0.2225	1.0396	275
+discovery	augmented	cohort	comparator + modules	3	TRUE	1.0382	0.8844	1.1919	0.2313	0.2226	1.0389	275
+discovery	augmented	cohort	comparator	5	FALSE	1	0.8382	1.1618	0.3627	0.3326	1.0907	141
+discovery	augmented	cohort	comparator + modules	5	FALSE	1.0382	0.8844	1.1919	0.3627	0.3324	1.0913	141
+validation	augmented	cohort	comparator	1	FALSE	0.8963	0.5115	1.281	0.0561	0.0726	0.7718	144
+validation	augmented	cohort	comparator + modules	1	FALSE	0.8353	0.5111	1.1594	0.0561	0.0749	0.7486	144
+validation	augmented	cohort	comparator	3	TRUE	0.8963	0.5115	1.281	0.1443	0.1824	0.7912	95
+validation	augmented	cohort	comparator + modules	3	TRUE	0.8353	0.5111	1.1594	0.1443	0.1835	0.7863	95
+validation	augmented	cohort	comparator	5	FALSE	0.8963	0.5115	1.281	0.2626	0.2828	0.9287	23
+validation	augmented	cohort	comparator + modules	5	FALSE	0.8353	0.5111	1.1594	0.2626	0.2837	0.9257	23

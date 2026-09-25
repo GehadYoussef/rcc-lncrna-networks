@@ -1,0 +1,7 @@
+model	HR	lo	hi	p	n	events	C	ph_p	site_stratified
+parsimonious: age sex T M1 grade	1.361	1.167	1.586	8.25e-05	504	163	0.768	0.107	FALSE
+parsimonious + site stratum	1.357	1.154	1.596	0.000218	504	163	0.757	0.206	TRUE
+full principal set (no quality metrics)	1.36	1.155	1.601	0.00023	504	163	0.773	0.104	FALSE
+full principal set + site stratum	1.381	1.164	1.639	0.000219	504	163	0.762	0.247	TRUE
+full principal set + quality metrics	1.076	0.813	1.425	0.607	504	163	0.777	0.0928	FALSE
+full principal set + quality + site stratum	0.97	0.71	1.323	0.845	504	163	0.767	0.267	TRUE

@@ -1,0 +1,59 @@
+biotype	module	covariate_set	n	events	HR_unadjusted	lo_unadjusted	hi_unadjusted	p_unadjusted	fdr_unadjusted	HR_adjusted	lo_adjusted	hi_adjusted	p_adjusted	fdr_adjusted	status
+lncRNA	blue	clinical	503	163	0.853	0.718	1.014	0.0707	0.0943	0.729	0.623	0.854	9e-05	0.00144	gained on adjustment
+lncRNA	greenyellow	clinical	503	163	1.42	1.211	1.666	1.61e-05	8.58e-05	1.31	1.113	1.541	0.00116	0.00925	robust
+lncRNA	turquoise	clinical	503	163	1.445	1.249	1.673	7.87e-07	1.26e-05	1.265	1.076	1.488	0.00444	0.0237	robust
+lncRNA	cyan	clinical	503	163	0.879	0.732	1.056	0.168	0.192	0.777	0.645	0.935	0.00765	0.0306	gained on adjustment
+lncRNA	black	clinical	503	163	1.454	1.245	1.697	2.13e-06	1.7e-05	1.277	1.048	1.556	0.0153	0.0407	robust
+lncRNA	lightcyan	clinical	503	163	0.88	0.741	1.046	0.147	0.18	0.806	0.678	0.959	0.0147	0.0407	gained on adjustment
+lncRNA	midnightblue	clinical	503	163	0.992	0.833	1.183	0.933	0.933	0.811	0.681	0.966	0.0188	0.0431	gained on adjustment
+lncRNA	brown	clinical	503	163	1.336	1.162	1.536	4.68e-05	0.000187	1.174	1.008	1.367	0.0395	0.079	LOST on adjustment
+lncRNA	tan	clinical	503	163	1.093	0.919	1.301	0.314	0.335	0.87	0.733	1.032	0.111	0.197	not significant
+lncRNA	magenta	clinical	503	163	1.269	1.114	1.446	0.000347	0.00111	1.127	0.962	1.32	0.139	0.222	LOST on adjustment
+lncRNA	purple	clinical	503	163	1.285	1.116	1.479	0.000482	0.00129	1.121	0.958	1.31	0.153	0.223	LOST on adjustment
+lncRNA	green	clinical	503	163	1.314	1.124	1.535	0.000585	0.00134	0.976	0.839	1.136	0.753	0.897	LOST on adjustment
+lncRNA	pink	clinical	503	163	1.183	1.013	1.382	0.0337	0.0491	0.989	0.842	1.163	0.897	0.897	LOST on adjustment
+lncRNA	red	clinical	503	163	1.208	1.02	1.431	0.0285	0.0467	1.015	0.845	1.219	0.876	0.897	LOST on adjustment
+lncRNA	salmon	clinical	503	163	1.298	1.104	1.526	0.00155	0.0031	0.978	0.817	1.171	0.808	0.897	LOST on adjustment
+lncRNA	yellow	clinical	503	163	1.176	1.017	1.359	0.0292	0.0467	0.975	0.832	1.142	0.754	0.897	LOST on adjustment
+mRNA	green	clinical	501	165	0.672	0.572	0.788	1.1e-06	1.42e-05	0.691	0.592	0.807	2.74e-06	3.56e-05	robust
+mRNA	purple	clinical	501	165	1.265	1.084	1.476	0.00279	0.0121	1.243	1.063	1.453	0.00647	0.0354	robust
+mRNA	turquoise	clinical	501	165	0.8	0.686	0.932	0.00429	0.0139	0.808	0.69	0.946	0.00817	0.0354	robust
+mRNA	pink	clinical	501	165	0.912	0.776	1.072	0.263	0.361	0.847	0.728	0.985	0.0314	0.102	not significant
+mRNA	magenta	clinical	501	165	0.857	0.727	1.01	0.0663	0.144	0.866	0.741	1.013	0.0713	0.155	not significant
+mRNA	red	clinical	501	165	1.446	1.237	1.691	3.76e-06	2.44e-05	1.174	0.987	1.396	0.0699	0.155	LOST on adjustment
+mRNA	brown	clinical	501	165	1.178	1.006	1.378	0.0418	0.109	1.14	0.971	1.339	0.109	0.177	not significant
+mRNA	tan	clinical	501	165	1.094	0.93	1.288	0.278	0.361	1.145	0.972	1.349	0.104	0.177	not significant
+mRNA	blue	clinical	501	165	0.891	0.742	1.07	0.217	0.353	0.88	0.737	1.051	0.157	0.227	not significant
+mRNA	greenyellow	clinical	501	165	0.897	0.756	1.064	0.214	0.353	0.925	0.778	1.101	0.382	0.47	not significant
+mRNA	yellow	clinical	501	165	0.978	0.838	1.141	0.775	0.775	0.935	0.799	1.093	0.398	0.47	not significant
+mRNA	black	clinical	501	165	1.039	0.897	1.204	0.611	0.722	1.058	0.912	1.228	0.455	0.493	not significant
+mRNA	salmon	clinical	501	165	1.034	0.868	1.232	0.706	0.765	0.993	0.837	1.179	0.938	0.938	not significant
+lncRNA	blue	clinical_rin_necrosis	503	163	0.87	0.729	1.04	0.126	0.168	0.739	0.629	0.867	0.000216	0.00345	gained on adjustment
+lncRNA	greenyellow	clinical_rin_necrosis	503	163	1.407	1.195	1.657	4.12e-05	0.000181	1.303	1.099	1.544	0.00225	0.018	robust
+lncRNA	turquoise	clinical_rin_necrosis	503	163	1.468	1.261	1.709	7.35e-07	1.18e-05	1.277	1.083	1.506	0.00356	0.019	robust
+lncRNA	black	clinical_rin_necrosis	503	163	1.463	1.247	1.715	2.84e-06	2.27e-05	1.266	1.039	1.542	0.0191	0.0611	LOST on adjustment
+lncRNA	cyan	clinical_rin_necrosis	503	163	0.909	0.755	1.096	0.318	0.339	0.796	0.659	0.962	0.0179	0.0611	not significant
+lncRNA	lightcyan	clinical_rin_necrosis	503	163	0.893	0.751	1.063	0.204	0.234	0.817	0.687	0.973	0.0234	0.0625	not significant
+lncRNA	brown	clinical_rin_necrosis	503	163	1.348	1.168	1.555	4.51e-05	0.000181	1.18	1.01	1.377	0.0367	0.0838	LOST on adjustment
+lncRNA	midnightblue	clinical_rin_necrosis	503	163	1.043	0.87	1.251	0.651	0.651	0.84	0.699	1.009	0.0628	0.126	not significant
+lncRNA	magenta	clinical_rin_necrosis	503	163	1.283	1.126	1.462	0.000182	0.000581	1.146	0.98	1.34	0.0869	0.154	LOST on adjustment
+lncRNA	purple	clinical_rin_necrosis	503	163	1.302	1.125	1.508	0.000414	0.00101	1.124	0.959	1.317	0.149	0.239	LOST on adjustment
+lncRNA	tan	clinical_rin_necrosis	503	163	1.139	0.953	1.361	0.151	0.186	0.895	0.75	1.069	0.222	0.323	not significant
+lncRNA	yellow	clinical_rin_necrosis	503	163	1.171	1.011	1.356	0.0358	0.0563	0.966	0.824	1.133	0.668	0.891	not significant
+lncRNA	green	clinical_rin_necrosis	503	163	1.322	1.131	1.546	0.000443	0.00101	0.986	0.846	1.15	0.862	0.986	LOST on adjustment
+lncRNA	salmon	clinical_rin_necrosis	503	163	1.318	1.116	1.556	0.00116	0.00231	0.981	0.816	1.179	0.837	0.986	LOST on adjustment
+lncRNA	red	clinical_rin_necrosis	503	163	1.203	1.01	1.433	0.0387	0.0563	0.992	0.821	1.199	0.935	0.998	not significant
+lncRNA	pink	clinical_rin_necrosis	503	163	1.207	1.028	1.416	0.0216	0.0384	1	0.847	1.181	0.998	0.998	LOST on adjustment
+mRNA	green	clinical_rin_necrosis	501	165	0.685	0.581	0.808	7.48e-06	4.86e-05	0.704	0.601	0.825	1.39e-05	0.000181	robust
+mRNA	purple	clinical_rin_necrosis	501	165	1.26	1.073	1.479	0.00482	0.0209	1.237	1.051	1.456	0.0105	0.0683	LOST on adjustment
+mRNA	turquoise	clinical_rin_necrosis	501	165	0.826	0.703	0.97	0.0198	0.0645	0.835	0.709	0.984	0.0314	0.136	not significant
+mRNA	red	clinical_rin_necrosis	501	165	1.46	1.243	1.714	3.84e-06	4.86e-05	1.177	0.991	1.398	0.0627	0.204	LOST on adjustment
+mRNA	magenta	clinical_rin_necrosis	501	165	0.875	0.74	1.034	0.116	0.252	0.874	0.746	1.025	0.0982	0.213	not significant
+mRNA	pink	clinical_rin_necrosis	501	165	0.951	0.805	1.125	0.56	0.724	0.874	0.747	1.023	0.0938	0.213	not significant
+mRNA	blue	clinical_rin_necrosis	501	165	0.892	0.741	1.074	0.226	0.42	0.869	0.725	1.043	0.131	0.219	not significant
+mRNA	brown	clinical_rin_necrosis	501	165	1.16	0.989	1.361	0.0677	0.176	1.126	0.958	1.323	0.151	0.219	not significant
+mRNA	tan	clinical_rin_necrosis	501	165	1.077	0.914	1.269	0.377	0.545	1.131	0.96	1.332	0.142	0.219	not significant
+mRNA	yellow	clinical_rin_necrosis	501	165	0.972	0.832	1.136	0.724	0.724	0.928	0.792	1.087	0.354	0.46	not significant
+mRNA	black	clinical_rin_necrosis	501	165	1.029	0.887	1.194	0.707	0.724	1.045	0.9	1.215	0.562	0.609	not significant
+mRNA	greenyellow	clinical_rin_necrosis	501	165	0.923	0.776	1.098	0.366	0.545	0.948	0.795	1.13	0.552	0.609	not significant
+mRNA	salmon	clinical_rin_necrosis	501	165	1.037	0.87	1.237	0.683	0.724	0.99	0.833	1.178	0.914	0.914	not significant

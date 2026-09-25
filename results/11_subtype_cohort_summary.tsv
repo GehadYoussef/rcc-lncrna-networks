@@ -1,0 +1,4 @@
+cohort	n_scored	n_complete	events	n_parameters	epv	adequate	n_T_missing	n_stage_available	n_stage_iv	n_M1_as_coded	n_M1_reconciled
+TCGA-KIRC	497	497	160	6	26.7	TRUE	0	494	76	74	2
+TCGA-KIRP	269	263	40	6	6.7	TRUE	6	240	16	9	5
+TCGA-KICH	65	65	9	6	1.5	FALSE	0	65	6	2	0

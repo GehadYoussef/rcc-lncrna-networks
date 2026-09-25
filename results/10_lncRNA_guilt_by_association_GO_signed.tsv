@@ -1,0 +1,49 @@
+module	sign	Description	GeneRatio	BgRatio	Count	p.adjust
+blue	positive	small molecule catabolic process	48/279	275/11125	48	3.09e-24
+blue	positive	organic acid catabolic process	41/279	190/11125	41	3.09e-24
+blue	positive	carboxylic acid catabolic process	41/279	190/11125	41	3.09e-24
+blue	positive	monocarboxylic acid metabolic process	56/279	453/11125	56	3.12e-21
+blue	positive	monocarboxylic acid catabolic process	25/279	103/11125	25	1.64e-15
+blue	positive	fatty acid metabolic process	38/279	278/11125	38	2.72e-15
+blue	positive	fatty acid catabolic process	22/279	85/11125	22	2.97e-14
+blue	positive	organic anion transport	33/279	281/11125	33	3.16e-11
+blue	positive	fatty acid oxidation	19/279	83/11125	19	3.58e-11
+blue	positive	lipid oxidation	19/279	88/11125	19	1e-10
+blue	negative	extracellular matrix organization	40/283	208/11125	40	3.42e-21
+blue	negative	extracellular structure organization	40/283	208/11125	40	3.42e-21
+blue	negative	external encapsulating structure organization	40/283	208/11125	40	3.42e-21
+blue	negative	collagen metabolic process	20/283	71/11125	20	3.99e-13
+blue	negative	collagen fibril organization	15/283	51/11125	15	8.07e-10
+blue	negative	cartilage development	21/283	141/11125	21	3.22e-08
+blue	negative	skeletal system development	33/283	364/11125	33	9.21e-08
+blue	negative	positive regulation of nervous system development	22/283	184/11125	22	6.35e-07
+blue	negative	response to wounding	34/283	419/11125	34	7.04e-07
+blue	negative	chondrocyte differentiation	15/283	83/11125	15	7.41e-07
+greenyellow	positive	nuclear division	26/274	283/11125	26	1.42e-05
+greenyellow	positive	mitotic nuclear division	22/274	211/11125	22	1.42e-05
+greenyellow	positive	humoral immune response	17/274	127/11125	17	1.42e-05
+greenyellow	positive	organelle fission	27/274	323/11125	27	2.18e-05
+greenyellow	positive	mitotic spindle assembly checkpoint signaling	9/274	33/11125	9	2.67e-05
+greenyellow	positive	spindle assembly checkpoint signaling	9/274	33/11125	9	2.67e-05
+greenyellow	positive	mitotic spindle checkpoint signaling	9/274	33/11125	9	2.67e-05
+greenyellow	positive	negative regulation of nuclear division	10/274	44/11125	10	2.67e-05
+greenyellow	positive	spindle checkpoint signaling	9/274	34/11125	9	2.67e-05
+greenyellow	positive	negative regulation of sister chromatid segregation	9/274	35/11125	9	2.67e-05
+greenyellow	negative	renal system process	12/272	85/11125	12	0.00285
+greenyellow	negative	urate metabolic process	5/272	11/11125	5	0.00285
+greenyellow	negative	organic acid catabolic process	17/272	190/11125	17	0.00285
+greenyellow	negative	carboxylic acid catabolic process	17/272	190/11125	17	0.00285
+greenyellow	negative	fatty acid metabolic process	21/272	278/11125	21	0.00285
+greenyellow	negative	fatty acid catabolic process	11/272	85/11125	11	0.00324
+greenyellow	negative	monocarboxylic acid catabolic process	12/272	103/11125	12	0.00324
+greenyellow	negative	cellular response to salt stress	5/272	13/11125	5	0.00324
+greenyellow	negative	renal tubular secretion	5/272	13/11125	5	0.00324
+greenyellow	negative	small molecule catabolic process	20/272	275/11125	20	0.00424
+turquoise	positive	RNA splicing	28/263	382/11125	28	0.000248
+turquoise	positive	mRNA processing	27/263	400/11125	27	0.0011
+turquoise	negative	proteasomal protein catabolic process	30/288	445/11125	30	0.00513
+turquoise	negative	stress granule assembly	7/288	31/11125	7	0.013
+turquoise	negative	protein depolymerization	11/288	85/11125	11	0.013
+turquoise	negative	Golgi vesicle transport	19/288	259/11125	19	0.0323
+turquoise	negative	proteasome-mediated ubiquitin-dependent protein catabolic process	22/288	330/11125	22	0.0323
+turquoise	negative	negative regulation of protein depolymerization	8/288	53/11125	8	0.034

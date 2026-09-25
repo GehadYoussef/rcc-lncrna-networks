@@ -1,0 +1,16 @@
+cohort	comparator	standardisation	years	primary	n	events	brier_clinical	brier_combined	brier_null
+discovery	clinical	cohort	1	FALSE	493	159	0.0715	0.0675	0.085
+discovery	clinical	cohort	3	TRUE	493	159	0.1443	0.1386	0.1779
+discovery	clinical	cohort	5	FALSE	493	159	0.1935	0.1795	0.2319
+validation	clinical	cohort	1	FALSE	199	32	0.0578	0.0607	0.0536
+validation	clinical	cohort	3	TRUE	199	32	0.0995	0.0979	0.126
+validation	clinical	cohort	5	FALSE	199	32	0.1392	0.1455	0.195
+validation	clinical	discovery	1	FALSE	199	32	0.0576	0.0671	0.0564
+validation	clinical	discovery	3	TRUE	199	32	0.0994	0.1134	0.137
+validation	clinical	discovery	5	FALSE	199	32	0.1394	0.1625	0.2086
+discovery	augmented	cohort	1	FALSE	493	159	0.0711	0.0669	0.085
+discovery	augmented	cohort	3	TRUE	493	159	0.1421	0.1385	0.1779
+discovery	augmented	cohort	5	FALSE	493	159	0.1826	0.1697	0.2321
+validation	augmented	cohort	1	FALSE	199	32	0.0564	0.0574	0.0533
+validation	augmented	cohort	3	TRUE	199	32	0.1073	0.1041	0.1251
+validation	augmented	cohort	5	FALSE	199	32	0.1384	0.1417	0.1944

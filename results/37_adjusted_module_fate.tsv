@@ -1,0 +1,17 @@
+adjusted	n_genes	pct_in_unadjusted_dominant	pct_in_other_unadjusted_module	pct_unadjusted_grey	unadjusted_dominant_module
+black	179	100	0	0	turquoise
+green	186	99.5	0.5	0	turquoise
+turquoise	438	99.5	0	0.5	turquoise
+salmon	72	84.7	0	15.3	turquoise
+pink	174	66.7	0.6	32.8	turquoise
+purple	110	66.4	0	33.6	turquoise
+brown	219	61.6	0	38.4	turquoise
+tan	93	53.8	1.1	45.2	turquoise
+magenta	122	40.2	0.8	59	turquoise
+blue	246	36.6	0	63.4	turquoise
+midnightblue	53	34	1.9	64.2	turquoise
+yellow	192	32.8	49.5	17.7	turquoise
+red	186	25.3	47.3	27.4	turquoise
+cyan	54	18.5	1.9	79.6	turquoise
+lightcyan	44	13.6	0	86.4	turquoise
+greenyellow	108	13	0.9	86.1	turquoise

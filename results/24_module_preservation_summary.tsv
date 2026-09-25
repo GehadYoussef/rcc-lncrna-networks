@@ -1,0 +1,7 @@
+network	test_cohort	n_modules	n_strong	n_weak_moderate	n_none	median_Zsummary	min_Zsummary	max_Zsummary	n_samples_test	n_genes_test	n_permutations
+lncRNA	CPTAC-3	16	13	3	0	13.39	2.2	30.65	200	3442	100
+lncRNA	TCGA-KICH	16	3	11	2	5.36	0.33	13.31	65	3441	100
+lncRNA	TCGA-KIRP	16	7	8	1	8.04	1.77	29.39	269	3442	100
+mRNA	CPTAC-3	13	13	0	0	43.99	17.69	101.66	200	12000	30
+mRNA	TCGA-KICH	13	10	3	0	18.72	4.83	49.11	65	12000	30
+mRNA	TCGA-KIRP	13	13	0	0	35.08	15.24	71.33	269	12000	30

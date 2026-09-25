@@ -1,0 +1,726 @@
+{
+  "bulk_lock_id": "3abe53290a1d015933d1b55f3b21bb02f360ad7c7a4c2f2b55fbb6cadf0d3b5b",
+  "parent_single_cell_lock_id": "0324d1059cd0395e998507566c9d7ef6efade764ff7aedc1d61b9813c252068d",
+  "created_utc": "2026-09-16 18:25:28 UTC",
+  "rules": {
+    "helpers": "../analysis/R/00_config.R",
+    "tcga_dataset": "../analysis/cache/dataset.rds",
+    "tcga_expr": "../analysis/cache/expr_raw.rds",
+    "tcga_star_qc": "../analysis/cache/star_qc.rds",
+    "cptac_dataset": "../analysis/cache/validation_dataset.rds",
+    "expression_transform": "log2_fpkm_plus1",
+    "detection_fpkm": 0.3,
+    "min_detection_fraction": 0.2,
+    "technical_r2_max": 0.3,
+    "min_retained_tier1": 3
+  },
+  "helpers_sha256": "aa88c0046d8b1e2ebcb53b29f24ee759c3fe4999f438cded17e6a036fd4dc915",
+  "cohorts": {
+    "TCGA_KIRC": {
+      "n": 520,
+      "patient_set": "analysis/cache/dataset.rds $cohort_adj"
+    },
+    "CPTAC_3": {
+      "n": 199,
+      "patient_set": "validation_dataset $cohort, complete CLIN_TERMS"
+    }
+  },
+  "n_locked": 115,
+  "n_retained": 99,
+  "removed": [
+    {
+      "lock_rank": 22,
+      "gene_key": "ENSG00000204677",
+      "symbol": "FAM153CP",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 23,
+      "gene_key": "ENSG00000258667",
+      "symbol": "HIF1A-AS3",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 25,
+      "gene_key": "ENSG00000251432",
+      "symbol": "LINC02615",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 26,
+      "gene_key": "ENSG00000247809",
+      "symbol": "NR2F2-AS1",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 38,
+      "gene_key": "ENSG00000249859",
+      "symbol": "PVT1",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 48,
+      "gene_key": "ENSG00000278071",
+      "symbol": "AL161669.3",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 62,
+      "gene_key": "ENSG00000257556",
+      "symbol": "LINC02298",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 64,
+      "gene_key": "ENSG00000254815",
+      "symbol": "LMNTD2-AS1",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 65,
+      "gene_key": "ENSG00000225361",
+      "symbol": "PPP1R26-AS1",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 80,
+      "gene_key": "ENSG00000237877",
+      "symbol": "LINC01473",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 81,
+      "gene_key": "ENSG00000231119",
+      "symbol": "AL031666.1",
+      "decision_reason": "unreliable_quantification"
+    },
+    {
+      "lock_rank": 90,
+      "gene_key": "ENSG00000271576",
+      "symbol": "AL359504.1",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 94,
+      "gene_key": "ENSG00000231064",
+      "symbol": "THBS3-AS1",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 100,
+      "gene_key": "ENSG00000233695",
+      "symbol": "GAS6-AS1",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 102,
+      "gene_key": "ENSG00000260924",
+      "symbol": "LINC01311",
+      "decision_reason": "technically_sensitive"
+    },
+    {
+      "lock_rank": 110,
+      "gene_key": "ENSG00000272356",
+      "symbol": "AL080317.2",
+      "decision_reason": "technically_sensitive"
+    }
+  ],
+  "retained": [
+    {
+      "lock_rank": 1,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000228262",
+      "symbol": "LINC01320"
+    },
+    {
+      "lock_rank": 2,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000235142",
+      "symbol": "LINC02532"
+    },
+    {
+      "lock_rank": 3,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000253574",
+      "symbol": "AC021744.1"
+    },
+    {
+      "lock_rank": 4,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000224057",
+      "symbol": "EGFR-AS1"
+    },
+    {
+      "lock_rank": 5,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000269985",
+      "symbol": "AL021328.1"
+    },
+    {
+      "lock_rank": 6,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000233610",
+      "symbol": "LINC00462"
+    },
+    {
+      "lock_rank": 7,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000214145",
+      "symbol": "LINC00887"
+    },
+    {
+      "lock_rank": 8,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000258586",
+      "symbol": "LINC02274"
+    },
+    {
+      "lock_rank": 9,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000254109",
+      "symbol": "RBPMS-AS1"
+    },
+    {
+      "lock_rank": 10,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000249396",
+      "symbol": "LINC02212"
+    },
+    {
+      "lock_rank": 11,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000231013",
+      "symbol": "SCTR-AS1"
+    },
+    {
+      "lock_rank": 12,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000247095",
+      "symbol": "MIR210HG"
+    },
+    {
+      "lock_rank": 13,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000181577",
+      "symbol": "C6orf223"
+    },
+    {
+      "lock_rank": 14,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000255462",
+      "symbol": "AC104031.1"
+    },
+    {
+      "lock_rank": 15,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000232527",
+      "symbol": "LINC02802"
+    },
+    {
+      "lock_rank": 16,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000234380",
+      "symbol": "LINC01426"
+    },
+    {
+      "lock_rank": 17,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000224843",
+      "symbol": "LINC00240"
+    },
+    {
+      "lock_rank": 18,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000245694",
+      "symbol": "CRNDE"
+    },
+    {
+      "lock_rank": 19,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000233593",
+      "symbol": "LINC02609"
+    },
+    {
+      "lock_rank": 20,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000250303",
+      "symbol": "LINC02762"
+    },
+    {
+      "lock_rank": 21,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000163364",
+      "symbol": "LINC01116"
+    },
+    {
+      "lock_rank": 24,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000214870",
+      "symbol": "AC004540.1"
+    },
+    {
+      "lock_rank": 27,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000214293",
+      "symbol": "APTR"
+    },
+    {
+      "lock_rank": 28,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000272870",
+      "symbol": "SAP30-DT"
+    },
+    {
+      "lock_rank": 29,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000236882",
+      "symbol": "LINC01554"
+    },
+    {
+      "lock_rank": 30,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000224032",
+      "symbol": "EPB41L4A-AS1"
+    },
+    {
+      "lock_rank": 31,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000237352",
+      "symbol": "LINC01358"
+    },
+    {
+      "lock_rank": 32,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000235531",
+      "symbol": "MSC-AS1"
+    },
+    {
+      "lock_rank": 33,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000231890",
+      "symbol": "DARS-AS1"
+    },
+    {
+      "lock_rank": 34,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000271737",
+      "symbol": "AC008608.2"
+    },
+    {
+      "lock_rank": 35,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000261889",
+      "symbol": "AC108134.2"
+    },
+    {
+      "lock_rank": 36,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000249249",
+      "symbol": "AC010226.1"
+    },
+    {
+      "lock_rank": 37,
+      "tier": "tier1_tumour_specific",
+      "gene_key": "ENSG00000177410",
+      "symbol": "ZFAS1"
+    },
+    {
+      "lock_rank": 39,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000256234",
+      "symbol": "AC022509.2"
+    },
+    {
+      "lock_rank": 40,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000259370",
+      "symbol": "AC103740.1"
+    },
+    {
+      "lock_rank": 41,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000265962",
+      "symbol": "GACAT2"
+    },
+    {
+      "lock_rank": 42,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000204876",
+      "symbol": "AC021218.1"
+    },
+    {
+      "lock_rank": 43,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000249746",
+      "symbol": "AC099509.1"
+    },
+    {
+      "lock_rank": 44,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000230945",
+      "symbol": "LINC01507"
+    },
+    {
+      "lock_rank": 45,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000224568",
+      "symbol": "LINC01886"
+    },
+    {
+      "lock_rank": 46,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000236751",
+      "symbol": "LINC01186"
+    },
+    {
+      "lock_rank": 47,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000260704",
+      "symbol": "LINC00543"
+    },
+    {
+      "lock_rank": 49,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000273001",
+      "symbol": "AL731533.2"
+    },
+    {
+      "lock_rank": 50,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000256124",
+      "symbol": "LINC01152"
+    },
+    {
+      "lock_rank": 51,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000229457",
+      "symbol": "LINC01789"
+    },
+    {
+      "lock_rank": 52,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000224093",
+      "symbol": "BCAR3-AS1"
+    },
+    {
+      "lock_rank": 53,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000273032",
+      "symbol": "DGCR5"
+    },
+    {
+      "lock_rank": 54,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000204362",
+      "symbol": "LINC02783"
+    },
+    {
+      "lock_rank": 55,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000260944",
+      "symbol": "FOXC2-AS1"
+    },
+    {
+      "lock_rank": 56,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000267530",
+      "symbol": "LINC01836"
+    },
+    {
+      "lock_rank": 57,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000273102",
+      "symbol": "AP000569.1"
+    },
+    {
+      "lock_rank": 58,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000272323",
+      "symbol": "AC026801.2"
+    },
+    {
+      "lock_rank": 59,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000215246",
+      "symbol": "AC116351.1"
+    },
+    {
+      "lock_rank": 60,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000246523",
+      "symbol": "FZD4-DT"
+    },
+    {
+      "lock_rank": 61,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000255750",
+      "symbol": "AC022509.1"
+    },
+    {
+      "lock_rank": 63,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000268812",
+      "symbol": "AC004264.1"
+    },
+    {
+      "lock_rank": 66,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000271334",
+      "symbol": "LINC02104"
+    },
+    {
+      "lock_rank": 67,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000255337",
+      "symbol": "AP001830.1"
+    },
+    {
+      "lock_rank": 68,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000227533",
+      "symbol": "SLC2A1-AS1"
+    },
+    {
+      "lock_rank": 69,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000223855",
+      "symbol": "HRAT92"
+    },
+    {
+      "lock_rank": 70,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000276649",
+      "symbol": "AL117335.1"
+    },
+    {
+      "lock_rank": 71,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000177640",
+      "symbol": "CASC2"
+    },
+    {
+      "lock_rank": 72,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000204860",
+      "symbol": "FAM201A"
+    },
+    {
+      "lock_rank": 73,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000226644",
+      "symbol": "AL121899.1"
+    },
+    {
+      "lock_rank": 74,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000269053",
+      "symbol": "AC010319.3"
+    },
+    {
+      "lock_rank": 75,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000258457",
+      "symbol": "AL132780.2"
+    },
+    {
+      "lock_rank": 76,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000273145",
+      "symbol": "BX537318.1"
+    },
+    {
+      "lock_rank": 77,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000270504",
+      "symbol": "AL391422.4"
+    },
+    {
+      "lock_rank": 78,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000271270",
+      "symbol": "TMCC1-AS1"
+    },
+    {
+      "lock_rank": 79,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000264107",
+      "symbol": "AC138207.2"
+    },
+    {
+      "lock_rank": 82,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000260352",
+      "symbol": "AC092287.1"
+    },
+    {
+      "lock_rank": 83,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000261390",
+      "symbol": "MAFTRR"
+    },
+    {
+      "lock_rank": 84,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000248161",
+      "symbol": "AC098487.1"
+    },
+    {
+      "lock_rank": 85,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000272335",
+      "symbol": "AC093297.2"
+    },
+    {
+      "lock_rank": 86,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000231742",
+      "symbol": "LINC01273"
+    },
+    {
+      "lock_rank": 87,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000250616",
+      "symbol": "AC012645.1"
+    },
+    {
+      "lock_rank": 88,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000224189",
+      "symbol": "HAGLR"
+    },
+    {
+      "lock_rank": 89,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000265943",
+      "symbol": "AC090912.1"
+    },
+    {
+      "lock_rank": 91,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000254614",
+      "symbol": "AP003068.2"
+    },
+    {
+      "lock_rank": 92,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000251602",
+      "symbol": "AL928654.1"
+    },
+    {
+      "lock_rank": 93,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000259583",
+      "symbol": "AC015712.2"
+    },
+    {
+      "lock_rank": 95,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000234432",
+      "symbol": "AC092171.3"
+    },
+    {
+      "lock_rank": 96,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000251141",
+      "symbol": "MRPS30-DT"
+    },
+    {
+      "lock_rank": 97,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000261087",
+      "symbol": "ZNNT1"
+    },
+    {
+      "lock_rank": 98,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000232453",
+      "symbol": "LINC02777"
+    },
+    {
+      "lock_rank": 99,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000270959",
+      "symbol": "LPP-AS2"
+    },
+    {
+      "lock_rank": 101,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000261188",
+      "symbol": "Z95115.1"
+    },
+    {
+      "lock_rank": 103,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000225265",
+      "symbol": "TAF1A-AS1"
+    },
+    {
+      "lock_rank": 104,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000228084",
+      "symbol": "AC118553.1"
+    },
+    {
+      "lock_rank": 105,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000272913",
+      "symbol": "AC009237.14"
+    },
+    {
+      "lock_rank": 106,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000265688",
+      "symbol": "MAFG-DT"
+    },
+    {
+      "lock_rank": 107,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000263400",
+      "symbol": "TMEM220-AS1"
+    },
+    {
+      "lock_rank": 108,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000272525",
+      "symbol": "AC099522.2"
+    },
+    {
+      "lock_rank": 109,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000175147",
+      "symbol": "TMEM51-AS1"
+    },
+    {
+      "lock_rank": 111,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000183250",
+      "symbol": "LINC01547"
+    },
+    {
+      "lock_rank": 112,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000249348",
+      "symbol": "UGDH-AS1"
+    },
+    {
+      "lock_rank": 113,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000260588",
+      "symbol": "AC027702.1"
+    },
+    {
+      "lock_rank": 114,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000234494",
+      "symbol": "SP2-AS1"
+    },
+    {
+      "lock_rank": 115,
+      "tier": "tier2_malignant_compartment_enriched",
+      "gene_key": "ENSG00000270194",
+      "symbol": "AC097359.2"
+    }
+  ],
+  "outcome_blindness": "No survival or outcome field was read: survival columns were dropped on load and all tables were checked by assert_no_outcome_fields().",
+  "retained_sha256": "a87b6c5f4924b385a06b374e0df5723b355acbf333fa3c5f144c5bf2885c4937"
+}

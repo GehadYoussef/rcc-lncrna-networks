@@ -1,0 +1,9 @@
+variable	n	n_sites	R2_anova	p_kruskal
+pct_noFeature	511	11	0.1158	2.34e-10
+lnc_axis	511	11	0.1156	3.14e-09
+pct_multimapping	511	11	0.0777	2.91e-06
+StromalScore	511	11	0.0901	9.08e-06
+ImmuneScore	511	11	0.0693	7.28e-05
+age	511	11	0.0575	0.00475
+T_stage	511	11	0.1337	9.27e-11
+grade_num	504	11	0.1466	1.3e-11

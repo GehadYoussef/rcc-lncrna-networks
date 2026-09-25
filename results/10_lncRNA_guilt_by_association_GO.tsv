@@ -1,0 +1,131 @@
+module	matrix	n_partners	Description	GeneRatio	p.adjust	Count
+blue	observed	100	small molecule catabolic process	20/94	9.39e-11	20
+blue	observed	100	monocarboxylic acid metabolic process	24/94	9.39e-11	24
+blue	observed	100	organic acid catabolic process	17/94	9.39e-11	17
+blue	observed	100	carboxylic acid catabolic process	17/94	9.39e-11	17
+blue	observed	100	amino acid metabolic process	16/94	1.18e-08	16
+blue	observed	100	alpha-amino acid metabolic process	13/94	1.64e-07	13
+blue	observed	100	organic anion transport	16/94	2.59e-07	16
+blue	observed	100	monocarboxylic acid catabolic process	10/94	2.27e-06	10
+blue	observed	100	urate metabolic process	5/94	2.46e-06	5
+blue	observed	100	fatty acid metabolic process	14/94	1e-05	14
+blue	observed	300	monocarboxylic acid metabolic process	47/272	2.35e-14	47
+blue	observed	300	organic acid catabolic process	31/272	2.35e-14	31
+blue	observed	300	carboxylic acid catabolic process	31/272	2.35e-14	31
+blue	observed	300	small molecule catabolic process	36/272	6.35e-14	36
+blue	observed	300	organic anion transport	31/272	8.82e-10	31
+blue	observed	300	fatty acid metabolic process	28/272	8.23e-08	28
+blue	observed	300	alpha-amino acid metabolic process	21/272	1.19e-07	21
+blue	observed	300	carboxylic acid transport	24/272	2.77e-07	24
+blue	observed	300	organic acid transport	24/272	2.77e-07	24
+blue	observed	300	amino acid metabolic process	24/272	2.77e-07	24
+blue	observed	500	organic acid catabolic process	47/458	6.2e-21	47
+blue	observed	500	carboxylic acid catabolic process	47/458	6.2e-21	47
+blue	observed	500	small molecule catabolic process	55/458	3.16e-20	55
+blue	observed	500	monocarboxylic acid metabolic process	68/458	2.9e-18	68
+blue	observed	500	monocarboxylic acid catabolic process	29/458	3.99e-14	29
+blue	observed	500	fatty acid catabolic process	25/458	1.59e-12	25
+blue	observed	500	fatty acid metabolic process	44/458	3.95e-12	44
+blue	observed	500	organic anion transport	42/458	1.1e-10	42
+blue	observed	500	fatty acid oxidation	22/458	5.36e-10	22
+blue	observed	500	lipid oxidation	22/458	1.75e-09	22
+greenyellow	observed	100	fatty acid catabolic process	7/93	0.0122	7
+greenyellow	observed	100	monocarboxylic acid catabolic process	7/93	0.0132	7
+greenyellow	observed	100	organic acid catabolic process	9/93	0.0132	9
+greenyellow	observed	100	carboxylic acid catabolic process	9/93	0.0132	9
+greenyellow	observed	100	fatty acid oxidation	6/93	0.023	6
+greenyellow	observed	100	renal system process	6/93	0.023	6
+greenyellow	observed	100	lipid oxidation	6/93	0.024	6
+greenyellow	observed	100	lipid transport	10/93	0.031	10
+greenyellow	observed	100	fatty acid beta-oxidation	5/93	0.031	5
+greenyellow	observed	300	renal system process	12/272	0.0032	12
+greenyellow	observed	300	urate metabolic process	5/272	0.00494	5
+greenyellow	observed	300	lipid localization	23/272	0.00494	23
+greenyellow	observed	300	fatty acid catabolic process	11/272	0.00503	11
+greenyellow	observed	300	monocarboxylic acid catabolic process	12/272	0.00503	12
+greenyellow	observed	300	renal tubular secretion	5/272	0.00511	5
+greenyellow	observed	300	lipid modification	14/272	0.00555	14
+greenyellow	observed	300	small molecule catabolic process	20/272	0.00555	20
+greenyellow	observed	300	organic acid catabolic process	16/272	0.00555	16
+greenyellow	observed	300	carboxylic acid catabolic process	16/272	0.00555	16
+greenyellow	observed	500	complement activation	10/455	0.00345	10
+greenyellow	observed	500	lipid localization	32/455	0.00676	32
+greenyellow	observed	500	renal system process	14/455	0.0085	14
+greenyellow	observed	500	fatty acid metabolic process	28/455	0.0085	28
+greenyellow	observed	500	monocarboxylic acid transport	16/455	0.0085	16
+greenyellow	observed	500	complement activation, classical pathway	7/455	0.00855	7
+greenyellow	observed	500	lipid transport	28/455	0.01	28
+greenyellow	observed	500	fatty acid transport	12/455	0.011	12
+greenyellow	observed	500	cellular response to cAMP	8/455	0.011	8
+greenyellow	observed	500	organic anion transport	27/455	0.011	27
+turquoise	observed	300	RNA splicing	25/264	0.0118	25
+turquoise	observed	300	mRNA processing	24/264	0.0393	24
+turquoise	observed	500	mRNA processing	46/447	3.01e-07	46
+turquoise	observed	500	RNA splicing	43/447	1.27e-06	43
+turquoise	observed	500	RNA splicing, via transesterification reactions with bulged adenosine as nucleophile	28/447	0.00116	28
+turquoise	observed	500	mRNA splicing, via spliceosome	28/447	0.00116	28
+turquoise	observed	500	RNA splicing, via transesterification reactions	28/447	0.00126	28
+blue	residualised	100	small molecule catabolic process	22/95	7.2e-13	22
+blue	residualised	100	organic acid catabolic process	19/95	7.2e-13	19
+blue	residualised	100	carboxylic acid catabolic process	19/95	7.2e-13	19
+blue	residualised	100	monocarboxylic acid metabolic process	24/95	1.12e-10	24
+blue	residualised	100	amino acid metabolic process	17/95	1.34e-09	17
+blue	residualised	100	alpha-amino acid metabolic process	14/95	1.61e-08	14
+blue	residualised	100	fatty acid metabolic process	15/95	2.35e-06	15
+blue	residualised	100	organic anion transport	15/95	2.38e-06	15
+blue	residualised	100	monocarboxylic acid catabolic process	10/95	2.45e-06	10
+blue	residualised	100	urate metabolic process	5/95	2.55e-06	5
+blue	residualised	300	organic acid catabolic process	31/275	5.03e-14	31
+blue	residualised	300	carboxylic acid catabolic process	31/275	5.03e-14	31
+blue	residualised	300	small molecule catabolic process	36/275	1.26e-13	36
+blue	residualised	300	monocarboxylic acid metabolic process	44/275	2.48e-12	44
+blue	residualised	300	organic anion transport	31/275	1.23e-09	31
+blue	residualised	300	carboxylic acid transport	24/275	4.1e-07	24
+blue	residualised	300	fatty acid metabolic process	27/275	4.1e-07	27
+blue	residualised	300	organic acid transport	24/275	4.1e-07	24
+blue	residualised	300	alpha-amino acid metabolic process	20/275	7.49e-07	20
+blue	residualised	300	monocarboxylic acid catabolic process	16/275	1.17e-06	16
+blue	residualised	500	organic acid catabolic process	49/461	1.09e-22	49
+blue	residualised	500	carboxylic acid catabolic process	49/461	1.09e-22	49
+blue	residualised	500	small molecule catabolic process	57/461	9.79e-22	57
+blue	residualised	500	monocarboxylic acid metabolic process	70/461	1.85e-19	70
+blue	residualised	500	monocarboxylic acid catabolic process	31/461	4.53e-16	31
+blue	residualised	500	fatty acid catabolic process	26/461	1.74e-13	26
+blue	residualised	500	fatty acid metabolic process	45/461	1.03e-12	45
+blue	residualised	500	fatty acid oxidation	24/461	7.67e-12	24
+blue	residualised	500	lipid oxidation	24/461	2.89e-11	24
+blue	residualised	500	organic anion transport	41/461	4.79e-10	41
+greenyellow	residualised	300	urate metabolic process	5/273	0.00648	5
+greenyellow	residualised	300	renal system process	11/273	0.00648	11
+greenyellow	residualised	300	fatty acid catabolic process	11/273	0.00648	11
+greenyellow	residualised	300	monocarboxylic acid catabolic process	12/273	0.00648	12
+greenyellow	residualised	300	organic acid catabolic process	16/273	0.00962	16
+greenyellow	residualised	300	carboxylic acid catabolic process	16/273	0.00962	16
+greenyellow	residualised	300	fatty acid oxidation	10/273	0.0159	10
+greenyellow	residualised	300	small molecule catabolic process	19/273	0.0195	19
+greenyellow	residualised	300	lipid oxidation	10/273	0.0206	10
+greenyellow	residualised	300	lateral ventricle development	4/273	0.0219	4
+greenyellow	residualised	500	renal system process	14/458	0.0343	14
+greenyellow	residualised	500	mating behavior	6/458	0.0349	6
+greenyellow	residualised	500	fatty acid catabolic process	13/458	0.0349	13
+greenyellow	residualised	500	urate metabolic process	5/458	0.0349	5
+greenyellow	residualised	500	small molecule catabolic process	26/458	0.0349	26
+greenyellow	residualised	500	lipid localization	29/458	0.0349	29
+greenyellow	residualised	500	monocarboxylic acid catabolic process	14/458	0.0349	14
+greenyellow	residualised	500	cellular hyperosmotic response	6/458	0.0349	6
+greenyellow	residualised	500	organic acid catabolic process	20/458	0.0349	20
+greenyellow	residualised	500	carboxylic acid catabolic process	20/458	0.0349	20
+turquoise	residualised	100	RNA splicing	14/89	0.00254	14
+turquoise	residualised	100	mRNA processing	13/89	0.0112	13
+turquoise	residualised	300	RNA splicing	32/259	6.38e-07	32
+turquoise	residualised	300	mRNA processing	31/259	4.13e-06	31
+turquoise	residualised	300	RNA splicing, via transesterification reactions with bulged adenosine as nucleophile	19/259	0.00481	19
+turquoise	residualised	300	mRNA splicing, via spliceosome	19/259	0.00481	19
+turquoise	residualised	300	RNA splicing, via transesterification reactions	19/259	0.00481	19
+turquoise	residualised	500	RNA splicing	51/442	4.67e-11	51
+turquoise	residualised	500	mRNA processing	51/442	1.5e-10	51
+turquoise	residualised	500	RNA splicing, via transesterification reactions with bulged adenosine as nucleophile	32/442	6.4e-06	32
+turquoise	residualised	500	mRNA splicing, via spliceosome	32/442	6.4e-06	32
+turquoise	residualised	500	RNA splicing, via transesterification reactions	32/442	7.49e-06	32
+turquoise	residualised	500	regulation of RNA splicing	19/442	0.00497	19
+turquoise	residualised	500	spliceosomal complex assembly	11/442	0.028	11

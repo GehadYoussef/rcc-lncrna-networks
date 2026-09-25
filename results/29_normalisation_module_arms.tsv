@@ -1,0 +1,97 @@
+biotype	module	n_genes	arm	description	covariate_set	n	events	HR	lo	hi	p	fdr
+lncRNA	black	179	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.452	1.245	1.695	2.15e-06	1.72e-05
+lncRNA	blue	246	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	0.852	0.715	1.014	0.072	0.096
+lncRNA	brown	219	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.335	1.162	1.535	4.65e-05	0.000186
+lncRNA	cyan	54	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	0.879	0.732	1.056	0.169	0.193
+lncRNA	green	186	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.313	1.124	1.533	0.000584	0.00134
+lncRNA	greenyellow	108	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.42	1.211	1.665	1.61e-05	8.56e-05
+lncRNA	lightcyan	44	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	0.879	0.739	1.047	0.149	0.183
+lncRNA	magenta	122	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.293	1.123	1.489	0.000346	0.00111
+lncRNA	midnightblue	53	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	0.992	0.832	1.183	0.933	0.933
+lncRNA	pink	174	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.185	1.013	1.385	0.0335	0.0488
+lncRNA	purple	110	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.286	1.117	1.481	0.000479	0.00128
+lncRNA	red	186	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.21	1.019	1.436	0.0292	0.047
+lncRNA	salmon	72	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.3	1.105	1.528	0.00154	0.00307
+lncRNA	tan	93	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.096	0.918	1.308	0.312	0.333
+lncRNA	turquoise	438	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.444	1.248	1.67	7.81e-07	1.25e-05
+lncRNA	yellow	192	fpkm_observed	log2(FPKM+1), observed eigengene	clinical	504	163	1.176	1.016	1.361	0.0294	0.047
+lncRNA	black	179	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	1.488	1.041	2.127	0.0291	0.0892
+lncRNA	blue	246	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	0.727	0.606	0.871	0.000573	0.00907
+lncRNA	brown	219	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	1.217	1.005	1.474	0.0448	0.102
+lncRNA	cyan	54	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	0.783	0.633	0.969	0.0245	0.0892
+lncRNA	green	186	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	1.07	0.822	1.393	0.616	0.822
+lncRNA	greenyellow	108	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	1.335	1.122	1.588	0.00113	0.00907
+lncRNA	lightcyan	44	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	0.824	0.689	0.985	0.0334	0.0892
+lncRNA	magenta	122	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	1.164	0.967	1.402	0.109	0.193
+lncRNA	midnightblue	53	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	0.809	0.646	1.014	0.0658	0.132
+lncRNA	pink	174	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	1.008	0.837	1.213	0.935	0.935
+lncRNA	purple	110	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	1.149	0.946	1.396	0.161	0.257
+lncRNA	red	186	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	1.027	0.838	1.26	0.794	0.847
+lncRNA	salmon	72	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	1.031	0.82	1.298	0.792	0.847
+lncRNA	tan	93	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	0.902	0.739	1.102	0.312	0.454
+lncRNA	turquoise	438	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	1.469	1.094	1.973	0.0105	0.0559
+lncRNA	yellow	192	fpkm_observed_STAR	log2(FPKM+1), observed eigengene + STAR covariates	clinical	504	163	0.972	0.807	1.171	0.767	0.847
+lncRNA	black	179	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	1.276	1.047	1.555	0.0158	0.042
+lncRNA	blue	246	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	0.727	0.62	0.853	9.38e-05	0.0015
+lncRNA	brown	219	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	1.174	1.008	1.367	0.0394	0.0788
+lncRNA	cyan	54	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	0.778	0.646	0.936	0.00778	0.0311
+lncRNA	green	186	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	0.976	0.838	1.136	0.75	0.899
+lncRNA	greenyellow	108	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	1.311	1.113	1.544	0.00116	0.00924
+lncRNA	lightcyan	44	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	0.805	0.675	0.959	0.015	0.042
+lncRNA	magenta	122	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	1.139	0.959	1.353	0.139	0.222
+lncRNA	midnightblue	53	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	0.808	0.677	0.965	0.0189	0.0431
+lncRNA	pink	174	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	0.99	0.841	1.164	0.899	0.899
+lncRNA	purple	110	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	1.122	0.958	1.313	0.153	0.222
+lncRNA	red	186	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	1.014	0.842	1.22	0.884	0.899
+lncRNA	salmon	72	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	0.978	0.816	1.172	0.81	0.899
+lncRNA	tan	93	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	0.866	0.725	1.034	0.112	0.199
+lncRNA	turquoise	438	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	1.264	1.076	1.486	0.00444	0.0237
+lncRNA	yellow	192	fpkm_residualised	log2(FPKM+1), residualised eigengene (production)	clinical	504	163	0.974	0.831	1.143	0.751	0.899
+lncRNA	black	179	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.444	1.224	1.703	1.27e-05	0.000102
+lncRNA	blue	246	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	0.74	0.63	0.868	0.000219	0.00117
+lncRNA	brown	219	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.283	1.097	1.501	0.00183	0.00495
+lncRNA	cyan	54	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	0.765	0.647	0.906	0.00186	0.00495
+lncRNA	green	186	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.27	1.081	1.492	0.00372	0.00661
+lncRNA	greenyellow	108	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.372	1.149	1.639	0.000483	0.00193
+lncRNA	lightcyan	44	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	0.778	0.657	0.92	0.00343	0.00661
+lncRNA	magenta	122	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.257	1.081	1.462	0.00292	0.00661
+lncRNA	midnightblue	53	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	0.835	0.709	0.984	0.0309	0.0449
+lncRNA	pink	174	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.056	0.9	1.238	0.505	0.538
+lncRNA	purple	110	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.217	1.041	1.421	0.0136	0.0217
+lncRNA	red	186	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.001	0.831	1.207	0.988	0.988
+lncRNA	salmon	72	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.205	1.008	1.442	0.041	0.0547
+lncRNA	tan	93	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	0.91	0.766	1.081	0.282	0.322
+lncRNA	turquoise	438	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.448	1.234	1.7	5.55e-06	8.89e-05
+lncRNA	yellow	192	tmm_observed	log2 CPM TMM, observed eigengene	clinical	504	163	1.096	0.935	1.285	0.256	0.315
+lncRNA	black	179	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	1.338	1	1.792	0.0503	0.115
+lncRNA	blue	246	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	0.703	0.598	0.827	1.99e-05	0.000319
+lncRNA	brown	219	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	1.173	0.974	1.414	0.0931	0.166
+lncRNA	cyan	54	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	0.75	0.613	0.918	0.00537	0.0215
+lncRNA	green	186	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	1.022	0.809	1.292	0.854	0.854
+lncRNA	greenyellow	108	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	1.338	1.11	1.612	0.00224	0.0147
+lncRNA	lightcyan	44	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	0.769	0.648	0.913	0.00276	0.0147
+lncRNA	magenta	122	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	1.147	0.949	1.387	0.156	0.249
+lncRNA	midnightblue	53	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	0.761	0.616	0.939	0.011	0.0352
+lncRNA	pink	174	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	0.982	0.832	1.16	0.832	0.854
+lncRNA	purple	110	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	1.118	0.929	1.347	0.238	0.346
+lncRNA	red	186	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	0.928	0.766	1.123	0.442	0.59
+lncRNA	salmon	72	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	0.932	0.748	1.161	0.529	0.605
+lncRNA	tan	93	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	0.856	0.716	1.022	0.086	0.166
+lncRNA	turquoise	438	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	1.357	1.029	1.789	0.0308	0.0823
+lncRNA	yellow	192	tmm_observed_STAR	log2 CPM TMM, observed eigengene + STAR covariates	clinical	504	163	0.942	0.79	1.124	0.51	0.605
+lncRNA	black	179	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	1.194	0.992	1.438	0.0603	0.121
+lncRNA	blue	246	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	0.709	0.61	0.825	8.51e-06	0.000136
+lncRNA	brown	219	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	1.15	0.977	1.353	0.0928	0.165
+lncRNA	cyan	54	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	0.768	0.645	0.916	0.00321	0.0129
+lncRNA	green	186	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	0.972	0.837	1.129	0.71	0.75
+lncRNA	greenyellow	108	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	1.312	1.1	1.565	0.00258	0.0129
+lncRNA	lightcyan	44	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	0.767	0.65	0.906	0.0018	0.0129
+lncRNA	magenta	122	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	1.132	0.947	1.353	0.174	0.279
+lncRNA	midnightblue	53	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	0.792	0.667	0.941	0.0079	0.0253
+lncRNA	pink	174	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	0.974	0.83	1.143	0.75	0.75
+lncRNA	purple	110	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	1.101	0.932	1.299	0.257	0.343
+lncRNA	red	186	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	0.926	0.772	1.112	0.411	0.506
+lncRNA	salmon	72	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	0.898	0.75	1.075	0.24	0.343
+lncRNA	tan	93	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	0.834	0.702	0.991	0.039	0.089
+lncRNA	turquoise	438	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	1.208	1.012	1.443	0.0368	0.089
+lncRNA	yellow	192	tmm_residualised	log2 CPM TMM, residualised eigengene	clinical	504	163	0.948	0.805	1.116	0.521	0.596

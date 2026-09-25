@@ -1,0 +1,6 @@
+module	n	events	HR	ph_ME_principal	ph_global_principal	ph_ME_unadjusted
+Protein-coding green	502	165	0.625	0.51	0.05	0.91
+Protein-coding purple	502	165	1.281	0.47	0.016	0.71
+lncRNA blue	504	163	0.709	0.95	0.019	0.67
+lncRNA greenyellow	504	163	1.354	0.45	0.0019	0.89
+lncRNA turquoise	504	163	1.239	0.91	0.0053	0.41

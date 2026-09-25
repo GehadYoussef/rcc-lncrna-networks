@@ -1,0 +1,7 @@
+dataset	sample_id	donor_id	tissue	n_genes_matrix	n_cells	integer_counts	unfiltered_input	n_cells_tisch2	n_cells_author
+KIRC_GSE222703	p022_Tumoral	p022	tumour	36601	10774	TRUE	TRUE		10774
+KIRC_GSE222703	p022_Juxta	p022	normal_kidney	36601	6899	TRUE	TRUE		6899
+KIRC_GSE222703	p027_Tumoral	p027	tumour	36601	3325	TRUE	TRUE		3325
+KIRC_GSE222703	p027_Juxta	p027	normal_kidney	36601	4821	TRUE	TRUE		4821
+KIRC_GSE222703	p029_Tumoral	p029	tumour	36601	1014	TRUE	TRUE		1014
+KIRC_GSE222703	p029_Juxta	p029	normal_kidney	36601	1130	TRUE	TRUE		1130

@@ -1,0 +1,5 @@
+comparator	model	n	events	loglik	Chisq	Df	p
+clinical	clinical	493	159	-828.153576134953			
+clinical	clinical + module score	493	159	-807.827409699552	40.6523328708013	1	1.81869986259995e-10
+augmented	augmented	493	159	-819.259764679179			
+augmented	augmented + module score	493	159	-800.396268890061	37.7269915782356	1	8.13708253106813e-10

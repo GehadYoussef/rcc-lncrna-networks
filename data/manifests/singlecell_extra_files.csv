@@ -1,0 +1,12 @@
+dataset_name,filename,url,role,fetch_required
+KIRC_GSE159115,GSE159115_ccRCC_anno.csv.gz,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE159nnn/GSE159115/suppl/GSE159115_ccRCC_anno.csv.gz,author_annotation,TRUE
+KIRC_GSE159115,GSE159115_normal_anno.csv.gz,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE159nnn/GSE159115/suppl/GSE159115_normal_anno.csv.gz,author_annotation,TRUE
+KIRC_GSE159115,GSE159115_chRCC_anno.csv.gz,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE159nnn/GSE159115/suppl/GSE159115_chRCC_anno.csv.gz,author_annotation,TRUE
+KIRC_GSE139555,GSE139555_all_metadata.txt.gz,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE139nnn/GSE139555/suppl/GSE139555_all_metadata.txt.gz,author_annotation,TRUE
+KIRC_GSE111360,GSE111360_readme_data_processing.txt,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE111nnn/GSE111360/suppl/GSE111360_readme_data_processing.txt,documentation,TRUE
+KIRC_Li2022,RCC_upload_final_raw_counts.h5ad,https://data.mendeley.com/public-files/datasets/g67bkbnhhg/files/0234c989-be98-401a-8384-2f5ea9f59534/file_downloaded,expression_and_annotation,TRUE
+KIRC_GSE222703,GSE222703_RAW.tar,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE222nnn/GSE222703/suppl/GSE222703_RAW.tar,expression,TRUE
+KIRC_GSE222703,GSE222703_SeuratObj_ALL_integrated.rds.gz,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE222nnn/GSE222703/suppl/GSE222703_SeuratObj_ALL_integrated.rds.gz,author_annotation,TRUE
+KIRC_GSE210038,GSE210038_RAW.tar,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE210nnn/GSE210038/suppl/GSE210038_RAW.tar,expression,FALSE
+KIRC_GSE242299,GSE242299_all_cells_50236_33538.h5ad.gz,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242299/suppl/GSE242299_all_cells_50236_33538.h5ad.gz,expression_and_annotation,FALSE
+KIRC_GSE207493,GSE207493_scRNA-seq.tar.gz,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE207nnn/GSE207493/suppl/GSE207493_scRNA-seq.tar.gz,expression,TRUE

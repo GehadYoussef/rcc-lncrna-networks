@@ -1,0 +1,4 @@
+module	n_genes	HR_tcga	fdr_tcga	HR_cptac	lo	hi	p_cptac	fdr_cptac	same_direction	n	events	HR_cptac_parsimonious	lo_parsimonious	hi_parsimonious	p_cptac_parsimonious
+blue	246	0.709	0.000484	0.778	0.546	1.11	0.166	0.208	TRUE	199	32	0.792	0.572	1.096	0.159
+greenyellow	108	1.354	0.00273	1.586	1.118	2.249	0.00967	0.0422	TRUE	199	32	1.424	1.067	1.9	0.0163
+turquoise	438	1.239	0.0392	1.112	0.811	1.526	0.509	0.509	TRUE	199	32	1.102	0.851	1.428	0.462

@@ -1,0 +1,7 @@
+variable	factor	n	n_levels	n_pooled_other	R2	anova_p	kruskal_p
+pct_noFeature	plate	528	15	11	0.2656	6.48e-27	4.02e-28
+pct_noFeature	batch	528	15	1	0.2455	4.15e-24	1.03e-25
+pct_noFeature	tss	528	11	27	0.1106	2.28e-09	8.34e-11
+lnc_axis	plate	511	15	9	0.2623	2.12e-25	9.32e-22
+lnc_axis	batch	511	15	1	0.26	4.3e-25	1.61e-21
+lnc_axis	tss	511	11	26	0.1156	1.58e-09	3.14e-09

@@ -1,0 +1,7 @@
+dataset	tisch2_table	tisch2_content	tisch2_genes	tisch2_symbols_unmapped_to_v36	tisch2_symbols_ambiguous	tisch2_lnc_mapped	raw_lnc_detected	raw_lnc_detected_absent_from_tisch2
+KIRC_GSE159115	KIRC_GSE159115_expression_Celltype_malignancy.txt	mean expression per cell group (not cell-level)	22229	931	43	4533	8912	4411
+KIRC_GSE171306	KIRC_GSE171306_expression_Celltype_malignancy.txt	mean expression per cell group (not cell-level)	19088	311	35	3261	7198	4003
+KIRC_GSE111360	KIRC_GSE111360_expression_Celltype_malignancy.txt	mean expression per cell group (not cell-level)	18104	238	38	2671	7323	4708
+KIRC_GSE139555	KIRC_GSE139555_expression_Celltype_malignancy.txt	mean expression per cell group (not cell-level)	18063	2165	48	851	1348	497
+KIRC_GSE121636	KIRC_GSE121636_expression_Celltype_malignancy.txt	mean expression per cell group (not cell-level)	17738	559	37	2640	6109	3491
+KIRC_GSE145281_aPDL1	KIRC_GSE145281_aPDL1_expression_Celltype_malignancy.txt	mean expression per cell group (not cell-level)	20226	615	49	3092	1007	0

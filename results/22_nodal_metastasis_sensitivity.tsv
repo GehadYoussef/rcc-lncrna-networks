@@ -1,0 +1,21 @@
+module	spec	n	events	HR	lo	hi	p
+Protein-coding green	A	502	165	0.625	0.531	0.736	1.69e-08
+Protein-coding green	B	502	165	0.621	0.527	0.732	1.26e-08
+Protein-coding green	C	240	87	0.551	0.433	0.701	1.24e-06
+Protein-coding green	D	502	165	0.63	0.535	0.741	2.6e-08
+Protein-coding purple	A	502	165	1.281	1.091	1.504	0.00252
+Protein-coding purple	B	502	165	1.296	1.101	1.525	0.00179
+Protein-coding purple	C	240	87	1.332	1.033	1.718	0.0273
+Protein-coding purple	D	502	165	1.278	1.09	1.499	0.00246
+lncRNA blue	A	504	163	0.709	0.603	0.833	3.03e-05
+lncRNA blue	B	504	163	0.704	0.599	0.828	2.27e-05
+lncRNA blue	C	241	87	0.612	0.481	0.778	6.28e-05
+lncRNA blue	D	504	163	0.718	0.611	0.844	5.93e-05
+lncRNA greenyellow	A	504	163	1.354	1.147	1.598	0.000341
+lncRNA greenyellow	B	504	163	1.36	1.154	1.604	0.000248
+lncRNA greenyellow	C	241	87	1.454	1.17	1.808	0.000738
+lncRNA greenyellow	D	504	163	1.373	1.164	1.619	0.00017
+lncRNA turquoise	A	504	163	1.239	1.059	1.45	0.00735
+lncRNA turquoise	B	504	163	1.258	1.07	1.479	0.00541
+lncRNA turquoise	C	241	87	1.475	1.106	1.968	0.00817
+lncRNA turquoise	D	504	163	1.265	1.079	1.484	0.00386

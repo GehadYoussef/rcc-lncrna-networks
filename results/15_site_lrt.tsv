@@ -1,0 +1,4 @@
+base_model	n	events	df	chisq	p_lrt	n_site_levels
+age sex T M1 grade	504	163	10	47.132	8.93e-07	11
+age sex T N M1 grade + ESTIMATE	504	163	10	49.89	2.8e-07	11
+age sex T N M1 grade + ESTIMATE + STAR	504	163	10	53.601	5.76e-08	11

@@ -1,0 +1,473 @@
+years	threshold	strategy	net_benefit	n	events
+3	0.02	Clinical (age, sex, TNM, grade)	0.215600649912357	493	159
+3	0.03	Clinical (age, sex, TNM, grade)	0.207103342210771	493	159
+3	0.04	Clinical (age, sex, TNM, grade)	0.198405021887096	493	159
+3	0.05	Clinical (age, sex, TNM, grade)	0.190037880362751	493	159
+3	0.06	Clinical (age, sex, TNM, grade)	0.181421558373021	493	159
+3	0.07	Clinical (age, sex, TNM, grade)	0.174852433615621	493	159
+3	0.08	Clinical (age, sex, TNM, grade)	0.171220587493763	493	159
+3	0.09	Clinical (age, sex, TNM, grade)	0.167660060204844	493	159
+3	0.1	Clinical (age, sex, TNM, grade)	0.158693183885249	493	159
+3	0.11	Clinical (age, sex, TNM, grade)	0.154223231940611	493	159
+3	0.12	Clinical (age, sex, TNM, grade)	0.146822026069977	493	159
+3	0.13	Clinical (age, sex, TNM, grade)	0.146511436837556	493	159
+3	0.14	Clinical (age, sex, TNM, grade)	0.135071036681797	493	159
+3	0.15	Clinical (age, sex, TNM, grade)	0.131941595645722	493	159
+3	0.16	Clinical (age, sex, TNM, grade)	0.128539168346674	493	159
+3	0.17	Clinical (age, sex, TNM, grade)	0.129169368637623	493	159
+3	0.18	Clinical (age, sex, TNM, grade)	0.115526108171568	493	159
+3	0.19	Clinical (age, sex, TNM, grade)	0.114708541673447	493	159
+3	0.2	Clinical (age, sex, TNM, grade)	0.111172540385336	493	159
+3	0.21	Clinical (age, sex, TNM, grade)	0.105222388578286	493	159
+3	0.22	Clinical (age, sex, TNM, grade)	0.098922626591963	493	159
+3	0.23	Clinical (age, sex, TNM, grade)	0.101298712290862	493	159
+3	0.24	Clinical (age, sex, TNM, grade)	0.0950852794947119	493	159
+3	0.25	Clinical (age, sex, TNM, grade)	0.0946774251330956	493	159
+3	0.26	Clinical (age, sex, TNM, grade)	0.0885420047413673	493	159
+3	0.27	Clinical (age, sex, TNM, grade)	0.0840922963835217	493	159
+3	0.28	Clinical (age, sex, TNM, grade)	0.0864713689232803	493	159
+3	0.29	Clinical (age, sex, TNM, grade)	0.0827790743995178	493	159
+3	0.3	Clinical (age, sex, TNM, grade)	0.0769813352827609	493	159
+3	0.31	Clinical (age, sex, TNM, grade)	0.0770833459827654	493	159
+3	0.32	Clinical (age, sex, TNM, grade)	0.0727385534575905	493	159
+3	0.33	Clinical (age, sex, TNM, grade)	0.0626725303567076	493	159
+3	0.34	Clinical (age, sex, TNM, grade)	0.0549221599071006	493	159
+3	0.35	Clinical (age, sex, TNM, grade)	0.0556757853885567	493	159
+3	0.36	Clinical (age, sex, TNM, grade)	0.0515730562876711	493	159
+3	0.37	Clinical (age, sex, TNM, grade)	0.0436390857283353	493	159
+3	0.38	Clinical (age, sex, TNM, grade)	0.0446203171400452	493	159
+3	0.39	Clinical (age, sex, TNM, grade)	0.0444159582873266	493	159
+3	0.4	Clinical (age, sex, TNM, grade)	0.0436365527643419	493	159
+3	0.41	Clinical (age, sex, TNM, grade)	0.0415031698938599	493	159
+3	0.42	Clinical (age, sex, TNM, grade)	0.0374337021209305	493	159
+3	0.43	Clinical (age, sex, TNM, grade)	0.0296542374111311	493	159
+3	0.44	Clinical (age, sex, TNM, grade)	0.027647235718666	493	159
+3	0.45	Clinical (age, sex, TNM, grade)	0.0257946419024486	493	159
+3	0.46	Clinical (age, sex, TNM, grade)	0.0276927979204292	493	159
+3	0.47	Clinical (age, sex, TNM, grade)	0.0222831974525495	493	159
+3	0.48	Clinical (age, sex, TNM, grade)	0.0208093405355068	493	159
+3	0.49	Clinical (age, sex, TNM, grade)	0.017359434195134	493	159
+3	0.5	Clinical (age, sex, TNM, grade)	0.011794076344846	493	159
+3	0.51	Clinical (age, sex, TNM, grade)	0.0103375411640706	493	159
+3	0.52	Clinical (age, sex, TNM, grade)	0.00770157200811356	493	159
+3	0.53	Clinical (age, sex, TNM, grade)	0.0065455382446449	493	159
+3	0.54	Clinical (age, sex, TNM, grade)	0.00551824927872199	493	159
+3	0.55	Clinical (age, sex, TNM, grade)	0.00665730483174701	493	159
+3	0.56	Clinical (age, sex, TNM, grade)	0.00591615956727519	493	159
+3	0.57	Clinical (age, sex, TNM, grade)	0.00533472848204674	493	159
+3	0.58	Clinical (age, sex, TNM, grade)	0.00695450594030715	493	159
+3	0.59	Clinical (age, sex, TNM, grade)	0.00876223772379713	493	159
+3	0.6	Clinical (age, sex, TNM, grade)	0.00157764255127339	493	159
+3	0.02	Clinical + module scores	0.215649425766265	493	159
+3	0.03	Clinical + module scores	0.207321106182467	493	159
+3	0.04	Clinical + module scores	0.198762566067679	493	159
+3	0.05	Clinical + module scores	0.191099893969857	493	159
+3	0.06	Clinical + module scores	0.1871265524709	493	159
+3	0.07	Clinical + module scores	0.180090907284727	493	159
+3	0.08	Clinical + module scores	0.174969267003619	493	159
+3	0.09	Clinical + module scores	0.168796121125958	493	159
+3	0.1	Clinical + module scores	0.164751171113369	493	159
+3	0.11	Clinical + module scores	0.15686153960544	493	159
+3	0.12	Clinical + module scores	0.146712878386516	493	159
+3	0.13	Clinical + module scores	0.146624131037797	493	159
+3	0.14	Clinical + module scores	0.140805455562131	493	159
+3	0.15	Clinical + module scores	0.137328268226539	493	159
+3	0.16	Clinical + module scores	0.128498549041691	493	159
+3	0.17	Clinical + module scores	0.125147369122053	493	159
+3	0.18	Clinical + module scores	0.12026757146768	493	159
+3	0.19	Clinical + module scores	0.119690820643742	493	159
+3	0.2	Clinical + module scores	0.116417691677368	493	159
+3	0.21	Clinical + module scores	0.111043606852352	493	159
+3	0.22	Clinical + module scores	0.107567792454828	493	159
+3	0.23	Clinical + module scores	0.099803235248979	493	159
+3	0.24	Clinical + module scores	0.0998978330740426	493	159
+3	0.25	Clinical + module scores	0.0960979223209221	493	159
+3	0.26	Clinical + module scores	0.0939252270434218	493	159
+3	0.27	Clinical + module scores	0.0879506466910033	493	159
+3	0.28	Clinical + module scores	0.0843107209078894	493	159
+3	0.29	Clinical + module scores	0.0745150891678617	493	159
+3	0.3	Clinical + module scores	0.0763002790157942	493	159
+3	0.31	Clinical + module scores	0.0631206549675677	493	159
+3	0.32	Clinical + module scores	0.0628846068656668	493	159
+3	0.33	Clinical + module scores	0.061252728504704	493	159
+3	0.34	Clinical + module scores	0.0565188119866663	493	159
+3	0.35	Clinical + module scores	0.0560050293831887	493	159
+3	0.36	Clinical + module scores	0.054644835387736	493	159
+3	0.37	Clinical + module scores	0.0488350757543892	493	159
+3	0.38	Clinical + module scores	0.0408318923951717	493	159
+3	0.39	Clinical + module scores	0.0387004525546976	493	159
+3	0.4	Clinical + module scores	0.0370633614538854	493	159
+3	0.41	Clinical + module scores	0.0328172570411371	493	159
+3	0.42	Clinical + module scores	0.0320763618018362	493	159
+3	0.43	Clinical + module scores	0.0316589715786121	493	159
+3	0.44	Clinical + module scores	0.0277332127131762	493	159
+3	0.45	Clinical + module scores	0.0259578150044682	493	159
+3	0.46	Clinical + module scores	0.0263466930377079	493	159
+3	0.47	Clinical + module scores	0.0229400919304168	493	159
+3	0.48	Clinical + module scores	0.0194804829946116	493	159
+3	0.49	Clinical + module scores	0.0179931456886554	493	159
+3	0.5	Clinical + module scores	0.0206419281708627	493	159
+3	0.51	Clinical + module scores	0.0212172643352012	493	159
+3	0.52	Clinical + module scores	0.0198844428053353	493	159
+3	0.53	Clinical + module scores	0.0143115490581246	493	159
+3	0.54	Clinical + module scores	0.00865490175804593	493	159
+3	0.55	Clinical + module scores	0.0101419878296146	493	159
+3	0.56	Clinical + module scores	0.00875898948921262	493	159
+3	0.57	Clinical + module scores	0.00797207415444123	493	159
+3	0.58	Clinical + module scores	0.00656814449917896	493	159
+3	0.59	Clinical + module scores	0.00902295316781042	493	159
+3	0.6	Clinical + module scores	0.00875413686345682	493	159
+3	0.02	Treat all	0.215600649912357	493	159
+3	0.03	Treat all	0.20751405867434	493	159
+3	0.04	Treat all	0.199258996785531	493	159
+3	0.05	Treat all	0.190830144120115	493	159
+3	0.06	Treat all	0.182221954163946	493	159
+3	0.07	Treat all	0.173428641843128	493	159
+3	0.08	Treat all	0.164444170558815	493	159
+3	0.09	Treat all	0.155262238367153	493	159
+3	0.1	Treat all	0.145876263237899	493	159
+3	0.11	Treat all	0.136279367319224	493	159
+3	0.12	Treat all	0.12646436012967	493	159
+3	0.13	Treat all	0.11642372059093	493	159
+3	0.14	Treat all	0.106149577807104	493	159
+3	0.15	Treat all	0.0956336904871875	493	159
+3	0.16	Treat all	0.0848674248977493	493	159
+3	0.17	Treat all	0.0738417312218186	493	159
+3	0.18	Treat all	0.0625471181879383	493	159
+3	0.19	Treat all	0.0509736258198882	493	159
+3	0.2	Treat all	0.0391107961426368	493	159
+3	0.21	Treat all	0.0269476416634296	493	159
+3	0.22	Treat all	0.0144726114283454	493	159
+3	0.23	Treat all	0.00167355443390832	493	159
+3	0.24	Treat all	-0.011462319849856	493	159
+3	0.25	Treat all	-0.0249484841145208	493	159
+3	0.26	Treat all	-0.0387991393052576	493	159
+3	0.27	Treat all	-0.05302926450122	493	159
+3	0.28	Treat all	-0.0676546709526259	493	159
+3	0.29	Treat all	-0.082692060684353	493	159
+3	0.3	Treat all	-0.0981590901227009	493	159
+3	0.31	Treat all	-0.114074439254914	493	159
+3	0.32	Treat all	-0.130457886891016	493	159
+3	0.33	Treat all	-0.147330392665508	493	159
+3	0.34	Treat all	-0.164714186493774	493	159
+3	0.35	Treat all	-0.182632866285986	493	159
+3	0.36	Treat all	-0.201111504821704	493	159
+3	0.37	Treat all	-0.220176766803001	493	159
+3	0.38	Treat all	-0.239857037235307	493	159
+3	0.39	Treat all	-0.260182562435886	493	159
+3	0.4	Treat all	-0.281185605143151	493	159
+3	0.41	Treat all	-0.302900615399815	493	159
+3	0.42	Treat all	-0.325364419113605	493	159
+3	0.43	Treat all	-0.348616426466475	493	159
+3	0.44	Treat all	-0.372698862653376	493	159
+3	0.45	Treat all	-0.397657023792528	493	159
+3	0.46	Treat all	-0.423539561270168	493	159
+3	0.47	Treat all	-0.450398798275265	493	159
+3	0.48	Treat all	-0.478291082857482	493	159
+3	0.49	Treat all	-0.507277182521354	493	159
+3	0.5	Treat all	-0.537422726171781	493	159
+3	0.51	Treat all	-0.568798700175287	493	159
+3	0.52	Treat all	-0.601482006428939	493	159
+3	0.53	Treat all	-0.635556091672108	493	159
+3	0.54	Treat all	-0.671111658882371	493	159
+3	0.55	Treat all	-0.708247473524202	493	159
+3	0.56	Treat all	-0.747071279740661	493	159
+3	0.57	Treat all	-0.787700844385792	493	159
+3	0.58	Treat all	-0.830265150204502	493	159
+3	0.59	Treat all	-0.874905763624124	493	159
+3	0.6	Treat all	-0.921778407714726	493	159
+3	0.02	Treat none	0	493	159
+3	0.03	Treat none	0	493	159
+3	0.04	Treat none	0	493	159
+3	0.05	Treat none	0	493	159
+3	0.06	Treat none	0	493	159
+3	0.07	Treat none	0	493	159
+3	0.08	Treat none	0	493	159
+3	0.09	Treat none	0	493	159
+3	0.1	Treat none	0	493	159
+3	0.11	Treat none	0	493	159
+3	0.12	Treat none	0	493	159
+3	0.13	Treat none	0	493	159
+3	0.14	Treat none	0	493	159
+3	0.15	Treat none	0	493	159
+3	0.16	Treat none	0	493	159
+3	0.17	Treat none	0	493	159
+3	0.18	Treat none	0	493	159
+3	0.19	Treat none	0	493	159
+3	0.2	Treat none	0	493	159
+3	0.21	Treat none	0	493	159
+3	0.22	Treat none	0	493	159
+3	0.23	Treat none	0	493	159
+3	0.24	Treat none	0	493	159
+3	0.25	Treat none	0	493	159
+3	0.26	Treat none	0	493	159
+3	0.27	Treat none	0	493	159
+3	0.28	Treat none	0	493	159
+3	0.29	Treat none	0	493	159
+3	0.3	Treat none	0	493	159
+3	0.31	Treat none	0	493	159
+3	0.32	Treat none	0	493	159
+3	0.33	Treat none	0	493	159
+3	0.34	Treat none	0	493	159
+3	0.35	Treat none	0	493	159
+3	0.36	Treat none	0	493	159
+3	0.37	Treat none	0	493	159
+3	0.38	Treat none	0	493	159
+3	0.39	Treat none	0	493	159
+3	0.4	Treat none	0	493	159
+3	0.41	Treat none	0	493	159
+3	0.42	Treat none	0	493	159
+3	0.43	Treat none	0	493	159
+3	0.44	Treat none	0	493	159
+3	0.45	Treat none	0	493	159
+3	0.46	Treat none	0	493	159
+3	0.47	Treat none	0	493	159
+3	0.48	Treat none	0	493	159
+3	0.49	Treat none	0	493	159
+3	0.5	Treat none	0	493	159
+3	0.51	Treat none	0	493	159
+3	0.52	Treat none	0	493	159
+3	0.53	Treat none	0	493	159
+3	0.54	Treat none	0	493	159
+3	0.55	Treat none	0	493	159
+3	0.56	Treat none	0	493	159
+3	0.57	Treat none	0	493	159
+3	0.58	Treat none	0	493	159
+3	0.59	Treat none	0	493	159
+3	0.6	Treat none	0	493	159
+5	0.02	Clinical (age, sex, TNM, grade)	0.349724911436493	493	159
+5	0.03	Clinical (age, sex, TNM, grade)	0.343021044544086	493	159
+5	0.04	Clinical (age, sex, TNM, grade)	0.336177513758087	493	159
+5	0.05	Clinical (age, sex, TNM, grade)	0.328530818403427	493	159
+5	0.06	Clinical (age, sex, TNM, grade)	0.320397442381723	493	159
+5	0.07	Clinical (age, sex, TNM, grade)	0.313155320178277	493	159
+5	0.08	Clinical (age, sex, TNM, grade)	0.305374218048599	493	159
+5	0.09	Clinical (age, sex, TNM, grade)	0.297696099497806	493	159
+5	0.1	Clinical (age, sex, TNM, grade)	0.288109943307561	493	159
+5	0.11	Clinical (age, sex, TNM, grade)	0.282196777020432	493	159
+5	0.12	Clinical (age, sex, TNM, grade)	0.276612409948513	493	159
+5	0.13	Clinical (age, sex, TNM, grade)	0.260348564422382	493	159
+5	0.14	Clinical (age, sex, TNM, grade)	0.253202352976845	493	159
+5	0.15	Clinical (age, sex, TNM, grade)	0.245411633538293	493	159
+5	0.16	Clinical (age, sex, TNM, grade)	0.241007912209364	493	159
+5	0.17	Clinical (age, sex, TNM, grade)	0.229823510301437	493	159
+5	0.18	Clinical (age, sex, TNM, grade)	0.225987530061008	493	159
+5	0.19	Clinical (age, sex, TNM, grade)	0.214827873778695	493	159
+5	0.2	Clinical (age, sex, TNM, grade)	0.208998175011952	493	159
+5	0.21	Clinical (age, sex, TNM, grade)	0.206650985587776	493	159
+5	0.22	Clinical (age, sex, TNM, grade)	0.202159296274996	493	159
+5	0.23	Clinical (age, sex, TNM, grade)	0.194623014721938	493	159
+5	0.24	Clinical (age, sex, TNM, grade)	0.185306262220571	493	159
+5	0.25	Clinical (age, sex, TNM, grade)	0.182340794435159	493	159
+5	0.26	Clinical (age, sex, TNM, grade)	0.176971653924599	493	159
+5	0.27	Clinical (age, sex, TNM, grade)	0.171623779011365	493	159
+5	0.28	Clinical (age, sex, TNM, grade)	0.165959390032311	493	159
+5	0.29	Clinical (age, sex, TNM, grade)	0.151122395331304	493	159
+5	0.3	Clinical (age, sex, TNM, grade)	0.151067188902082	493	159
+5	0.31	Clinical (age, sex, TNM, grade)	0.145665871047913	493	159
+5	0.32	Clinical (age, sex, TNM, grade)	0.141162975535349	493	159
+5	0.33	Clinical (age, sex, TNM, grade)	0.135261144128876	493	159
+5	0.34	Clinical (age, sex, TNM, grade)	0.131513466966566	493	159
+5	0.35	Clinical (age, sex, TNM, grade)	0.132908873067173	493	159
+5	0.36	Clinical (age, sex, TNM, grade)	0.134192390876993	493	159
+5	0.37	Clinical (age, sex, TNM, grade)	0.128923218747546	493	159
+5	0.38	Clinical (age, sex, TNM, grade)	0.127120768841237	493	159
+5	0.39	Clinical (age, sex, TNM, grade)	0.117899703659612	493	159
+5	0.4	Clinical (age, sex, TNM, grade)	0.11730907276306	493	159
+5	0.41	Clinical (age, sex, TNM, grade)	0.112385886857775	493	159
+5	0.42	Clinical (age, sex, TNM, grade)	0.114988501810305	493	159
+5	0.43	Clinical (age, sex, TNM, grade)	0.114736685730109	493	159
+5	0.44	Clinical (age, sex, TNM, grade)	0.110705692035546	493	159
+5	0.45	Clinical (age, sex, TNM, grade)	0.108618858757159	493	159
+5	0.46	Clinical (age, sex, TNM, grade)	0.10438686876143	493	159
+5	0.47	Clinical (age, sex, TNM, grade)	0.102797168669555	493	159
+5	0.48	Clinical (age, sex, TNM, grade)	0.09813496671699	493	159
+5	0.49	Clinical (age, sex, TNM, grade)	0.0898749804157628	493	159
+5	0.5	Clinical (age, sex, TNM, grade)	0.0802350557338234	493	159
+5	0.51	Clinical (age, sex, TNM, grade)	0.0775823588118461	493	159
+5	0.52	Clinical (age, sex, TNM, grade)	0.0739586309084588	493	159
+5	0.53	Clinical (age, sex, TNM, grade)	0.0714585748655021	493	159
+5	0.54	Clinical (age, sex, TNM, grade)	0.0656102077222476	493	159
+5	0.55	Clinical (age, sex, TNM, grade)	0.0674590664623315	493	159
+5	0.56	Clinical (age, sex, TNM, grade)	0.0636224288943965	493	159
+5	0.57	Clinical (age, sex, TNM, grade)	0.0598407798061936	493	159
+5	0.58	Clinical (age, sex, TNM, grade)	0.0541385862937067	493	159
+5	0.59	Clinical (age, sex, TNM, grade)	0.0501808004157977	493	159
+5	0.6	Clinical (age, sex, TNM, grade)	0.0476047038690771	493	159
+5	0.02	Clinical + module scores	0.349724911436493	493	159
+5	0.03	Clinical + module scores	0.343021044544086	493	159
+5	0.04	Clinical + module scores	0.335906989173259	493	159
+5	0.05	Clinical + module scores	0.328277965755937	493	159
+5	0.06	Clinical + module scores	0.319980649499745	493	159
+5	0.07	Clinical + module scores	0.312526749019448	493	159
+5	0.08	Clinical + module scores	0.306154544950285	493	159
+5	0.09	Clinical + module scores	0.294970064893012	493	159
+5	0.1	Clinical + module scores	0.28717578557859	493	159
+5	0.11	Clinical + module scores	0.279560864550187	493	159
+5	0.12	Clinical + module scores	0.27447850072856	493	159
+5	0.13	Clinical + module scores	0.261884362943602	493	159
+5	0.14	Clinical + module scores	0.257845246506083	493	159
+5	0.15	Clinical + module scores	0.251432522009791	493	159
+5	0.16	Clinical + module scores	0.249130022053296	493	159
+5	0.17	Clinical + module scores	0.243459534425101	493	159
+5	0.18	Clinical + module scores	0.235405402734477	493	159
+5	0.19	Clinical + module scores	0.221735950037323	493	159
+5	0.2	Clinical + module scores	0.216162892131616	493	159
+5	0.21	Clinical + module scores	0.20969080145287	493	159
+5	0.22	Clinical + module scores	0.203286902129564	493	159
+5	0.23	Clinical + module scores	0.203532127487154	493	159
+5	0.24	Clinical + module scores	0.199372354051417	493	159
+5	0.25	Clinical + module scores	0.190341638430426	493	159
+5	0.26	Clinical + module scores	0.181062433732689	493	159
+5	0.27	Clinical + module scores	0.174593519969412	493	159
+5	0.28	Clinical + module scores	0.170368732764328	493	159
+5	0.29	Clinical + module scores	0.169713219306854	493	159
+5	0.3	Clinical + module scores	0.168338319591171	493	159
+5	0.31	Clinical + module scores	0.163386019058744	493	159
+5	0.32	Clinical + module scores	0.160903128238503	493	159
+5	0.33	Clinical + module scores	0.150321153923696	493	159
+5	0.34	Clinical + module scores	0.137267290388655	493	159
+5	0.35	Clinical + module scores	0.134153830977135	493	159
+5	0.36	Clinical + module scores	0.13228984124233	493	159
+5	0.37	Clinical + module scores	0.135026574786147	493	159
+5	0.38	Clinical + module scores	0.133578329504059	493	159
+5	0.39	Clinical + module scores	0.130852422021685	493	159
+5	0.4	Clinical + module scores	0.128192449140599	493	159
+5	0.41	Clinical + module scores	0.120420480913055	493	159
+5	0.42	Clinical + module scores	0.115899781934619	493	159
+5	0.43	Clinical + module scores	0.116453295978209	493	159
+5	0.44	Clinical + module scores	0.10689481069645	493	159
+5	0.45	Clinical + module scores	0.105695747307588	493	159
+5	0.46	Clinical + module scores	0.098715425060703	493	159
+5	0.47	Clinical + module scores	0.0884606161327832	493	159
+5	0.48	Clinical + module scores	0.0894343582440772	493	159
+5	0.49	Clinical + module scores	0.0899531937590951	493	159
+5	0.5	Clinical + module scores	0.0885630336913823	493	159
+5	0.51	Clinical + module scores	0.0806110714020359	493	159
+5	0.52	Clinical + module scores	0.0763456701138874	493	159
+5	0.53	Clinical + module scores	0.0762769262257364	493	159
+5	0.54	Clinical + module scores	0.0724565715084549	493	159
+5	0.55	Clinical + module scores	0.0642969443251077	493	159
+5	0.56	Clinical + module scores	0.0610111906555165	493	159
+5	0.57	Clinical + module scores	0.059175185041722	493	159
+5	0.58	Clinical + module scores	0.0592805837977371	493	159
+5	0.59	Clinical + module scores	0.0534019217077258	493	159
+5	0.6	Clinical + module scores	0.0563404596397104	493	159
+5	0.02	Treat all	0.349724911436493	493	159
+5	0.03	Treat all	0.343021044544086	493	159
+5	0.04	Treat all	0.336177513758087	493	159
+5	0.05	Treat all	0.329189908639751	493	159
+5	0.06	Treat all	0.322053631072089	493	159
+5	0.07	Treat all	0.314763885169638	493	159
+5	0.08	Treat all	0.307315666530178	493	159
+5	0.09	Treat all	0.299703750777762	493	159
+5	0.1	Treat all	0.291922681341959	493	159
+5	0.11	Treat all	0.283966756413217	493	159
+5	0.12	Treat all	0.275830015008822	493	159
+5	0.13	Treat all	0.267506222077889	493	159
+5	0.14	Treat all	0.258988852567167	493	159
+5	0.15	Treat all	0.250271074362075	493	159
+5	0.16	Treat all	0.241345730009242	493	159
+5	0.17	Treat all	0.232205317117787	493	159
+5	0.18	Treat all	0.222841967326541	493	159
+5	0.19	Treat all	0.213247423713288	493	159
+5	0.2	Treat all	0.203413016509704	493	159
+5	0.21	Treat all	0.193329636971852	493	159
+5	0.22	Treat all	0.182987709240722	493	159
+5	0.23	Treat all	0.172377160010082	493	159
+5	0.24	Treat all	0.161487385799689	493	159
+5	0.25	Treat all	0.150307217610351	493	159
+5	0.26	Treat all	0.138824882713194	493	159
+5	0.27	Treat all	0.127027963298306	493	159
+5	0.28	Treat all	0.114903351677449	493	159
+5	0.29	Treat all	0.102437201701075	493	159
+5	0.3	Treat all	0.0896148760110904	493	159
+5	0.31	Treat all	0.0764208887069033	493	159
+5	0.32	Treat all	0.0628388429525931	493	159
+5	0.33	Treat all	0.0488513629966617	493	159
+5	0.34	Treat all	0.0344400200117626	493	159
+5	0.35	Treat all	0.0195852510888666	493	159
+5	0.36	Treat all	0.00426627063713014	493	159
+5	0.37	Treat all	-0.011539026654344	493	159
+5	0.38	Treat all	-0.027854172245543	493	159
+5	0.39	Treat all	-0.0447042406430109	493	159
+5	0.4	Treat all	-0.0621159779870611	493	159
+5	0.41	Treat all	-0.0801179437156554	493	159
+5	0.42	Treat all	-0.0987406668831667	493	159
+5	0.43	Treat all	-0.118016818933749	493	159
+5	0.44	Treat all	-0.137981404986137	493	159
+5	0.45	Treat all	-0.158671975985885	493	159
+5	0.46	Treat all	-0.180128864430068	493	159
+5	0.47	Treat all	-0.202395446777805	493	159
+5	0.48	Treat all	-0.225518436138917	493	159
+5	0.49	Treat all	-0.249548209396543	493	159
+5	0.5	Treat all	-0.274539173584473	493	159
+5	0.51	Treat all	-0.300550177127014	493	159
+5	0.52	Treat all	-0.327644972483827	493	159
+5	0.53	Treat all	-0.355892737855823	493	159
+5	0.54	Treat all	-0.385368666939645	493	159
+5	0.55	Treat all	-0.416154637316082	493	159
+5	0.56	Treat all	-0.448339969982356	493	159
+5	0.57	Treat all	-0.482022294865667	493	159
+5	0.58	Treat all	-0.517308539981516	493	159
+5	0.59	Treat all	-0.554316065346919	493	159
+5	0.6	Treat all	-0.593173966980592	493	159
+5	0.02	Treat none	0	493	159
+5	0.03	Treat none	0	493	159
+5	0.04	Treat none	0	493	159
+5	0.05	Treat none	0	493	159
+5	0.06	Treat none	0	493	159
+5	0.07	Treat none	0	493	159
+5	0.08	Treat none	0	493	159
+5	0.09	Treat none	0	493	159
+5	0.1	Treat none	0	493	159
+5	0.11	Treat none	0	493	159
+5	0.12	Treat none	0	493	159
+5	0.13	Treat none	0	493	159
+5	0.14	Treat none	0	493	159
+5	0.15	Treat none	0	493	159
+5	0.16	Treat none	0	493	159
+5	0.17	Treat none	0	493	159
+5	0.18	Treat none	0	493	159
+5	0.19	Treat none	0	493	159
+5	0.2	Treat none	0	493	159
+5	0.21	Treat none	0	493	159
+5	0.22	Treat none	0	493	159
+5	0.23	Treat none	0	493	159
+5	0.24	Treat none	0	493	159
+5	0.25	Treat none	0	493	159
+5	0.26	Treat none	0	493	159
+5	0.27	Treat none	0	493	159
+5	0.28	Treat none	0	493	159
+5	0.29	Treat none	0	493	159
+5	0.3	Treat none	0	493	159
+5	0.31	Treat none	0	493	159
+5	0.32	Treat none	0	493	159
+5	0.33	Treat none	0	493	159
+5	0.34	Treat none	0	493	159
+5	0.35	Treat none	0	493	159
+5	0.36	Treat none	0	493	159
+5	0.37	Treat none	0	493	159
+5	0.38	Treat none	0	493	159
+5	0.39	Treat none	0	493	159
+5	0.4	Treat none	0	493	159
+5	0.41	Treat none	0	493	159
+5	0.42	Treat none	0	493	159
+5	0.43	Treat none	0	493	159
+5	0.44	Treat none	0	493	159
+5	0.45	Treat none	0	493	159
+5	0.46	Treat none	0	493	159
+5	0.47	Treat none	0	493	159
+5	0.48	Treat none	0	493	159
+5	0.49	Treat none	0	493	159
+5	0.5	Treat none	0	493	159
+5	0.51	Treat none	0	493	159
+5	0.52	Treat none	0	493	159
+5	0.53	Treat none	0	493	159
+5	0.54	Treat none	0	493	159
+5	0.55	Treat none	0	493	159
+5	0.56	Treat none	0	493	159
+5	0.57	Treat none	0	493	159
+5	0.58	Treat none	0	493	159
+5	0.59	Treat none	0	493	159
+5	0.6	Treat none	0	493	159

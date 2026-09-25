@@ -1,0 +1,7 @@
+quantity	n	of
+eligible tumour projects with networks	25	
+rule C met	4	25
+largest observed module >= 40% of genes	6	25
+largest observed eigengene |r| >= 0.7	17	25
+ARI < 0.2	5	25
+more modules after adjustment than before	13	25

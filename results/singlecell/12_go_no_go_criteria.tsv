@@ -1,0 +1,8 @@
+criterion	observed	pass
+Discovery dataset (KIRC_GSE159115) imported with integer counts	imported TRUE	TRUE
+Discovery: evaluable malignant donors >= 5	7	TRUE
+Discovery: evaluable normal-epithelial donors >= 3	5	TRUE
+Discovery: lncRNAs passing donor-level filter >= 300	1130	TRUE
+Replication: independent evaluable malignant donors >= 5	35	TRUE
+Replication: >= 2 datasets with evaluable malignant donors	5	TRUE
+Replication: discovery-passing lncRNAs also passing in >= 1 replication dataset >= 100	1100	TRUE

@@ -1,0 +1,17 @@
+quantity	test	n_genes	n_samples	df	statistic	p
+|rho| with the non-feature fraction	Kruskal-Wallis across the six positional classes	3442	511	5	263.31	7.65e-55
+rho with the non-feature fraction (signed)	Kruskal-Wallis across the six positional classes	3442	511	5	265.65	2.41e-55
+observed PC1 loading	Kruskal-Wallis across the six positional classes	3442	511	5	109.97	4.15e-22
+gene length	Kruskal-Wallis across the six positional classes	3442		5	634.5	7.09e-135
+exon count	Kruskal-Wallis across the six positional classes	3442		5	465.7	2.01e-98
+transcript count	Kruskal-Wallis across the six positional classes	3442		5	377.29	2.32e-79
+mean log2(FPKM+1)	Kruskal-Wallis across the six positional classes	3442	511	5	27.46	4.63e-05
+fraction of samples expressed	Kruskal-Wallis across the six positional classes	3442	511	5	53.13	3.17e-10
+|rho| with the non-feature fraction	class F-test adjusted for mean log2 expression and log10 gene length (sequential ANOVA, class last)	3442	511	5	54.8	6.24e-55
+observed PC1 loading	class F-test adjusted for mean log2 expression and log10 gene length (sequential ANOVA, class last)	3442	511	5	18.29	5.82e-18
+|rho| vs mean log2 expression (rho)	Spearman across all lncRNAs	3442	511		-0.181	1.3e-26
+|rho| vs gene length (rho)	Spearman across all lncRNAs	3442			-0.084	7.11e-07
+|rho| vs exon count (rho)	Spearman across all lncRNAs	3442			-0.054	0.00165
+PC1 loading vs mean log2 expression (rho)	Spearman across all lncRNAs	3442	511		0.262	3.57e-55
+PC1 loading vs rho with the non-feature fraction (rho)	Spearman across all lncRNAs	3442	511		0.779	0
+observed PC1 sample score vs pct_noFeature (rho)	Spearman across the discovery libraries in the lncRNA network (sample level, not gene level)		511		0.901	1.35e-186

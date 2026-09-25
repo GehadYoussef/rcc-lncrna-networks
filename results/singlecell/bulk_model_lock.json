@@ -1,0 +1,223 @@
+{
+  "model_lock_id": "f2701f9c1be7f90e2f793ee87b399e14d78e7cc5beb216d0cee452056363b181",
+  "parent_bulk_lock_id": "3abe53290a1d015933d1b55f3b21bb02f360ad7c7a4c2f2b55fbb6cadf0d3b5b",
+  "parent_single_cell_lock_id": "0324d1059cd0395e998507566c9d7ef6efade764ff7aedc1d61b9813c252068d",
+  "created_utc": "2026-09-16 18:28:17 UTC",
+  "written_before_validation_outcomes_read": true,
+  "development": {
+    "cohort": "TCGA-KIRC",
+    "n": 520,
+    "events": 172
+  },
+  "primary_arm": "clinical_sc_score",
+  "secondary_arm": "clinical_enet",
+  "coefficients": [
+    {
+      "term": "M1",
+      "arm": "clinical",
+      "coefficient": 0.960798659564357,
+      "symbol": null
+    },
+    {
+      "term": "N_pos",
+      "arm": "clinical",
+      "coefficient": 0.660092670187774,
+      "symbol": null
+    },
+    {
+      "term": "T_stage",
+      "arm": "clinical",
+      "coefficient": 0.221852027608182,
+      "symbol": null
+    },
+    {
+      "term": "age",
+      "arm": "clinical",
+      "coefficient": 0.367557165649037,
+      "symbol": null
+    },
+    {
+      "term": "grade",
+      "arm": "clinical",
+      "coefficient": 0.418724388857719,
+      "symbol": null
+    },
+    {
+      "term": "male",
+      "arm": "clinical",
+      "coefficient": -0.0538418471691325,
+      "symbol": null
+    },
+    {
+      "term": "ENSG00000204362",
+      "arm": "clinical_enet",
+      "coefficient": 0.0256056250740282,
+      "symbol": "LINC02783"
+    },
+    {
+      "term": "ENSG00000214293",
+      "arm": "clinical_enet",
+      "coefficient": -0.0407963141623525,
+      "symbol": "APTR"
+    },
+    {
+      "term": "ENSG00000224568",
+      "arm": "clinical_enet",
+      "coefficient": -0.111398848704158,
+      "symbol": "LINC01886"
+    },
+    {
+      "term": "ENSG00000230945",
+      "arm": "clinical_enet",
+      "coefficient": -0.02579398888511,
+      "symbol": "LINC01507"
+    },
+    {
+      "term": "ENSG00000233593",
+      "arm": "clinical_enet",
+      "coefficient": 0.00399251022365327,
+      "symbol": "LINC02609"
+    },
+    {
+      "term": "ENSG00000234494",
+      "arm": "clinical_enet",
+      "coefficient": 0.0153393004890148,
+      "symbol": "SP2-AS1"
+    },
+    {
+      "term": "ENSG00000236882",
+      "arm": "clinical_enet",
+      "coefficient": -0.0292406626054201,
+      "symbol": "LINC01554"
+    },
+    {
+      "term": "ENSG00000249249",
+      "arm": "clinical_enet",
+      "coefficient": -0.0411269874255489,
+      "symbol": "AC010226.1"
+    },
+    {
+      "term": "ENSG00000253574",
+      "arm": "clinical_enet",
+      "coefficient": -0.0441159609227637,
+      "symbol": "AC021744.1"
+    },
+    {
+      "term": "ENSG00000255337",
+      "arm": "clinical_enet",
+      "coefficient": 0.0252729305814811,
+      "symbol": "AP001830.1"
+    },
+    {
+      "term": "ENSG00000261188",
+      "arm": "clinical_enet",
+      "coefficient": 0.078882477073647,
+      "symbol": "Z95115.1"
+    },
+    {
+      "term": "ENSG00000264107",
+      "arm": "clinical_enet",
+      "coefficient": 0.0423308608483189,
+      "symbol": "AC138207.2"
+    },
+    {
+      "term": "ENSG00000273032",
+      "arm": "clinical_enet",
+      "coefficient": -0.00509720450677681,
+      "symbol": "DGCR5"
+    },
+    {
+      "term": "M1",
+      "arm": "clinical_enet",
+      "coefficient": 1.03171187278915,
+      "symbol": null
+    },
+    {
+      "term": "N_pos",
+      "arm": "clinical_enet",
+      "coefficient": 0.606964850991247,
+      "symbol": null
+    },
+    {
+      "term": "T_stage",
+      "arm": "clinical_enet",
+      "coefficient": 0.223139878122946,
+      "symbol": null
+    },
+    {
+      "term": "age",
+      "arm": "clinical_enet",
+      "coefficient": 0.392089401243333,
+      "symbol": null
+    },
+    {
+      "term": "grade",
+      "arm": "clinical_enet",
+      "coefficient": 0.376119038572319,
+      "symbol": null
+    },
+    {
+      "term": "male",
+      "arm": "clinical_enet",
+      "coefficient": -0.0185960499242109,
+      "symbol": null
+    },
+    {
+      "term": "M1",
+      "arm": "clinical_sc_score",
+      "coefficient": 0.983064831143534,
+      "symbol": null
+    },
+    {
+      "term": "N_pos",
+      "arm": "clinical_sc_score",
+      "coefficient": 0.597749872740884,
+      "symbol": null
+    },
+    {
+      "term": "T_stage",
+      "arm": "clinical_sc_score",
+      "coefficient": 0.231093247822514,
+      "symbol": null
+    },
+    {
+      "term": "age",
+      "arm": "clinical_sc_score",
+      "coefficient": 0.398226133200013,
+      "symbol": null
+    },
+    {
+      "term": "grade",
+      "arm": "clinical_sc_score",
+      "coefficient": 0.402878700292782,
+      "symbol": null
+    },
+    {
+      "term": "male",
+      "arm": "clinical_sc_score",
+      "coefficient": -0.00517430530841702,
+      "symbol": null
+    },
+    {
+      "term": "sc_score",
+      "arm": "clinical_sc_score",
+      "coefficient": -0.402021205126808,
+      "symbol": null
+    }
+  ],
+  "lambda_min": 0.0849184960049787,
+  "model_rds_sha256": "b835640982463269ab518e88155f98f170561042bfce2b79afdf48d6206a9900",
+  "rules": {
+    "primary_score": "tier1_unweighted",
+    "secondary_model": "elastic_net_all_retained",
+    "cv_repeats": 10,
+    "cv_folds": 10,
+    "inner_folds": 5,
+    "horizons_years": [1, 3, 5],
+    "primary_horizon_years": 3,
+    "min_at_risk_report": 10,
+    "nb_thresholds": [0.02, 0.6, 0.01],
+    "nb_summary_window": [0.1, 0.4]
+  },
+  "helpers_sha256": "aa88c0046d8b1e2ebcb53b29f24ee759c3fe4999f438cded17e6a036fd4dc915"
+}

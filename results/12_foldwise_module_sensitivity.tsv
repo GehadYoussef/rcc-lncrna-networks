@@ -1,0 +1,7 @@
+analysis	comparator	C_clinical	C_combined	delta_C	delta_sd	delta_lo	delta_hi	n_assignments	interval_type
+modules fixed on full cohort (apparent)	clinical	0.7662	0.7867	0.0205		0.0022	0.04		paired patient bootstrap 95% (in-sample)
+modules fixed on full cohort (10x10 CV, from 05)	clinical	0.7551	0.7606	0.0056	0.0064	-0.0039	0.0147	10	2.5 and 97.5 percentiles across repeats
+modules recomputed inside each fold (3 x 5 assignments)	clinical	0.7388	0.7447	0.0059	0.0106	-0.0089	0.0175	5	range across fold assignments
+modules fixed on full cohort (apparent)	augmented	0.775	0.7916	0.0165		-5e-04	0.0347		paired patient bootstrap 95% (in-sample)
+modules fixed on full cohort (10x10 CV, from 05)	augmented	0.756	0.7662	0.0102	0.0043	0.005	0.0183	10	2.5 and 97.5 percentiles across repeats
+modules recomputed inside each fold (3 x 5 assignments)	augmented	0.7367	0.749	0.0123	0.0145	-0.0081	0.0277	5	range across fold assignments

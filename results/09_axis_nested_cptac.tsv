@@ -1,0 +1,4 @@
+cohort	model	n	events	HR	lo	hi	p	C	ph_p
+CPTAC-3	Axis alone	199	32	0.668	0.485	0.919	0.0133	0.632	0.446
+CPTAC-3	+ age, sex, T, N, M1, ordinal grade	199	32	0.784	0.561	1.094	0.152	0.752	0.866
+CPTAC-3	+ non-feature, multimapping, log10 depth	199	32	0.787	0.547	1.131	0.195	0.756	0.753

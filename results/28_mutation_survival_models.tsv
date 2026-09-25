@@ -1,0 +1,33 @@
+block	exposure	model	term	n	events	n_mutated_in_model	n_terms	epv	HR	lo	hi	p	fdr	C	ph_p	HR_noFeature	lo_noFeature	hi_noFeature	p_noFeature
+mutation as exposure	VHL non-synonymous mutation	mutation alone	VHL	361	93	170	1	93	1.025	0.682	1.539	0.906	0.906	0.483	0.037				
+mutation as exposure	VHL non-synonymous mutation	+ age, sex, T, N, M1, ordinal grade	VHL	361	93	170	7	13.29	0.765	0.502	1.167	0.214	0.374	0.781	0.0263				
+mutation as exposure	VHL non-synonymous mutation	+ clinical + non-feature fraction	VHL	361	93	170	8	11.62	0.786	0.516	1.198	0.262	0.367	0.788	0.017	1.304	1.091	1.558	0.00351
+mutation as exposure	PBRM1 non-synonymous mutation	mutation alone	PBRM1	361	93	149	1	93	0.971	0.644	1.463	0.887	0.906	0.511	0.453				
+mutation as exposure	PBRM1 non-synonymous mutation	+ age, sex, T, N, M1, ordinal grade	PBRM1	361	93	149	7	13.29	0.685	0.443	1.06	0.0898	0.314	0.777	0.583				
+mutation as exposure	PBRM1 non-synonymous mutation	+ clinical + non-feature fraction	PBRM1	361	93	149	8	11.62	0.684	0.441	1.061	0.0903	0.316	0.784	0.588	1.308	1.096	1.561	0.00291
+mutation as exposure	BAP1 non-synonymous mutation	mutation alone	BAP1	361	93	39	1	93	1.954	1.168	3.269	0.0107	0.0334	0.545	0.726				
+mutation as exposure	BAP1 non-synonymous mutation	+ age, sex, T, N, M1, ordinal grade	BAP1	361	93	39	7	13.29	1.477	0.855	2.551	0.162	0.374	0.777	0.654				
+mutation as exposure	BAP1 non-synonymous mutation	+ clinical + non-feature fraction	BAP1	361	93	39	8	11.62	1.254	0.706	2.225	0.44	0.494	0.785	0.638	1.285	1.069	1.545	0.0077
+mutation as exposure	SETD2 non-synonymous mutation	mutation alone	SETD2	361	93	46	1	93	1.141	0.656	1.985	0.639	0.895	0.506	0.828				
+mutation as exposure	SETD2 non-synonymous mutation	+ age, sex, T, N, M1, ordinal grade	SETD2	361	93	46	7	13.29	0.753	0.417	1.359	0.346	0.374	0.777	0.948				
+mutation as exposure	SETD2 non-synonymous mutation	+ clinical + non-feature fraction	SETD2	361	93	46	8	11.62	0.685	0.38	1.236	0.209	0.367	0.782	0.983	1.338	1.114	1.607	0.00188
+mutation as exposure	KDM5C non-synonymous mutation	mutation alone	KDM5C	361	93	19	1	93	1.412	0.617	3.233	0.415	0.726	0.502	0.154				
+mutation as exposure	KDM5C non-synonymous mutation	+ age, sex, T, N, M1, ordinal grade	KDM5C	361	93	19	7	13.29	1.472	0.627	3.455	0.374	0.374	0.782	0.209				
+mutation as exposure	KDM5C non-synonymous mutation	+ clinical + non-feature fraction	KDM5C	361	93	19	8	11.62	1.347	0.573	3.165	0.494	0.494	0.787	0.209	1.308	1.092	1.566	0.00349
+mutation as exposure	MTOR non-synonymous mutation	mutation alone	MTOR	361	93	26	1	93	2.081	1.158	3.742	0.0143	0.0334	0.524	0.229				
+mutation as exposure	MTOR non-synonymous mutation	+ age, sex, T, N, M1, ordinal grade	MTOR	361	93	26	7	13.29	1.361	0.732	2.531	0.33	0.374	0.781	0.553				
+mutation as exposure	MTOR non-synonymous mutation	+ clinical + non-feature fraction	MTOR	361	93	26	8	11.62	1.491	0.798	2.786	0.21	0.367	0.788	0.626	1.326	1.11	1.584	0.00191
+mutation as exposure	TP53 non-synonymous mutation	mutation alone	TP53	361	93	10	1	93	3.229	1.41	7.394	0.00555	0.0334	0.531	0.104				
+mutation as exposure	TP53 non-synonymous mutation	+ age, sex, T, N, M1, ordinal grade	TP53	361	93	10	7	13.29	3.648	1.548	8.597	0.00308	0.0216	0.79	0.209				
+mutation as exposure	TP53 non-synonymous mutation	+ clinical + non-feature fraction	TP53	361	93	10	8	11.62	3.631	1.532	8.608	0.00341	0.0239	0.797	0.132	1.31	1.095	1.568	0.00321
+mutation as exposure	log1p non-synonymous count, per SD	mutation alone	tmb_z	361	93		1	93	1.46	1.202	1.775	0.00014		0.607	0.699				
+mutation as exposure	log1p non-synonymous count, per SD	+ age, sex, T, N, M1, ordinal grade	tmb_z	361	93		7	13.29	1.409	1.094	1.813	0.00782		0.784	0.409				
+mutation as exposure	log1p non-synonymous count, per SD	+ clinical + non-feature fraction	tmb_z	361	93		8	11.62	1.406	1.098	1.8	0.00688		0.792	0.423	1.31	1.099	1.563	0.00264
+non-feature fraction as exposure	pct_noFeature, per SD	nf + clinical (covered subset)	nf	361	93		7	13.29	1.311	1.097	1.568	0.00289		0.787	0.0505				
+non-feature fraction as exposure	pct_noFeature, per SD	+ BAP1	nf	361	93		8	11.62	1.285	1.069	1.545	0.0077		0.785	0.0546				
+non-feature fraction as exposure	pct_noFeature, per SD	+ PBRM1	nf	361	93		8	11.62	1.308	1.096	1.561	0.00291		0.784	0.058				
+non-feature fraction as exposure	pct_noFeature, per SD	+ SETD2	nf	361	93		8	11.62	1.338	1.114	1.607	0.00188		0.782	0.0362				
+non-feature fraction as exposure	pct_noFeature, per SD	+ BAP1 + PBRM1 + SETD2	nf	361	93		10	9.3	1.319	1.09	1.595	0.00437		0.778	0.0452				
+non-feature fraction as exposure	pct_noFeature, per SD	+ all seven driver genes	nf	361	93		14	6.64	1.33	1.094	1.617	0.0042		0.789	0.0565				
+non-feature fraction as exposure	pct_noFeature, per SD	+ mutation count (log1p, per SD)	nf	361	93		8	11.62	1.31	1.099	1.563	0.00264		0.792	0.0418				
+non-feature fraction as exposure	pct_noFeature, per SD	+ all seven driver genes + mutation count	nf	361	93		15	6.2	1.342	1.103	1.632	0.00324		0.787	0.0398				
