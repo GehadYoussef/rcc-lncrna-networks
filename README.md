@@ -21,7 +21,7 @@ data/
 results/             result tables (tab-separated) and lock files
   singlecell/        single-cell results and candidate locks
 figures/             main and supplementary figures (PNG and SVG)
-manuscript/          article and Supplementary Information (PDF)
+manuscript/          article, Supplementary Information and figure files with legends (PDF)
 ```
 
 ## Requirements
