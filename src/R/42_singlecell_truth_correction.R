@@ -205,19 +205,16 @@ t3[, direction_agrees_corr := sign(d_tumour_fitted) == sign(sc_lfc)]
 save_tsv(t3[order(-technical_r2_TCGA_KIRC)], "42_sc_truth_technical_candidates.tsv"); print(t3)
 
 # ---- 6. figure ---------------------------------------------------------------
+# Each panel carries its letter and a short title; the statistics are in the
+# Supplementary Fig. 6 legend.
 BLUE <- "#0072B2"; VERM <- "#D55E00"
-wrap60 <- function(x) paste(strwrap(x, 60), collapse = "
-")
 th <- theme_bw(base_size = 8) + theme(panel.grid.minor = element_blank(), plot.title = element_text(face = "bold", size = 8.5),
-                                      plot.subtitle = element_text(size = 6.8, colour = "grey25"), plot.title.position = "plot")
-r1 <- t1[pairs == "all pairs" & correction == "tumour_fitted"]
+                                      plot.title.position = "plot")
 pa <- ggplot(gl, aes(sc_lfc, d_tumour_fitted)) +
   geom_hline(yintercept = 0, colour = "grey70", linewidth = 0.3) + geom_vline(xintercept = 0, colour = "grey70", linewidth = 0.3) +
   geom_point(aes(colour = sc_fdr < 0.05), size = 0.8, alpha = 0.7) +
   scale_colour_manual(values = c(`TRUE` = VERM, `FALSE` = "grey60"), labels = c(`TRUE` = "single-cell FDR < 0.05", `FALSE` = "not significant"), name = NULL) +
-  labs(title = "Tumour-normal differences agree with single cells",
-       subtitle = wrap60(sprintf("%d lncRNAs; Spearman rho %.3f observed, %.3f corrected; sign agreement %.1f%% and %.1f%%",
-                          nrow(gl), r1$rho_observed, r1$rho_corrected, 100 * r1$agree_observed, 100 * r1$agree_corrected)),
+  labs(title = "Tumour-normal agreement",
        x = "Single-cell log2 fold change, malignant vs normal epithelium", y = "Bulk paired tumour - normal, corrected (log2)") +
   th + theme(legend.position = "bottom")
 cd <- coh[correction != "joint_fitted"]
@@ -231,8 +228,7 @@ pb <- ggplot(cl, aes(rho, set, colour = correction)) +
   geom_errorbar(aes(xmin = lo, xmax = hi), orientation = "y", width = 0.2, position = position_dodge(0.5)) +
   geom_point(size = 1.6, position = position_dodge(0.5)) + facet_wrap(~ with) +
   scale_colour_manual(values = c(observed = VERM, corrected = BLUE), name = NULL) +
-  labs(title = "Correction leaves the tumour signal",
-       subtitle = wrap60(sprintf("Spearman rho of lncRNA scores in %d tumours; the marker score itself correlates with the metric at %.2f", nrow(XT), marker_vs_metric)),
+  labs(title = "Score coherence",
        x = "Spearman rho", y = NULL) + th + theme(legend.position = "bottom")
 t3p <- t3[in_bulk == TRUE]
 t3p[, symbol := factor(symbol, levels = symbol[order(rho_metric_obs)])]
@@ -241,10 +237,12 @@ pc_ <- ggplot(t3p) +
   geom_point(aes(rho_metric_obs, symbol), colour = VERM, size = 1.6) +
   geom_point(aes(rho_metric_corr, symbol), colour = BLUE, size = 1.6) +
   geom_vline(xintercept = 0, linetype = 2, colour = "grey55", linewidth = 0.3) +
-  labs(title = "Candidates set aside as technically sensitive",
-       subtitle = "Correlation with the non-feature fraction, observed (orange) and corrected (blue)",
+  labs(title = "Set-aside candidates",
        x = "Spearman rho with the non-feature fraction", y = NULL) + th
-save_fig((pa | pb) / (pc_ | plot_spacer()) + plot_annotation(tag_levels = "a"),
+# Bold lower-case tags, as in the other supplementary figures.
+save_fig((pa | pb) / (pc_ | plot_spacer()) +
+           plot_annotation(tag_levels = "a") &
+           theme(plot.tag = element_text(face = "bold", size = 9.5)),
          "SupplementaryFigureS6_sc_truth_correction", 7.2, 7.6)
 
 write_session_info("42_singlecell_truth_correction")

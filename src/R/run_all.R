@@ -68,6 +68,8 @@ steps <- c(# 00 skips files already present and verified.
            "43_pancancer_dose_response.R",
            # 44 compares the residualisation with RUV-III (ruv package from CRAN).
            "44_ruv3_prps_comparison.R",
+           # 45 reads CPTAC-3 specimen handling times from the GDC API.
+           "45_cptac_handling_time.R",
            "14_tables.R", "13_figures.R", "32_supplementary_figures.R",
            # 31 indexes every results file, so it runs last.
            "31_supplementary_data_and_index.R")

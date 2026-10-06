@@ -1,8 +1,9 @@
 # 13_figures.R: the seven composite main figures.
 #
-# Every count, hazard ratio, correlation and sample size in a title, subtitle
-# or annotation is computed from the table the panel plots. A panel whose
-# source table is absent is skipped with a message.
+# Each panel carries its letter and a short title. Sample sizes, model
+# definitions and summary statistics are given in the figure legends, and every
+# number drawn inside a panel is computed from the table the panel plots. A
+# panel whose source table is absent is skipped with a message.
 # Reads result tables from stages 01 to 43. Writes to figures/ (SVG and PNG):
 # Figure1_design_cohorts to Figure7_prediction and
 # SupplementaryFigureS9_lncRNA_module_annotation. Sections are in build order, and
@@ -31,13 +32,6 @@ MISSING <- character(0)                       # source files that were absent
 wrap_lab <- function(x, w = 30)
   vapply(x, function(s) paste(strwrap(s, width = w), collapse = "\n"),
          character(1), USE.NAMES = FALSE)
-# "n patients, k events" from per-row n and events columns.
-n_ev_text <- function(n, ev) {
-  n <- n[is.finite(n)]; ev <- ev[is.finite(ev)]
-  if (uniqueN(n) == 1L && uniqueN(ev) == 1L)
-    sprintf("%d patients, %d deaths", as.integer(n[1]), as.integer(ev[1]))
-  else sprintf("%d-%d patients, %d-%d deaths", min(n), max(n), min(ev), max(ev))
-}
 # Horizontal 95% CI (geom_errorbarh is deprecated in ggplot2 >= 3.5).
 ci_h <- function(mapping, width = 0.2, ...)
   geom_errorbar(mapping, orientation = "y", width = width, ...)
@@ -54,9 +48,7 @@ base <- theme_bw(base_size = 8, base_family = FIG_FONT) +
   theme(plot.title    = element_text(face = "bold", size = 8.5,
                                      margin = margin(t = 0, b = 2)),
         plot.title.position = "plot",
-        plot.subtitle = element_text(size = 6.8, colour = "grey25",
-                                     margin = margin(b = 3)),
-        axis.title    = element_text(size = 7.5),
+        axis.title   = element_text(size = 7.5),
         axis.text     = element_text(size = 7, colour = "grey15"),
         strip.text    = element_text(size = 7, margin = margin(2, 2, 2, 2)),
         strip.background = element_rect(fill = "grey93", colour = NA),
@@ -170,7 +162,7 @@ p1a <- ggplot() +
   scale_fill_manual(values = c(step = "white", final = "#DDEAF5"), guide = "none") +
   scale_x_continuous(limits = c(0, 10.6), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0.5, 5.5), expand = c(0, 0)) +
-  labs(title = "Discovery cohort assembly", x = NULL, y = NULL) +
+  labs(title = "Discovery cohort", x = NULL, y = NULL) +
   theme_void(base_size = 8, base_family = FIG_FONT) +
   theme(plot.title = element_text(face = "bold", size = 8.5,
                                   margin = margin(t = 2, b = 4)),
@@ -195,9 +187,7 @@ p1b <- ggplot(coh, aes(tick, n, fill = cohort)) +
             size = 2.2, family = FIG_FONT, lineheight = 0.9, colour = "grey10") +
   scale_fill_manual(values = COH_COL, guide = "none") +
   scale_y_continuous(expand = expansion(mult = c(0, 0.26))) +
-  labs(title = sprintf("Cohorts: %s patients, %d deaths",
-                       format(sum(coh$n), big.mark = ","), sum(coh$events)),
-       x = NULL, y = "Patients") +
+  labs(title = "Cohorts", x = NULL, y = "Patients") +
   theme(axis.text.x = element_text(size = 6.6, lineheight = 0.9))
 
 # -- c: library protocol and the non-feature fraction per cohort --------------
@@ -207,11 +197,6 @@ cq[, protocol := factor(protocol, levels = names(PROTO_COL))]
 cq[, tick := paste0(cohort, "\n", wrap_lab(as.character(protocol), 13))]
 cq[, tick := factor(tick, levels = cq[order(cohort), tick])]
 # Each cohort used one protocol, so protocol and cohort are confounded here.
-# The fold difference is given as a range over individual cohort pairs.
-nf_ribo  <- cq[protocol == "ribo-depleted total RNA", noFeature_median]
-nf_polyA <- cq[protocol == "polyA", noFeature_median]
-nf_lo <- min(nf_ribo) / max(nf_polyA)
-nf_hi <- max(nf_ribo) / min(nf_polyA)
 p1c <- ggplot(cq, aes(tick, noFeature_median, fill = cohort)) +
   geom_col(width = 0.62) +
   geom_errorbar(aes(ymin = noFeature_q25, ymax = noFeature_q75), width = 0.16,
@@ -220,11 +205,8 @@ p1c <- ggplot(cq, aes(tick, noFeature_median, fill = cohort)) +
             vjust = -0.6, size = 2.1, family = FIG_FONT, colour = "grey10") +
   scale_fill_manual(values = COH_COL, guide = "none") +
   scale_y_continuous(expand = expansion(mult = c(0, 0.18))) +
-  labs(title = sprintf("The non-feature fraction is %.0f to %.0f times higher under ribo-depletion than in any poly(A) cohort",
-                       nf_lo, nf_hi) |> wrap_lab(46),
-       subtitle = sprintf("Median (IQR); %s patients; the protocol is named under each cohort, and each cohort used one protocol, so protocol and cohort are not separable here",
-                          format(sum(cq$n), big.mark = ",")) |> wrap_lab(54),
-       x = NULL, y = "Reads in no annotated\nfeature (%)") +
+  labs(title = "Non-feature read fraction", x = NULL,
+       y = "Reads in no annotated\nfeature (%)") +
   theme(axis.text.x = element_text(size = 6.4, lineheight = 0.9))
 
 fig1 <- (TG(p1a, "a") | (TG(p1b, "b") / TG(p1c, "c"))) +
@@ -240,15 +222,6 @@ ps <- R_("07_per_gene_quality_summary.tsv")
 nx <- R_("23_axis_nested_extended.tsv")
 bv <- R_("23_batch_variance.tsv")
 nd <- R_("23_noFeature_determinants.tsv")
-# The protein-coding module that tracks the metric most strongly, located from
-# the table because module colours change when the network is rebuilt.
-mbx <- Rx("27_metric_biology_correlations.tsv")
-ce  <- if (!is.null(mbx))
-  mbx[exposure == "pct_noFeature" & matrix == "observed" &
-      candidate_class == "protein_coding_module_eigengene"][
-        which.max(abs(spearman_rho))] else NULL
-if (is.null(ce) || !nrow(ce))
-  MISSING <- unique(c(MISSING, "27_metric_biology_correlations.tsv"))
 
 # -- a and b: the two leading axes against the metric, on identical axes ------
 alnc <- ax[is.finite(lnc_axis_z) & is.finite(pct_noFeature)]
@@ -258,29 +231,19 @@ YL <- range(c(alnc$lnc_axis_z, apc$pc_axis_z))
 rho_l <- cor(alnc$lnc_axis_z, alnc$pct_noFeature, method = "spearman")
 rho_p <- cor(apc$pc_axis_z,   apc$pct_noFeature,  method = "spearman")
 
-axis_panel <- function(d, yv, col, ttl, sub, rho, ylab) {
+axis_panel <- function(d, yv, col, ttl, rho, ylab) {
   ggplot(d, aes(pct_noFeature, .data[[yv]])) +
     geom_point(alpha = 0.45, size = 0.6, colour = col, stroke = 0) +
     geom_smooth(method = "lm", formula = y ~ x, se = FALSE, colour = "grey15",
                 linewidth = 0.4) +
     coord_cartesian(xlim = XL, ylim = YL) +
     ANN(sprintf("Spearman rho = %.3f\nn = %d", rho, nrow(d))) +
-    labs(title = ttl, subtitle = sub,
-         x = "Reads in no annotated feature (%)", y = ylab)
+    labs(title = ttl, x = "Reads in no annotated feature (%)", y = ylab)
 }
 p2a <- axis_panel(alnc, "lnc_axis_z", unname(BIO_COL["lncRNA"]),
-                  "lncRNA leading axis", "Observed log2(FPKM+1), PC1", rho_l,
-                  "lncRNA PC1 (z)")
-# The subtitle names the one protein-coding module that tracks the metric.
-sub_b <- if (!is.null(ce) && nrow(ce)) {
-  sprintf("Whole protein-coding matrix, same ranges as a. One module is the exception: the observed %s eigengene (%s, %s genes) tracks the metric at rho %.2f, shown in Supplementary Fig. 5a",
-          sub("^mRNA_ME", "", ce$candidate), ce$module_top_GO_term,
-          format(ce$module_n_genes, big.mark = ",", trim = TRUE),
-          ce$spearman_rho) |> wrap_lab(48)
-} else "Whole protein-coding matrix, same ranges as a"
+                  "lncRNA axis", rho_l, "lncRNA PC1 (z)")
 p2b <- axis_panel(apc, "pc_axis_z", unname(BIO_COL["protein-coding"]),
-                  "Protein-coding leading axis", sub_b,
-                  rho_p, "Protein-coding PC1 (z)")
+                  "Protein-coding axis", rho_p, "Protein-coding PC1 (z)")
 
 # -- c: per-gene |rho| with the metric, lncRNA against protein-coding ---------
 pg[, biotype := bt(biotype)]
@@ -302,9 +265,7 @@ p2c <- ggplot(pg, aes(abs(rho_noFeature), colour = biotype, fill = biotype)) +
                                  format(ps$n_genes, big.mark = ",", trim = TRUE),
                                  ps$median_abs_rho, 100 * ps$frac_abs_rho_gt_0.3),
                          collapse = "\n")) +
-  labs(title = "lncRNA genes track the metric more closely than protein-coding genes" |>
-         wrap_lab(38),
-       subtitle = "Per-gene Spearman rho; dashed lines are medians",
+  labs(title = "Per-gene correlation",
        x = "|rho| with the non-feature fraction", y = "Density") +
   theme(legend.position = "bottom")
 
@@ -319,13 +280,7 @@ p2d <- ggplot(nx, aes(HR, lab)) +
                       labels = c(`TRUE` = "p < 0.05", `FALSE` = "p >= 0.05"),
                       breaks = c("TRUE", "FALSE")) +
   scale_x_log10(breaks = c(0.6, 0.8, 1, 1.25, 1.6)) +
-  # The STAR metrics remove the association but RIN does not. A one-line title
-  # and subtitle leave height for the eight model labels.
-  labs(title = "The axis is prognostic until the STAR metrics enter" |> wrap_lab(56),
-       subtitle = sprintf("Nested Cox models, %s; p < 0.05 in %d of %d models",
-                          n_ev_text(nx$n, nx$events), nx[p < 0.05, .N], nrow(nx)) |>
-         wrap_lab(80),
-       x = "Hazard ratio per 1 SD (95% CI)", y = NULL) +
+  labs(title = "Nested Cox models", x = "Hazard ratio per 1 SD (95% CI)", y = NULL) +
   theme(axis.text.y = element_text(size = 6.2, lineheight = 0.9),
         legend.position = "bottom")
 
@@ -356,14 +311,7 @@ p2e <- ggplot(ve, aes(term_lab, 100 * R2, fill = var_lab)) +
   # The bars mix quantities: one-way ANOVA R2 for plate, batch and site, and
   # regression R2 for RIN and the joint model (metric only). The joint bar is
   # one model, not a sum of the others.
-  labs(title = sprintf("Plate explains %.0f%% of the metric and %.0f%% of the axis",
-                       100 * ve[term == "plate" & variable == "pct_noFeature", R2],
-                       100 * ve[term == "plate" & variable == "lnc_axis", R2]) |>
-         wrap_lab(56),
-       subtitle = sprintf("Mixed quantities: one-way ANOVA R2 for plate, batch and site; regression for RIN (%d df) and RIN + plate + site (%d df), metric only; the joint bar is one model, not a sum; n = %d-%d libraries",
-                          nd[term == "rin", df], joint$df,
-                          min(ve$n), max(ve$n)) |> wrap_lab(70),
-       x = NULL, y = "Variance explained (%)") +
+  labs(title = "Variance explained", x = NULL, y = "Variance explained (%)") +
   theme(legend.position = "bottom",
         axis.text.x = element_text(size = 6.4, lineheight = 0.9))
 
@@ -428,55 +376,6 @@ if (!nrow(ordq)) ordq <- f2[matrix == "lncRNA"]
 f2[, lab := factor(lab, levels = unique(ordq[order(rho_plot), lab]))]
 f2[, matrix := factor(matrix, levels = names(BIO_COL))]
 f2[, axis := factor(axis, levels = unname(AXT))]
-pj  <- f2[axis == AXT["projected"]]
-pjl <- pj[matrix == "lncRNA"]; pjp <- pj[matrix == "protein-coding"]
-pw  <- pjl[grepl("^polyA", protocol)]; rs <- pjl[!grepl("^polyA", protocol)]
-gap <- nrow(pw) > 0L && nrow(rs) > 0L
-# The lncRNA versus protein-coding gap is computed within each sample set and
-# summarised by protocol, because the contrast depends on protocol.
-pjw <- merge(pjl[, .(lab, protocol, cohort, tis, rho_l = rho_plot)],
-             pjp[, .(lab, rho_p = rho_plot)], by = "lab")
-pjw[, proto := fifelse(grepl("^polyA", protocol), "poly(A)", "ribo-depleted")]
-pjw[, gapv := rho_l - rho_p]
-gap_by_proto <- pjw[, .(txt = sprintf("%s in the %d %s set%s",
-                                      if (.N == 1L) sprintf("%.2f", gapv[1])
-                                      else sprintf("%.2f to %.2f", min(gapv), max(gapv)),
-                                      .N, proto[1], if (.N == 1L) "" else "s")),
-                    by = proto][order(proto)]   # poly(A) first, then ribo-depleted
-worst <- if (nrow(pjw)) pjw[which.min(gapv)] else NULL
-n_sets <- uniqueN(f2$lab)
-n_conv <- f2[interpretable == FALSE, .N]
-# The title refers to the projected facet.
-ttl_f <- if (nrow(pjl)) {
-  sprintf("The projected lncRNA axis tracks the metric in %d of %d sample sets, and the protocol difference is graded",
-          pjl[rho > 0 & p < 0.05, .N], n_sets)
-} else {
-  sprintf("Each sample set's own leading component against the metric, %d sets",
-          n_sets)
-}
-sub_f <- paste(c(
-  # "Tracks" means positive with p < 0.05, counted over the projected rows.
-  sprintf("Spearman rho with the non-feature fraction; %d sample sets, both expression matrices, both axis definitions%s.",
-          n_sets,
-          if (nrow(pjl))
-            sprintf("; the projected lncRNA correlation is positive at p < 0.05 in %d of them",
-                    pjl[rho > 0 & p < 0.05, .N]) else ""),
-  if (nrow(pjw) && nrow(gap_by_proto))
-    sprintf("The lncRNA specificity is a poly(A) finding: within a sample set the projected lncRNA rho exceeds the projected protein-coding rho by %s, and in %s, %s it is %.2f against %.2f, which is almost no contrast.",
-            paste(gap_by_proto$txt, collapse = " and "),
-            worst$cohort, worst$tis, worst$rho_l, worst$rho_p),
-  # Three decimals (the stored precision) avoid a rounding tie at two.
-  if (gap)
-    sprintf("The protocol difference is graded, not categorical: the weakest poly(A) set (%s %s, %.3f) sits beside the strongest ribo-depleted set (%s %s, %.3f).",
-            pw[which.min(rho_plot), cohort], pw[which.min(rho_plot), tis],
-            pw[, min(rho_plot)],
-            rs[which.max(rho_plot), cohort], rs[which.max(rho_plot), tis],
-            rs[, max(rho_plot)]),
-  if (n_conv)
-    sprintf("%d own-component row%s whose sign is a convention rather than a finding %s drawn as magnitudes (open symbols).",
-            n_conv, if (n_conv == 1L) "" else "s",
-            if (n_conv == 1L) "is" else "are")),
-  collapse = " ")
 p2f <- ggplot(f2, aes(rho_plot, lab, colour = matrix, shape = sgn,
                       group = matrix)) +
   geom_vline(xintercept = 0, linetype = 2, colour = "grey55", linewidth = 0.3) +
@@ -490,7 +389,7 @@ p2f <- ggplot(f2, aes(rho_plot, lab, colour = matrix, shape = sgn,
                      name = "Quantity plotted", drop = FALSE) +
   scale_x_continuous(limits = c(min(-0.15, min(f2$rho_plot) - 0.05), 1),
                      breaks = seq(-0.25, 1, 0.25)) +
-  labs(title = ttl_f |> wrap_lab(96), subtitle = sub_f |> wrap_lab(116),
+  labs(title = "Axis and metric across sample sets",
        x = "Spearman rho with the non-feature fraction (magnitude where the sign is a convention)",
        y = NULL) +
   theme(axis.text.y = element_text(size = 6.4, lineheight = 0.9),
@@ -510,9 +409,6 @@ banner("Figure 4 | modules")
 sens <- R_("12_technical_adjustment_sensitivity.tsv")[covariate_set == "clinical"]
 sens[, biotype := bt(biotype)]
 sens[, status := factor(status, levels = STATUS_LEVELS)]
-n_lost <- sens[status == "LOST on adjustment", .N]
-n_gain <- sens[status == "gained on adjustment", .N]
-n_rob  <- sens[status == "robust", .N]
 p3a <- ggplot(sens, aes(HR_unadjusted, HR_adjusted, colour = status,
                         shape = biotype)) +
   geom_abline(slope = 1, intercept = 0, linetype = 2, colour = "grey60",
@@ -526,11 +422,7 @@ p3a <- ggplot(sens, aes(HR_unadjusted, HR_adjusted, colour = status,
   scale_shape_manual(values = c(lncRNA = 16, `protein-coding` = 17), name = NULL) +
   guides(colour = guide_legend(nrow = 2, byrow = TRUE, order = 1),
          shape = guide_legend(nrow = 2, order = 2)) +
-  labs(title = "Adjustment changes which modules are prognostic",
-       subtitle = sprintf("%d modules, identical membership on both axes; %d significant unadjusted, %d adjusted (%d lost, %d gained, %d robust); %s",
-                          nrow(sens), sens[fdr_unadjusted < FDR_ALPHA, .N],
-                          sens[fdr_adjusted < FDR_ALPHA, .N], n_lost, n_gain, n_rob,
-                          n_ev_text(sens$n, sens$events)) |> wrap_lab(66),
+  labs(title = "Observed against adjusted",
        x = "HR per 1 SD without adjustment",
        y = "HR per 1 SD with adjustment") +
   theme(legend.position = "bottom", legend.spacing.x = unit(0.1, "cm"))
@@ -550,7 +442,6 @@ TR <- c(age = "Age", male = "Male sex", stage = "Stage", grade = "Grade")
 mtl[, trait := factor(TR[trait], levels = unname(TR))]
 ord <- mtl[trait == "Grade"][order(r), mod]
 mtl[, mod := factor(mod, levels = ord)]
-n_fdr <- mtl[, sum(p.adjust(p, "BH") < FDR_ALPHA)]
 p3b <- ggplot(mtl, aes(trait, mod, fill = r)) +
   geom_tile(colour = "white", linewidth = 0.4) +
   geom_text(aes(label = ifelse(p.adjust(p, "BH") < FDR_ALPHA, "*", "")),
@@ -559,11 +450,7 @@ p3b <- ggplot(mtl, aes(trait, mod, fill = r)) +
                        high = unname(OI["vermillion"]), midpoint = 0,
                        limits = c(-0.5, 0.5), name = "Pearson r") +
   scale_x_discrete(expand = c(0, 0)) + scale_y_discrete(expand = c(0, 0)) +
-  labs(title = "lncRNA module-trait correlation",
-       subtitle = sprintf("%d modules x %d traits; * = BH FDR < %.2f (%d of %d)",
-                          uniqueN(mtl$mod), uniqueN(mtl$trait), FDR_ALPHA,
-                          n_fdr, nrow(mtl)),
-       x = NULL, y = NULL) +
+  labs(title = "Module-trait correlation", x = NULL, y = NULL) +
   theme(axis.text.y = element_text(size = 6.4), legend.position = "right",
         legend.key.width = unit(0.25, "cm"), panel.grid = element_blank())
 
@@ -593,11 +480,8 @@ p3c <- ggplot(sv, aes(HR_full, key, colour = cls)) +
                                  `protective (FDR < 0.05)` = unname(DIR_COL["protective"]),
                                  `not significant` = "grey65"), name = NULL) +
   guides(colour = guide_legend(nrow = 2, byrow = TRUE)) +
-  labs(title = "Module effects under the principal specification",
-       subtitle = sprintf("Module + age, sex, T, N, M1, grade, ESTIMATE, three STAR metrics; %s; %d of %d at FDR < %.2f",
-                          n_ev_text(sv$n_full, sv$events_full),
-                          sum(sv$sig), nrow(sv), FDR_ALPHA) |> wrap_lab(66),
-       x = "Hazard ratio per 1 SD (95% CI)", y = NULL) +
+  labs(title = "Principal specification", x = "Hazard ratio per 1 SD (95% CI)",
+       y = NULL) +
   theme(axis.text.y = element_text(size = 6.2), legend.position = "bottom",
         legend.text = element_text(size = 6.4))
 
@@ -626,15 +510,6 @@ EST_LEV <- c("TCGA-KIRC discovery (12-parameter)", "CPTAC-3 (12-parameter)",
 r4[, est := factor(est, levels = EST_LEV)]
 r4[, lab := paste0(biotype, ": ", module)]
 r4[, lab := factor(lab, levels = r4[est == EST_LEV[1]][order(HR), lab])]
-# "Replicated" means FDR < 0.05 in CPTAC-3. Other modules may keep direction.
-n_same <- rep12[same_direction == TRUE, .N]
-n_repl <- rep12[fdr_cptac < FDR_ALPHA, .N]
-# Counts and events per parameter are shown for both arms, which can disagree.
-# The events-per-parameter threshold is the one applied in panel b.
-n_repl6 <- rep6[fdr_cptac < FDR_ALPHA, .N]
-n_same6 <- rep6[same_direction == TRUE, .N]
-epv12   <- max(rep12$epv); epv6 <- max(rep6$epv)
-adq     <- function(x) if (isTRUE(as.logical(x))) "above" else "below"
 p4a <- ggplot(r4, aes(HR, lab, colour = est)) +
   geom_vline(xintercept = 1, linetype = 2, colour = "grey55", linewidth = 0.3) +
   ci_h(aes(xmin = lo, xmax = hi), width = 0.22, linewidth = 0.35,
@@ -644,14 +519,8 @@ p4a <- ggplot(r4, aes(HR, lab, colour = est)) +
   scale_colour_manual(values = c(unname(COH_COL["TCGA-KIRC"]),
                                  unname(COH_COL["CPTAC-3"]), unname(OI["skyblue"])),
                       name = NULL) +
-  labs(title = sprintf("%d of %d modules replicate under the 12-parameter model, %d of %d under the 6-parameter model",
-                       n_repl, nrow(rep12), n_repl6, nrow(rep6)) |> wrap_lab(52),
-       subtitle = sprintf("Coefficients re-estimated in CPTAC-3 (%s); replicated means FDR < %.2f there; %d of %d keep direction in both arms. Events per parameter: %.1f for the 12-parameter model (%s the threshold of %d applied in panel b) and %.1f for the 6-parameter model (%s it), so the adequately powered arm is the one in which no module reaches FDR < %.2f",
-                          n_ev_text(rep12$n, rep12$events), FDR_ALPHA,
-                          min(n_same, n_same6), nrow(rep12),
-                          epv12, adq(rep12$adequate_epv[1]), MIN_EPV,
-                          epv6, adq(rep6$adequate_epv[1]), FDR_ALPHA) |> wrap_lab(62),
-       x = "Hazard ratio per 1 SD (95% CI)", y = NULL) +
+  labs(title = "Estimates in CPTAC-3", x = "Hazard ratio per 1 SD (95% CI)",
+       y = NULL) +
   theme(legend.position = "bottom", axis.text.y = element_text(size = 6.6)) +
   guides(colour = guide_legend(nrow = 3))
 
@@ -663,22 +532,18 @@ st <- merge(st, het[, .(biotype, module, p_heterogeneity, I2, k_het = k,
                         het_cohorts = cohorts)],
             by = c("biotype", "module"), all.x = TRUE)
 # Q and I2 come from the cohorts stage 11 could power, so the row label carries
-# k and the subtitle names the cohorts inside and outside the test.
+# k and the legend names the cohorts inside and outside the test.
 n_coh_plot <- uniqueN(st$cohort)
-het_in  <- unique(unlist(strsplit(as.character(het$cohorts[1]), ";", fixed = TRUE)))
-het_out <- setdiff(unique(as.character(st$cohort)), het_in)
 st[, lab := sprintf("%s: %s\n(Q p = %.2g, I2 = %g%%, %d of %d cohorts)", biotype,
                     module, p_heterogeneity, I2, k_het, n_coh_plot)]
 st[, lab := factor(lab, levels = unique(st[cohort == "TCGA-KIRC"][order(HR), lab]))]
 st[, cohort := factor(cohort, levels = c("TCGA-KIRC", "TCGA-KIRP", "TCGA-KICH"))]
-under <- st[adequate == FALSE, sort(unique(as.character(cohort)))]
 # The underpowered subtype has very wide intervals, so the axis is capped at
 # twice the widest adequately powered bound and truncation is declared.
 XCAP <- c(min(st$lo) / 1.1, ceiling(2 * max(st[adequate == TRUE, hi])))
 # Raise the cap so the edge marker clears the largest estimate still on the
 # panel.
 XCAP[2] <- round(max(XCAP[2], 1.35 * max(st[HR <= XCAP[2], HR])), 1)
-n_trunc <- st[hi > XCAP[2] | lo < XCAP[1], .N]
 st[, cut_hi := hi > XCAP[2]]
 trunc_hi <- st[cut_hi == TRUE]
 p4b <- ggplot(st, aes(HR, lab, colour = cohort, alpha = adequate)) +
@@ -699,22 +564,7 @@ p4b <- ggplot(st, aes(HR, lab, colour = cohort, alpha = adequate)) +
   scale_x_log10(breaks = c(0.25, 0.5, 1, 2, 4)) +
   scale_colour_manual(values = COH_COL, name = NULL) +
   scale_alpha_manual(values = c(`TRUE` = 1, `FALSE` = 0.3), guide = "none") +
-  labs(title = "Estimates across renal subtypes",
-       subtitle = sprintf("Discovery loadings fixed; %s%s%s. The Q and I2 in each row label are computed on %s only, on %d of the %d cohorts plotted; %s %s in the test",
-                          n_ev_text(st$n, st$events),
-                          if (length(under))
-                            sprintf("; %s faded, events per parameter < %d",
-                                    paste(under, collapse = ", "), MIN_EPV) else "",
-                          if (n_trunc) sprintf("; %d interval%s truncated at HR %.1f and marked >",
-                                               n_trunc, if (n_trunc == 1L) "" else "s",
-                                               XCAP[2]) else "",
-                          paste(het_in, collapse = " and "),
-                          max(st$k_het, na.rm = TRUE), n_coh_plot,
-                          paste(het_out, collapse = " and "),
-                          if (length(het_out) == 1L) "is plotted but does not appear"
-                          else "are plotted but do not appear") |>
-         wrap_lab(62),
-       x = "Hazard ratio per 1 SD (95% CI)", y = NULL) +
+  labs(title = "Renal subtypes", x = "Hazard ratio per 1 SD (95% CI)", y = NULL) +
   theme(axis.text.y = element_text(size = 6, lineheight = 0.9),
         legend.position = "bottom") +
   guides(colour = guide_legend(nrow = 1))
@@ -735,17 +585,12 @@ p4c <- ggplot(pr5, aes(Zsummary, lab, colour = test_cohort)) +
   scale_x_log10(breaks = c(1, 2, 5, 10, 20, 50)) +
   scale_colour_manual(values = COH_COL, name = NULL) +
   scale_y_discrete(expand = expansion(add = c(0.6, 0.9))) +
+  # Right of its line: the left panel edge would clip a label placed before it.
   annotate("text", x = 2, y = Inf, label = "Z = 2 (weak)", size = 2.0, vjust = 1.3,
-           hjust = 1.06, family = FIG_FONT, colour = "grey35") +
+           hjust = -0.06, family = FIG_FONT, colour = "grey35") +
   annotate("text", x = 10, y = Inf, label = "Z = 10 (strong)", size = 2.0,
            vjust = 1.3, hjust = -0.06, family = FIG_FONT, colour = "grey35") +
-  labs(title = "Module preservation of the five prognostic modules",
-       subtitle = sprintf("WGCNA modulePreservation Zsummary; test cohorts n = %s; %d of %d module x cohort pairs above 10",
-                          paste(pr5[, .(n = unique(n_samples_test)),
-                                    by = test_cohort][order(test_cohort), n],
-                                collapse = ", "),
-                          pr5[Zsummary > 10, .N], nrow(pr5)) |> wrap_lab(96),
-       x = "Zsummary (log scale)", y = NULL) +
+  labs(title = "Module preservation", x = "Zsummary (log scale)", y = NULL) +
   theme(axis.text.y = element_text(size = 6.6), legend.position = "bottom")
 
 fig4 <- (ROW(TG(p4a, "a") | TG(p4b, "b")) / ROW(TG(p4c, "c"))) +
@@ -810,13 +655,7 @@ p5a <- ggplot(d5, aes(delta, lab, colour = kind2, shape = kind2)) +
   # Neutral colours: gold means Clinical + modules in panels c to e.
   scale_colour_manual(values = c("#1A1A1A", "grey58"), name = NULL) +
   scale_shape_manual(values = c(16, 17), name = NULL) +
-  # The endpoint is named because other endpoints behave differently.
-  labs(title = "Increment in concordance index over the plain clinical model",
-       subtitle = sprintf("Overall survival. Comparator: age, sex, T, N, M1, ordinal grade. TCGA-KIRC %s; CPTAC-3 %s",
-                          n_ev_text(d5[grepl("Discovery", lab), n],
-                                    d5[grepl("Discovery", lab), events]),
-                          n_ev_text(d5[grepl("CPTAC", lab), n],
-                                    d5[grepl("CPTAC", lab), events])) |> wrap_lab(100),
+  labs(title = "Increment over the clinical model",
        x = "Change in concordance index", y = NULL) +
   theme(axis.text.y = element_text(size = 6.2, lineheight = 0.9),
         legend.position = "bottom")
@@ -839,23 +678,14 @@ p5b <- ggplot(ci, aes(C, mlab, colour = coh)) +
   coord_cartesian(xlim = c(0.5, 0.9)) +
   scale_colour_manual(values = COH_COL, name = NULL) +
   # Augmented is the covariate set built by clinical_design(set = "augmented").
-  labs(title = "Discrimination",
-       subtitle = sprintf("TCGA-KIRC %s; CPTAC-3 %s; scores standardised within cohort. Clinical = age, sex, T, N, M1, ordinal grade; Augmented = clinical + ESTIMATE stromal and immune scores + the three STAR library metrics",
-                          n_ev_text(ci[coh == "TCGA-KIRC", n], ci[coh == "TCGA-KIRC", events]),
-                          n_ev_text(ci[coh == "CPTAC-3", n], ci[coh == "CPTAC-3", events])) |>
-         wrap_lab(56),
-       x = "Concordance index (95% CI)", y = NULL) +
+  labs(title = "Discrimination", x = "Concordance index (95% CI)", y = NULL) +
   theme(axis.text.y = element_text(size = 6.6), legend.position = "bottom")
 
 # -- c: calibration at the primary horizon in CPTAC-3 -------------------------
 MOD2 <- c(comparator = "Clinical", `comparator + modules` = "Clinical + modules")
 cal <- R_("12_calibration_bins.tsv")[cohort == "validation" & comparator == "clinical" &
                                      standardisation == "cohort" & years == PRIMARY_HORIZON_YR]
-cs  <- R_("12_calibration_summary.tsv")[cohort == "validation" & comparator == "clinical" &
-                                        standardisation == "cohort" & years == PRIMARY_HORIZON_YR]
 cal[, mlab := factor(MOD2[model], levels = unname(MOD2))]
-cs[,  mlab := factor(MOD2[model], levels = unname(MOD2))]
-cs[,  short := c(Clinical = "Clinical:", `Clinical + modules` = "+ modules:")[as.character(mlab)]]
 LIMC <- c(0, max(c(cal$predicted, cal$obs_hi), na.rm = TRUE) * 1.05)
 p5c <- ggplot(cal, aes(predicted, observed, colour = mlab)) +
   geom_abline(slope = 1, intercept = 0, linetype = 2, colour = "grey55",
@@ -867,14 +697,8 @@ p5c <- ggplot(cal, aes(predicted, observed, colour = mlab)) +
   # title under patchwork), so calibration reads as distance from the diagonal.
   coord_cartesian(xlim = LIMC, ylim = LIMC) +
   scale_colour_manual(values = MODEL_COL[1:2], name = NULL) +
-  labs(title = sprintf("Calibration at %d years, CPTAC-3", PRIMARY_HORIZON_YR),
-       subtitle = paste(c(sprintf("%s; bars are Kaplan-Meier 95%% CIs; slope (95%% CI), observed/expected:",
-                                  n_ev_text(ci[coh == "CPTAC-3", n],
-                                            ci[coh == "CPTAC-3", events])) |> wrap_lab(40),
-                          sprintf("%s %.2f (%.2f-%.2f), O/E %.2f", cs$short,
-                                  cs$slope, cs$slope_lo, cs$slope_hi, cs$OE)),
-                        collapse = "\n"),
-       x = "Predicted risk of death", y = "Observed risk") +
+  labs(title = "Calibration, CPTAC-3", x = "Predicted risk of death",
+       y = "Observed risk") +
   theme(legend.position = "bottom", aspect.ratio = 1)
 
 # -- d: decision curve at the primary horizon in CPTAC-3 ----------------------
@@ -885,10 +709,6 @@ dca <- R_("12_validation_decision_curve.tsv")[baseline == "discovery" &
                                               standardisation == "cohort" &
                                               years == PRIMARY_HORIZON_YR]
 dca[, strat := factor(STRAT[strategy], levels = unname(STRAT))]
-nb <- dcast(dca[strategy %in% c("comparator", "comparator + modules")],
-            threshold ~ strategy, value.var = "net_benefit")
-nb[, d := `comparator + modules` - comparator]
-win <- nb[threshold >= 0.10 & threshold <= 0.40]
 # The y floor clears the lowest model curve. The treat-all reference may run
 # off the panel.
 dfloor <- function(d) {
@@ -901,10 +721,8 @@ p5d <- ggplot(dca, aes(threshold, net_benefit, colour = strat, linetype = strat)
   scale_colour_manual(values = c(unname(MODEL_COL[1:2]), "grey40", "grey72"),
                       name = NULL) +
   scale_linetype_manual(values = c(1, 1, 2, 3), name = NULL) +
-  labs(title = sprintf("Decision curve at %d years, CPTAC-3", PRIMARY_HORIZON_YR),
-       subtitle = sprintf("Median change in net benefit over thresholds 0.10-0.40: %+.3f (positive at %d of %d); the treat-all reference runs below the panel",
-                          median(win$d), sum(win$d > 0), nrow(win)) |> wrap_lab(52),
-       x = "Threshold probability", y = "Net benefit") +
+  labs(title = "Decision curve, CPTAC-3", x = "Threshold probability",
+       y = "Net benefit") +
   theme(legend.position = "bottom", legend.text = element_text(size = 6),
         legend.direction = "vertical", legend.key.height = unit(0.26, "cm"))
 
@@ -920,18 +738,13 @@ brl[, mlab := factor(c(brier_clinical = "Clinical",
                      levels = c("Clinical", "Clinical + modules", "Null (no covariates)"))]
 brl[, coh := factor(fifelse(cohort == "discovery", "TCGA-KIRC", "CPTAC-3"),
                     levels = c("TCGA-KIRC", "CPTAC-3"))]
-bw <- dcast(br, cohort + years ~ ., value.var = c("brier_clinical", "brier_combined"))
-n_better <- sum(br$brier_combined < br$brier_clinical)
 p5e <- ggplot(brl, aes(factor(years), brier, fill = mlab)) +
   geom_col(position = position_dodge(0.78), width = 0.68) +
   facet_wrap(~ coh) +
   scale_fill_manual(values = MODEL_COL[c("Clinical", "Clinical + modules",
                                          "Null (no covariates)")], name = NULL) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.08))) +
-  labs(title = "Brier score (lower is better)",
-       subtitle = sprintf("IPCW; modules improve the Brier score at %d of %d cohort x horizon combinations",
-                          n_better, nrow(br)) |> wrap_lab(52),
-       x = "Years since diagnosis", y = "Brier score") +
+  labs(title = "Brier score", x = "Years since diagnosis", y = "Brier score") +
   theme(legend.position = "bottom", legend.direction = "vertical",
         legend.key.height = unit(0.26, "cm"), legend.text = element_text(size = 6))
 
@@ -953,17 +766,13 @@ svl <- R_("03_lncRNA_module_survival.tsv")
 pc_mod <- catabolic_reference_module()
 if (!pc_mod %in% go$module)
   pc_mod <- svm[HR_full < 1 & module %in% go$module][which.min(fdr_full), module]
-pc_hr <- svm[module == pc_mod]
 gob <- go[module == pc_mod][order(p.adjust)][seq_len(min(8, .N))]
 p6a <- ggplot(gob, aes(-log10(p.adjust), reorder(wrap_lab(Description, 34), -p.adjust))) +
   # Neutral grey: these are adjusted p values, and blue and orange-red carry the
   # sign of a correlation in panel c.
   geom_col(fill = "grey45", width = 0.68) +
   scale_x_continuous(expand = expansion(mult = c(0, 0.05))) +
-  labs(title = sprintf("Protein-coding %s module: catabolic metabolism", pc_mod),
-       subtitle = sprintf("GO biological process, top %d terms; HR %.2f (95%% CI %.2f-%.2f) per SD, FDR %.1e",
-                          nrow(gob), pc_hr$HR_full, pc_hr$HR_full_lo, pc_hr$HR_full_hi,
-                          pc_hr$fdr_full) |> wrap_lab(62),
+  labs(title = sprintf("Protein-coding %s module", pc_mod),
        x = expression(-log[10]~adjusted~italic(p)), y = NULL) +
   theme(axis.text.y = element_text(size = 6, lineheight = 0.9))
 
@@ -972,7 +781,6 @@ p6a <- ggplot(gob, aes(-log10(p.adjust), reorder(wrap_lab(Description, 34), -p.a
 # negatively correlated protein-coding partners. Also used for Supplementary
 # Figure 9a and b.
 go_signed_panel <- function(gs, mod) {
-  lh <- svl[module == mod]
   g <- gs[module == mod][order(sign, p.adjust)][, head(.SD, 6), by = sign]
   g[, lab := factor(ifelse(sign == "negative", "negatively correlated mRNA partners",
                                                "positively correlated mRNA partners"),
@@ -987,11 +795,7 @@ go_signed_panel <- function(gs, mod) {
     scale_fill_manual(values = setNames(c(unname(DIR_COL["adverse"]),
                                           unname(DIR_COL["protective"])),
                                         levels(g$lab)), guide = "none") +
-    labs(title = sprintf("lncRNA %s module: GO terms of its partners", mod) |>
-           wrap_lab(52),
-         subtitle = sprintf("HR %.2f (95%% CI %.2f-%.2f) per SD, FDR %.3g; top %d GO terms per sign",
-                            lh$HR_full, lh$HR_full_lo, lh$HR_full_hi, lh$fdr_full,
-                            g[, .N, by = sign][, max(N)]) |> wrap_lab(62),
+    labs(title = sprintf("lncRNA %s partners", mod),
          x = expression(-log[10]~adjusted~italic(p)), y = NULL) +
     theme(axis.text.y = element_text(size = 5.8, lineheight = 0.9))
 }
@@ -1017,20 +821,7 @@ p6c <- ggplot(cp, aes(pearson_r, module, colour = cohort)) +
   geom_point(size = 2.1, position = position_dodge(0.68)) +
   scale_x_continuous(limits = c(-1, 1), breaks = seq(-1, 1, 0.5)) +
   scale_colour_manual(values = COH_COL, name = NULL) +
-  # The title count uses the discovery intervals. The subtitle gives the count
-  # per cohort.
-  labs(title = sprintf("%d of %d lncRNA modules track the %s eigengene in TCGA-KIRC",
-                       cp[cohort == "TCGA-KIRC" & (CI_lo > 0 | CI_hi < 0), .N],
-                       uniqueN(cp$module), paste(ref_pc, collapse = "/")) |>
-         wrap_lab(46),
-       subtitle = sprintf("Eigengene Pearson r (95%% CI) against the protein-coding module; n = %s. Intervals exclude zero in %s",
-                          paste(cp[, .(n = unique(n)), by = cohort][order(cohort),
-                                 sprintf("%s %d", cohort, n)], collapse = ", "),
-                          paste(cp[, .(k = sum(CI_lo > 0 | CI_hi < 0), m = .N),
-                                   by = cohort][order(cohort),
-                                 sprintf("%s %d of %d", cohort, k, m)],
-                                collapse = ", ")) |>
-         wrap_lab(58),
+  labs(title = sprintf("Coupling to %s", paste(ref_pc, collapse = "/")),
        x = sprintf("Pearson r with the %s eigengene", paste(ref_pc, collapse = "/")),
        y = NULL) +
   theme(legend.position = "bottom") +
@@ -1081,11 +872,7 @@ p6d <- ggplot(cl, aes(module, n, fill = class)) +
   scale_y_continuous(labels = scales::percent, expand = c(0, 0)) +
   scale_fill_manual(values = CLS_COL, name = NULL, drop = FALSE) +
   guides(fill = guide_legend(nrow = 4, byrow = TRUE)) +
-  labs(title = "Gene classes of the prognostic lncRNA modules",
-       subtitle = sprintf("%s genes in %d modules, two annotation schemes; the schemes classify the same genes differently, so no key is shared between them and antisense, divergent and intronic appear once per scheme",
-                          format(cl1[, sum(n)], big.mark = ","),
-                          uniqueN(cl$module)) |> wrap_lab(58),
-       x = NULL, y = "Proportion of module genes") +
+  labs(title = "Gene classes", x = NULL, y = "Proportion of module genes") +
   theme(legend.position = "bottom", legend.text = element_text(size = 6),
         legend.key.size = unit(0.26, "cm"))
 
@@ -1133,11 +920,7 @@ if (!is.null(sc)) {
     scale_colour_manual(values = DIR_COL, guide = "none") +
     scale_fill_manual(values = c(DIR_COL, none = "white"), guide = "none") +
     scale_shape_manual(values = SC_SHAPE, name = NULL) +
-    labs(title = "Single-cell localisation of the five prognostic modules",
-         subtitle = paste("Median log2 fold change of module members in malignant cells, minus the mean of",
-                          "2,000 abundance-matched random gene sets; one point per cohort, filled where",
-                          "empirical p < 0.05; bar, mean over cohorts. Colour is the hazard direction") |>
-           wrap_lab(62),
+    labs(title = "Single-cell localisation",
          x = "Shift above matched null (log2 fold change)", y = NULL) +
     theme(legend.position = "bottom") +
     guides(shape = guide_legend(nrow = 2, override.aes = list(fill = "grey40", colour = "grey20")))
@@ -1179,8 +962,7 @@ if (!is.null(ax7) && !is.null(nw7)) {
     scale_colour_manual(values = c(`lncRNA PC1` = BIO_COL[["lncRNA"]], `protein-coding PC1` = BIO_COL[["protein-coding"]]), name = NULL) +
     scale_shape_manual(values = c(`lncRNA PC1` = 16, `protein-coding PC1` = 1), name = NULL) +
     scale_x_continuous(limits = c(0, 1)) +
-    labs(title = sprintf("Rule A met in %d of %d cancer types", sum(a$rule_A_pass), nrow(a)),
-         subtitle = "|Spearman rho| of each matrix's leading component with the non-feature fraction, primary tumours; crosses, the lncRNA PC1 in solid-tissue normals; dashed, the locked threshold" |> wrap_lab(60),
+    labs(title = "Leading components",
          x = "|rho| with the non-feature fraction", y = NULL) +
     theme(legend.position = "bottom", axis.text.y = element_text(size = 6))
   # -- b: positional-class gradient --------------------------------------------
@@ -1193,8 +975,7 @@ if (!is.null(ax7) && !is.null(nw7)) {
       geom_line(aes(group = project), colour = "grey80", linewidth = 0.3) +
       geom_point(size = 0.8, colour = "grey55") +
       geom_point(data = gm, aes(class, med), colour = BIO_COL[["lncRNA"]], size = 2.4, shape = 18) +
-      labs(title = sprintf("Intronic above intergenic in %d of %d", sum(a$intronic_minus_intergenic > 0, na.rm = TRUE), nrow(a)),
-           subtitle = "Median per-gene |rho| with the metric by positional lncRNA class; one line per cancer type, diamonds the median over types" |> wrap_lab(58),
+      labs(title = "Positional classes",
            x = NULL, y = "Median per-gene |rho|") +
       theme(axis.text.x = element_text(angle = 35, hjust = 1))
   }
@@ -1214,8 +995,7 @@ if (!is.null(ax7) && !is.null(nw7)) {
               size = 1.9, hjust = 1, colour = "grey30", inherit.aes = FALSE) +
     scale_colour_manual(values = c(observed = BIO_COL[["lncRNA"]], `adjusted` = unname(OI["blue"])), name = NULL) +
     scale_x_continuous(limits = c(0, 1), labels = scales::percent) +
-    labs(title = sprintf("Rule C met in %d of %d cancer types", sum(n$rule_C_pass), nrow(n)),
-         subtitle = "Share of lncRNAs in the largest module of the network built on observed and on adjusted expression; right, adjusted Rand index between the two" |> wrap_lab(60),
+    labs(title = "Largest module",
          x = "Largest module, share of genes", y = NULL) +
     theme(legend.position = "bottom", axis.text.y = element_text(size = 6))
   # -- d: the metric's hazard ratio -------------------------------------------------
@@ -1232,8 +1012,7 @@ if (!is.null(ax7) && !is.null(nw7)) {
       geom_point(data = pool, shape = 18, size = 3.4, colour = BIO_COL[["lncRNA"]]) +
       ci_h(data = pool, aes(xmin = lo, xmax = hi), width = 0.3, linewidth = 0.6, colour = BIO_COL[["lncRNA"]]) +
       scale_x_log10(breaks = c(0.5, 0.7, 1, 1.4, 2)) +
-      labs(title = sprintf("Pooled HR %.2f (%.2f-%.2f) over %d cancer types", pm$pooled_hr, pm$lo, pm$hi, pm$k),
-           subtitle = sprintf("Overall survival per SD of the non-feature fraction, adjusted for age, sex and stage and stratified by sequencing plate; I-squared %.0f%%", pm$i2) |> wrap_lab(110),
+      labs(title = "Metric and overall survival",
            x = "Hazard ratio per SD (log scale)", y = NULL) +
       theme(axis.text.y = element_text(size = 6))
   }
@@ -1241,8 +1020,6 @@ if (!is.null(ax7) && !is.null(nw7)) {
   dr <- Rx("43_pancancer_dose_response_projects.tsv"); dt <- Rx("43_pancancer_dose_response.tsv")
   p7e <- NULL
   if (!is.null(dr) && !is.null(dt)) {
-    r1 <- dt[spread_measure == "mad_log_metric" & grepl("largest", outcome)]
-    r2 <- dt[spread_measure == "mad_log_metric" & grepl("PC1", outcome)]
     dr[, lab := lab7(project)]
     p7e <- ggplot(dr, aes(mad_log_metric, largest_frac_observed)) +
       geom_hline(yintercept = PAN_NET_LARGEST_MIN, linetype = 2, colour = "grey55", linewidth = 0.3) +
@@ -1252,9 +1029,7 @@ if (!is.null(ax7) && !is.null(nw7)) {
       scale_colour_gradient(low = "grey75", high = BIO_COL[["lncRNA"]], limits = c(0, 1), breaks = c(0, 0.5, 1), name = "|rho| lncRNA PC1") +
       scale_shape_manual(values = c(`TRUE` = 17, `FALSE` = 16), labels = c(`TRUE` = "rule C met", `FALSE` = "not met"), name = NULL) +
       scale_y_continuous(labels = scales::percent) +
-      labs(title = "Effect grows with metric spread (exploratory)",
-           subtitle = sprintf("Spread of the non-feature fraction within each cohort against the largest observed lncRNA module (Spearman rho %.2f, FDR %.1g) and the lncRNA-axis |rho| (colour; rho %.2f, FDR %.1g)",
-                              r1$spearman_rho, r1$fdr, r2$spearman_rho, r2$fdr) |> wrap_lab(60),
+      labs(title = "Metric spread (exploratory)",
            x = "MAD of log non-feature fraction", y = "Largest observed module") +
       theme(legend.position = "bottom", legend.box = "vertical",
             legend.key.width = unit(0.8, "cm"))

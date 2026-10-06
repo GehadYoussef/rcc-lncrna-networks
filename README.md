@@ -1,4 +1,4 @@
-# Non-exonic read content reorganises lncRNA networks and masks tumour cell programmes in renal cancer
+# Non-exonic read content reorganises lncRNA co-expression networks in renal and other cancers
 
 Code and results for the article by Gehad Youssef and Namshik Han (Milner
 Therapeutics Institute, University of Cambridge). Correspondence: Namshik Han,
@@ -84,7 +84,7 @@ No new data were generated. All inputs are open access, and the pipeline downloa
 | `06_enrichment.R` | Gene Ontology over-representation of protein-coding modules |
 | `07_purity_qc.R` | ESTIMATE scores, STAR alignment metrics, the leading lncRNA axis |
 | `08_validation_data.R` | CPTAC-3 cohort through the same pipeline |
-| `09_validate.R` | locked model and association replication in CPTAC-3 |
+| `09_validate.R` | locked model and external association estimates in CPTAC-3 |
 | `10_paper_analyses.R` | validation bootstrap, guilt-by-association enrichment, module composition |
 | `11_subtype_specificity.R` | projection onto TCGA-KIRP and TCGA-KICH |
 | `12_model_diagnostics.R` | calibration, Brier scores, decision curves, fold-wise module rebuild |
@@ -111,12 +111,13 @@ No new data were generated. All inputs are open access, and the pipeline downloa
 | `36_singlecell_module_localisation.R` | single-cell localisation of the 29 modules |
 | `37_network_rewiring.R` | adjusted against unadjusted lncRNA network partitions |
 | `38_pancancer_build.R` | 33 TCGA projects from the GDC under the discovery rules |
-| `39_pancancer_axis.R` | lncRNA-specific axis rule and positional-class gradient per project |
-| `40_pancancer_network.R` | network reorganisation rule per project |
+| `39_pancancer_axis.R` | Rule A (lncRNA-specific axis) and the positional-class gradient per project |
+| `40_pancancer_network.R` | Rule C (network reorganisation) per project |
 | `41_pancancer_metric_survival.R` | hazard of the metric per project and random-effects meta-analysis |
 | `42_singlecell_truth_correction.R` | single-cell ground truth for the correction |
 | `43_pancancer_dose_response.R` | within-cohort spread of the metric against the rule quantities (exploratory) |
 | `44_ruv3_prps_comparison.R` | comparison with RUV-III using pseudo-replicates of pseudo-samples |
+| `45_cptac_handling_time.R` | CPTAC-3 specimen handling time against the metric, the axis, tumour severity and survival |
 | `pan_helpers.R` | shared pan-cancer functions, including the decision-rule check |
 | `ora_hypergeometric.R` | hypergeometric over-representation test |
 | `run_all.R` | runs every stage in order |
@@ -154,9 +155,9 @@ No new data were generated. All inputs are open access, and the pipeline downloa
 | Table 1 | `01_table1_cohort.tsv`, `08_validation_table1.tsv`, `11_cohort_quality_metrics.tsv`, `11_subtype_cohort_summary.tsv` |
 | Table 2 | `03_mRNA_module_survival.tsv`, `03_lncRNA_module_survival.tsv`, `09_module_replication.tsv`, `09_module_replication_parsimonious.tsv` |
 | Table 3 | `09_validation_cindex.tsv`, `09_delta_cindex_validation.tsv`, `05_delta_cindex.tsv`, `12_foldwise_module_sensitivity.tsv`, `12_calibration_summary.tsv`, `12_brier_scores.tsv` |
-| Supplementary Fig. 1 | `02_lncRNA_soft_threshold.tsv`, `02_mRNA_soft_threshold.tsv`, `02_network_summary.tsv`, `02_lncRNA_module_sizes.tsv`, `02_mRNA_module_sizes.tsv` |
-| Supplementary Fig. 2 | `29_normalisation_pc1.tsv`, `29_normalisation_module_contrast.tsv` |
-| Supplementary Fig. 3 | `25_tumour_vs_normal_distribution.tsv`, `25_paired_scores_per_sample.tsv`, `25_normal_axis_projection.tsv`, `25_normal_metric_survival.tsv` |
+| Supplementary Fig. 1 | `29_normalisation_pc1.tsv`, `29_normalisation_module_contrast.tsv` |
+| Supplementary Fig. 2 | `25_tumour_vs_normal_distribution.tsv`, `25_paired_scores_per_sample.tsv`, `25_normal_axis_projection.tsv`, `25_normal_metric_survival.tsv` |
+| Supplementary Fig. 3 | `02_lncRNA_soft_threshold.tsv`, `02_mRNA_soft_threshold.tsv`, `02_network_summary.tsv`, `02_lncRNA_module_sizes.tsv`, `02_mRNA_module_sizes.tsv` |
 | Supplementary Fig. 4 | `23_biospecimen_kirc.tsv`, `23_axis_vs_biospecimen.tsv`, `27_axis_scores_per_sample.tsv` |
 | Supplementary Fig. 5 | `27_metric_biology_correlations.tsv`, `28_noFeature_vs_mutations.tsv` |
 | Supplementary Fig. 6 | `42_sc_truth_concordance.tsv`, `42_sc_truth_score_coherence.tsv`, `42_sc_truth_technical_candidates.tsv` |
@@ -188,6 +189,7 @@ No new data were generated. All inputs are open access, and the pipeline downloa
 | Supplementary Table 19 | `36_sc_module_gene_coverage.tsv`, `36_sc_module_localisation_per_dataset.tsv`, `36_sc_module_localisation_combined.tsv`, `36_sc_module_lncRNA_pooled_meta_summary.tsv` |
 | Supplementary Table 20 | `22_locked_model_coefficients.tsv`, `05_final_model_coefficients.tsv`, `22_module_score_constants.tsv`, `22_locked_model_standardisation.tsv`, `22_locked_model_baseline.tsv` |
 | Supplementary Table 21 | `09_validation_cindex.tsv`, `12_calibration_summary.tsv`, `12_brier_scores.tsv`, `12_validation_decision_curve_summary.tsv`, `20_bootstrap_delta_cindex.tsv`, `20_score_spread_by_standardisation.tsv`, `20_replication_unitmatched.tsv` |
+| Supplementary Table 22 | `45_cptac_handling_time_correlations.tsv`, `45_cptac_handling_time_survival.tsv`, `45_cptac_handling_time_per_sample.tsv` |
 | Supplementary Data 1 | `SupplementaryData1_case_list.tsv`, `SupplementaryData1_column_definitions.tsv`, `31_supplementary_data1_summary.tsv` |
 | Supplementary Data 2 | `02_lncRNA_module_genes.tsv`, `02_mRNA_module_genes.tsv`, `22_module_loadings.tsv` |
 | Supplementary Data 3 | `03_all_modules_principal.tsv` |

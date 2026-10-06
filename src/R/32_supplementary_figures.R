@@ -2,10 +2,12 @@
 # Sensitivity analyses: network diagnostics, module preservation, matched normal libraries,
 # published signatures against random nulls, RIN and plate, normalisation, alternative
 # endpoints, metric correlates, hub-lncRNA cross-validation, and calibration at the
-# secondary horizon. As in 13_figures.R, every number in a title, subtitle or annotation
-# is computed from the table the panel plots, and a panel whose source is missing is
-# skipped and logged. Writes SupplementaryFigureS1 to S5, S7, S8 and S11 to S13 to
-# figures/. Log labels S1 to S10 follow build order, not the file numbers.
+# secondary horizon. Each panel carries its letter and a short title only; sample
+# sizes, model definitions and summary counts belong to the legends. As in
+# 13_figures.R, every number in an annotation is computed from the table the panel
+# plots, and a panel whose source is missing is skipped and logged. Writes
+# SupplementaryFigureS1 to S5, S7, S8 and S11 to S13 to figures/. Log labels S1 to
+# S10 follow build order, not the file numbers.
 
 if (!exists("R_DIR")) {
   .a <- commandArgs(trailingOnly = FALSE)
@@ -34,15 +36,6 @@ skip <- function(panel, why) {
 wrap_lab <- function(x, w = 30)
   vapply(x, function(s) paste(strwrap(s, width = w), collapse = "\n"),
          character(1), USE.NAMES = FALSE)
-# `word` names what the event column counts: deaths for overall survival, other
-# events for the alternative endpoints.
-n_ev_text <- function(n, ev, word = "deaths") {
-  n <- n[is.finite(n)]; ev <- ev[is.finite(ev)]
-  if (!length(n)) return("")
-  if (uniqueN(n) == 1L && uniqueN(ev) == 1L)
-    sprintf("%d patients, %d %s", as.integer(n[1]), as.integer(ev[1]), word)
-  else sprintf("%d-%d patients, %d-%d %s", min(n), max(n), min(ev), max(ev), word)
-}
 ci_h <- function(mapping, width = 0.2, ...)
   geom_errorbar(mapping, orientation = "y", width = width, ...)
 bt <- function(x) ifelse(grepl("^lnc", x, ignore.case = TRUE), "lncRNA", "protein-coding")
@@ -120,11 +113,6 @@ if (!is.null(stl) && !is.null(stm)) {
                                        linetype = 3, linewidth = 0.45) } +
     scale_colour_manual(values = BIO_COL, name = NULL) +
     labs(title = "Scale-free topology fit",
-         subtitle = if (!is.null(chosen))
-           sprintf("Dotted lines: chosen power (%s); dashed line: target R2 = %.2f",
-                   paste(sprintf("%s %d", chosen$network, chosen$power),
-                         collapse = ", "), RSQ_CUT) |> wrap_lab(58)
-         else sprintf("Dashed line: target R2 = %.2f", RSQ_CUT),
          # Quoted: an unquoted hyphen inside a plotmath expression is parsed as
          # the minus operator and renders as "Scale - free".
          x = "Soft-thresholding power", y = expression("Scale-free fit"~R^2)) +
@@ -138,7 +126,6 @@ if (!is.null(stl) && !is.null(stm)) {
     scale_y_log10() +
     scale_colour_manual(values = BIO_COL, guide = "none") +
     labs(title = "Mean connectivity",
-         subtitle = "Log scale; same colours and chosen powers as a",
          x = "Soft-thresholding power", y = "Mean connectivity k")
 } else skip("S1a/S1b", "soft-threshold tables missing")
 if (!is.null(szl) && !is.null(szm)) {
@@ -146,8 +133,6 @@ if (!is.null(szl) && !is.null(szm)) {
   sz[, grey := module == "grey"]
   sz[, key := paste(network, module)]
   sz[, key := factor(key, levels = sz[order(network, n_genes), key])]
-  tot <- sz[, .(total = sum(n_genes), grey = sum(n_genes[module == "grey"]),
-                k = sum(module != "grey")), by = network]
   P$c <- ggplot(sz, aes(n_genes, key, fill = grey)) +
     geom_col(width = 0.72) +
     facet_wrap(~ network, scales = "free", ncol = 2) +
@@ -157,13 +142,7 @@ if (!is.null(szl) && !is.null(szm)) {
                       labels = c(`FALSE` = "assigned module", `TRUE` = "grey (unassigned)"),
                       name = NULL) +
     # "Genes", not "transcripts": the GDC STAR-Counts matrices are gene-level.
-    labs(title = "Module sizes",
-         subtitle = paste(sprintf("%s: %d modules, %s of %s genes unassigned",
-                                  tot$network, tot$k,
-                                  format(tot$grey, big.mark = ",", trim = TRUE),
-                                  format(tot$total, big.mark = ",", trim = TRUE)),
-                          collapse = "; ") |> wrap_lab(108),
-         x = "Genes", y = NULL) +
+    labs(title = "Module sizes", x = "Genes", y = NULL) +
     theme(axis.text.y = element_text(size = 6), legend.position = "bottom")
 } else skip("S1c", "module size tables missing")
 pp <- compose(P)
@@ -171,7 +150,7 @@ if (length(pp)) {
   s1 <- if (length(pp) == 3) ROW(pp[[1]] | pp[[2]]) / ROW(pp[[3]]) +
                              plot_layout(heights = c(1, 1.25))
         else Reduce(`|`, pp)
-  save_fig(s1, "SupplementaryFigureS1_network_diagnostics", W, 6.6)
+  save_fig(s1, "SupplementaryFigureS3_network_diagnostics", W, 6.6)
   msg("  S1 written")
 }
 
@@ -189,12 +168,10 @@ if (!is.null(pl) || !is.null(pm)) {
   # modulePreservation caps moduleSize at maxModuleSize (1,000), so the true
   # discovery sizes are taken from 02_*_module_sizes.tsv where available.
   szl2 <- Rx("02_lncRNA_module_sizes.tsv"); szm2 <- Rx("02_mRNA_module_sizes.tsv")
-  n_capped <- 0L
   if (!is.null(szl2) && !is.null(szm2)) {
     sizes <- rbind(szl2[, .(network = "lncRNA", module, true_size = n_genes)],
                    szm2[, .(network = "protein-coding", module, true_size = n_genes)])
     pres <- merge(pres, sizes, by = c("network", "module"), all.x = TRUE)
-    n_capped <- pres[is.finite(true_size) & true_size > moduleSize, uniqueN(module)]
     pres[, size_plot := fifelse(is.finite(true_size), as.numeric(true_size),
                                 as.numeric(moduleSize))]
   } else pres[, size_plot := as.numeric(moduleSize)]
@@ -209,14 +186,7 @@ if (!is.null(pl) || !is.null(pm)) {
     facet_grid(network ~ test_cohort) +
     scale_x_log10() + scale_y_log10() +
     scale_colour_manual(values = COH_COL, guide = "none") +
-    labs(title = sprintf("Preservation of all %d modules in each test cohort",
-                         uniqueN(pres[, paste(network, module)])),
-         subtitle = sprintf("WGCNA modulePreservation; %d module x cohort pairs (grey and gold excluded); sizes are discovery module sizes%s",
-                            nrow(pres),
-                            if (n_capped) sprintf(", %d of which modulePreservation reports capped at %s",
-                                                  n_capped,
-                                                  format(max(pres$moduleSize), big.mark = ",",
-                                                         trim = TRUE)) else "") |> wrap_lab(108),
+    labs(title = "Module preservation by test cohort",
          x = "Module size (genes, log scale)", y = "Zsummary (log scale)")
 }
 if (!is.null(ps_)) {
@@ -236,11 +206,7 @@ if (!is.null(ps_)) {
     scale_fill_manual(values = c(unname(OI["green"]), unname(OI["yellow"]),
                                  unname(OI["vermillion"])), name = NULL) +
     scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
-    labs(title = "Preservation class counts",
-         subtitle = sprintf("%d permutations for lncRNA, %d for protein-coding",
-                            max(ps_[grepl("lnc", network), n_permutations]),
-                            max(ps_[!grepl("lnc", network), n_permutations])),
-         x = NULL, y = "Modules") +
+    labs(title = "Preservation class counts", x = NULL, y = "Modules") +
     theme(legend.position = "bottom", axis.text.x = element_text(size = 6.4))
 }
 pp <- compose(P)
@@ -270,34 +236,7 @@ if (!is.null(tvn)) {
     dl[, cohort := factor(cohort, levels = names(COH_COL))]
     # The unpaired contrast mixes tissue with plate: normal libraries occupy few tumour
     # plates, and plate is the largest source of variance in the metric. The
-    # plate-restricted and within-patient contrasts are quoted beside it.
-    nconf <- d[unpaired_plate_confounded == TRUE, .N]
-    nf    <- d[unpaired_plate_confounded == TRUE & variable == "pct_noFeature"]
-    # The plate-restricted contrast is reported for both normal sets (all normal
-    # libraries, and normals of the analysed tumours) with its library counts.
-    nf_pat <- if (nrow(nf)) tvn[cohort == nf$cohort[1] &
-                                normal_set == "normals of analysed-tumour patients" &
-                                variable == "pct_noFeature"] else NULL
-    conf_clause <- if (nconf && nrow(nf)) {
-      sprintf(". The unpaired contrast mixes tissue with plate in %d of %d rows: in %s the non-feature difference falls from %.2f percentage points unpaired to %.2f on the plates both tissues occupy (%d tumour and %d normal libraries, rank-sum p %.3f) for the normals of the analysed tumours, the figure the text quotes%s, and is %.2f within patient on %d pairs (signed-rank p %.2f)",
-              nconf, nrow(d), nf$cohort[1], nf$median_diff_t_minus_n[1],
-              if (!is.null(nf_pat) && nrow(nf_pat))
-                nf_pat$plate_matched_median_diff_t_minus_n[1] else
-                nf$plate_matched_median_diff_t_minus_n[1],
-              if (!is.null(nf_pat) && nrow(nf_pat))
-                nf_pat$plate_matched_n_tumour[1] else nf$plate_matched_n_tumour[1],
-              if (!is.null(nf_pat) && nrow(nf_pat))
-                nf_pat$plate_matched_n_normal[1] else nf$plate_matched_n_normal[1],
-              if (!is.null(nf_pat) && nrow(nf_pat))
-                nf_pat$plate_matched_rank_sum_p[1] else nf$plate_matched_rank_sum_p[1],
-              if (!is.null(nf_pat) && nrow(nf_pat))
-                sprintf(" (%.2f, p %.3f, on the %d plate-matched libraries of all normal libraries, which is the set these bars show)",
-                        nf$plate_matched_median_diff_t_minus_n[1],
-                        nf$plate_matched_rank_sum_p[1],
-                        nf$plate_matched_n_normal[1]) else "",
-              nf$matched_median_diff_t_minus_n[1], nf$matched_n_pairs[1],
-              nf$matched_signed_rank_p[1])
-    } else ""
+    # plate-restricted and within-patient contrasts are quoted in the legend.
     P$a <- ggplot(dl, aes(cohort, med, fill = tissue)) +
       geom_col(width = 0.66, position = position_dodge(0.72)) +
       geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.18, linewidth = 0.35,
@@ -305,12 +244,7 @@ if (!is.null(tvn)) {
       facet_wrap(~ description, scales = "free_y") +
       scale_fill_manual(values = TISSUE_COL, name = NULL) +
       scale_y_continuous(expand = expansion(mult = c(0, 0.08))) +
-      labs(title = "Library metrics in tumour and matched normal libraries",
-           subtitle = sprintf("Median (IQR); n = %s tumour and %s normal libraries; %d of %d unpaired rank-sum tests at FDR < %.2f%s",
-                              paste(unique(d$n_tumour), collapse = "/"),
-                              paste(unique(d$n_normal), collapse = "/"),
-                              d[fdr < FDR_ALPHA, .N], nrow(d), FDR_ALPHA,
-                              conf_clause) |> wrap_lab(112),
+      labs(title = "Tumour and normal library metrics",
            x = NULL, y = "Per cent of reads") +
       theme(legend.position = "bottom")
   } else skip("S3a", "no rows for the all-normal set")
@@ -320,15 +254,11 @@ if (!is.null(pss)) {
   if (nrow(d)) {
     d[, cohort := factor(cohort, levels = names(COH_COL))]
     d[, tissue := factor(tissue, levels = c("tumour", "normal"))]
-    rho <- d[, .(rho = cor(pct_noFeature, lnc_axis_proj, method = "spearman"),
-                 n = .N), by = .(cohort, tissue)]
     P$b <- ggplot(d, aes(pct_noFeature, lnc_axis_proj, colour = tissue)) +
       geom_point(size = 0.7, alpha = 0.6, stroke = 0) +
       facet_wrap(~ cohort, scales = "free_x") +
       scale_colour_manual(values = TISSUE_COL, name = NULL) +
-      labs(title = "The projected lncRNA axis in paired libraries",
-           subtitle = paste(sprintf("%s %s: rho %.2f (n = %d)", rho$cohort, rho$tissue,
-                                    rho$rho, rho$n), collapse = "; ") |> wrap_lab(96),
+      labs(title = "Projected lncRNA axis",
            x = "Reads in no annotated feature (%)",
            y = "lncRNA axis projected on\nthe discovery PC1") +
       theme(legend.position = "bottom")
@@ -348,12 +278,8 @@ if (!is.null(nap)) {
   d[, `:=`(ref_med = 100 * n_matched_pc1_share,
            ref_lo  = 100 * n_matched_pc1_share_min,
            ref_hi  = 100 * n_matched_pc1_share_max)]
-  n_ref   <- d[is.finite(ref_med), .N]
-  n_above <- d[is.finite(ref_hi) & 100 * var_share > ref_hi, .N]
-  # A variance share does not depend on PC1 orientation, so every row is shown. The
-  # subtitle counts rows whose sign is a convention (pc1_sign_interpretable).
-  n_conv <- if ("pc1_sign_interpretable" %in% names(d))
-    d[pc1_sign_interpretable == FALSE, .N] else NA_integer_
+  # A variance share does not depend on PC1 orientation, so every row is shown,
+  # including those whose sign is a convention (pc1_sign_interpretable).
   P$c <- ggplot(d, aes(100 * var_share, lab, colour = matrix)) +
     ci_h(aes(xmin = ref_lo, xmax = ref_hi), width = 0.1, linewidth = 0.3,
          colour = "grey55", position = position_dodge(0.5), show.legend = FALSE,
@@ -364,15 +290,7 @@ if (!is.null(nap)) {
     geom_point(size = 2.1, position = position_dodge(0.5)) +
     scale_colour_manual(values = BIO_COL, name = NULL) +
     scale_x_continuous(expand = expansion(mult = c(0.06, 0.1))) +
-    labs(title = "Share of variance on each set's own PC1",
-         subtitle = sprintf("%d sample sets; open grey points and bars are the median and range of the PC1 share of %s size-matched random subsets of the discovery samples (%d of %d rows); %d observed shares sit above that range%s",
-                            uniqueN(d$lab),
-                            format(max(d$n_matched_draws, na.rm = TRUE),
-                                   big.mark = ",", trim = TRUE),
-                            n_ref, nrow(d), n_above,
-                            if (is.na(n_conv)) "" else
-                              sprintf("; a share carries no sign, and the orientation of %d of these %d components is a convention, so only their magnitudes are quoted elsewhere",
-                                      n_conv, nrow(d))) |> wrap_lab(58),
+    labs(title = "Variance on each set's PC1",
          x = "PC1 variance share (%)", y = NULL) +
     theme(axis.text.y = element_text(size = 6.2, lineheight = 0.9),
           legend.position = "bottom")
@@ -403,9 +321,7 @@ if (!is.null(nms)) {
       scale_x_log10(breaks = c(0.6, 0.8, 1, 1.25, 1.5, 2)) +
       scale_colour_manual(values = COH_COL, name = NULL) +
       scale_alpha_manual(values = c(`TRUE` = 1, `FALSE` = 0.35), guide = "none") +
-      labs(title = "The metric as exposure in paired patients",
-           subtitle = sprintf("Non-feature fraction, linear scale, per SD; %s; faded where events per parameter < %d",
-                              n_ev_text(d$n, d$events), MIN_EPV) |> wrap_lab(58),
+      labs(title = "Metric as exposure, paired patients",
            x = "Hazard ratio per 1 SD (95% CI)", y = NULL) +
       theme(axis.text.y = element_text(size = 6.2, lineheight = 0.9),
             legend.position = "bottom")
@@ -415,11 +331,11 @@ pp <- compose(P)
 if (length(pp) >= 4) {
   s3 <- ROW(pp[[1]]) / ROW(pp[[2]]) / ROW(pp[[3]] | pp[[4]]) +
     plot_layout(heights = c(0.95, 0.95, 1.4))
-  save_fig(s3, "SupplementaryFigureS3_matched_normal", W, 9.2)
+  save_fig(s3, "SupplementaryFigureS2_matched_normal", W, 9.2)
   msg("  S3 written")
 } else if (length(pp)) {
   save_fig(Reduce(function(a, b) a / b, lapply(pp, ROW)),
-           "SupplementaryFigureS3_matched_normal", W, 2.6 * length(pp))
+           "SupplementaryFigureS2_matched_normal", W, 2.6 * length(pp))
   msg("  S3 written (", length(pp), " panels)")
 } else skip("S3", "25_* tables missing")
 
@@ -428,63 +344,17 @@ banner("S4 | published signatures")
 sm_ <- Rx("26_published_signatures_models.tsv")
 rn  <- Rx("26_random_signature_null.tsv")
 sc  <- Rx("26_published_signatures_correlations.tsv")
-hrg <- Rx("26_headline_ranges_by_provenance.tsv")
 # Weight provenance decides what may be pooled. Some signatures publish
 # coefficients, others had their weights signed by a univariate Cox fit in this
-# cohort, which inflates their hazard ratios. Every quoted range is read from
+# cohort, which inflates their hazard ratios. The ranges the legend quotes are in
 # 26_headline_ranges_by_provenance.tsv, computed within one provenance class.
 PROV <- c(external_coefficients       = "External coefficients",
           in_sample_signed            = "Weights signed in TCGA-KIRC",
           in_sample_refit             = "Coefficients refitted in TCGA-KIRC",
           footnote_incomplete_mapping = "Incomplete mapping (footnote)")
 prov_lab <- function(x) fifelse(x %in% names(PROV), unname(PROV[x]), x)
-# Subtitles break the signature count down by weight provenance.
-PROV_PHRASE <- c(external_coefficients = "with coefficients published outside this cohort",
-                 in_sample_signed = "whose per-gene weights had to be signed by a univariate Cox fit in this cohort",
-                 in_sample_refit = "with coefficients refitted in this cohort",
-                 footnote_incomplete_mapping = "held back for incomplete mapping")
-prov_breakdown <- function(d) {
-  z <- unique(d[, .(signature, weight_provenance)])[, .N, by = weight_provenance]
-  z <- z[order(match(weight_provenance, names(PROV)))]
-  paste(sprintf("%d %s", z$N,
-                fifelse(z$weight_provenance %in% names(PROV_PHRASE),
-                        unname(PROV_PHRASE[z$weight_provenance]),
-                        z$weight_provenance)),
-        collapse = " and ")
-}
 prov_fac <- function(x) factor(prov_lab(x),
                                levels = unname(PROV[names(PROV) %in% unique(x)]))
-# One per-provenance range as stage 26 wrote it, NA if the quantity is absent.
-rng <- function(qpat, spat, prov) {
-  if (is.null(hrg)) return(NA_character_)
-  v <- hrg[grepl(qpat, quantity) & grepl(spat, stratum, fixed = TRUE) &
-           weight_provenance == prov, range_text]
-  if (length(v)) v[1] else NA_character_
-}
-att3_ext <- rng("^Attenuation", "3_score_plus_clinical_plus_STAR | published weights",
-                "external_coefficients")
-att3_sig <- rng("^Attenuation", "3_score_plus_clinical_plus_STAR | published weights",
-                "in_sample_signed")
-att4_ext <- rng("^Attenuation", "4_residualised_score_plus_clinical | published weights",
-                "external_coefficients")
-att4_sig <- rng("^Attenuation", "4_residualised_score_plus_clinical | published weights",
-                "in_sample_signed")
-psr_ext  <- rng("Percentile of \\|rho\\|.*sign-randomised", "published weights",
-                "external_coefficients")
-psr_sig  <- rng("Percentile of \\|rho\\|.*sign-randomised", "published weights",
-                "in_sample_signed")
-pos_ext  <- rng("Percentile of \\|rho\\|.*outcome-signed", "published weights",
-                "external_coefficients")
-pos_sig  <- rng("Percentile of \\|rho\\|.*outcome-signed", "published weights",
-                "in_sample_signed")
-phr_ext  <- rng("Percentile of the univariate HR", "published weights",
-                "external_coefficients")
-phr_sig  <- rng("Percentile of the univariate HR", "published weights",
-                "in_sample_signed")
-rho_ext  <- rng("^Spearman rho", "observed expression | published weights",
-                "external_coefficients")
-rho_sig  <- rng("^Spearman rho", "observed expression | published weights",
-                "in_sample_signed")
 P <- list()
 if (!is.null(rn)) {
   # Two nulls over the same gene sets: outcome-signed and sign-randomised.
@@ -494,19 +364,11 @@ if (!is.null(rn)) {
   draws   <- rn[row_type == "random_set" & sign_scheme %in% names(NULLLAB)]
   obs_all <- rn[row_type == "signature_percentile"]
   # Footnote-tier signatures mapped too few members to render the published
-  # model. They are counted in the subtitle, not drawn.
+  # model. They are not drawn.
   obs    <- obs_all[reporting_tier == "primary"]
-  n_foot <- uniqueN(obs_all[reporting_tier != "primary", signature])
   if (nrow(draws)) {
     draws[, null_lab := factor(NULLLAB[sign_scheme], levels = unname(NULLLAB))]
     NULL_COL <- setNames(c("grey82", "#CBD9E6"), unname(NULLLAB))
-    n_per <- draws[, .N, by = .(set_size, sign_scheme)][, max(N)]
-    # The two nulls must share gene sets. The overlap is counted, not assumed.
-    n_shared <- length(intersect(
-      draws[sign_scheme == "outcome_signed",  unique(gene_set_key)],
-      draws[sign_scheme == "sign_randomised", unique(gene_set_key)]))
-    med_sr   <- draws[sign_scheme == "sign_randomised", median(HR)]
-    pct_os_p <- 100 * draws[sign_scheme == "outcome_signed", mean(HR_p < 0.05)]
     P$a <- ggplot(draws, aes(abs(rho_noFeature), factor(set_size),
                              fill = null_lab)) +
       geom_violin(colour = "grey55", linewidth = 0.25, scale = "width",
@@ -522,15 +384,7 @@ if (!is.null(rn)) {
                          name = NULL) +
       guides(fill = guide_legend(order = 1, nrow = 2),
              shape = guide_legend(order = 2, nrow = 2)) +
-      labs(title = "Published signatures against two random-signature nulls" |>
-             wrap_lab(46),
-           # Percentile ranges are quoted within a weight-provenance class.
-           subtitle = sprintf("%s random sets per size and null; the two nulls are the same %s gene sets re-signed two ways. Points are %d signatures x %d weightings at the primary tier (%d held back for incomplete mapping). Published weights sit at percentiles %s of the sign-randomised null with external coefficients and %s with weights signed in TCGA-KIRC; outcome-signing itself induces the correlation, so that null sits higher (%s and %s)",
-                              format(n_per, big.mark = ",", trim = TRUE),
-                              format(n_shared, big.mark = ",", trim = TRUE),
-                              uniqueN(obs$signature), uniqueN(obs$weights), n_foot,
-                              psr_ext, psr_sig, pos_ext, pos_sig) |>
-             wrap_lab(70),
+      labs(title = "Correlation against random nulls",
            x = "|Spearman rho| with the non-feature fraction",
            y = "Signature size (genes)") +
       theme(legend.position = "bottom", legend.text = element_text(size = 6))
@@ -550,10 +404,7 @@ if (!is.null(rn)) {
                          name = NULL) +
       guides(fill = guide_legend(order = 1, nrow = 2),
              shape = guide_legend(order = 2, nrow = 2)) +
-      labs(title = "Hazard ratio against two random-signature nulls" |> wrap_lab(46),
-           subtitle = sprintf("Random sets, %s; the sign-randomised null has median HR %.2f while the outcome-signed null's sets are prognostic by construction (%.0f%% at p < 0.05). Published weights sit at percentiles %s of the outcome-signed null with external coefficients and %s with weights signed in TCGA-KIRC",
-                              n_ev_text(draws$n, draws$events), med_sr, pct_os_p,
-                              phr_ext, phr_sig) |> wrap_lab(60),
+      labs(title = "Hazard ratio against random nulls",
            x = "Hazard ratio per 1 SD (log scale)",
            y = "Signature size (genes)") +
       theme(legend.position = "bottom", legend.text = element_text(size = 6))
@@ -580,13 +431,7 @@ if (!is.null(sm_)) {
       # Contrast-checked palette: no pure yellow and no near-neighbour hues.
       scale_colour_manual(values = SIG_PAL[seq_len(uniqueN(d$label))],
                           name = NULL) +
-      labs(title = "Published signatures under four specifications, by weight provenance" |>
-             wrap_lab(70),
-           subtitle = sprintf("%d primary-tier signatures scored with their published gene sets (%s), %s; %d of %d intervals exclude 1. Attenuation of the clinically adjusted log hazard ratio on adding the three STAR metrics: %s per cent with external coefficients and %s with weights signed in this cohort; on residualising the expression instead, %s and %s",
-                              uniqueN(d$signature), prov_breakdown(d),
-                              n_ev_text(d$n, d$events),
-                              d[lo > 1, .N], nrow(d),
-                              att3_ext, att3_sig, att4_ext, att4_sig) |> wrap_lab(112),
+      labs(title = "Signature hazard ratios by specification",
            x = "Hazard ratio per 1 SD (95% CI)", y = NULL) +
       theme(axis.text.y = element_text(size = 6, lineheight = 0.9),
             legend.position = "bottom", legend.text = element_text(size = 6)) +
@@ -599,7 +444,6 @@ if (!is.null(sc)) {
   if (nrow(d)) {
     d[, expr := factor(expression, levels = c("observed", "residualised"))]
     d[, prov := prov_fac(weight_provenance)]
-    res_max <- d[expr == "residualised", max(abs(spearman_rho))]
     P$d <- ggplot(d, aes(spearman_rho, reorder(label, spearman_rho), colour = expr)) +
       geom_vline(xintercept = 0, linetype = 2, colour = "grey55", linewidth = 0.3) +
       geom_point(size = 2, position = position_dodge(0.5)) +
@@ -607,13 +451,7 @@ if (!is.null(sc)) {
       scale_colour_manual(values = c(observed = unname(OI["vermillion"]),
                                      residualised = unname(OI["blue"])),
                           name = "Expression matrix") +
-      labs(title = "Signature score against the metric, by weight provenance" |>
-             wrap_lab(70),
-           subtitle = sprintf("%d primary-tier signatures scored with their published gene sets (%s), Spearman rho, n = %s; observed %s with external coefficients and %s with weights signed in TCGA-KIRC; after residualisation every |rho| is below %.2f, which is the check that the adjustment does what it claims",
-                              uniqueN(d$signature), prov_breakdown(d),
-                              paste(unique(d$n), collapse = "/"),
-                              rho_ext, rho_sig, ceiling(res_max * 100) / 100) |>
-             wrap_lab(112),
+      labs(title = "Signature score against the metric",
            x = "Spearman rho with the non-feature fraction", y = NULL) +
       theme(axis.text.y = element_text(size = 6), legend.position = "bottom",
             strip.text.y = element_text(size = 6.2, angle = 0))
@@ -645,41 +483,32 @@ if (!is.null(axs) && !is.null(bio)) {
   axs <- merge(axs[, .(sample_barcode, pct_noFeature, lnc_axis_z)],
                bio[, .(sample_barcode, rin, plate)], by = "sample_barcode")
   # One library has RIN recorded as 0.0, a coded missing value. It is dropped
-  # here and the exclusion is stated on the panel, so n differs by one from
+  # here and the exclusion is stated in the legend, so n differs by one from
   # 23_axis_vs_biospecimen.tsv.
-  n_rin0 <- axs[is.finite(rin) & rin <= 0, .N]
   rin_rho <- function(v) {
     d <- axs[is.finite(rin) & rin > 0 & is.finite(get(v))]
     list(d = d, rho = cor(d$rin, d[[v]], method = "spearman"), n = nrow(d))
   }
-  rin_note <- if (n_rin0)
-    sprintf("; %d library with RIN recorded as 0 excluded as a coded missing value",
-            n_rin0) else ""
   # No trend line: the rank correlation is weak.
   a <- rin_rho("pct_noFeature")
   P$a <- ggplot(a$d, aes(rin, pct_noFeature)) +
     geom_point(size = 0.7, alpha = 0.45, colour = unname(OI["grey"]), stroke = 0) +
     ANN(sprintf("Spearman rho = %.3f\nn = %d", a$rho, a$n)) +
     labs(title = "Metric against RIN",
-         subtitle = sprintf("TCGA-KIRC, RIN from the BCR record%s", rin_note) |>
-           wrap_lab(40),
          x = "RIN", y = "Non-feature reads (%)")
   b <- rin_rho("lnc_axis_z")
   P$b <- ggplot(b$d, aes(rin, lnc_axis_z)) +
     geom_point(size = 0.7, alpha = 0.45, colour = unname(OI["vermillion"]), stroke = 0) +
     ANN(sprintf("Spearman rho = %.3f\nn = %d", b$rho, b$n)) +
     labs(title = "lncRNA axis against RIN",
-         subtitle = sprintf("Same axis as Figure 2a%s", rin_note) |> wrap_lab(40),
          x = "RIN", y = "lncRNA PC1 (z)")
   pd <- axs[is.finite(pct_noFeature) & !is.na(plate) & plate != ""]
-  ord <- pd[, .(m = median(pct_noFeature), n = .N), by = plate][order(m)]
+  ord <- pd[, .(m = median(pct_noFeature)), by = plate][order(m)]
   pd[, plate := factor(plate, levels = ord$plate)]
   P$c <- ggplot(pd, aes(plate, pct_noFeature)) +
     geom_boxplot(outlier.size = 0.4, linewidth = 0.3, fill = "grey90",
                  colour = "grey35") +
-    labs(title = "The metric by sequencing plate",
-         subtitle = sprintf("%d plates, %d libraries, %d to %d per plate",
-                            nrow(ord), nrow(pd), min(ord$n), max(ord$n)) |> wrap_lab(70),
+    labs(title = "Metric by sequencing plate",
          x = "Plate (ordered by median)", y = "Reads in no annotated feature (%)") +
     theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 5.8))
   ad <- axs[is.finite(lnc_axis_z) & !is.na(plate) & plate != ""]
@@ -687,9 +516,7 @@ if (!is.null(axs) && !is.null(bio)) {
   P$d <- ggplot(ad, aes(plate, lnc_axis_z)) +
     geom_boxplot(outlier.size = 0.4, linewidth = 0.3,
                  fill = alpha(unname(OI["vermillion"]), 0.25), colour = "grey35") +
-    labs(title = "The lncRNA axis by sequencing plate",
-         subtitle = sprintf("Plates in the same order; %d libraries with an axis score",
-                            nrow(ad)) |> wrap_lab(70),
+    labs(title = "lncRNA axis by sequencing plate",
          x = "Plate (ordered by median non-feature fraction)", y = "lncRNA PC1 (z)") +
     theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 5.8))
 } else skip("S5a-S5d", "27_axis_scores_per_sample.tsv or 23_biospecimen_kirc.tsv missing")
@@ -717,9 +544,6 @@ if (!is.null(avb)) {
                        breaks = c("TRUE", "FALSE"),
                        labels = c(`TRUE` = "p < 0.05", `FALSE` = "p >= 0.05")) +
     labs(title = "Biospecimen correlates",
-         subtitle = sprintf("Spearman rho, n = %d-%d; %d of %d tests at p < 0.05, unadjusted",
-                            min(d$n), max(d$n), d[sig == TRUE, .N], nrow(d)) |>
-           wrap_lab(44),
          x = "Spearman rho", y = NULL) +
     theme(axis.text.y = element_text(size = 6.4), legend.position = "bottom",
           legend.box = "vertical", legend.spacing.y = unit(0, "cm")) +
@@ -750,10 +574,7 @@ P <- list()
 if (!is.null(nz)) {
   nz[, lab := factor(wrap_lab(matrix, 26), levels = rev(wrap_lab(matrix, 26)))]
   # Each PC1 is oriented against the cached FPKM axis, so signed correlations
-  # are comparable across matrices. The subtitle counts matrices whose
-  # mean-expression anchor is indeterminate.
-  n_indet <- if ("mean_expr_anchor_determinate" %in% names(nz))
-    nz[mean_expr_anchor_determinate == FALSE, .N] else NA_integer_
+  # are comparable across matrices.
   p6a <- ggplot(nz, aes(rho_noFeature, lab)) +
     geom_vline(xintercept = 0, linetype = 2, colour = "grey55", linewidth = 0.3) +
     geom_segment(aes(x = 0, xend = rho_noFeature, yend = lab), linewidth = 0.4,
@@ -762,13 +583,7 @@ if (!is.null(nz)) {
     geom_text(aes(label = sprintf("%.3f", rho_noFeature)), hjust = -0.35,
               size = 2.1, family = FIG_FONT, colour = "grey25") +
     scale_x_continuous(limits = c(0, 1.06), breaks = seq(0, 1, 0.25)) +
-    labs(title = sprintf("The axis tracks the metric under all %d normalisations tested",
-                         nrow(nz)) |> wrap_lab(36),
-         subtitle = sprintf("Spearman rho of each matrix's PC1 with the non-feature fraction, n = %d; each sign is anchored to the cached FPKM axis%s",
-                            max(nz$n),
-                            if (is.na(n_indet) || !n_indet) "" else
-                              sprintf(", the mean-expression anchor being indeterminate for %d of %d",
-                                      n_indet, nrow(nz))) |> wrap_lab(64),
+    labs(title = "Axis against the metric",
          x = "Spearman rho with the non-feature fraction", y = NULL) +
     theme(axis.text.y = element_text(size = 6.2, lineheight = 0.9))
   p6b <- ggplot(nz, aes(100 * pc1_var_share, lab)) +
@@ -778,7 +593,7 @@ if (!is.null(nz)) {
     geom_text(aes(label = sprintf("%.1f%%", 100 * pc1_var_share)), hjust = -0.3,
               size = 2.1, family = FIG_FONT, colour = "grey25") +
     scale_x_continuous(expand = expansion(mult = c(0, 0.22))) +
-    labs(title = "PC1 variance share", subtitle = "Same matrices, same samples",
+    labs(title = "PC1 variance share",
          x = "PC1 variance share (%)", y = NULL) +
     theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
   p6c <- ggplot(nz, aes(rho_axis_fpkm, lab)) +
@@ -789,22 +604,17 @@ if (!is.null(nz)) {
               size = 2.1, family = FIG_FONT, colour = "grey25") +
     scale_x_continuous(limits = c(0, 1.14), breaks = seq(0, 1, 0.25)) +
     labs(title = "Agreement with the FPKM axis",
-         subtitle = "Against the cached log2(FPKM+1) axis",
          x = "Spearman rho with the FPKM axis", y = NULL) +
     theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
   P$a <- p6a; P$b <- p6b; P$c <- p6c
 } else skip("S6a-S6c", "29_normalisation_pc1.tsv missing")
 # Module hazard ratios under TMM and FPKM: stage 29 bootstraps the difference in
-# log hazard ratio, with BH control within each arm. Controlled counts are
-# quoted, with the raw counts beside them.
+# log hazard ratio, with BH control within each arm. Segments are coloured by
+# the controlled call on the observed matrix; the counts belong to the legend.
 if (!is.null(mcn)) {
   SCL <- c(fpkm = "log2(FPKM+1)", tmm = "log2 CPM TMM")
   w <- mcn[, .(module, n, events, fpkm = HR_fpkm_observed, tmm = HR_tmm_observed,
-               sig_obs = as.logical(boot_sig_fdr_observed),
-               ci_obs  = as.logical(boot_ci_excludes_0_observed),
-               sig_res = as.logical(boot_sig_fdr_residualised),
-               ci_res  = as.logical(boot_ci_excludes_0_residualised),
-               nboot   = boot_n_observed)]
+               sig_obs = as.logical(boot_sig_fdr_observed))]
   w[, lab := factor(module, levels = w[order(fpkm), module])]
   SHIFT <- c(`TRUE`  = sprintf("shift at FDR < %.2f", FDR_ALPHA),
              `FALSE` = sprintf("no shift at FDR < %.2f", FDR_ALPHA))
@@ -824,15 +634,7 @@ if (!is.null(mcn)) {
                         drop = FALSE) +
     scale_shape_manual(values = setNames(c(21, 16), unname(SCL)),
                        name = "Normalisation") +
-    labs(title = sprintf("%d of %d lncRNA module hazard ratios shift detectably between the two scales",
-                         w[sig_obs == TRUE, .N], nrow(w)) |> wrap_lab(70),
-         subtitle = sprintf("Paired patient bootstrap of the trimmed-mean minus FPKM difference in the log hazard ratio, %s resamples, %s, Benjamini-Hochberg within arm; %d of %d at FDR < %.2f on the observed matrix and %d of %d on the residualised matrix (before multiplicity control, %d and %d intervals excluded zero); same modules, same patients, same covariates on both scales",
-                            format(max(w$nboot), big.mark = ",", trim = TRUE),
-                            n_ev_text(mcn$n, mcn$events),
-                            w[sig_obs == TRUE, .N], nrow(w), FDR_ALPHA,
-                            w[sig_res == TRUE, .N], nrow(w),
-                            w[ci_obs == TRUE, .N], w[ci_res == TRUE, .N]) |>
-           wrap_lab(112),
+    labs(title = "Module hazard ratios, TMM against FPKM",
          x = "Hazard ratio per 1 SD (log scale)", y = NULL) +
     theme(axis.text.y = element_text(size = 6.4), legend.position = "bottom",
           legend.box = "horizontal")
@@ -841,15 +643,15 @@ pp <- compose(P)
 if (length(pp) >= 4) {
   s6 <- ROW(pp[[1]] | pp[[2]] | pp[[3]]) / ROW(pp[[4]]) +
     plot_layout(heights = c(1, 1.35))
-  save_fig(s6, "SupplementaryFigureS2_normalisation", W, 7.2)
+  save_fig(s6, "SupplementaryFigureS1_normalisation", W, 7.2)
   msg("  S6 written")
 } else if (length(pp) == 3L) {
   save_fig(ROW(pp[[1]] | pp[[2]] | pp[[3]]) + plot_layout(),
-           "SupplementaryFigureS2_normalisation", W, 3.4)
+           "SupplementaryFigureS1_normalisation", W, 3.4)
   msg("  S6 written (3 panels)")
 } else if (length(pp)) {
   save_fig(Reduce(function(a, b) a / b, lapply(pp, ROW)),
-           "SupplementaryFigureS2_normalisation", W, 3.4 * length(pp))
+           "SupplementaryFigureS1_normalisation", W, 3.4 * length(pp))
   msg("  S6 written (", length(pp), " panels)")
 } else skip("S6", "29_* tables missing")
 
@@ -861,26 +663,12 @@ END <- c(OS_pipeline = "Overall survival (pipeline)",
          DSS = "Disease-specific survival",
          PFI = "Progression-free interval")
 END_COL <- setNames(unname(OI[c("vermillion", "blue", "green", "purple")]), unname(END))
-# What the event column counts under each endpoint. Only the overall survival
-# endpoints count deaths.
-END_EVENT <- c(OS_pipeline = "deaths", OS_cdr = "deaths",
-               DSS = "cancer-specific deaths", PFI = "progression or death")
-END_SHORT <- c(OS_pipeline = "overall survival", OS_cdr = "overall survival",
-               DSS = "disease-specific survival",
-               PFI = "the progression-free interval")
-ev_gloss <- function(codes) {
-  codes <- unique(as.character(codes))
-  sprintf("events are %s", paste(unique(sprintf("%s for %s", END_EVENT[codes],
-                                                END_SHORT[codes])),
-                                 collapse = ", "))
-}
 P <- list()
 if (!is.null(em)) {
   d <- em[specification == "principal"]
   d[, biotype := bt(biotype)]
   d[, lab := paste0(biotype, ": ", module)]
   d[, lab := factor(lab, levels = unique(d[endpoint == "OS_pipeline"][order(HR), lab]))]
-  gloss_a <- ev_gloss(d$endpoint)
   d[, endpoint := factor(END[endpoint], levels = unname(END))]
   P$a <- ggplot(d, aes(HR, lab, colour = endpoint)) +
     geom_vline(xintercept = 1, linetype = 2, colour = "grey55", linewidth = 0.3) +
@@ -889,21 +677,12 @@ if (!is.null(em)) {
     geom_point(size = 1.8, position = position_dodge(0.7)) +
     scale_x_log10(breaks = HR_BRK) +
     scale_colour_manual(values = END_COL, name = NULL) +
-    labs(title = "The five prognostic modules under four endpoints",
-         subtitle = sprintf("Principal specification; %s (%s); %d of %d at FDR < %.2f",
-                            n_ev_text(d$n, d$events, "events"), gloss_a,
-                            d[fdr_5modules < FDR_ALPHA, .N],
-                            nrow(d), FDR_ALPHA) |> wrap_lab(92),
+    labs(title = "Prognostic modules by endpoint",
          x = "Hazard ratio per 1 SD (95% CI)", y = NULL) +
     theme(axis.text.y = element_text(size = 6.6), legend.position = "bottom")
 }
 if (!is.null(ee)) {
   d <- copy(ee)
-  gloss_b <- ev_gloss(d$endpoint)
-  # The subtitle counts intervals excluding 1 in each endpoint group.
-  pfi_row <- d$endpoint == "PFI"
-  k_surv <- sum(d$lo[!pfi_row] > 1); n_surv <- sum(!pfi_row)
-  k_pfi  <- sum(d$lo[pfi_row]  > 1); n_pfi  <- sum(pfi_row)
   d[, endpoint := factor(END[endpoint], levels = unname(END))]
   # Strip the file's (a)/(b) prefixes, which clash with panel letters, and use
   # the plain name of the metric.
@@ -920,10 +699,7 @@ if (!is.null(ee)) {
     facet_wrap(~ exposure_scale) +
     scale_x_log10(breaks = HR_BRK) +
     scale_colour_manual(values = END_COL, name = NULL) +
-    labs(title = "The non-feature fraction as exposure under four endpoints",
-         subtitle = sprintf("%s (%s); the interval excludes 1 in %d of %d estimates for overall and disease-specific survival and in %d of %d for the progression-free interval",
-                            n_ev_text(d$n, d$events, "events"), gloss_b,
-                            k_surv, n_surv, k_pfi, n_pfi) |> wrap_lab(92),
+    labs(title = "Metric as exposure by endpoint",
          x = "Hazard ratio per 1 SD (95% CI)", y = NULL) +
     theme(axis.text.y = element_text(size = 6.2, lineheight = 0.9),
           legend.position = "bottom")
@@ -958,14 +734,7 @@ if (!is.null(ci30) && nrow(ci30)) {
     scale_shape_manual(values = c(16, 1), name = NULL,
                        labels = function(x) wrap_lab(x, 36)) +
     scale_x_continuous(expand = expansion(mult = c(0.06, 0.72))) +
-    labs(title = "Increment over the clinical model, endpoint by endpoint",
-         subtitle = sprintf("%d x %d cross-validation; %d module scores added to age, sex, T, N, M1 and ordinal grade; %s. The interval excludes zero for %d of %d endpoints and %d of %d survive Benjamini-Hochberg over the four (smallest adjusted p %.3f); the mean over repeats is smaller than the bootstrap estimate in %d of %d",
-                            ML_N_REPEATS, ML_N_FOLDS, max(d$n_module_scores),
-                            n_ev_text(d$n, d$events, "events"),
-                            d[boot_lo > 0, .N], nrow(d),
-                            d[boot_p_BH_4endpoints < 0.05, .N], nrow(d),
-                            min(d$boot_p_BH_4endpoints),
-                            d[delta_mean < boot_delta, .N], nrow(d)) |> wrap_lab(62),
+    labs(title = "Increment over the clinical model",
          x = "Change in concordance index", y = NULL) +
     theme(axis.text.y = element_text(size = 6.4), legend.position = "bottom",
           legend.direction = "vertical", legend.text = element_text(size = 6),
@@ -1001,29 +770,6 @@ if (!is.null(fw) && nrow(fw)) {
                               rng_txt(n), rng_txt(events)), 46), by = analysis]
   d[, lab := factor(lab, levels = rev(unique(lab)))]
   d[, ep := factor(END[endpoint], levels = unname(END))]
-  reb  <- d[grepl("recomputed inside each fold", analysis)]
-  fxd  <- d[grepl("identical folds", analysis)]
-  cv10 <- d[grepl("10 x 10", analysis)]
-  opt  <- merge(fxd[, .(endpoint, fixed = delta_C)],
-                reb[, .(endpoint, rebuilt = delta_C)], by = "endpoint")
-  opt[, cost := fixed - rebuilt]
-  cost_txt <- paste(sprintf("%+.4f for %s", opt$cost, END_SHORT[opt$endpoint]),
-                    collapse = " and ")
-  dss <- opt[endpoint == "DSS"]
-  # Optimism is fixed minus rebuilt (the file's definition), shown signed.
-  ttl_d <- if (nrow(dss)) {
-    sprintf("Module-definition optimism for %s: %+.4f in the concordance index",
-            END_SHORT[["DSS"]], dss$cost)
-  } else {
-    "Modules rebuilt inside each fold against a matched fixed-module arm"
-  }
-  # For disease-specific survival, the matched arm separates the effect of
-  # coarser cross-validation from that of module definition.
-  dss_clause <- if (nrow(dss) && nrow(cv10[endpoint == "DSS"])) {
-    sprintf(" For %s both %d-fold rows (%+.4f fixed, %+.4f rebuilt) sit below the %d x %d value (%+.4f), which the matched fixed-module arm attributes to the coarser cross-validation rather than to module definition.",
-            END_SHORT[["DSS"]], FOLDWISE_K, dss$fixed, dss$rebuilt,
-            ML_N_REPEATS, ML_N_FOLDS, cv10[endpoint == "DSS", delta_C])
-  } else ""
   P$d <- ggplot(d, aes(delta_C, lab, colour = ep)) +
     geom_vline(xintercept = 0, linetype = 2, colour = "grey55", linewidth = 0.3) +
     ci_h(aes(xmin = delta_lo, xmax = delta_hi), width = 0.16, linewidth = 0.32,
@@ -1031,18 +777,16 @@ if (!is.null(fw) && nrow(fw)) {
     geom_point(size = 1.9, position = position_dodge(0.62)) +
     scale_colour_manual(values = END_COL, name = NULL, drop = TRUE) +
     scale_x_continuous(expand = expansion(mult = c(0.08, 0.10))) +
-    labs(title = ttl_d |> wrap_lab(58),
-         subtitle = sprintf("Only the two %d-fold rows are matched arms (the same patients, folds and inner splits, differing only in how the modules are defined), so rebuilding costs %s.%s Ranges span %d fold assignments and are not confidence intervals; every row carries its own n",
-                            FOLDWISE_K, cost_txt, dss_clause,
-                            max(d[grepl("^range", interval_type),
-                                  n_assignments], na.rm = TRUE)) |> wrap_lab(66),
+    labs(title = "Modules rebuilt inside each fold",
          x = "Change in concordance index", y = NULL) +
+    # One key per row, so the key fits the panel width.
+    guides(colour = guide_legend(ncol = 1)) +
     theme(axis.text.y = element_text(size = 5.8, lineheight = 0.9),
           legend.position = "bottom", legend.text = element_text(size = 6))
 } else skip("S7d", "30_endpoint_foldwise.tsv missing")
 pp <- compose(P)
 if (length(pp) >= 4) {
-  # Row 3 carries panel d's long labels and subtitle, so it is taller.
+  # Row 3 carries panel d's long row labels, so it is taller.
   s7 <- ROW(pp[[1]]) / ROW(pp[[2]]) / ROW(pp[[3]] | pp[[4]]) +
     plot_layout(heights = c(0.95, 0.9, 1.35))
   save_fig(s7, "SupplementaryFigureS13_endpoint_sensitivity", W, 10.4)
@@ -1103,10 +847,7 @@ if (!is.null(mb)) {
     scale_fill_manual(values = setNames(unname(OI[c("vermillion", "blue", "grey")]),
                                         unname(MATLAB)),
                       name = "Source of the candidate", drop = FALSE) +
-    labs(title = "What the non-feature fraction correlates with",
-         subtitle = sprintf("%d strongest of %d candidates, n = %d-%d; observed eigengenes carry the metric by construction",
-                            nrow(d), nrow(mb[exposure == "pct_noFeature"]),
-                            min(d$n), max(d$n)) |> wrap_lab(92),
+    labs(title = "Correlates of the non-feature fraction",
          x = "Spearman rho with the non-feature fraction", y = NULL) +
     theme(axis.text.y = element_text(size = 5.8), legend.position = "bottom")
 }
@@ -1133,15 +874,8 @@ if (!is.null(mu)) {
                         labels = c(`FALSE` = sprintf("FDR >= %.2f", FDR_ALPHA),
                                    `TRUE` = sprintf("FDR < %.2f", FDR_ALPHA)),
                         name = NULL) +
-      # The subtitle gives the smallest mutated group, which limits power.
-      labs(title = sprintf("No driver mutation is associated with the metric at FDR < %.2f",
-                           FDR_ALPHA),
-           subtitle = sprintf("Difference of medians, mutated minus wild type; n = %s patients with a mutation call; %d of %d at FDR < %.2f, on as few as %d mutated patients",
-                              if (min(d$n) == max(d$n)) as.character(max(d$n))
-                              else sprintf("%d-%d", min(d$n), max(d$n)),
-                              d[fdr < FDR_ALPHA, .N], nrow(d), FDR_ALPHA,
-                              min(d$n_mutated, na.rm = TRUE)) |>
-             wrap_lab(92),
+      # The row labels give each mutated group, the smallest of which limits power.
+      labs(title = "Driver mutations and the metric",
            x = "Difference of medians (mutated - wild type)", y = NULL) +
       theme(axis.text.y = element_text(size = 6, lineheight = 0.9),
             legend.position = "bottom")
@@ -1176,13 +910,8 @@ if (!is.null(cvr)) {
                                    `TRUE` = unname(OI["skyblue"])),
                         labels = c(`FALSE` = "clinical comparator",
                                    `TRUE` = "augmented comparator"), name = NULL) +
-    # The subtitle defines both comparators as built by clinical_design().
-    labs(title = sprintf("Cross-validated concordance, %d repeats of %d-fold",
-                         nrow(cvr), ML_N_FOLDS),
-         subtitle = paste("Lines join the same repeat; bars are the mean over repeats.",
-                          "Clinical = age, sex, T, N, M1, ordinal grade;",
-                          "Augmented = clinical + ESTIMATE stromal and immune scores",
-                          "+ the three STAR library metrics") |> wrap_lab(74),
+    # Both comparators are built by clinical_design(); the legend defines them.
+    labs(title = "Cross-validated concordance",
          x = NULL, y = "Out-of-fold concordance index") +
     theme(axis.text.x = element_text(size = 6, angle = 20, hjust = 1),
           legend.position = "bottom")
@@ -1204,8 +933,6 @@ if (!is.null(cvr)) {
               hjust = 1.05, size = 2.0, family = FIG_FONT, colour = "grey25") +
     scale_x_continuous(expand = expansion(mult = c(0.06, 0.28))) +
     labs(title = "Increment per cross-validation repeat",
-         subtitle = sprintf("Grey points are repeats, red points the mean over %d repeats",
-                            nrow(cvr)) |> wrap_lab(60),
          x = "Change in concordance index", y = NULL) +
     theme(axis.text.y = element_text(size = 6.4))
 } else skip("S9a/S9b", "05_cv_cindex_per_repeat.tsv missing")
@@ -1215,10 +942,7 @@ if (!is.null(hub)) {
     geom_text(aes(label = sprintf("%d", n_folds_selected)), hjust = -0.25,
               size = 2.1, family = FIG_FONT, colour = "grey25") +
     scale_x_continuous(expand = expansion(mult = c(0, 0.14))) +
-    labs(title = "How often each module supplies a selected hub",
-         subtitle = sprintf("Elastic-net selection inside %d folds (%d repeats x %d folds); labels are fold counts",
-                            round(max(hub$n_folds_selected) / max(hub$frac_folds_selected)),
-                            ML_N_REPEATS, ML_N_FOLDS) |> wrap_lab(60),
+    labs(title = "Hub selection by module",
          x = "Folds in which a hub from the module was selected (%)", y = NULL) +
     theme(axis.text.y = element_text(size = 6.4))
 } else skip("S9c", "05_hub_module_selection_frequency.tsv missing")
@@ -1236,22 +960,16 @@ if (length(pp) >= 3) {
 # ==== Supplementary Figure S12: calibration and utility sensitivity ==========
 # CPTAC-3 at the secondary horizon and under discovery-fixed standardisation.
 banner("S10 | calibration and utility sensitivity")
-cb <- Rx("12_calibration_bins.tsv"); cs2 <- Rx("12_calibration_summary.tsv")
-dc <- Rx("12_validation_decision_curve.tsv")
+cb <- Rx("12_calibration_bins.tsv"); dc <- Rx("12_validation_decision_curve.tsv")
 MOD2 <- c(comparator = "Clinical", `comparator + modules` = "Clinical + modules")
 MOD2_COL <- c(Clinical = "#4D4D4D", `Clinical + modules` = unname(OI["orange"]))
 P <- list()
 cal_panel <- function(yrs, std, ttl) {
   d <- cb[cohort == "validation" & comparator == "clinical" &
           standardisation == std & years == yrs]
-  s <- cs2[cohort == "validation" & comparator == "clinical" &
-           standardisation == std & years == yrs]
   if (!nrow(d)) return(skip(ttl, "no calibration bins for this arm"))
   d[, mlab := factor(MOD2[model], levels = unname(MOD2))]
-  s[, mlab := factor(MOD2[model], levels = unname(MOD2))]
-  s[, short := c(Clinical = "Clinical:",
-                 `Clinical + modules` = "+ modules:")[as.character(mlab)]]
-  L <- c(0, max(c(d$predicted, d$obs_hi), na.rm = TRUE) * 1.05)
+  L <-c(0, max(c(d$predicted, d$obs_hi), na.rm = TRUE) * 1.05)
   ggplot(d, aes(predicted, observed, colour = mlab)) +
     geom_abline(slope = 1, intercept = 0, linetype = 2, colour = "grey55",
                 linewidth = 0.3) +
@@ -1262,12 +980,7 @@ cal_panel <- function(yrs, std, ttl) {
     # under patchwork), so calibration reads as distance from the diagonal.
     coord_cartesian(xlim = L, ylim = L) +
     scale_colour_manual(values = MOD2_COL, name = NULL) +
-    labs(title = ttl,
-         subtitle = paste(c(sprintf("CPTAC-3, %d at risk at %d years; bars are Kaplan-Meier 95%% CIs; slope (95%% CI), observed/expected:",
-                                    max(s$n_at_risk), yrs) |> wrap_lab(52),
-                            sprintf("%s %.2f (%.2f-%.2f), O/E %.2f", s$short, s$slope,
-                                    s$slope_lo, s$slope_hi, s$OE)), collapse = "\n"),
-         x = "Predicted risk of death", y = "Observed risk") +
+    labs(title = ttl, x = "Predicted risk of death", y = "Observed risk") +
     theme(legend.position = "bottom", aspect.ratio = 1)
 }
 dca_panel <- function(yrs, std, ttl) {
@@ -1277,10 +990,6 @@ dca_panel <- function(yrs, std, ttl) {
           standardisation == std & years == yrs]
   if (!nrow(d)) return(skip(ttl, "no decision-curve rows for this arm"))
   d[, strat := factor(STRAT[strategy], levels = unname(STRAT))]
-  nb <- dcast(d[strategy %in% c("comparator", "comparator + modules")],
-              threshold ~ strategy, value.var = "net_benefit")
-  nb[, dd := `comparator + modules` - comparator]
-  win <- nb[threshold >= 0.10 & threshold <= 0.40]
   # The y floor clears the lowest model curve. The treat-all reference may run
   # off the panel.
   mod_nb <- d[strategy %in% c("comparator", "comparator + modules"), net_benefit]
@@ -1290,28 +999,25 @@ dca_panel <- function(yrs, std, ttl) {
     coord_cartesian(ylim = c(flo, max(d$net_benefit, na.rm = TRUE) * 1.08)) +
     scale_colour_manual(values = c(unname(MOD2_COL), "grey40", "grey72"), name = NULL) +
     scale_linetype_manual(values = c(1, 1, 2, 3), name = NULL) +
-    labs(title = ttl,
-         subtitle = sprintf("Median change in net benefit over thresholds 0.10-0.40: %+.3f (positive at %d of %d); the treat-all reference runs below the panel",
-                            median(win$dd), sum(win$dd > 0), nrow(win)) |> wrap_lab(52),
-         x = "Threshold probability", y = "Net benefit") +
+    labs(title = ttl, x = "Threshold probability", y = "Net benefit") +
     theme(legend.position = "bottom", legend.direction = "vertical",
           legend.text = element_text(size = 6),
           legend.key.height = unit(0.26, "cm"))
 }
-if (!is.null(cb) && !is.null(cs2)) {
+# Titles name the horizon and, for panels b and d, the standardisation; the cohort
+# (CPTAC-3) is stated in the legend.
+if (!is.null(cb)) {
   P$a <- cal_panel(SECONDARY_HORIZON_YR, "cohort",
-                   sprintf("Calibration at %d years", SECONDARY_HORIZON_YR))
+                   sprintf("%d-year calibration", SECONDARY_HORIZON_YR))
   P$b <- cal_panel(PRIMARY_HORIZON_YR, "discovery",
-                   sprintf("Calibration at %d years,\ndiscovery-fixed scores",
+                   sprintf("%d-year calibration, discovery-fixed scores",
                            PRIMARY_HORIZON_YR))
-} else skip("S10a/S10b", "12_calibration_* missing")
+} else skip("S10a/S10b", "12_calibration_bins.tsv missing")
 if (!is.null(dc)) {
-  # Both decision curves are scored in CPTAC-3, which the titles name.
   P$c <- dca_panel(SECONDARY_HORIZON_YR, "cohort",
-                   sprintf("Decision curve at %d years, CPTAC-3",
-                           SECONDARY_HORIZON_YR))
+                   sprintf("%d-year decision curve", SECONDARY_HORIZON_YR))
   P$d <- dca_panel(PRIMARY_HORIZON_YR, "discovery",
-                   sprintf("Decision curve at %d years, CPTAC-3,\ndiscovery-fixed scores",
+                   sprintf("%d-year decision curve, discovery-fixed scores",
                            PRIMARY_HORIZON_YR))
 } else skip("S10c/S10d", "12_validation_decision_curve.tsv missing")
 pp <- compose(P)
