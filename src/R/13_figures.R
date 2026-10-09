@@ -260,13 +260,13 @@ p2c <- ggplot(pg, aes(abs(rho_noFeature), colour = biotype, fill = biotype)) +
   annotate("label", x = Inf, y = Inf, hjust = 1.06, vjust = 1.06, size = 2.05,
            family = FIG_FONT, colour = "grey15", lineheight = 0.95,
            fill = "white", linewidth = 0, label.padding = unit(1.1, "mm"),
-           label = paste(sprintf("%s (%s genes):\nmedian |rho| %.2f, %.0f%% above 0.3",
+           label = paste(sprintf("%s (%s genes):\nmedian absolute rho %.2f, %.0f%% above 0.3",
                                  ps$biotype,
                                  format(ps$n_genes, big.mark = ",", trim = TRUE),
                                  ps$median_abs_rho, 100 * ps$frac_abs_rho_gt_0.3),
                          collapse = "\n")) +
   labs(title = "Per-gene correlation",
-       x = "|rho| with the non-feature fraction", y = "Density") +
+       x = "Absolute rho with the non-feature fraction", y = "Density") +
   theme(legend.position = "bottom")
 
 # -- d: eight nested adjustments of the axis ---------------------------------
@@ -332,7 +332,7 @@ axp <- rbindlist(list(nrm, sbt), use.names = TRUE, fill = TRUE)
 AXT <- c(projected = "Discovery axis projected onto the set",
          own       = "The set's own leading component")
 SGN <- c(`TRUE`  = "signed rho (sign anchored)",
-         `FALSE` = "|rho| (the sign is a convention)")
+         `FALSE` = "absolute rho (the sign is a convention)")
 PROTO_SHORT <- c(`polyA` = "poly(A)",
                  `ribo-depleted total RNA` = "ribo-depleted")
 if (nrow(axp)) {
@@ -963,7 +963,7 @@ if (!is.null(ax7) && !is.null(nw7)) {
     scale_shape_manual(values = c(`lncRNA PC1` = 16, `protein-coding PC1` = 1), name = NULL) +
     scale_x_continuous(limits = c(0, 1)) +
     labs(title = "Leading components",
-         x = "|rho| with the non-feature fraction", y = NULL) +
+         x = "Absolute rho with the non-feature fraction", y = NULL) +
     theme(legend.position = "bottom", axis.text.y = element_text(size = 6))
   # -- b: positional-class gradient --------------------------------------------
   p7b <- NULL
@@ -976,7 +976,7 @@ if (!is.null(ax7) && !is.null(nw7)) {
       geom_point(size = 0.8, colour = "grey55") +
       geom_point(data = gm, aes(class, med), colour = BIO_COL[["lncRNA"]], size = 2.4, shape = 18) +
       labs(title = "Positional classes",
-           x = NULL, y = "Median per-gene |rho|") +
+           x = NULL, y = "Median per-gene absolute rho") +
       theme(axis.text.x = element_text(angle = 35, hjust = 1))
   }
   # -- c: network reorganisation -------------------------------------------------
@@ -1026,8 +1026,9 @@ if (!is.null(ax7) && !is.null(nw7)) {
       geom_point(aes(colour = abs_rho_lnc, shape = rule_C_pass), size = 2.2) +
       ggrepel::geom_text_repel(aes(label = lab), size = 1.9, colour = "grey25", seed = SEED,
                                max.overlaps = Inf, min.segment.length = 0.1, segment.size = 0.2) +
-      scale_colour_gradient(low = "grey75", high = BIO_COL[["lncRNA"]], limits = c(0, 1), breaks = c(0, 0.5, 1), name = "|rho| lncRNA PC1") +
-      scale_shape_manual(values = c(`TRUE` = 17, `FALSE` = 16), labels = c(`TRUE` = "rule C met", `FALSE` = "not met"), name = NULL) +
+      scale_colour_gradient(low = "grey75", high = BIO_COL[["lncRNA"]], limits = c(0, 1), breaks = c(0, 0.5, 1), name = "Absolute rho, lncRNA PC1",
+                            guide = guide_colourbar(title.position = "top")) +
+      scale_shape_manual(values = c(`TRUE` = 17, `FALSE` = 16), labels = c(`TRUE` = "Rule C met", `FALSE` = "Rule C not met"), name = NULL) +
       scale_y_continuous(labels = scales::percent) +
       labs(title = "Metric spread (exploratory)",
            x = "MAD of log non-feature fraction", y = "Largest observed module") +
